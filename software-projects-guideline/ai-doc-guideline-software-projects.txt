@@ -1,0 +1,316 @@
+# Telcobright Software Development Guidelines
+
+## Company Overview
+Telcobright is a Realtime Communications (RTC) focused software company developing both frontend (web UI and apps) and backend software, primarily using Java and modern JavaScript frameworks, but also leveraging other programming languages as needed. We actively use open-source projects and build reusable libraries and frameworks for consistency, reliability, and development speed.
+
+## Core Design Principles
+
+WE FOLLOW TWO MOST IMPORTANT PRINCIPLES:
+
+1. Single responsibility principle (we have described it below)
+2. TreeView Protocol
+
+  A Telcobright-specific approach that structures all system modeling and goals as hierarchical tree nodes, similar to a project management Work Breakdown Structure (WBS).
+
+  Implementation:
+  - Start with a high-level goal as the root node
+  - Break down features into logical tree branches
+  - Each branch represents a functional area or module
+  - Continue decomposition until reaching manageable leaf nodes
+  - Sometimes it's necessary to describe/list features outside the scope of this module to 
+	clearly explain the whole design. But in that case clearly mark "Out of scope" near the beginning of the requirements file. 
+
+  Example Structure:
+  Chronicle Queue Database Cache (root)
+  ├── Queue Management
+  │   ├── Create queue
+  │   ├── Manage log rotation
+  │   └── Disaster recovery
+  ├── Producer Component
+  │   ├── Primary Queue Operations
+  │   │   └── Async writes (fast path)
+  │   ├── High Availability
+  │   │   └── Secondary queue writes (slow path)
+  │   └── Disaster Recovery
+  │       ├── Purge queue files
+  │       ├── Initialize fresh queue
+  │       └── Bulk restore from secondary storage
+
+  TreeView Guidelines:
+  - Leaf Node Rule: Documentation files at the leaf level should not exceed 30 lines (exceptions permitted when justified)
+  - Package Management: When a package or directory becomes too large, decompose it into smaller sub-packages
+  - Work Package Principle: Each tree branch should contain a manageable scope of work, avoiding monolithic structures
+
+  This approach ensures our systems remain organized, maintainable, and align with established project management practices.
+
+
+
+### 1. Single Responsibility Principle (Primary)
+Our most important design principle is "Single Responsibility Principle", applied at all levels:
+
+#### Package/Module Level
+- Each package serves one high-level goal
+  - Example: "Freeswitch ESL Protocol" - ESL related domain objects and business logic
+  - Example: "Prepaid Billing" - Services for prepaid billing needed for call/SMS and subscription-based services
+  - Example: "Authentication Module" - User authentication and authorization logic
+
+#### Class/Component Level
+- Each class/component serves one specific job
+  - Example: `EslClient` - Manage ESL connection with Freeswitch for send-receive of events
+  - Example: `SmsSender` - Send SMS messages
+  - Example: `OrderCreator` - Creates orders for clients
+  - Example: `UserRepository` - Manages user data persistence and retrieval
+
+#### Method/Function Level
+- Each method performs one specific task
+  - Example: `connectToFreeswitch()` - Connects the client to Freeswitch
+  - Example: `createTimerInstances(list)` - Creates a list of timers
+  - Example: `fetchPartners()` - Retrieves partner entities from backend
+
+## Naming Conventions
+
+### Directory and File Naming
+- **Directories**: Use kebab-case (e.g., `user-management`, `event-driven-architecture`)
+- **Files**: Use appropriate case for language context
+  - TypeScript/JavaScript: PascalCase for components/classes, camelCase for utilities
+  - Java: PascalCase for classes, camelCase for methods
+  - Documentation: kebab-case with descriptive names (e.g., `api-documentation.md`)
+- **Avoid abbreviations**: Use full descriptive names (`configuration.md` not `config.md`)
+
+### Consistency Rules
+- When renaming, update ALL references across the codebase
+- Maintain naming consistency within the same context
+- Physical folder names must match their usage in code and configuration
+
+## Framework and Library Development
+
+### Framework Structure
+When building frameworks (e.g., Telcobright Admin-UI Framework):
+- Separate framework code from application code
+- Create clear boundaries between reusable components and app-specific logic
+- Provide comprehensive documentation for framework features
+- Include migration guides when updating framework versions
+
+### Event-Driven Architecture
+For WebSocket and event-based systems:
+- Centralize event handling through EventBus patterns
+- Implement proper connection management with reconnection logic
+- Separate concerns: transport layer, business logic, state management
+- Use structured logging formats (JSONL, structured JSON)
+
+## Configuration Management
+
+### Profile-Based Configuration
+- Maintain separate profiles: `development`, `staging`, `production`
+- Use a master profile selector file (`app.profile.ts` or equivalent)
+- Environment-specific settings in dedicated configuration objects
+- Support runtime configuration overrides for debugging
+
+### Configuration Structure
+```typescript
+// Example configuration structure
+interface AppConfig {
+  api: { baseUrl, timeout }
+  websocket: { url, reconnectInterval }
+  features: { enableDebugMode, enableMonitoring }
+  // Category-based organization
+}
+```
+
+## Documentation Standards
+
+### Documentation Structure
+Following Single Responsibility Principle for documentation:
+
+```
+project-root/
+├── docs/
+│   ├── README.md                 # Overview and quick links
+│   ├── framework/                # Core framework concepts (if applicable)
+│   │   ├── overview.md
+│   │   └── design-philosophy.md
+│   ├── architecture/             # System design
+│   │   ├── system-architecture.md
+│   │   └── database-design.md
+│   ├── features/                 # Feature documentation
+│   │   ├── feature-1.md
+│   │   └── feature-2.md
+│   ├── configuration/            # Configuration guides
+│   │   └── environment-setup.md
+│   ├── development/              # Developer guides
+│   │   ├── quick-start.md
+│   │   └── development-workflow.md
+│   ├── api/                      # API references
+│   │   └── rest-endpoints.md
+│   └── archive/                  # Deprecated docs for reference
+```
+
+### Documentation Rules
+1. **One topic per file** - Each file covers a single, specific topic. A requirement file must not contain more than 30 lines.
+if we need more lines, we must created sub folder folder with a category name, then create multiple files to split the requirements. 
+On some cases, we may exceed the 30 lines limit, but we try to avoid it. REMEMBER, WE LOCAL TREE STRUCTURE, everything under catagorized tree.
+And it's our wish how much detail we want to see by navigating to the right tree node. 
+2. **Clear categorization** - Place files in appropriate category folders
+3. **Descriptive filenames** - Use full, descriptive names in kebab-case
+4. **Cross-references** - Link related documentation
+5. **Code examples** - Include practical, working examples
+6. **Keep current** - Update docs alongside code changes
+7. **No redundancy** - Avoid duplicating information across files
+
+### Content Structure Template
+```markdown
+# Title
+
+## Overview
+Brief introduction (2-3 sentences)
+
+## Concept/Feature
+Detailed explanation with context
+
+## Examples
+Practical code samples
+
+## Configuration (if applicable)
+Settings and options
+
+## Best Practices
+Recommendations and patterns
+
+## Troubleshooting (if applicable)
+Common issues and solutions
+
+## Related
+Links to other relevant documentation
+```
+
+## State Management
+
+### Store Architecture
+For state management (e.g., MobX stores):
+- Use proxy stores in debug mode for development visibility
+- Implement proper separation between UI stores and backend stores
+- Create unified store interfaces that work in both environments
+- Use event-driven updates for real-time synchronization
+
+### Development Debugging
+- Maintain debug tools separate from production code
+- Use appropriate logging levels (DEBUG, INFO, WARN, ERROR)
+- Implement structured logging for easier parsing
+- Provide tools for state inspection during development
+
+## Query Systems
+
+### Query Systems
+- Implement version migration strategies when updating query formats
+- Use explicit entity type specification where applicable
+- Support both read and write operations in consistent format
+- Provide comprehensive error messages
+- Implement appropriate caching strategies
+
+## Development Workflow
+
+### Service Management
+When running multiple services:
+1. Backend services (Spring Boot, Node.js, microservices)
+2. Development/debugging tools
+3. Frontend applications (React, Vue, Angular, etc.)
+4. Database and cache services
+
+### Testing Requirements
+- Check for existing test scripts before writing new ones
+- Use project's established testing frameworks
+- Run linting and type checking before commits
+- Verify all services are running before testing features
+
+## Error Handling
+
+### Backend Conflicts
+- Avoid controller/endpoint conflicts (check existing mappings)
+- Provide clear error messages for ambiguous routes
+- Implement proper versioning for API endpoints
+
+### Frontend Console Management
+- Implement configurable console redirect for debugging
+- Filter framework noise from console outputs
+- Batch console messages to avoid WebSocket overload
+- Preserve original console functionality
+
+## Migration and Refactoring
+
+### Renaming Guidelines
+When renaming components/folders:
+1. Stop all related services
+2. Update physical folder/file names
+3. Update all code references
+4. Update configuration files
+5. Update documentation
+6. Update scripts and automation
+7. Restart services from new locations
+8. Verify functionality
+
+### Backward Compatibility
+- Maintain backward compatibility when possible
+- Provide migration paths for breaking changes
+- Document deprecated features before removal
+- Use feature flags for gradual rollouts
+
+## Code Quality Standards
+
+### Before Completing Tasks
+- Run lint checks (`npm run lint`, `ruff`, etc.)
+- Run type checks (`npm run typecheck`, `tsc`, etc.)
+- Verify no console errors in development mode
+- Check debug logs for unexpected warnings
+- Ensure consistent code style with existing codebase
+
+### Code Organization
+- Group related functionality in dedicated folders
+- Use barrel exports (index files) appropriately
+- Maintain clear import hierarchies
+- Avoid circular dependencies
+
+## Project-Specific Extensions
+
+### CLAUDE.md Integration
+Each project should maintain a `CLAUDE.md` file with:
+- Project-specific conventions
+- Special requirements or constraints
+- Common tasks and their commands
+- Environment-specific notes
+
+## Best Practices Summary
+
+1. **Always follow Single Responsibility Principle**
+2. **Maintain consistent naming across all levels**
+3. **Document as you develop, not after**
+4. **Use debug modes during development**
+5. **Test with all services running**
+6. **Keep configuration centralized and profile-based**
+7. **Separate framework code from application code**
+8. **Use event-driven patterns for real-time features**
+9. **Implement comprehensive error handling**
+10. **Update all references when refactoring**
+
+## Common Patterns
+
+### Real-time Communication
+- Centralize message handling through event bus patterns
+- Implement automatic reconnection logic
+- Handle connection state transitions properly
+- Queue messages during connection interruptions
+
+### State Synchronization
+- Keep frontend and backend state consistent
+- Use appropriate real-time update mechanisms
+- Implement optimistic updates where suitable
+- Handle conflict resolution strategies
+
+### Development Tools
+- Separate development tools from production code
+- Use feature flags for development features
+- Implement comprehensive logging strategies
+- Provide debugging utilities for developers
+
+---
+
+*This document should be referenced for all Telcobright software projects and updated as new patterns and practices emerge.*
