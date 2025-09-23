@@ -1,0 +1,4 @@
+*
+!software-projects-guinelines/
+!software-projects-guinelines/**
+!.gitignore
