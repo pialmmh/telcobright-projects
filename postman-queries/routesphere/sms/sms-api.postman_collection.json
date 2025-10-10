@@ -1,0 +1,206 @@
+{
+  "info": {
+    "name": "RouteSphere SMS API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "API endpoints for SMS operations in RouteSphere, including bulk SMS submission with tenant hierarchy and rule pipeline processing"
+  },
+  "item": [
+    {
+      "name": "Bulk SMS Operations",
+      "description": "Bulk SMS submission endpoints with automatic tenant identification from socket binding",
+      "item": [
+        {
+          "name": "Test 1: Single SMS - Valid Credentials",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"taskId\": \"test-001\",\n    \"clienttransId\": \"tx-001\",\n    \"senderAddress\": \"TEST\",\n    \"destinationAddress\": \"8801711111111\",\n    \"messageText\": \"Test message\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  }\n]"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v3/sms/bulk/send",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v3", "sms", "bulk", "send"]
+            },
+            "description": "Test single SMS submission with valid credentials. Expected: 200 OK with 1 ACCEPTED task."
+          },
+          "response": []
+        },
+        {
+          "name": "Test 2: Multiple SMS - Batch Processing",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"taskId\": \"task-001\",\n    \"clienttransId\": \"client-123\",\n    \"senderAddress\": \"TESTCORP\",\n    \"destinationAddress\": \"8801711111111\",\n    \"messageText\": \"Hello, this is a test SMS\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  },\n  {\n    \"taskId\": \"task-002\",\n    \"clienttransId\": \"client-124\",\n    \"senderAddress\": \"ALERTS\",\n    \"destinationAddress\": \"8801722222222\",\n    \"messageText\": \"Your OTP is 123456\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"HIGH\"\n  },\n  {\n    \"taskId\": \"task-003\",\n    \"clienttransId\": \"client-125\",\n    \"senderAddress\": \"PROMO\",\n    \"destinationAddress\": \"8801733333333\",\n    \"messageText\": \"Special offer: 50% discount today!\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"LOW\"\n  }\n]"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v3/sms/bulk/send",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v3", "sms", "bulk", "send"]
+            },
+            "description": "Test batch processing with 3 SMS tasks. Expected: 200 OK with 3 ACCEPTED tasks."
+          },
+          "response": []
+        },
+        {
+          "name": "Test 3: Invalid Credentials",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"taskId\": \"test-fail-001\",\n    \"clienttransId\": \"tx-fail-001\",\n    \"senderAddress\": \"TEST\",\n    \"destinationAddress\": \"8801711111111\",\n    \"messageText\": \"Test message\",\n    \"username\": \"wronguser\",\n    \"password\": \"wrongpass\",\n    \"priority\": \"NORMAL\"\n  }\n]"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v3/sms/bulk/send",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v3", "sms", "bulk", "send"]
+            },
+            "description": "Test authentication failure with invalid credentials. Expected: 200 OK with 1 REJECTED task (authentication failure)."
+          },
+          "response": []
+        },
+        {
+          "name": "Test 4: Mixed Valid and Invalid Credentials",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"taskId\": \"task-valid-001\",\n    \"clienttransId\": \"tx-valid-001\",\n    \"senderAddress\": \"TESTCORP\",\n    \"destinationAddress\": \"8801711111111\",\n    \"messageText\": \"Test message with valid credentials\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  },\n  {\n    \"taskId\": \"task-invalid-001\",\n    \"clienttransId\": \"tx-invalid-001\",\n    \"senderAddress\": \"TESTCORP\",\n    \"destinationAddress\": \"8801722222222\",\n    \"messageText\": \"Test message with invalid credentials\",\n    \"username\": \"wronguser\",\n    \"password\": \"wrongpass\",\n    \"priority\": \"NORMAL\"\n  },\n  {\n    \"taskId\": \"task-valid-002\",\n    \"clienttransId\": \"tx-valid-002\",\n    \"senderAddress\": \"TESTCORP\",\n    \"destinationAddress\": \"8801733333333\",\n    \"messageText\": \"Another test message with valid credentials\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"HIGH\"\n  }\n]"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v3/sms/bulk/send",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v3", "sms", "bulk", "send"]
+            },
+            "description": "Test partial failure with mixed valid and invalid credentials. Expected: 200 OK with 2 ACCEPTED and 1 REJECTED tasks."
+          },
+          "response": []
+        },
+        {
+          "name": "Test 5: All Priority Levels",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"taskId\": \"priority-high-001\",\n    \"clienttransId\": \"pri-high-001\",\n    \"senderAddress\": \"URGENT\",\n    \"destinationAddress\": \"8801711111111\",\n    \"messageText\": \"HIGH priority message\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"HIGH\"\n  },\n  {\n    \"taskId\": \"priority-normal-001\",\n    \"clienttransId\": \"pri-normal-001\",\n    \"senderAddress\": \"INFO\",\n    \"destinationAddress\": \"8801722222222\",\n    \"messageText\": \"NORMAL priority message\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  },\n  {\n    \"taskId\": \"priority-low-001\",\n    \"clienttransId\": \"pri-low-001\",\n    \"senderAddress\": \"PROMO\",\n    \"destinationAddress\": \"8801733333333\",\n    \"messageText\": \"LOW priority message\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"LOW\"\n  }\n]"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v3/sms/bulk/send",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v3", "sms", "bulk", "send"]
+            },
+            "description": "Test all three priority levels (HIGH, NORMAL, LOW). Expected: 200 OK with 3 ACCEPTED tasks."
+          },
+          "response": []
+        },
+        {
+          "name": "Test 6: Large Batch (10 SMS)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"taskId\": \"batch-001\",\n    \"clienttransId\": \"btx-001\",\n    \"senderAddress\": \"BATCH\",\n    \"destinationAddress\": \"8801711111111\",\n    \"messageText\": \"Batch message 1\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  },\n  {\n    \"taskId\": \"batch-002\",\n    \"clienttransId\": \"btx-002\",\n    \"senderAddress\": \"BATCH\",\n    \"destinationAddress\": \"8801722222222\",\n    \"messageText\": \"Batch message 2\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  },\n  {\n    \"taskId\": \"batch-003\",\n    \"clienttransId\": \"btx-003\",\n    \"senderAddress\": \"BATCH\",\n    \"destinationAddress\": \"8801733333333\",\n    \"messageText\": \"Batch message 3\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  },\n  {\n    \"taskId\": \"batch-004\",\n    \"clienttransId\": \"btx-004\",\n    \"senderAddress\": \"BATCH\",\n    \"destinationAddress\": \"8801744444444\",\n    \"messageText\": \"Batch message 4\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  },\n  {\n    \"taskId\": \"batch-005\",\n    \"clienttransId\": \"btx-005\",\n    \"senderAddress\": \"BATCH\",\n    \"destinationAddress\": \"8801755555555\",\n    \"messageText\": \"Batch message 5\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  },\n  {\n    \"taskId\": \"batch-006\",\n    \"clienttransId\": \"btx-006\",\n    \"senderAddress\": \"BATCH\",\n    \"destinationAddress\": \"8801766666666\",\n    \"messageText\": \"Batch message 6\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  },\n  {\n    \"taskId\": \"batch-007\",\n    \"clienttransId\": \"btx-007\",\n    \"senderAddress\": \"BATCH\",\n    \"destinationAddress\": \"8801777777777\",\n    \"messageText\": \"Batch message 7\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  },\n  {\n    \"taskId\": \"batch-008\",\n    \"clienttransId\": \"btx-008\",\n    \"senderAddress\": \"BATCH\",\n    \"destinationAddress\": \"8801788888888\",\n    \"messageText\": \"Batch message 8\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  },\n  {\n    \"taskId\": \"batch-009\",\n    \"clienttransId\": \"btx-009\",\n    \"senderAddress\": \"BATCH\",\n    \"destinationAddress\": \"8801799999999\",\n    \"messageText\": \"Batch message 9\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  },\n  {\n    \"taskId\": \"batch-010\",\n    \"clienttransId\": \"btx-010\",\n    \"senderAddress\": \"BATCH\",\n    \"destinationAddress\": \"8801700000000\",\n    \"messageText\": \"Batch message 10\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\",\n    \"priority\": \"NORMAL\"\n  }\n]"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v3/sms/bulk/send",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v3", "sms", "bulk", "send"]
+            },
+            "description": "Performance test with 10 SMS tasks. Expected: 200 OK with 10 ACCEPTED tasks. Can be scaled to 100+ for stress testing."
+          },
+          "response": []
+        },
+        {
+          "name": "Test 7: Minimal Required Fields",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"taskId\": \"minimal-001\",\n    \"senderAddress\": \"TEST\",\n    \"destinationAddress\": \"8801711111111\",\n    \"messageText\": \"Minimal test message\",\n    \"username\": \"testuser\",\n    \"password\": \"testpass123\"\n  }\n]"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v3/sms/bulk/send",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v3", "sms", "bulk", "send"]
+            },
+            "description": "Test with only required fields (no clienttransId, no priority). Expected: 200 OK with 1 ACCEPTED task."
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://127.0.0.1:19999",
+      "type": "string",
+      "description": "Base URL for RouteSphere API (automatic tenant identification from socket binding)"
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "// Optional: Add any pre-request scripts here",
+          "// Example: Set dynamic variables, timestamps, etc."
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "// Optional: Add common test scripts here",
+          "// Example: Check response status, validate JSON structure"
+        ]
+      }
+    }
+  ]
+}

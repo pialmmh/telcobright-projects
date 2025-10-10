@@ -143,6 +143,7 @@ project-root/
 │   ├── api/                      # API references
 │   │   └── rest-endpoints.md
 │   └── archive/                  # Deprecated docs for reference
+│   └── test/                     # Coverage, spec and features of each test in one text file as doc. 
 ```
 
 ### Documentation Rules
@@ -156,7 +157,9 @@ And it's our wish how much detail we want to see by navigating to the right tree
 5. **Code examples** - Include practical, working examples
 6. **Keep current** - Update docs alongside code changes
 7. **No redundancy** - Avoid duplicating information across files
-
+8. we must document each one of our test cases in a test folder. in the folder a single test file will contain 
+narrative/description of each test with bullets and other formats e.g. could be table. for each test case,
+the ai code generator should generate a single class or a package with multiple class to cover the test scenario.
 ### Content Structure Template
 ```markdown
 # Title
@@ -312,5 +315,6 @@ Each project should maintain a `CLAUDE.md` file with:
 - Provide debugging utilities for developers
 
 ---
+
 
 *This document should be referenced for all Telcobright software projects and updated as new patterns and practices emerge.*

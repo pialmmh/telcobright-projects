@@ -1,4 +1,6 @@
 *
 !software-projects-guideline/
 !software-projects-guideline/**
+!postman-queries/
+!postman-queries/**
 !.gitignore
