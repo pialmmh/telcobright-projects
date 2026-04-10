@@ -1,0 +1,16 @@
+# Environment / secrets
+.env
+
+# Large media files
+**/frames/
+**/video.mp4
+**/audio.wav
+**/audio.mp3
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Whisper model cache
+*.pt

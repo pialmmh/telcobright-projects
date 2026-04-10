@@ -3,4 +3,11 @@
 !software-projects-guideline/**
 !postman-queries/
 !postman-queries/**
+!video-extractor/
+!video-extractor/**
+video-extractor/crm-mightycall/frames/
+video-extractor/crm-mightycall/video.mp4
+video-extractor/crm-mightycall/audio.wav
+video-extractor/.env
+video-extractor/.venv/
 !.gitignore

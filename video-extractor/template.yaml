@@ -1,0 +1,400 @@
+# ============================================================
+# Software Knowledge Graph Template
+# ============================================================
+# Fill this out manually when documenting software without video.
+# Then run: python manual_input.py template.yaml --output ./output
+# ============================================================
+
+software:
+  name: "Your Software Name"
+  version: "1.0"
+  vendor: "Company Name"
+  description: "Brief description of what the software does"
+
+# ============================================================
+# MODULES - Major sections/areas of the software
+# ============================================================
+modules:
+  - id: sales
+    name: "Sales"
+    description: "Manage quotations, orders, and customer relationships"
+  
+  - id: inventory
+    name: "Inventory"
+    description: "Track stock levels, warehouses, and product movements"
+  
+  # Add more modules...
+
+# ============================================================
+# SCREENS - Individual pages/views in the software
+# ============================================================
+screens:
+  - id: customer_list
+    name: "Customer List"
+    module: sales
+    url_pattern: "/customers"
+    description: "View and search all customers"
+    navigates_to:
+      - customer_detail
+      - customer_create
+    components:
+      - type: search_bar
+        label: "Search customers"
+        purpose: "Filter customer list by name, email, or ID"
+      
+      - type: table
+        label: "Customer Table"
+        purpose: "Display customer records"
+        columns:
+          - name: "Name"
+            field: "name"
+            sortable: true
+          - name: "Email"
+            field: "email"
+          - name: "Status"
+            field: "status"
+            type: "badge"
+      
+      - type: button
+        label: "Add Customer"
+        purpose: "Navigate to create customer form"
+        action: "navigate"
+        target: customer_create
+  
+  - id: customer_detail
+    name: "Customer Detail"
+    module: sales
+    url_pattern: "/customers/{id}"
+    description: "View and edit individual customer"
+    navigates_from:
+      - customer_list
+    components:
+      - type: form
+        label: "Customer Information"
+        fields:
+          - name: "name"
+            label: "Full Name"
+            type: "text"
+            required: true
+          - name: "email"
+            label: "Email Address"
+            type: "email"
+            required: true
+          - name: "phone"
+            label: "Phone Number"
+            type: "phone"
+          - name: "address"
+            label: "Address"
+            type: "textarea"
+      
+      - type: button
+        label: "Save"
+        purpose: "Save customer changes"
+        action: "submit"
+      
+      - type: button
+        label: "Delete"
+        purpose: "Delete this customer"
+        action: "delete"
+        style: "danger"
+
+# ============================================================
+# FEATURES - Specific capabilities users can perform
+# ============================================================
+features:
+  - id: create_customer
+    name: "Create Customer"
+    module: sales
+    type: create
+    description: "Add a new customer to the system"
+    screens:
+      - customer_list
+      - customer_create
+    preconditions:
+      - "User has sales access"
+    postconditions:
+      - "Customer record created"
+      - "Customer ID assigned"
+    steps:
+      - action: "click"
+        target: "Add Customer button"
+        screen: customer_list
+        description: "Click Add Customer button"
+      
+      - action: "fill"
+        target: "Customer form"
+        screen: customer_create
+        description: "Enter customer information"
+      
+      - action: "click"
+        target: "Save button"
+        screen: customer_create
+        description: "Save the new customer"
+    business_rules:
+      - "Email must be unique"
+      - "Name is required"
+
+  - id: search_customers
+    name: "Search Customers"
+    module: sales
+    type: read
+    description: "Find customers by various criteria"
+    screens:
+      - customer_list
+    steps:
+      - action: "type"
+        target: "Search bar"
+        description: "Enter search term"
+      
+      - action: "view"
+        target: "Results table"
+        description: "View filtered results"
+
+# ============================================================
+# USER FLOWS - End-to-end journeys through the software
+# ============================================================
+user_flows:
+  - id: new_customer_order
+    name: "New Customer Places Order"
+    description: "Complete flow from customer creation to order placement"
+    actors:
+      - Sales Representative
+    steps:
+      - sequence: 1
+        screen: customer_list
+        action: "Click Add Customer"
+        result: "Customer form opens"
+      
+      - sequence: 2
+        screen: customer_create
+        action: "Fill customer details and save"
+        result: "Customer created, redirected to detail"
+      
+      - sequence: 3
+        screen: customer_detail
+        action: "Click Create Order"
+        result: "Order form opens with customer pre-filled"
+      
+      - sequence: 4
+        screen: order_create
+        action: "Add products and submit"
+        result: "Order created and confirmed"
+
+# ============================================================
+# BUSINESS PROCESSES - BPMN-style process definitions
+# ============================================================
+processes:
+  - id: order_fulfillment
+    name: "Order Fulfillment Process"
+    description: "From order receipt to delivery"
+    actors:
+      - Sales Rep
+      - Warehouse Staff
+      - Delivery Driver
+    triggers:
+      - "Customer places order"
+      - "Order imported from e-commerce"
+    steps:
+      - id: receive_order
+        name: "Receive Order"
+        type: event
+        sequence: 1
+        description: "Order enters the system"
+      
+      - id: check_inventory
+        name: "Check Inventory"
+        type: task
+        sequence: 2
+        performer: "System"
+        description: "Verify stock availability"
+      
+      - id: inventory_decision
+        name: "Stock Available?"
+        type: decision
+        sequence: 3
+        outcomes:
+          - condition: "yes"
+            next: pick_items
+          - condition: "no"
+            next: backorder
+      
+      - id: pick_items
+        name: "Pick Items"
+        type: task
+        sequence: 4
+        performer: "Warehouse Staff"
+        description: "Locate and pick items from warehouse"
+      
+      - id: pack_shipment
+        name: "Pack Shipment"
+        type: task
+        sequence: 5
+        performer: "Warehouse Staff"
+        description: "Package items for shipping"
+      
+      - id: ship_order
+        name: "Ship Order"
+        type: task
+        sequence: 6
+        performer: "Delivery Driver"
+        description: "Deliver to customer"
+      
+      - id: complete
+        name: "Order Complete"
+        type: event
+        sequence: 7
+        description: "Order delivered and closed"
+    
+    outcomes:
+      - "Order delivered to customer"
+      - "Inventory updated"
+      - "Invoice generated"
+
+# ============================================================
+# DATA ENTITIES - Core data objects in the system
+# ============================================================
+entities:
+  - id: customer
+    name: "Customer"
+    description: "A person or company that purchases products/services"
+    fields:
+      - name: "id"
+        type: "integer"
+        label: "Customer ID"
+        auto_generate: true
+      - name: "name"
+        type: "string"
+        label: "Full Name"
+        required: true
+      - name: "email"
+        type: "string"
+        label: "Email Address"
+        required: true
+        unique: true
+      - name: "phone"
+        type: "string"
+        label: "Phone Number"
+      - name: "address"
+        type: "text"
+        label: "Address"
+      - name: "status"
+        type: "enum"
+        label: "Status"
+        options: ["active", "inactive", "blocked"]
+        default: "active"
+      - name: "created_at"
+        type: "datetime"
+        label: "Created Date"
+        auto_generate: true
+    relationships:
+      - type: "has_many"
+        target: "order"
+        description: "Customer can have multiple orders"
+      - type: "has_many"
+        target: "invoice"
+        description: "Customer can have multiple invoices"
+  
+  - id: order
+    name: "Order"
+    description: "A customer's purchase request"
+    fields:
+      - name: "id"
+        type: "integer"
+        label: "Order ID"
+        auto_generate: true
+      - name: "order_number"
+        type: "string"
+        label: "Order Number"
+        auto_generate: true
+        format: "ORD-{YYYY}-{SEQUENCE}"
+      - name: "customer_id"
+        type: "relation"
+        label: "Customer"
+        target: "customer"
+        required: true
+      - name: "status"
+        type: "enum"
+        label: "Status"
+        options: ["draft", "confirmed", "processing", "shipped", "delivered", "cancelled"]
+      - name: "total"
+        type: "decimal"
+        label: "Order Total"
+        computed: true
+      - name: "order_date"
+        type: "datetime"
+        label: "Order Date"
+    relationships:
+      - type: "belongs_to"
+        target: "customer"
+      - type: "has_many"
+        target: "order_line"
+
+# ============================================================
+# DESIGN SYSTEM - UI patterns and styling
+# ============================================================
+design_system:
+  layout_type: "sidebar"  # sidebar, topnav, combined
+  
+  colors:
+    primary: "#3B82F6"      # Main brand color
+    secondary: "#6B7280"    # Secondary actions
+    success: "#10B981"      # Success states
+    warning: "#F59E0B"      # Warning states
+    danger: "#EF4444"       # Error/delete states
+    background: "#F9FAFB"   # Page background
+    surface: "#FFFFFF"      # Card/panel background
+    text_primary: "#111827"
+    text_secondary: "#6B7280"
+  
+  typography:
+    font_family: "Inter, system-ui, sans-serif"
+    heading_font: "Inter, system-ui, sans-serif"
+    sizes:
+      h1: "30px"
+      h2: "24px"
+      h3: "20px"
+      body: "14px"
+      small: "12px"
+  
+  spacing:
+    xs: "4px"
+    sm: "8px"
+    md: "16px"
+    lg: "24px"
+    xl: "32px"
+  
+  components:
+    button:
+      border_radius: "6px"
+      padding: "8px 16px"
+      variants:
+        - primary
+        - secondary
+        - outline
+        - ghost
+        - danger
+    
+    input:
+      border_radius: "6px"
+      border_color: "#D1D5DB"
+      focus_color: "#3B82F6"
+      height: "40px"
+    
+    card:
+      border_radius: "8px"
+      shadow: "0 1px 3px rgba(0,0,0,0.1)"
+      padding: "16px"
+    
+    table:
+      row_height: "48px"
+      header_bg: "#F9FAFB"
+      border_color: "#E5E7EB"
+      stripe: true
+  
+  common_patterns:
+    - "List views with search, filter, and pagination"
+    - "Detail views with tabs for related data"
+    - "Forms with inline validation"
+    - "Modal dialogs for confirmations"
+    - "Toast notifications for feedback"
+    - "Breadcrumb navigation"
