@@ -1,0 +1,560 @@
+{
+  "software_name": "MightyCall",
+  "extraction_date": "2026-04-13",
+  "source_video": "progressive-dialer",
+
+  "modules": [
+    {
+      "id": "auto_dialer",
+      "name": "Auto Dialer",
+      "description": "Outbound calling automation module. Contains campaign management and record list management. Accessible via top navigation 'Auto dialer' tab."
+    }
+  ],
+
+  "features": [
+    {
+      "id": "campaign_management",
+      "name": "Campaign Management",
+      "module": "auto_dialer",
+      "description": "Create, manage and monitor outbound calling campaigns. Campaigns can be in states: Preparing, Scheduled, Running, Ready, Completed, Paused, Incomplete.",
+      "type": "workflow",
+      "user_steps": [
+        "Navigate to Auto Dialer > Campaigns",
+        "Click 'Create campaign' button",
+        "Fill in General Settings (name, description, timezone, dates, business hours, phone numbers)",
+        "Configure Dialer Settings (select Progressive mode and configure mode-specific parameters)",
+        "Add agents to Agent List",
+        "Upload or select a Record List",
+        "Save and launch campaign"
+      ],
+      "business_value": "Enables teams to run structured outbound calling campaigns with full control over scheduling, staffing, and contact lists."
+    },
+    {
+      "id": "progressive_dialing",
+      "name": "Progressive Dialing Mode",
+      "module": "auto_dialer",
+      "description": "The Progressive campaign automatically initiates calls, allowing agents to connect with contacts who are already on the line, making it a more efficient option compared to Preview mode. Best for small to medium teams with steady flow. The system dials the next contact automatically when an agent becomes available.",
+      "type": "configuration",
+      "user_steps": [
+        "In Dialer Settings, select 'Progressive' mode tab",
+        "Configure Auto Answer with timeout (default 3 sec)",
+        "Set Timing: Ringing agent time (30 sec), Wrap-up time (30 sec), Max ring time (25 sec)",
+        "Set Dialing Attempts: Default retry period (30 min), Max attempts per record (3)",
+        "Enable/disable Answering Machine Detection",
+        "Configure System Disposition actions (Retry/Final per outcome)",
+        "Configure Agent Disposition options (which outcomes agents can select)"
+      ],
+      "business_value": "Balances automation with efficiency for small to medium outbound teams. More efficient than Preview mode while maintaining steady agent workload without abandoned calls.",
+      "key_differences_from_preview": [
+        "Progressive has Auto Answer with configurable timeout (3 sec default) - Preview does not",
+        "Progressive has Answering Machine Detection (AMD) toggle - Preview does not",
+        "Progressive has 'Ringing agent time' setting - Preview has 'Preview time' instead",
+        "Progressive system dispositions include 'Answering machine' - Preview has 'Blocked by spam filters' and 'Blocked by robocall analytics' instead",
+        "Progressive auto-initiates calls; Preview lets agent review contact info first and manually initiate",
+        "Progressive is described as 'more efficient' than Preview but gives agents less control"
+      ]
+    },
+    {
+      "id": "local_presence",
+      "name": "Local Presence",
+      "module": "auto_dialer",
+      "description": "Automatically selects the best outbound business number based on the contact's area code. Makes calls appear local to the prospect, increasing answer rates.",
+      "type": "configuration",
+      "user_steps": [
+        "In General Settings, assign multiple business numbers with regional labels",
+        "Toggle on 'Local Presence'",
+        "System automatically matches caller ID to contact area code at call time"
+      ],
+      "business_value": "Increases answer rates by displaying a local number to prospects instead of an unknown toll-free or out-of-state number."
+    },
+    {
+      "id": "business_hours",
+      "name": "Business Hours Scheduling",
+      "module": "auto_dialer",
+      "description": "Configure per-day calling windows for a campaign. Each day (Sunday-Saturday) can be enabled/disabled with custom AM/PM start and end times, or set to Full Day.",
+      "type": "configuration",
+      "user_steps": [
+        "In General Settings, scroll to Business Hours section",
+        "Enable/disable each day with checkbox",
+        "Set start and end times per day",
+        "Or toggle 'Full day' for unrestricted daily calling"
+      ],
+      "business_value": "Ensures calls are placed only during legally and operationally acceptable hours, applied per the campaign timezone."
+    },
+    {
+      "id": "dnc_compliance",
+      "name": "DNC Compliance",
+      "module": "auto_dialer",
+      "description": "Do Not Call list management including National DNC list scrubber and Local DNC list. Prevents dialing numbers on DNC registries.",
+      "type": "configuration",
+      "user_steps": [
+        "Toggle National DNC list scrubber on/off",
+        "Manage Local DNC List: Add more numbers, Replace list, Delete all, Export to CSV",
+        "Review DNC count (e.g. 2 NUMBERS)"
+      ],
+      "business_value": "Ensures compliance with TCPA and DNC regulations, protecting the business from legal liability."
+    },
+    {
+      "id": "answering_machine_detection",
+      "name": "Answering Machine Detection (AMD)",
+      "module": "auto_dialer",
+      "description": "Automatically detects when a call reaches an answering machine/voicemail. Available in Progressive mode (and Predictive mode). When enabled, adds 'Answering machine' to system dispositions. Can be configured to Retry or Final.",
+      "type": "workflow",
+      "user_steps": [
+        "In Dialer Settings (Progressive mode), toggle on 'Answering machine detection' (green toggle)",
+        "In System Disposition, configure Answering machine outcome as Retry or Final"
+      ],
+      "business_value": "Prevents wasting agent time on voicemails and enables intelligent retry logic."
+    },
+    {
+      "id": "auto_answer",
+      "name": "Auto Answer",
+      "module": "auto_dialer",
+      "description": "Automatically answers incoming connected calls for agents after a configurable timeout. Available in Progressive mode (not in Preview mode). Default timeout is 3 seconds.",
+      "type": "configuration",
+      "user_steps": [
+        "In Dialer Settings (Progressive mode), locate Auto Answer section",
+        "Set Timeout in seconds (default 3 sec)"
+      ],
+      "business_value": "Reduces agent response time and streamlines call handling in automated dialing modes."
+    },
+    {
+      "id": "system_disposition",
+      "name": "System Disposition",
+      "module": "auto_dialer",
+      "description": "Automated handling rules for call outcomes not controlled by agents. Each outcome can be set to Retry (with period and attempt limits) or Final. Progressive mode includes: Contact busy, Contact no response, Contact abandoned, Invalid number, and Answering machine (when AMD is enabled).",
+      "type": "configuration",
+      "user_steps": [
+        "In Dialer Settings, scroll to System Disposition section",
+        "For each outcome: choose Retry or Final",
+        "For Retry outcomes: set retry period (min) and max attempts per number"
+      ],
+      "progressive_dispositions": [
+        {"outcome": "Contact busy", "default_retry_period": "30 min", "default_attempts": 3, "default_action": "Retry"},
+        {"outcome": "Contact no response", "default_retry_period": "30 min", "default_attempts": 3, "default_action": "Retry"},
+        {"outcome": "Contact abandoned", "default_action": "Retry"},
+        {"outcome": "Invalid number", "default_action": "Final"},
+        {"outcome": "Answering machine", "default_action": "Final", "note": "Only shown when AMD is enabled"}
+      ],
+      "business_value": "Automates retry logic and eliminates manual queue management for unreachable contacts."
+    },
+    {
+      "id": "agent_disposition",
+      "name": "Agent Disposition",
+      "module": "auto_dialer",
+      "description": "Configurable set of call outcome options that agents select after each call. Same options as Preview mode. Each disposition can be marked as Final (removes from queue) or non-Final (remains eligible for retry).",
+      "type": "configuration",
+      "user_steps": [
+        "In Dialer Settings, scroll to Agent Disposition section",
+        "Enable or disable specific disposition options for this campaign",
+        "Mark each as Final or not"
+      ],
+      "dispositions_observed": [
+        "Successful call (Final)",
+        "Call back later (Final)",
+        "Incorrect number (Final)",
+        "Not interested (Final)",
+        "Left voicemail (Final)"
+      ],
+      "business_value": "Standardizes agent call outcomes, drives retry logic, and feeds reporting/analytics."
+    },
+    {
+      "id": "record_list_management",
+      "name": "Record List Management",
+      "module": "auto_dialer",
+      "description": "Upload and manage contact lists (CSV format) for use in campaigns. Lists show record count, unique area codes, and coverage score. Same functionality as Preview mode.",
+      "type": "workflow",
+      "user_steps": [
+        "In campaign creation Step 4 (Record list), upload a CSV file or drag-and-drop",
+        "Or select an existing record list from the available lists panel",
+        "Download the template for correct CSV format",
+        "Review coverage score after list is attached"
+      ],
+      "business_value": "Enables targeted outreach by attaching specific contact databases to each campaign."
+    },
+    {
+      "id": "agent_workspace",
+      "name": "Agent Workspace",
+      "module": "auto_dialer",
+      "description": "The agent interface during an active Progressive campaign. Displays wrap-up timer (00:30), contact list, conversation thread, and call recordings. Agents select call outcomes and can optionally add numbers to the Do Not Call list.",
+      "type": "workflow",
+      "user_steps": [
+        "System auto-dials next contact when agent becomes available",
+        "Agent conducts call (conversation thread and recordings visible)",
+        "After call ends, wrap-up timer starts (30 sec countdown)",
+        "Agent selects call outcome: Successful call, Call back later, Not interested, or Left voicemail",
+        "Optionally check 'Add the number to Do not call list'",
+        "System auto-dials next contact when wrap-up completes"
+      ],
+      "business_value": "Provides agents with all necessary context and controls during calls while maintaining efficient call flow."
+    }
+  ],
+
+  "screens": [
+    {
+      "id": "campaigns_list",
+      "name": "Campaigns List",
+      "module": "auto_dialer",
+      "purpose": "Overview of all outbound campaigns with status, agents, records, and coverage score. Entry point for campaign management.",
+      "url_pattern": "/auto-dialer/campaigns",
+      "components": [
+        {"type": "button", "label": "Create campaign", "action": "Opens campaign creation wizard"},
+        {"type": "table", "label": "Campaigns table", "action": "Lists all campaigns with Name, Description, Agents, Records, Coverage Score columns"},
+        {"type": "badge", "label": "Status badge", "action": "Shows Preparing / Scheduled / Running / Ready / Completed / Paused / Incomplete per campaign"},
+        {"type": "button", "label": "Play/Pause", "action": "Start or pause a campaign inline"},
+        {"type": "menu", "label": "Three-dot menu", "action": "Edit or Delete campaign"},
+        {"type": "panel", "label": "National DNC list scrubber", "action": "Toggle DNC scrubber on/off"},
+        {"type": "panel", "label": "Local DNC List", "action": "Manage local DNC numbers with Add more, Replace, Delete all, Export to CSV. Shows count (e.g. 2 NUMBERS)"}
+      ],
+      "navigates_to": ["campaign_general_settings"],
+      "navigates_from": ["top_nav_auto_dialer"],
+      "edit_rules": [
+        "Completed campaigns cannot be edited",
+        "Running and Paused campaigns allow limited edits only",
+        "Edit and Delete available via three-dot menu"
+      ]
+    },
+    {
+      "id": "campaign_general_settings",
+      "name": "Campaign General Settings (Step 1)",
+      "module": "auto_dialer",
+      "purpose": "Configure campaign name, description, timezone, date range, business hours, and assigned phone numbers including local presence. Identical to Preview mode.",
+      "url_pattern": "/auto-dialer/campaigns/create/general",
+      "components": [
+        {"type": "input", "label": "Campaign name", "action": "Enter campaign title"},
+        {"type": "textarea", "label": "Description (Optional)", "action": "Enter campaign description, 0/200 char limit"},
+        {"type": "dropdown", "label": "Timezone", "action": "Select campaign timezone"},
+        {"type": "date_picker", "label": "Start date", "action": "Set campaign start date"},
+        {"type": "date_picker", "label": "End date", "action": "Set campaign end date"},
+        {"type": "schedule_grid", "label": "Business hours", "action": "Enable/disable each day (Sun-Sat) and set AM/PM start-end times or Full Day"},
+        {"type": "panel", "label": "Business Numbers", "action": "Assign phone numbers: LA Main, LA Sales, NYC, Toronto, San Diego, Toll-Free x2"},
+        {"type": "toggle", "label": "Auto-rotation", "action": "Enable number rotation"},
+        {"type": "toggle", "label": "Local Presence", "action": "Auto-select best number based on contact area code"},
+        {"type": "button", "label": "Cancel", "action": "Discard campaign and return to list"},
+        {"type": "button", "label": "Save", "action": "Save campaign progress"}
+      ],
+      "sidebar_steps": [
+        "1. General settings (active)",
+        "2. Dialer settings",
+        "3. Agent list",
+        "4. Record list"
+      ],
+      "navigates_to": ["campaign_dialer_settings"],
+      "navigates_from": ["campaigns_list"]
+    },
+    {
+      "id": "campaign_dialer_settings",
+      "name": "Campaign Dialer Settings (Step 2) - Progressive Mode",
+      "module": "auto_dialer",
+      "purpose": "Select Progressive dialing mode and configure mode-specific parameters including auto answer, timing, retry logic, AMD, and disposition options.",
+      "url_pattern": "/auto-dialer/campaigns/create/dialer",
+      "components": [
+        {"type": "tab_group", "label": "Dialer mode selector", "action": "Choose Preview / Progressive (SELECTED) / Predictive / Agentless"},
+        {"type": "description_text", "label": "Mode description", "content": "The Progressive campaign automatically initiates calls, allowing agents to connect with contacts who are already on the line, making it a more efficient option compared to Preview mode"},
+        {"type": "section", "label": "Auto answer", "components": [
+          {"type": "number_input", "label": "Timeout", "default": "3 sec", "action": "Seconds before auto-answer triggers"}
+        ]},
+        {"type": "section", "label": "Timing", "components": [
+          {"type": "number_input", "label": "Ringing agent time", "default": "30 sec", "action": "How long agent phone rings"},
+          {"type": "number_input", "label": "Wrap-up time", "default": "30 sec", "action": "Post-call wrap time before next call"},
+          {"type": "number_input", "label": "Max ring time", "default": "25 sec", "action": "Maximum time to let contact phone ring"}
+        ]},
+        {"type": "section", "label": "Dialing attempts", "components": [
+          {"type": "number_input", "label": "Default retry period", "default": "30 min", "action": "Minimum wait before retrying a record"},
+          {"type": "number_input", "label": "Max att. per record", "default": "3", "action": "Maximum total dial attempts per contact"}
+        ]},
+        {"type": "toggle", "label": "Answering machine detection", "default": "ON (green)", "action": "Enable AMD - adds Answering machine to system dispositions"},
+        {"type": "disposition_table", "label": "System disposition", "action": "Set Retry/Final rules for system-level outcomes"},
+        {"type": "disposition_table", "label": "Agent disposition", "action": "Configure which outcome options agents can select and whether each is Final"}
+      ],
+      "navigates_to": ["campaign_agent_list"],
+      "navigates_from": ["campaign_general_settings"]
+    },
+    {
+      "id": "campaign_agent_list",
+      "name": "Campaign Agent List (Step 3)",
+      "module": "auto_dialer",
+      "purpose": "Add agents to the campaign. Same as Preview mode.",
+      "url_pattern": "/auto-dialer/campaigns/create/agents",
+      "components": [
+        {"type": "list", "label": "Agent list", "action": "Add/remove agents for this campaign"}
+      ],
+      "navigates_to": ["campaign_record_list"],
+      "navigates_from": ["campaign_dialer_settings"]
+    },
+    {
+      "id": "campaign_record_list",
+      "name": "Campaign Record List (Step 4)",
+      "module": "auto_dialer",
+      "purpose": "Upload a new CSV contact list or select an existing record list. Shows coverage score. Same as Preview mode.",
+      "url_pattern": "/auto-dialer/campaigns/create/records",
+      "components": [
+        {"type": "dropzone", "label": "Create record list", "action": "Upload or drag-and-drop CSV file"},
+        {"type": "button", "label": "Upload", "action": "Trigger file upload"},
+        {"type": "link", "label": "Download the template", "action": "Download CSV template with required field format"},
+        {"type": "list", "label": "Available lists panel", "action": "Browse and select pre-uploaded lists showing record count and unique area codes"},
+        {"type": "column", "label": "Coverage Score", "action": "Shows % of contact area codes covered by assigned local numbers"}
+      ],
+      "navigates_to": [],
+      "navigates_from": ["campaign_agent_list"]
+    },
+    {
+      "id": "agent_workspace",
+      "name": "Agent Workspace (Progressive Campaign)",
+      "module": "auto_dialer",
+      "purpose": "Agent interface during active Progressive campaign calls. Shows wrap-up timer, contact info, conversation thread, call recordings, and disposition selection.",
+      "url_pattern": "/auto-dialer/agent-workspace",
+      "components": [
+        {"type": "timer", "label": "Wrap-up", "action": "Countdown timer showing remaining wrap-up time (00:30)"},
+        {"type": "list", "label": "Contact list", "action": "Shows current and queued contacts"},
+        {"type": "panel", "label": "Conversation thread", "action": "Call history and notes for current contact"},
+        {"type": "panel", "label": "Call recordings", "action": "Playback of recorded calls"},
+        {"type": "dropdown", "label": "SELECT CALL OUTCOME", "action": "Choose disposition: Successful call, Call back later, Not interested, Left voicemail"},
+        {"type": "checkbox", "label": "Add the number to Do not call list", "action": "Adds contact number to DNC list"}
+      ],
+      "navigates_to": [],
+      "navigates_from": []
+    }
+  ],
+
+  "user_flows": [
+    {
+      "id": "create_progressive_campaign",
+      "name": "Create a Progressive Dialer Campaign",
+      "description": "End-to-end flow for setting up a new outbound progressive dialing campaign from scratch.",
+      "steps": [
+        {"sequence": 1, "screen": "campaigns_list", "action": "Click 'Create campaign'", "result": "Opens General Settings form (Step 1)"},
+        {"sequence": 2, "screen": "campaign_general_settings", "action": "Enter campaign name, description (0/200), timezone, start/end dates", "result": "Campaign identity established"},
+        {"sequence": 3, "screen": "campaign_general_settings", "action": "Configure business hours per day (Sun-Sat)", "result": "Calling schedule defined"},
+        {"sequence": 4, "screen": "campaign_general_settings", "action": "Assign business numbers (LA Main, LA Sales, NYC, Toronto, San Diego, Toll-Free) and enable Local Presence and Auto-rotation", "result": "Outbound caller IDs configured"},
+        {"sequence": 5, "screen": "campaign_dialer_settings", "action": "Select 'Progressive' dialing mode tab", "result": "Progressive settings panel opens with mode description"},
+        {"sequence": 6, "screen": "campaign_dialer_settings", "action": "Configure Auto Answer with timeout (3 sec default)", "result": "Auto-answer behavior set"},
+        {"sequence": 7, "screen": "campaign_dialer_settings", "action": "Set timing: Ringing agent time (30 sec), Wrap-up time (30 sec), Max ring time (25 sec)", "result": "Call pacing configured"},
+        {"sequence": 8, "screen": "campaign_dialer_settings", "action": "Set dialing attempts: Default retry period (30 min), Max attempts per record (3)", "result": "Retry limits defined"},
+        {"sequence": 9, "screen": "campaign_dialer_settings", "action": "Enable Answering Machine Detection toggle", "result": "AMD activated, Answering machine added to system dispositions"},
+        {"sequence": 10, "screen": "campaign_dialer_settings", "action": "Configure system dispositions (Contact busy: Retry, Contact no response: Retry, Contact abandoned: Retry, Invalid number: Final, Answering machine: Final)", "result": "Automated retry logic defined"},
+        {"sequence": 11, "screen": "campaign_dialer_settings", "action": "Configure agent disposition options (Successful call, Call back later, Incorrect number, Not interested, Left voicemail - all Final)", "result": "Agent outcome options defined"},
+        {"sequence": 12, "screen": "campaign_agent_list", "action": "Add agents to campaign", "result": "Staffing assigned"},
+        {"sequence": 13, "screen": "campaign_record_list", "action": "Upload CSV or select existing record list", "result": "Contact list attached"},
+        {"sequence": 14, "screen": "campaign_record_list", "action": "Review coverage score", "result": "Local presence coverage validated"},
+        {"sequence": 15, "screen": "campaigns_list", "action": "Save and launch campaign", "result": "Campaign moves to Running status"}
+      ]
+    },
+    {
+      "id": "agent_progressive_call_flow",
+      "name": "Agent Handles Progressive Campaign Call",
+      "description": "Flow from agent perspective when working in a Progressive campaign. System auto-dials; agent handles connected calls.",
+      "steps": [
+        {"sequence": 1, "screen": "agent_workspace", "action": "System automatically dials next contact when agent becomes available", "result": "Call initiated without agent action"},
+        {"sequence": 2, "screen": "agent_workspace", "action": "Contact answers; call auto-answered after timeout (3 sec)", "result": "Agent connected to live contact"},
+        {"sequence": 3, "screen": "agent_workspace", "action": "Agent conducts call, views conversation thread and call recordings", "result": "Conversation in progress"},
+        {"sequence": 4, "screen": "agent_workspace", "action": "Call ends, wrap-up timer starts (00:30 countdown)", "result": "Agent in wrap-up state"},
+        {"sequence": 5, "screen": "agent_workspace", "action": "Agent selects call outcome (Successful call / Call back later / Not interested / Left voicemail)", "result": "Disposition recorded"},
+        {"sequence": 6, "screen": "agent_workspace", "action": "Optionally check 'Add the number to Do not call list'", "result": "Number added to DNC if checked"},
+        {"sequence": 7, "screen": "agent_workspace", "action": "Wrap-up timer expires or agent proceeds", "result": "System auto-dials next contact"}
+      ]
+    }
+  ],
+
+  "business_processes": [
+    {
+      "id": "outbound_progressive_campaign_process",
+      "name": "Outbound Progressive Dialing Campaign",
+      "description": "End-to-end business process for running a progressive dialing outbound sales or outreach campaign. Progressive mode auto-initiates calls for small to medium teams with steady flow.",
+      "actors": ["Campaign Manager", "Sales Agent", "System (Auto Dialer)"],
+      "triggers": ["New sales campaign initiated", "New contact list available", "Scheduled campaign start date reached"],
+      "steps": [
+        {"sequence": 1, "name": "Create campaign with general settings (name, timezone, dates, hours, numbers)", "type": "task", "performer": "Campaign Manager"},
+        {"sequence": 2, "name": "Configure Progressive dialer mode with auto answer, timing, and retry settings", "type": "task", "performer": "Campaign Manager"},
+        {"sequence": 3, "name": "Enable Answering Machine Detection and configure system dispositions", "type": "task", "performer": "Campaign Manager"},
+        {"sequence": 4, "name": "Configure agent disposition options", "type": "task", "performer": "Campaign Manager"},
+        {"sequence": 5, "name": "Add agents to campaign", "type": "task", "performer": "Campaign Manager"},
+        {"sequence": 6, "name": "Upload contact record list (CSV) and validate coverage score", "type": "task", "performer": "Campaign Manager"},
+        {"sequence": 7, "name": "Launch campaign - system begins auto-dialing contacts", "type": "event", "performer": "System"},
+        {"sequence": 8, "name": "System dials next contact when agent becomes available", "type": "task", "performer": "System"},
+        {"sequence": 9, "name": "Contact answers - call auto-answered after timeout", "type": "decision", "performer": "System"},
+        {"sequence": 10, "name": "AMD detects answering machine - apply Final disposition", "type": "decision", "performer": "System"},
+        {"sequence": 11, "name": "Agent conducts call with live contact", "type": "task", "performer": "Sales Agent"},
+        {"sequence": 12, "name": "Agent selects disposition outcome during wrap-up", "type": "task", "performer": "Sales Agent"},
+        {"sequence": 13, "name": "System applies retry/final logic based on disposition", "type": "decision", "performer": "System"},
+        {"sequence": 14, "name": "System retries or removes record from queue", "type": "task", "performer": "System"}
+      ],
+      "outcomes": ["Successful contacts made", "Leads qualified", "Campaign completed", "DNC list updated from agent opt-outs"]
+    },
+    {
+      "id": "dnc_compliance_process",
+      "name": "DNC Compliance Management",
+      "description": "Process for ensuring outbound calls comply with Do Not Call regulations. Identical to Preview mode.",
+      "actors": ["Compliance Manager", "Sales Agent"],
+      "triggers": ["Before campaign launch", "DNC list updated", "Agent marks number as DNC during call"],
+      "steps": [
+        {"sequence": 1, "name": "Toggle National DNC list scrubber on", "type": "task", "performer": "Compliance Manager"},
+        {"sequence": 2, "name": "Upload or manage Local DNC list (Add more, Replace, Delete all, Export to CSV)", "type": "task", "performer": "Compliance Manager"},
+        {"sequence": 3, "name": "System scrubs campaign record lists against DNC", "type": "task", "performer": "System"},
+        {"sequence": 4, "name": "Agent optionally adds number to DNC during call wrap-up", "type": "task", "performer": "Sales Agent"}
+      ],
+      "outcomes": ["DNC-compliant record list", "Reduced regulatory risk", "Real-time DNC updates from agent actions"]
+    }
+  ],
+
+  "data_entities": [
+    {
+      "id": "campaign",
+      "name": "Campaign",
+      "description": "An outbound calling campaign with configuration, staffing, scheduling and contact list.",
+      "fields": [
+        {"name": "name", "type": "string", "description": "Campaign title"},
+        {"name": "description", "type": "string", "description": "Campaign description (max 200 chars)"},
+        {"name": "status", "type": "enum", "description": "Preparing / Scheduled / Running / Ready / Completed / Paused / Incomplete"},
+        {"name": "timezone", "type": "string", "description": "Campaign timezone for business hours"},
+        {"name": "start_date", "type": "date", "description": "Campaign start date"},
+        {"name": "end_date", "type": "date", "description": "Campaign end date"},
+        {"name": "business_hours", "type": "object", "description": "Per-day schedule (Sun-Sat) with start/end times or Full Day"},
+        {"name": "dialer_mode", "type": "enum", "description": "Preview / Progressive / Predictive / Agentless"},
+        {"name": "local_presence_enabled", "type": "boolean", "description": "Whether local presence is active"},
+        {"name": "auto_rotation", "type": "boolean", "description": "Whether number auto-rotation is on"}
+      ],
+      "relationships": [
+        {"type": "has_many", "target": "business_number"},
+        {"type": "has_one", "target": "progressive_dialer_settings"},
+        {"type": "has_many", "target": "agent"},
+        {"type": "has_many", "target": "record_list"},
+        {"type": "has_many", "target": "call_record"}
+      ]
+    },
+    {
+      "id": "progressive_dialer_settings",
+      "name": "Progressive Dialer Settings",
+      "description": "Configuration for how the Progressive auto dialer behaves within a campaign. Key differences from Preview: includes Auto Answer, AMD, and Ringing agent time instead of Preview time.",
+      "fields": [
+        {"name": "mode", "type": "enum", "value": "Progressive", "description": "Dialer mode - Progressive"},
+        {"name": "auto_answer_timeout_sec", "type": "integer", "default": 3, "description": "Auto-answer timeout in seconds (NOT present in Preview mode)"},
+        {"name": "ringing_agent_time_sec", "type": "integer", "default": 30, "description": "Time agent phone rings (Preview has 'Preview time' instead)"},
+        {"name": "wrap_up_time_sec", "type": "integer", "default": 30, "description": "Post-call wrap-up time in seconds"},
+        {"name": "max_ring_time_sec", "type": "integer", "default": 25, "description": "Max time contact phone rings"},
+        {"name": "default_retry_period_min", "type": "integer", "default": 30, "description": "Minutes before retry"},
+        {"name": "max_attempts_per_record", "type": "integer", "default": 3, "description": "Max total dial attempts per contact"},
+        {"name": "amd_enabled", "type": "boolean", "default": true, "description": "Answering machine detection on/off (NOT present in Preview mode)"}
+      ],
+      "relationships": [
+        {"type": "belongs_to", "target": "campaign"},
+        {"type": "has_many", "target": "system_disposition"},
+        {"type": "has_many", "target": "agent_disposition"}
+      ]
+    },
+    {
+      "id": "system_disposition",
+      "name": "System Disposition (Progressive)",
+      "description": "Automated outcome handling rule for system-level call results in Progressive mode. Differs from Preview: includes 'Answering machine' but does NOT include 'Blocked by spam filters' or 'Blocked by robocall analytics'.",
+      "fields": [
+        {"name": "outcome_type", "type": "enum", "description": "Contact busy / Contact no response / Contact abandoned / Invalid number / Answering machine"},
+        {"name": "action", "type": "enum", "description": "Retry or Final"},
+        {"name": "retry_period_min", "type": "integer", "description": "Minutes before retry attempt (for Retry outcomes)"},
+        {"name": "max_attempts_per_number", "type": "integer", "description": "Max retries for this outcome (for Retry outcomes)"}
+      ],
+      "default_values": [
+        {"outcome": "Contact busy", "retry_period": "30 min", "attempts": 3, "action": "Retry"},
+        {"outcome": "Contact no response", "retry_period": "30 min", "attempts": 3, "action": "Retry"},
+        {"outcome": "Contact abandoned", "action": "Retry"},
+        {"outcome": "Invalid number", "action": "Final"},
+        {"outcome": "Answering machine", "action": "Final", "note": "Only shown when AMD is enabled"}
+      ],
+      "relationships": [
+        {"type": "belongs_to", "target": "progressive_dialer_settings"}
+      ]
+    },
+    {
+      "id": "agent_disposition",
+      "name": "Agent Disposition",
+      "description": "Call outcome option that an agent can select after completing a call. Same options as Preview mode.",
+      "fields": [
+        {"name": "label", "type": "string", "description": "Display name"},
+        {"name": "is_final", "type": "boolean", "description": "If true, contact is removed from dial queue"}
+      ],
+      "standard_values": [
+        "Successful call (Final)",
+        "Call back later (Final)",
+        "Incorrect number (Final)",
+        "Not interested (Final)",
+        "Left voicemail (Final)"
+      ],
+      "relationships": [
+        {"type": "belongs_to", "target": "progressive_dialer_settings"}
+      ]
+    },
+    {
+      "id": "record_list",
+      "name": "Record List",
+      "description": "A CSV-based contact list uploaded for use in one or more campaigns.",
+      "fields": [
+        {"name": "name", "type": "string", "description": "List name"},
+        {"name": "record_count", "type": "integer", "description": "Total number of contacts"},
+        {"name": "unique_area_codes", "type": "integer", "description": "Number of distinct area codes in the list"},
+        {"name": "coverage_score_pct", "type": "decimal", "description": "% of area codes covered by assigned local numbers"}
+      ],
+      "relationships": [
+        {"type": "belongs_to", "target": "campaign"}
+      ]
+    },
+    {
+      "id": "business_number",
+      "name": "Business Number",
+      "description": "A phone number assigned to a campaign for outbound caller ID, optionally labeled by region.",
+      "fields": [
+        {"name": "label", "type": "string", "description": "Regional label (e.g. LA Main, LA Sales, NYC, Toronto, San Diego, Toll-Free)"},
+        {"name": "phone_number", "type": "string", "description": "E.164 format phone number"},
+        {"name": "type", "type": "enum", "description": "Local or Toll-Free"}
+      ],
+      "observed_values": ["LA Main", "LA Sales", "NYC", "Toronto", "San Diego", "Toll-Free", "Toll-Free (2nd)"],
+      "relationships": [
+        {"type": "belongs_to", "target": "campaign"}
+      ]
+    },
+    {
+      "id": "dnc_list",
+      "name": "DNC List",
+      "description": "Do Not Call list for compliance. Includes both National DNC scrubber and Local DNC list management.",
+      "fields": [
+        {"name": "national_scrubber_enabled", "type": "boolean", "description": "Whether National DNC list scrubber is active"},
+        {"name": "local_dnc_count", "type": "integer", "description": "Number of numbers in local DNC list (e.g. 2 NUMBERS)"}
+      ],
+      "local_dnc_actions": ["Add more", "Replace", "Delete all", "Export to CSV"]
+    }
+  ],
+
+  "ui_patterns": {
+    "layout_type": "Top navigation bar with dropdown sub-menus. Wizard/stepper for campaign creation (4 steps in left sidebar). Two-column layout on creation forms (settings left, supporting panel right).",
+    "color_scheme": "Dark navy/black top nav. White content area. Green accent for active nav items, toggle switches, and brand elements. Blue action buttons. Status badges with color coding.",
+    "component_library": "Custom design system. Uses card panels, toggle switches (green when ON), data tables with sortable columns, step-wizard sidebar, date pickers, AM/PM time inputs.",
+    "common_patterns": [
+      "4-step campaign creation wizard with left sidebar progress tracker (General settings, Dialer settings, Agent list, Record list)",
+      "Dialer mode tab selector (Preview | Progressive | Predictive | Agentless)",
+      "Right-side resource panel (numbers, record lists) alongside main form",
+      "Toggle switches for enable/disable features (green when active)",
+      "Inline status badges on list screens",
+      "Disposition tables with Retry/Final selectors and retry period inputs",
+      "Coverage score metric linking local numbers to contact area codes",
+      "Wrap-up countdown timer in agent workspace (00:30)",
+      "Three-dot menu for Edit/Delete actions on campaign rows",
+      "Call outcome dropdown with DNC checkbox in agent workspace"
+    ]
+  },
+
+  "mode_comparison": {
+    "progressive_vs_preview": {
+      "summary": "Progressive is more efficient than Preview but gives agents less control. Progressive auto-initiates calls; Preview lets agents review contact info first.",
+      "progressive_only_features": [
+        "Auto Answer with configurable timeout (3 sec default)",
+        "Answering Machine Detection (AMD) toggle",
+        "Ringing agent time setting",
+        "Answering machine system disposition"
+      ],
+      "preview_only_features": [
+        "Preview time setting (agent review time before call)",
+        "Blocked by spam filters system disposition",
+        "Blocked by robocall analytics system disposition",
+        "Agent manually initiates each call after reviewing contact info"
+      ]
+    }
+  }
+}

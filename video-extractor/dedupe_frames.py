@@ -2,20 +2,25 @@
 """
 Deduplicate frames using perceptual hashing.
 Groups consecutive similar frames, keeps one representative per group.
-Outputs: crm-mightycall/scenes.json with frame groups + timestamp ranges.
+Outputs: <folder>/scenes.json with frame groups + timestamp ranges.
+
+Usage: python dedupe_frames.py <folder>
+Example: python dedupe_frames.py preview-dialer
 """
 
 import json
+import sys
 from pathlib import Path
 import imagehash
 from PIL import Image
 
-FRAMES_DIR = Path("crm-mightycall/frames")
-OUTPUT_DIR = Path("crm-mightycall")
+FOLDER = sys.argv[1] if len(sys.argv) > 1 else "crm-mightycall"
+FRAMES_DIR = Path(FOLDER) / "frames"
+OUTPUT_DIR = Path(FOLDER)
 HASH_THRESHOLD = 8  # hamming distance; lower = stricter (more groups)
 
 frames = sorted(FRAMES_DIR.glob("frame_*.jpg"))
-print(f"Total frames: {len(frames)}")
+print(f"[{FOLDER}] Total frames: {len(frames)}")
 
 scenes = []
 current_group = []
@@ -66,6 +71,6 @@ out_path = OUTPUT_DIR / "scenes.json"
 with open(out_path, "w") as f:
     json.dump(scene_summaries, f, indent=2)
 
-print(f"Scenes found:  {len(scene_summaries)}")
-print(f"Avg duration:  {sum(s['duration_sec'] for s in scene_summaries) / len(scene_summaries):.1f}s per scene")
-print(f"Saved to:      {out_path}")
+print(f"[{FOLDER}] Scenes found:  {len(scene_summaries)}")
+print(f"[{FOLDER}] Avg duration:  {sum(s['duration_sec'] for s in scene_summaries) / len(scene_summaries):.1f}s per scene")
+print(f"[{FOLDER}] Saved to:      {out_path}")

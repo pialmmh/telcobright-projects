@@ -6,6 +6,7 @@ Analyze deduplicated scenes with Claude.
 """
 
 import os
+import sys
 import json
 import base64
 import logging
@@ -25,8 +26,9 @@ import anthropic
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")
 log = logging.getLogger(__name__)
 
-SCENES_JSON = Path("crm-mightycall/scenes.json")
-OUTPUT_DIR  = Path("crm-mightycall")
+FOLDER = sys.argv[1] if len(sys.argv) > 1 else "crm-mightycall"
+SCENES_JSON = Path(FOLDER) / "scenes.json"
+OUTPUT_DIR  = Path(FOLDER)
 ANALYSES_JSON = OUTPUT_DIR / "analyses.json"
 
 SONNET = "claude-sonnet-4-5"
@@ -60,17 +62,17 @@ def analyze_batch(batch: list, batch_num: int, total: int) -> list:
 
     content.append({
         "type": "text",
-        "text": """You are analyzing screenshots from a MightyCall predictive dialer / CRM demo video.
+        "text": f"""You are analyzing screenshots from a MightyCall CRM / dialer demo video (topic: {FOLDER}).
 
 For EACH screenshot (in order), return a JSON object with:
 - "scene_index": integer (from the label above)
 - "caption_text": extract any visible closed-caption / subtitle text from the bottom of the screen (empty string if none)
 - "is_crm_calling_related": true if screen shows CRM or calling features (dialer, contacts, campaigns, call logs, IVR, agent dashboard, click-to-call, recordings, leads, deals). false for ads, sponsor segments, generic UI, presenter face, intro/outro slides.
 - "screen_name": name of the screen/page shown
-- "module": which module (Predictive Dialer, Campaign, Contact, Call Log, IVR, Dashboard, etc.)
+- "module": which module (Predictive Dialer, Preview Dialer, Progressive Dialer, Campaign, Contact, Call Log, IVR, Dashboard, etc.)
 - "feature_demonstrated": specific feature being shown
 - "user_action": what the user is doing
-- "ui_components": array of {type, label, purpose}
+- "ui_components": array of {{type, label, purpose}}
 - "data_fields": visible form fields or table columns
 - "navigation_context": where this fits in the user journey
 - "business_process": what business process this supports
@@ -151,7 +153,7 @@ def build_knowledge_graph(analyses: list) -> dict:
     if len(summary) > 60000:
         summary = summary[:60000] + "\n...(truncated)"
 
-    prompt = f"""You are building a structured knowledge graph of MightyCall's Predictive Dialer and CRM calling features.
+    prompt = f"""You are building a structured knowledge graph of MightyCall's CRM and dialer features (source: {FOLDER}).
 
 SCENE ANALYSES (from {len(relevant)} screens):
 {summary}
@@ -163,7 +165,8 @@ Generate a comprehensive knowledge graph as JSON. Include ONLY features related 
 
 Structure:
 {{
-  "software_name": "MightyCall Predictive Dialer",
+  "software_name": "MightyCall",
+  "source_video": "{FOLDER}",
   "extraction_date": "{datetime.now().isoformat()}",
   "modules": [{{"id", "name", "description"}}],
   "features": [{{
@@ -229,7 +232,7 @@ if __name__ == "__main__":
         exit(1)
 
     scenes = json.loads(SCENES_JSON.read_text())
-    log.info(f"Loaded {len(scenes)} scenes")
+    log.info(f"[{FOLDER}] Loaded {len(scenes)} scenes")
 
     analyses = run_analysis(scenes)
     kg = build_knowledge_graph(analyses)
@@ -241,4 +244,4 @@ if __name__ == "__main__":
     except Exception as e:
         log.warning(f"Doc generation skipped: {e}")
 
-    log.info("All done. Outputs in crm-mightycall/")
+    log.info(f"All done. Outputs in {FOLDER}/")

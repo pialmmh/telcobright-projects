@@ -5,9 +5,13 @@
 !postman-queries/**
 !video-extractor/
 !video-extractor/**
-video-extractor/crm-mightycall/frames/
-video-extractor/crm-mightycall/video.mp4
-video-extractor/crm-mightycall/audio.wav
+video-extractor/**/frames/
+video-extractor/**/*.mp4
+video-extractor/**/*.wav
+video-extractor/**/*.mp3
 video-extractor/.env
 video-extractor/.venv/
+video-extractor/venv/
+video-extractor/**/*.pt
+video-extractor/**/capture.log
 !.gitignore

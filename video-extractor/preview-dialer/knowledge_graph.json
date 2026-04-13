@@ -1,0 +1,593 @@
+{
+  "software_name": "MightyCall",
+  "extraction_date": "2026-04-13",
+  "source_video": "preview-dialer",
+
+  "modules": [
+    {
+      "id": "auto_dialer",
+      "name": "Auto Dialer",
+      "description": "Outbound calling automation module. Contains campaign management with multiple dialing modes (Preview, Progressive, Predictive, Agentless), record list management, and DNC compliance tools. Accessible via top navigation 'Auto dialer' tab."
+    }
+  ],
+
+  "features": [
+    {
+      "id": "campaign_management",
+      "name": "Campaign Management",
+      "module": "auto_dialer",
+      "description": "Create, manage and monitor outbound calling campaigns through a 4-step wizard. Campaigns can be in states: Preparing, Scheduled, Running, Ready, Completed, Paused, Incomplete.",
+      "type": "workflow",
+      "user_steps": [
+        "Navigate to Auto Dialer > Campaigns",
+        "Click 'Create campaign' button",
+        "Step 1: Fill in General Settings (name, description, timezone, dates, business hours, phone numbers, local presence)",
+        "Step 2: Configure Dialer Settings (choose dialer mode and mode-specific parameters)",
+        "Step 3: Add agents to Agent List",
+        "Step 4: Upload or select a Record List",
+        "Save and launch campaign"
+      ],
+      "campaign_statuses": {
+        "Preparing": "Business number, agent, or record list hasn't been assigned yet",
+        "Scheduled": "Campaign is set to start at a future date",
+        "Running": "Active campaign, has play/pause button",
+        "Ready": "Campaign ready to start",
+        "Completed": "Finished campaign",
+        "Paused": "Temporarily stopped",
+        "Incomplete": "Missing required configuration"
+      },
+      "campaign_edit_rules": [
+        "Completed campaigns cannot be edited",
+        "Running and Paused campaigns allow limited edits only (general settings only, limited dialer settings for Progressive and Predictive modes)",
+        "Running campaigns cannot be deleted",
+        "To edit: click three-dot menu then Edit",
+        "To delete: click three-dot menu then Delete"
+      ],
+      "business_value": "Enables teams to run structured outbound calling campaigns with full control over scheduling, staffing, and contact lists."
+    },
+    {
+      "id": "preview_dialing",
+      "name": "Preview Dialing Mode",
+      "module": "auto_dialer",
+      "description": "Agent is provided with a preview of the contact's information before initiating the call. The agent decides when to place the call. Best for small teams with manual review.",
+      "type": "configuration",
+      "user_steps": [
+        "In Dialer Settings (Step 2), select 'Preview' mode tab",
+        "Configure Preview time (how long agent has to review contact info)",
+        "Configure Wrap-up time (post-call wrap time)",
+        "Configure Max ring time (maximum ring duration for contact)",
+        "Set Dialing Attempts: Default retry period, Max attempts per record",
+        "Configure System Disposition actions (Retry/Final per outcome)",
+        "Configure Agent Disposition options (which outcomes agents can select)"
+      ],
+      "business_value": "Gives agents context before calling, improving conversation quality for high-value or complex contacts. Best for small teams requiring manual review."
+    },
+    {
+      "id": "progressive_dialing",
+      "name": "Progressive Dialing Mode",
+      "module": "auto_dialer",
+      "description": "System dials one call per available agent, maintaining steady flow. Best for small to medium teams.",
+      "type": "configuration",
+      "user_steps": ["Select 'Progressive' mode tab in Dialer Settings"],
+      "business_value": "Balances automation with control — no abandoned calls, steady agent workload."
+    },
+    {
+      "id": "predictive_dialing",
+      "name": "Predictive Dialing Mode",
+      "module": "auto_dialer",
+      "description": "Algorithm-driven mass calling for large teams. Dials multiple contacts simultaneously to maximize call efficiency and reduce agent idle time.",
+      "type": "configuration",
+      "user_steps": ["Select 'Predictive' mode tab in Dialer Settings"],
+      "business_value": "Maximizes agent productivity for large outbound teams by minimizing idle time between calls."
+    },
+    {
+      "id": "agentless_dialing",
+      "name": "Agentless Dialing Mode",
+      "module": "auto_dialer",
+      "description": "Automated outbound calling without live agents. Suitable for IVR-based campaigns, surveys, or broadcast messages.",
+      "type": "configuration",
+      "user_steps": ["Select 'Agentless' mode tab in Dialer Settings"],
+      "business_value": "Enables fully automated outreach at scale without requiring agent staffing."
+    },
+    {
+      "id": "local_presence",
+      "name": "Local Presence",
+      "module": "auto_dialer",
+      "description": "Selects the best business number based on the contact's area code. Makes calls appear local to the prospect, increasing answer rates. Uses only business numbers that match contact's location; some selected numbers may not be used. Calls are distributed evenly among matching numbers. If no match is found, Auto dialer uses all selected numbers which may hurt reputation and lower answer rates. Recommends purchasing additional matching numbers.",
+      "type": "configuration",
+      "user_steps": [
+        "In General Settings (Step 1), assign multiple business numbers",
+        "Toggle on 'Local Presence'",
+        "System automatically matches caller ID to contact area code at call time"
+      ],
+      "business_value": "Increases answer rates by displaying a local number to prospects instead of an unknown toll-free or out-of-state number."
+    },
+    {
+      "id": "business_hours",
+      "name": "Business Hours Scheduling",
+      "module": "auto_dialer",
+      "description": "Configure per-day calling windows for a campaign. Each day (Sunday-Saturday) can be enabled/disabled with custom start and end times (AM/PM toggle), or set to Full Day. Monday through Friday are checked by default.",
+      "type": "configuration",
+      "user_steps": [
+        "In General Settings (Step 1), scroll to Business Hours section",
+        "Enable/disable each day with checkbox (Monday-Friday on by default)",
+        "Set start time (e.g. 08:00) and end time (e.g. 09:00) with AM/PM toggle per day",
+        "Or check 'Full day' for unrestricted daily calling"
+      ],
+      "business_value": "Ensures calls are placed only during legally and operationally acceptable hours, applied per the campaign timezone."
+    },
+    {
+      "id": "dnc_compliance",
+      "name": "DNC Compliance (National DNC List Scrubber)",
+      "module": "auto_dialer",
+      "description": "MightyCall is integrated with scrubbing services to verify dialing lists against 'Do Not Call' lists and reduce the risk of TCPA and DNC violations and lawsuits. When enabled, automatically removes registered numbers from campaign lists. Also supports a Local DNC List that can be managed separately.",
+      "type": "configuration",
+      "user_steps": [
+        "Toggle on/off National DNC list scrubber",
+        "When enabled, system automatically removes DNC-registered numbers from campaign lists",
+        "Manage Local DNC List: Add more, Replace, Delete all, or Export to CSV"
+      ],
+      "business_value": "Ensures compliance with TCPA and national DNC regulations, protecting the business from legal liability."
+    },
+    {
+      "id": "local_dnc_list",
+      "name": "Local DNC List",
+      "module": "auto_dialer",
+      "description": "Internal Do Not Call list managed within MightyCall. Agents can add numbers to the Local DNC list directly after a call via a checkbox in the call outcome panel. Can also be managed in bulk via Add more, Replace, Delete all, and Export to CSV actions.",
+      "type": "configuration",
+      "user_steps": [
+        "During a call, agent checks 'Add the number to Do not call list' checkbox in the call outcome panel",
+        "Or manage bulk entries via Local DNC List menu: Add more, Replace, Delete all, Export to CSV"
+      ],
+      "business_value": "Gives agents and managers control over internal DNC compliance, preventing repeat calls to contacts who opt out."
+    },
+    {
+      "id": "system_disposition",
+      "name": "System Disposition",
+      "module": "auto_dialer",
+      "description": "Automated handling rules for call outcomes not controlled by agents. Each outcome can be set to Retry (with configurable retry period and attempts per number) or Final.",
+      "type": "configuration",
+      "disposition_outcomes": [
+        {"outcome": "Contact busy", "default_action": "Retry", "configurable": ["retry_period", "attempts_per_num"]},
+        {"outcome": "Contact no response", "default_action": "Retry", "configurable": ["retry_period", "attempts_per_num"]},
+        {"outcome": "Agent abandoned", "default_action": "Retry", "configurable": ["retry_period", "attempts_per_num"]},
+        {"outcome": "Invalid number", "default_action": "Final", "configurable": []},
+        {"outcome": "Blocked by spam filters", "default_action": "Final", "configurable": []},
+        {"outcome": "Blocked by robocall analytics", "default_action": "Final", "configurable": []}
+      ],
+      "business_value": "Automates retry logic and eliminates manual queue management for unreachable contacts."
+    },
+    {
+      "id": "agent_disposition",
+      "name": "Agent Disposition",
+      "module": "auto_dialer",
+      "description": "Configurable set of call outcome options that agents select after each call. Each disposition is marked as Final (removes contact from dial queue). Agents see these options in the 'SELECT CALL OUTCOME' panel after a call.",
+      "type": "configuration",
+      "dispositions_observed": [
+        {"label": "Successful call", "action": "Final"},
+        {"label": "Call back later", "action": "Final"},
+        {"label": "Incorrect number", "action": "Final"},
+        {"label": "Not interested", "action": "Final"},
+        {"label": "Left voicemail", "action": "Final"},
+        {"label": "Already a customer", "action": "Final"},
+        {"label": "Left unanswered", "action": "Final"}
+      ],
+      "business_value": "Standardizes agent call outcomes, drives retry logic, and feeds reporting/analytics."
+    },
+    {
+      "id": "record_list_management",
+      "name": "Record List Management",
+      "module": "auto_dialer",
+      "description": "Upload and manage contact lists (CSV format) for use in campaigns. Lists show record count, unique area codes, and coverage score. Files over 15 MB may take 5-7 minutes to upload. A template is available for download.",
+      "type": "workflow",
+      "user_steps": [
+        "In campaign creation Step 4 (Record List), upload a CSV file or drag-and-drop",
+        "Or select an existing record list from the Available lists panel",
+        "Download the template for correct CSV format",
+        "Review coverage score after list is attached",
+        "Use three-dot menu on uploaded list to View details"
+      ],
+      "example_lists_observed": [
+        {"name": "record_list_outbound campaign", "records": 257, "area_codes": 1},
+        {"name": "full_list", "records": 4714, "area_codes": 148},
+        {"name": "outreach_LA (October)", "records": 50, "area_codes": 3},
+        {"name": "LG4 leads", "records": 296, "area_codes": 98},
+        {"name": "LA_new_leads", "records": 48, "area_codes": 3},
+        {"name": "Gear10_discount_record_list", "records": 48, "area_codes": 3},
+        {"name": "Cold_calls_record_list", "records": 257, "area_codes": 1}
+      ],
+      "business_value": "Enables targeted outreach by attaching specific contact databases to each campaign."
+    },
+    {
+      "id": "coverage_score",
+      "name": "Coverage Score",
+      "module": "auto_dialer",
+      "description": "A percentage metric showing how many unique contact area codes in the record list are covered by the campaign's assigned local and overlay numbers. Displayed per record list as a fraction and percentage. Warning shown when local presence may be less effective if some client area codes are not covered by selected numbers.",
+      "type": "report",
+      "user_steps": [
+        "Attach a record list to a campaign",
+        "Assign local business numbers in General Settings",
+        "Coverage Score auto-calculates and displays in the Record List step and Campaigns table"
+      ],
+      "business_value": "Helps managers optimize local presence coverage to maximize answer rates across different geographic regions."
+    },
+    {
+      "id": "agent_workspace",
+      "name": "Agent Workspace (Active Campaign)",
+      "module": "auto_dialer",
+      "description": "The agent interface during an active preview dialer campaign. Shows wrap-up countdown timer, contact list with tabs (Unanswered, My recents, Clients, Team), conversation thread with messages/images/call recordings, and a call outcome selection panel.",
+      "type": "workflow",
+      "user_steps": [
+        "Agent receives preview of contact information",
+        "Agent decides when to initiate the call",
+        "During wrap-up, countdown timer displayed (e.g. 'Wrap-up 00:30')",
+        "After call, agent selects outcome from 'SELECT CALL OUTCOME' panel",
+        "Optionally check 'Add the number to Do not call list' to add to Internal DNC list"
+      ],
+      "business_value": "Provides agents with full context and tools to manage outbound calls efficiently while maintaining compliance."
+    }
+  ],
+
+  "screens": [
+    {
+      "id": "campaigns_list",
+      "name": "Campaigns List",
+      "module": "auto_dialer",
+      "purpose": "Overview of all outbound campaigns with status, agents, records, and coverage score. Entry point for campaign management.",
+      "url_pattern": "/auto-dialer/campaigns",
+      "components": [
+        {"type": "button", "label": "Create campaign", "action": "Opens campaign creation wizard"},
+        {"type": "table", "label": "Campaigns table", "columns": ["STATUS", "NAME", "DESCRIPTION", "AGENTS (avatars)", "RECORDS (CSV filename + count)", "COVERAGE SCORE (fraction + percentage)"]},
+        {"type": "badge", "label": "Status badge", "action": "Shows Preparing / Scheduled / Running / Ready / Completed / Paused / Incomplete per campaign"},
+        {"type": "button", "label": "Play/Pause/Stop controls", "action": "Start, pause, or stop a campaign inline"},
+        {"type": "menu", "label": "Three-dot action menu", "actions": ["Edit", "Delete"]},
+        {"type": "panel", "label": "National DNC list scrubber", "action": "Toggle and manage DNC compliance"},
+        {"type": "panel", "label": "Local DNC List", "actions": ["Add more", "Replace", "Delete all", "Export to CSV"]}
+      ],
+      "navigates_to": ["campaign_general_settings"],
+      "navigates_from": ["top_nav_auto_dialer"]
+    },
+    {
+      "id": "campaign_general_settings",
+      "name": "Campaign General Settings (Step 1)",
+      "module": "auto_dialer",
+      "purpose": "Configure campaign name, description, timezone, date range, business hours, and assigned phone numbers including local presence.",
+      "url_pattern": "/auto-dialer/campaigns/create/general",
+      "components": [
+        {"type": "input", "label": "Campaign name", "action": "Enter campaign title"},
+        {"type": "textarea", "label": "Description (Optional)", "action": "Enter campaign description, 0/200 char limit"},
+        {"type": "dropdown", "label": "Timezone", "action": "Select campaign timezone (e.g. UTC-06:00 Central Time (US & Canada)), Profile time zone option available"},
+        {"type": "date_picker", "label": "Start date", "action": "Set campaign start date (optional), shows duration badge when dates set (e.g. '13 days')"},
+        {"type": "date_picker", "label": "End date", "action": "Set campaign end date (optional)"},
+        {"type": "schedule_grid", "label": "Business hours", "action": "Day-by-day schedule (Sunday-Saturday), each with start time, end time, AM/PM toggle, Full day checkbox. Monday-Friday checked by default."},
+        {"type": "panel", "label": "Business Numbers", "action": "Select from list of numbers with + button to add multiple"},
+        {"type": "toggle", "label": "Auto-rotation", "action": "Enable number rotation"},
+        {"type": "toggle", "label": "Local Presence", "action": "Auto-select best number based on contact area code. Tooltip explains matching behavior."},
+        {"type": "button", "label": "Cancel", "action": "Discard campaign and return to list"},
+        {"type": "button", "label": "Save", "action": "Save campaign progress"}
+      ],
+      "business_numbers_observed": [
+        {"label": "LA Main", "number": "+1 713 647 2453"},
+        {"label": "LA Sales", "number": "+1 323 522 5554"},
+        {"label": "NYC", "number": "+1 332 213 9228"},
+        {"label": "Toronto", "number": "+1 647 361 5305"},
+        {"label": "San Diego", "number": "+1 650 300 0672"},
+        {"label": "Toll-Free", "number": "+1 855 855 9875"},
+        {"label": "Toll-Free", "number": "+1 888 388 0889"}
+      ],
+      "sidebar_steps": [
+        "1. General settings (active)",
+        "2. Dialer settings",
+        "3. Agent list",
+        "4. Record list"
+      ],
+      "navigates_to": ["campaign_dialer_settings"],
+      "navigates_from": ["campaigns_list"]
+    },
+    {
+      "id": "campaign_dialer_settings",
+      "name": "Campaign Dialer Settings (Step 2)",
+      "module": "auto_dialer",
+      "purpose": "Select dialing mode (Preview, Progressive, Predictive, Agentless) and configure mode-specific parameters including timing, retry logic, and disposition options.",
+      "url_pattern": "/auto-dialer/campaigns/create/dialer",
+      "components": [
+        {"type": "tab_group", "label": "Dialer mode tabs", "options": ["Preview (selected)", "Progressive", "Predictive", "Agentless"]},
+        {"type": "description", "label": "Mode description", "text": "Agent is provided with a preview of the contact's information before initiating the call"},
+        {"type": "slider", "label": "Preview time", "action": "Set time agent has to preview contact info"},
+        {"type": "slider", "label": "Wrap-up time", "action": "Post-call wrap time before next call"},
+        {"type": "slider", "label": "Max ring time", "action": "Maximum time to let contact phone ring"},
+        {"type": "number_input", "label": "Default retry period", "action": "Minimum wait before retrying a record"},
+        {"type": "number_input", "label": "Max att. per record", "action": "Maximum total dial attempts per contact"},
+        {"type": "disposition_table", "label": "System disposition", "action": "Set Retry/Final rules with retry period and attempts per number for system-level outcomes"},
+        {"type": "disposition_table", "label": "Agent disposition", "action": "Configure which outcome options agents can select, all marked as Final"}
+      ],
+      "navigates_to": ["campaign_agent_list"],
+      "navigates_from": ["campaign_general_settings"]
+    },
+    {
+      "id": "campaign_agent_list",
+      "name": "Campaign Agent List (Step 3)",
+      "module": "auto_dialer",
+      "purpose": "Assign agents to the campaign.",
+      "url_pattern": "/auto-dialer/campaigns/create/agents",
+      "components": [
+        {"type": "agent_selector", "label": "Agent avatars", "action": "Add or remove agents from the campaign"}
+      ],
+      "navigates_to": ["campaign_record_list"],
+      "navigates_from": ["campaign_dialer_settings"]
+    },
+    {
+      "id": "campaign_record_list",
+      "name": "Campaign Record List (Step 4)",
+      "module": "auto_dialer",
+      "purpose": "Upload a new CSV contact list or select an existing record list. Shows list stats including list name, last changes (user + date), record count, and coverage score.",
+      "url_pattern": "/auto-dialer/campaigns/create/records",
+      "components": [
+        {"type": "dropzone", "label": "Create record list", "action": "Upload or drag and drop CSV file to create campaign record list"},
+        {"type": "link", "label": "Download the template", "action": "Download CSV template for guidance"},
+        {"type": "table", "label": "Uploaded lists", "columns": ["LIST NAME", "LAST CHANGES (user + date)", "RECORDS (count)", "COVERAGE SCORE (fraction + percentage)"]},
+        {"type": "panel", "label": "Available lists", "action": "Browse and select pre-uploaded lists showing record count and area codes"},
+        {"type": "radio", "label": "New record list", "action": "Create a new list rather than reusing existing"},
+        {"type": "menu", "label": "Three-dot menu on uploaded list", "actions": ["View"]},
+        {"type": "warning", "label": "Coverage warning", "text": "Local presence may be less effective if some client area codes aren't covered by your selected numbers. Consider adding more matching ones."},
+        {"type": "info", "label": "Upload note", "text": "Files over 15 MB may take 5-7 minutes to upload"}
+      ],
+      "navigates_to": [],
+      "navigates_from": ["campaign_agent_list"]
+    },
+    {
+      "id": "agent_workspace",
+      "name": "Agent Workspace (Active Campaign)",
+      "module": "auto_dialer",
+      "purpose": "Agent interface during active preview dialer campaign showing contact info, conversation thread, and call outcome selection.",
+      "url_pattern": "/agent/workspace",
+      "components": [
+        {"type": "status_bar", "label": "Wrap-up timer", "action": "Shows 'Wrap-up 00:30' countdown timer"},
+        {"type": "panel", "label": "Contact list (left)", "tabs": ["Unanswered", "My recents", "Clients", "Team"]},
+        {"type": "panel", "label": "Conversation thread (center)", "action": "Shows messages, images, call recordings with timestamps and duration"},
+        {"type": "panel", "label": "SELECT CALL OUTCOME (right)", "action": "Agent selects call disposition"},
+        {"type": "radio_list", "label": "Call outcome options", "options": ["Successful call", "Call back later", "Not interested", "Left voicemail"]},
+        {"type": "info", "label": "Contact number display", "action": "Shows contact phone number (e.g. +1 904 515 4645)"},
+        {"type": "checkbox", "label": "Add the number to Do not call list", "action": "Adds contact number to Internal DNC list"}
+      ],
+      "contacts_observed": ["Benjamin Schmitt", "Alice Fox", "Site Visitor", "Angela Diaz", "Google", "Audrey Davis"],
+      "navigates_to": [],
+      "navigates_from": []
+    }
+  ],
+
+  "user_flows": [
+    {
+      "id": "create_preview_campaign",
+      "name": "Create a Preview Dialer Campaign",
+      "description": "End-to-end flow for setting up a new outbound preview dialing campaign from scratch.",
+      "steps": [
+        {"sequence": 1, "screen": "campaigns_list", "action": "Click 'Create campaign'", "result": "Opens General Settings form (Step 1)"},
+        {"sequence": 2, "screen": "campaign_general_settings", "action": "Enter campaign name and optional description (0/200 chars)", "result": "Campaign identity established"},
+        {"sequence": 3, "screen": "campaign_general_settings", "action": "Select timezone (e.g. UTC-06:00 Central Time) and optionally set start/end dates", "result": "Campaign scheduling configured"},
+        {"sequence": 4, "screen": "campaign_general_settings", "action": "Configure business hours per day (Sunday-Saturday with AM/PM times or Full day)", "result": "Calling schedule defined"},
+        {"sequence": 5, "screen": "campaign_general_settings", "action": "Assign business numbers and optionally enable Auto-rotation and Local Presence", "result": "Outbound caller IDs configured with local matching"},
+        {"sequence": 6, "screen": "campaign_dialer_settings", "action": "Select 'Preview' dialing mode tab", "result": "Preview settings panel opens"},
+        {"sequence": 7, "screen": "campaign_dialer_settings", "action": "Configure timing: Preview time, Wrap-up time, Max ring time", "result": "Call pacing configured for preview mode"},
+        {"sequence": 8, "screen": "campaign_dialer_settings", "action": "Set dialing attempts: Default retry period, Max attempts per record", "result": "Retry logic defined"},
+        {"sequence": 9, "screen": "campaign_dialer_settings", "action": "Configure system dispositions (Retry/Final for busy, no response, abandoned, invalid, blocked)", "result": "Automated outcome handling defined"},
+        {"sequence": 10, "screen": "campaign_dialer_settings", "action": "Configure agent disposition options (Successful call, Call back later, etc.)", "result": "Agent outcome options defined"},
+        {"sequence": 11, "screen": "campaign_agent_list", "action": "Add agents to campaign", "result": "Staffing assigned"},
+        {"sequence": 12, "screen": "campaign_record_list", "action": "Upload CSV or select existing record list", "result": "Contact list attached"},
+        {"sequence": 13, "screen": "campaign_record_list", "action": "Review coverage score and address any coverage warnings", "result": "Local presence coverage validated"},
+        {"sequence": 14, "screen": "campaigns_list", "action": "Save and launch campaign", "result": "Campaign moves to Running or Scheduled status"}
+      ]
+    },
+    {
+      "id": "agent_preview_call_flow",
+      "name": "Agent Preview Call Flow",
+      "description": "Flow for an agent handling a call during an active preview dialer campaign.",
+      "steps": [
+        {"sequence": 1, "screen": "agent_workspace", "action": "Agent receives preview of contact information", "result": "Agent reviews contact details before calling"},
+        {"sequence": 2, "screen": "agent_workspace", "action": "Agent initiates the call when ready", "result": "Outbound call placed to contact"},
+        {"sequence": 3, "screen": "agent_workspace", "action": "Agent conducts conversation, views thread with messages/recordings", "result": "Call in progress"},
+        {"sequence": 4, "screen": "agent_workspace", "action": "Call ends, wrap-up countdown begins (e.g. Wrap-up 00:30)", "result": "Agent enters wrap-up period"},
+        {"sequence": 5, "screen": "agent_workspace", "action": "Agent selects call outcome from SELECT CALL OUTCOME panel", "result": "Disposition recorded (e.g. Call back later)"},
+        {"sequence": 6, "screen": "agent_workspace", "action": "Optionally check 'Add the number to Do not call list'", "result": "Contact added to Internal DNC list if checked"},
+        {"sequence": 7, "screen": "agent_workspace", "action": "Wrap-up timer expires, next contact preview presented", "result": "Agent ready for next call"}
+      ]
+    },
+    {
+      "id": "manage_dnc_compliance",
+      "name": "Manage DNC Compliance",
+      "description": "Flow for enabling and managing Do Not Call list scrubbing for campaigns.",
+      "steps": [
+        {"sequence": 1, "screen": "campaigns_list", "action": "Toggle on National DNC list scrubber", "result": "System automatically removes registered numbers from campaign lists"},
+        {"sequence": 2, "screen": "campaigns_list", "action": "Manage Local DNC List via menu (Add more, Replace, Delete all, Export to CSV)", "result": "Internal DNC list updated"},
+        {"sequence": 3, "screen": "agent_workspace", "action": "Agent checks 'Add the number to Do not call list' after a call", "result": "Number added to Local DNC list in real-time"}
+      ]
+    }
+  ],
+
+  "business_processes": [
+    {
+      "id": "preview_dialer_campaign_process",
+      "name": "Outbound Preview Dialing Campaign",
+      "description": "End-to-end business process for running a preview dialing outbound campaign where agents manually review contacts before calling.",
+      "actors": ["Campaign Manager", "Sales Agent", "System (Auto Dialer)"],
+      "triggers": ["New sales campaign initiated", "New contact list available", "Scheduled campaign start date reached"],
+      "steps": [
+        {"sequence": 1, "name": "Create campaign with general settings (name, timezone, dates, hours, numbers)", "type": "task", "performer": "Campaign Manager"},
+        {"sequence": 2, "name": "Configure preview dialer mode and timing parameters", "type": "task", "performer": "Campaign Manager"},
+        {"sequence": 3, "name": "Configure system and agent dispositions", "type": "task", "performer": "Campaign Manager"},
+        {"sequence": 4, "name": "Assign agents to campaign", "type": "task", "performer": "Campaign Manager"},
+        {"sequence": 5, "name": "Upload contact record list (CSV) and review coverage score", "type": "task", "performer": "Campaign Manager"},
+        {"sequence": 6, "name": "Enable DNC list scrubber for compliance", "type": "task", "performer": "Campaign Manager"},
+        {"sequence": 7, "name": "Launch campaign", "type": "event", "performer": "Campaign Manager"},
+        {"sequence": 8, "name": "System presents contact preview to agent", "type": "task", "performer": "System"},
+        {"sequence": 9, "name": "Agent reviews contact information and decides to call", "type": "decision", "performer": "Sales Agent"},
+        {"sequence": 10, "name": "Agent conducts call", "type": "task", "performer": "Sales Agent"},
+        {"sequence": 11, "name": "Agent selects disposition outcome", "type": "task", "performer": "Sales Agent"},
+        {"sequence": 12, "name": "Agent optionally adds number to DNC list", "type": "decision", "performer": "Sales Agent"},
+        {"sequence": 13, "name": "System applies retry/final logic based on disposition", "type": "decision", "performer": "System"},
+        {"sequence": 14, "name": "System retries or removes record from queue", "type": "task", "performer": "System"},
+        {"sequence": 15, "name": "Manager monitors campaign status and edits if needed", "type": "task", "performer": "Campaign Manager"}
+      ],
+      "outcomes": ["Successful contacts made", "Leads qualified", "DNC compliance maintained", "Campaign completed"]
+    },
+    {
+      "id": "dnc_compliance_process",
+      "name": "DNC Compliance Management",
+      "description": "Process for ensuring outbound calls comply with Do Not Call regulations using both national and local DNC lists.",
+      "actors": ["Compliance Manager", "Sales Agent", "System"],
+      "triggers": ["Before campaign launch", "DNC list updated", "Agent marks contact as DNC during call"],
+      "steps": [
+        {"sequence": 1, "name": "Enable National DNC list scrubber toggle", "type": "task", "performer": "Compliance Manager"},
+        {"sequence": 2, "name": "System automatically scrubs campaign record lists against national DNC registry", "type": "task", "performer": "System"},
+        {"sequence": 3, "name": "Manage Local DNC List (Add more, Replace, Delete all, Export to CSV)", "type": "task", "performer": "Compliance Manager"},
+        {"sequence": 4, "name": "Agent adds contact number to DNC list via checkbox after call", "type": "task", "performer": "Sales Agent"},
+        {"sequence": 5, "name": "System prevents future dialing of DNC-listed numbers", "type": "task", "performer": "System"}
+      ],
+      "outcomes": ["DNC-compliant campaign execution", "Reduced TCPA and DNC violation risk", "Internal opt-out tracking"]
+    }
+  ],
+
+  "data_entities": [
+    {
+      "id": "campaign",
+      "name": "Campaign",
+      "description": "An outbound calling campaign with configuration, staffing, scheduling and contact list.",
+      "fields": [
+        {"name": "name", "type": "string", "description": "Campaign title"},
+        {"name": "description", "type": "string", "description": "Campaign description (max 200 chars, optional)"},
+        {"name": "status", "type": "enum", "description": "Preparing / Scheduled / Running / Ready / Completed / Paused / Incomplete"},
+        {"name": "timezone", "type": "string", "description": "Campaign timezone (e.g. UTC-06:00 Central Time)"},
+        {"name": "start_date", "type": "date", "description": "Campaign start date (optional)"},
+        {"name": "end_date", "type": "date", "description": "Campaign end date (optional)"},
+        {"name": "business_hours", "type": "object", "description": "Per-day schedule (Sunday-Saturday) with start/end times, AM/PM, Full day option"},
+        {"name": "dialer_mode", "type": "enum", "description": "Preview / Progressive / Predictive / Agentless"},
+        {"name": "local_presence_enabled", "type": "boolean", "description": "Whether local presence is active"},
+        {"name": "auto_rotation", "type": "boolean", "description": "Whether number auto-rotation is on"},
+        {"name": "dnc_scrubber_enabled", "type": "boolean", "description": "Whether National DNC list scrubber is active"}
+      ],
+      "relationships": [
+        {"type": "has_many", "target": "business_number"},
+        {"type": "has_one", "target": "dialer_settings"},
+        {"type": "has_many", "target": "agent"},
+        {"type": "has_many", "target": "record_list"},
+        {"type": "has_one", "target": "local_dnc_list"}
+      ]
+    },
+    {
+      "id": "dialer_settings",
+      "name": "Dialer Settings (Preview Mode)",
+      "description": "Configuration for preview dialer mode within a campaign. Agent previews contact info before manually initiating the call.",
+      "fields": [
+        {"name": "mode", "type": "enum", "description": "Preview (selected in this context)"},
+        {"name": "preview_time", "type": "integer", "description": "Time agent has to preview contact info before call"},
+        {"name": "wrap_up_time", "type": "integer", "description": "Post-call wrap-up time in seconds"},
+        {"name": "max_ring_time", "type": "integer", "description": "Max time contact phone rings in seconds"},
+        {"name": "default_retry_period", "type": "integer", "description": "Default minutes before retry"},
+        {"name": "max_attempts_per_record", "type": "integer", "description": "Max total dial attempts per contact"}
+      ],
+      "relationships": [
+        {"type": "belongs_to", "target": "campaign"},
+        {"type": "has_many", "target": "system_disposition"},
+        {"type": "has_many", "target": "agent_disposition"}
+      ]
+    },
+    {
+      "id": "system_disposition",
+      "name": "System Disposition",
+      "description": "Automated outcome handling rule for a specific system-level call result.",
+      "fields": [
+        {"name": "outcome_type", "type": "enum", "description": "Contact busy / Contact no response / Agent abandoned / Invalid number / Blocked by spam filters / Blocked by robocall analytics"},
+        {"name": "action", "type": "enum", "description": "Retry or Final"},
+        {"name": "retry_period", "type": "integer", "description": "Minutes before retry attempt (for Retry outcomes)"},
+        {"name": "attempts_per_num", "type": "integer", "description": "Max retries per number (for Retry outcomes)"}
+      ],
+      "relationships": [
+        {"type": "belongs_to", "target": "dialer_settings"}
+      ]
+    },
+    {
+      "id": "agent_disposition",
+      "name": "Agent Disposition",
+      "description": "Call outcome option that an agent selects after completing a call. In preview mode, all observed dispositions are marked as Final.",
+      "fields": [
+        {"name": "label", "type": "string", "description": "Display name"},
+        {"name": "is_final", "type": "boolean", "description": "If true, contact is removed from dial queue"}
+      ],
+      "standard_values": [
+        "Successful call (Final)",
+        "Call back later (Final)",
+        "Incorrect number (Final)",
+        "Not interested (Final)",
+        "Left voicemail (Final)",
+        "Already a customer (Final)",
+        "Left unanswered (Final)"
+      ],
+      "relationships": [
+        {"type": "belongs_to", "target": "dialer_settings"}
+      ]
+    },
+    {
+      "id": "record_list",
+      "name": "Record List",
+      "description": "A CSV-based contact list uploaded for use in campaigns.",
+      "fields": [
+        {"name": "name", "type": "string", "description": "List name"},
+        {"name": "last_changes", "type": "string", "description": "Last update info (user + date)"},
+        {"name": "record_count", "type": "integer", "description": "Total number of contacts"},
+        {"name": "area_codes", "type": "integer", "description": "Number of distinct area codes in the list"},
+        {"name": "coverage_score", "type": "string", "description": "Fraction and percentage of area codes covered by local/overlay numbers"}
+      ],
+      "relationships": [
+        {"type": "belongs_to", "target": "campaign"}
+      ]
+    },
+    {
+      "id": "business_number",
+      "name": "Business Number",
+      "description": "A phone number assigned to a campaign for outbound caller ID, labeled by region.",
+      "fields": [
+        {"name": "label", "type": "string", "description": "Regional label (e.g. LA Main, LA Sales, NYC, Toronto, San Diego, Toll-Free)"},
+        {"name": "phone_number", "type": "string", "description": "Phone number (e.g. +1 713 647 2453)"},
+        {"name": "type", "type": "enum", "description": "Local or Toll-Free"}
+      ],
+      "relationships": [
+        {"type": "belongs_to", "target": "campaign"}
+      ]
+    },
+    {
+      "id": "local_dnc_list",
+      "name": "Local DNC List",
+      "description": "Internal Do Not Call list maintained within MightyCall. Numbers can be added by agents after calls or managed in bulk.",
+      "fields": [
+        {"name": "numbers", "type": "array", "description": "Phone numbers on the DNC list"},
+        {"name": "count", "type": "integer", "description": "Total numbers in the list"}
+      ],
+      "management_actions": ["Add more", "Replace", "Delete all", "Export to CSV"],
+      "relationships": [
+        {"type": "belongs_to", "target": "campaign"}
+      ]
+    }
+  ],
+
+  "ui_patterns": {
+    "layout_type": "Top navigation bar with dropdown sub-menus. 4-step wizard/stepper for campaign creation with left sidebar progress tracker. Two-column layout on creation forms (settings left, supporting panel right). Agent workspace uses three-panel layout (contacts left, conversation center, outcomes right).",
+    "color_scheme": "Dark navy/black top nav. White content area. Green accent for active nav items. Blue action buttons. Status badges with color coding per campaign status.",
+    "component_library": "Custom design system. Uses card panels, toggle switches, slider controls for timing settings, data tables with sortable columns, step-wizard sidebar, date pickers, AM/PM time inputs, drag-and-drop file upload zones, countdown timers.",
+    "common_patterns": [
+      "4-step campaign creation wizard with left sidebar progress tracker (General settings, Dialer settings, Agent list, Record list)",
+      "Tab-based dialer mode selector (Preview / Progressive / Predictive / Agentless)",
+      "Slider controls for timing parameters (Preview time, Wrap-up time, Max ring time)",
+      "Right-side available lists panel alongside main form in Record List step",
+      "Toggle switches for enable/disable features (Local Presence, Auto-rotation, DNC scrubber)",
+      "Inline status badges on campaign list screen",
+      "Disposition tables with Retry/Final selectors and retry period/attempts inputs",
+      "Coverage score metric linking local numbers to contact area codes with fraction and percentage display",
+      "Wrap-up countdown timer in agent workspace",
+      "SELECT CALL OUTCOME panel with radio options and DNC checkbox",
+      "Three-dot action menus for campaign and list management",
+      "Duration badge on date range (e.g. '13 days')",
+      "Play/pause/stop controls per campaign on list view",
+      "Local Presence tooltip with detailed explanation of matching behavior"
+    ]
+  }
+}
