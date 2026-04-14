@@ -46,6 +46,16 @@ Common UI patterns observed across MightyCall's Auto Dialer, synthesized from al
 9. **Upload zones**: Drag-and-drop areas for CSV file uploads
 10. **Searchable lists**: "Search by label or number" for business numbers; "Search by list name" for record lists
 
+## Mock Screen Reference
+
+A pixel-faithful HTML mock of the Campaigns list screen is available as a styling reference:
+
+**`../mock-screens/mightycall-campaigns.html`** — single self-contained HTML file, no dependencies.
+
+Demonstrates all UI patterns in this page: sidebar, top nav, status badges, DNC panel, campaigns table with agent avatars, coverage score pills, action buttons.
+
+Use this as the **baseline style guide** when building the actual dialer UI — copy the CSS variables, badge styles, and layout structure directly.
+
 ## Navigation Structure
 
 ```

@@ -33,6 +33,9 @@ Compiled from video tutorials covering MightyCall Auto Dialer and Salesforce Sal
 - [Data Entities](data-entities.md) — Campaign, Dialer Settings, Record List, Disposition, Business Number
 - [UI Patterns](ui-patterns.md) — Layout, navigation, component patterns
 
+### Mock Screens (styling reference)
+- [`../mock-screens/mightycall-campaigns.html`](../mock-screens/mightycall-campaigns.html) — Campaigns list view: sidebar, top nav, status badges, DNC panel, agent avatars, coverage score, action buttons. Use as CSS/layout baseline.
+
 ---
 
 ## Salesforce Sales Cloud Pages

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MightyCall – Auto Dialer Campaigns</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; color: #111827; background: #f3f4f6; display: flex; height: 100vh; overflow: hidden; }
+
+  /* ── Left sidebar ── */
+  .sidebar {
+    width: 60px; background: #1e3a5f; display: flex; flex-direction: column; align-items: center;
+    padding: 16px 0; gap: 4px; flex-shrink: 0;
+  }
+  .sidebar .logo { color: #fff; font-size: 20px; font-weight: 800; margin-bottom: 20px; letter-spacing: -1px; }
+  .nav-item {
+    width: 44px; height: 44px; border-radius: 10px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; cursor: pointer; gap: 2px;
+    color: #94a3b8; font-size: 9px; font-weight: 500; transition: background 0.15s;
+  }
+  .nav-item:hover { background: rgba(255,255,255,0.08); color: #e2e8f0; }
+  .nav-item.active { background: #2563eb; color: #fff; }
+  .nav-item svg { width: 20px; height: 20px; }
+  .sidebar-bottom { margin-top: auto; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .avatar-sm { width: 32px; height: 32px; border-radius: 50%; background: #2563eb; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px; }
+
+  /* ── Main area ── */
+  .main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+  /* Top nav */
+  .topnav {
+    background: #fff; border-bottom: 1px solid #e5e7eb; padding: 0 24px;
+    height: 52px; display: flex; align-items: center; gap: 2px; flex-shrink: 0;
+  }
+  .topnav-item {
+    padding: 6px 14px; border-radius: 6px; cursor: pointer; color: #6b7280;
+    font-size: 13px; font-weight: 500; white-space: nowrap;
+  }
+  .topnav-item:hover { background: #f3f4f6; color: #111827; }
+  .topnav-item.active { color: #2563eb; background: #eff6ff; font-weight: 600; }
+  .topnav-right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+  .status-pill {
+    display: flex; align-items: center; gap: 6px; background: #f0fdf4;
+    border: 1px solid #bbf7d0; border-radius: 20px; padding: 4px 12px;
+    font-size: 12px; font-weight: 600; color: #16a34a; cursor: pointer;
+  }
+  .status-dot { width: 8px; height: 8px; border-radius: 50%; background: #16a34a; }
+
+  /* Page body */
+  .page-body { flex: 1; overflow-y: auto; padding: 24px; }
+
+  /* Page header */
+  .page-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+  .page-title { font-size: 20px; font-weight: 700; color: #111827; }
+  .page-actions { display: flex; gap: 10px; }
+
+  .btn { padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; display: flex; align-items: center; gap: 6px; }
+  .btn-primary { background: #2563eb; color: #fff; }
+  .btn-primary:hover { background: #1d4ed8; }
+  .btn-secondary { background: #fff; color: #374151; border: 1px solid #d1d5db; }
+  .btn-secondary:hover { background: #f9fafb; }
+  .btn-ghost { background: transparent; color: #6b7280; padding: 6px 10px; }
+  .btn-ghost:hover { background: #f3f4f6; color: #374151; }
+
+  /* DNC panel */
+  .dnc-panel {
+    background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
+    padding: 14px 18px; margin-bottom: 20px; display: flex; align-items: flex-start; gap: 32px;
+  }
+  .dnc-section { display: flex; flex-direction: column; gap: 6px; }
+  .dnc-label { font-size: 11px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px; }
+  .dnc-row { display: flex; align-items: center; gap: 10px; }
+  .toggle { width: 40px; height: 22px; border-radius: 11px; background: #16a34a; position: relative; cursor: pointer; flex-shrink: 0; }
+  .toggle::after { content:''; position:absolute; width:18px; height:18px; border-radius:50%; background:#fff; top:2px; right:2px; box-shadow:0 1px 3px rgba(0,0,0,.2); }
+  .toggle.off { background: #d1d5db; }
+  .toggle.off::after { right: auto; left: 2px; }
+  .dnc-count { font-size: 12px; color: #374151; }
+  .dnc-actions { display: flex; gap: 6px; margin-top: 4px; }
+  .dnc-btn { font-size: 11px; padding: 3px 8px; border-radius: 5px; border: 1px solid #d1d5db; background: #fff; color: #374151; cursor: pointer; }
+  .dnc-btn:hover { background: #f3f4f6; }
+  .dnc-divider { width: 1px; background: #e5e7eb; align-self: stretch; }
+
+  /* Campaign table */
+  .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; }
+  thead th {
+    background: #f9fafb; padding: 10px 16px; text-align: left;
+    font-size: 11px; font-weight: 700; color: #6b7280; text-transform: uppercase;
+    letter-spacing: 0.5px; border-bottom: 1px solid #e5e7eb;
+  }
+  tbody tr { border-bottom: 1px solid #f3f4f6; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: #fafafa; }
+  td { padding: 14px 16px; vertical-align: middle; }
+
+  /* Status badge */
+  .status-badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+  .status-running  { background: #dcfce7; color: #15803d; }
+  .status-paused   { background: #fef9c3; color: #a16207; }
+  .status-ready    { background: #fef9c3; color: #a16207; }
+  .status-completed{ background: #f3f4f6; color: #6b7280; }
+  .status-preparing{ background: #f3f4f6; color: #9ca3af; }
+  .status-incomplete{ background: #fee2e2; color: #b91c1c; }
+  .status-scheduled{ background: #dbeafe; color: #1d4ed8; }
+  .status-dot-r { width: 7px; height: 7px; border-radius: 50%; }
+  .dot-green  { background: #16a34a; }
+  .dot-yellow { background: #ca8a04; }
+  .dot-gray   { background: #9ca3af; }
+  .dot-red    { background: #dc2626; }
+  .dot-blue   { background: #2563eb; }
+
+  .campaign-name { font-weight: 600; color: #111827; }
+  .campaign-desc { font-size: 12px; color: #6b7280; margin-top: 2px; }
+
+  /* Agent avatars */
+  .avatars { display: flex; }
+  .avatar { width: 28px; height: 28px; border-radius: 50%; border: 2px solid #fff; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; margin-left: -6px; }
+  .avatars .avatar:first-child { margin-left: 0; }
+  .av1 { background: #2563eb; }
+  .av2 { background: #7c3aed; }
+  .av3 { background: #db2777; }
+  .av4 { background: #d97706; }
+  .av-more { background: #6b7280; font-size: 9px; }
+
+  /* Records */
+  .records-cell { font-size: 13px; color: #374151; }
+  .records-file { font-size: 11px; color: #6b7280; margin-top: 2px; }
+
+  /* Coverage score */
+  .coverage { display: inline-flex; align-items: center; gap: 6px; }
+  .cov-pill { padding: 3px 8px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+  .cov-good { background: #dcfce7; color: #15803d; }
+  .cov-warn { background: #fef9c3; color: #a16207; }
+  .cov-frac { font-size: 12px; color: #6b7280; }
+
+  /* Row actions */
+  .row-actions { display: flex; align-items: center; gap: 4px; }
+  .action-btn { width: 30px; height: 30px; border-radius: 6px; border: 1px solid #e5e7eb; background: #fff; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #6b7280; }
+  .action-btn:hover { background: #f3f4f6; color: #111827; }
+  .action-btn.play { color: #16a34a; border-color: #bbf7d0; background: #f0fdf4; }
+  .action-btn.pause { color: #ca8a04; border-color: #fef08a; background: #fefce8; }
+  .action-btn.stop { color: #dc2626; border-color: #fecaca; background: #fef2f2; }
+  .action-btn svg { width: 14px; height: 14px; }
+  .three-dot { font-size: 16px; letter-spacing: 1px; color: #9ca3af; }
+
+  /* Dialing mode chip */
+  .mode-chip { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .mode-predictive  { background: #ede9fe; color: #5b21b6; }
+  .mode-progressive { background: #dbeafe; color: #1e40af; }
+  .mode-preview     { background: #dcfce7; color: #065f46; }
+  .mode-agentless   { background: #f3f4f6; color: #374151; }
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+  <div class="logo">M</div>
+
+  <div class="nav-item" title="Workspace">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    <span>Work</span>
+  </div>
+  <div class="nav-item" title="Reports">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+    <span>Reports</span>
+  </div>
+  <div class="nav-item active" title="Auto Dialer">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 013 1.18 2 2 0 014.11 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+    <span>Dialer</span>
+  </div>
+  <div class="nav-item" title="Call Flow">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+    <span>Flow</span>
+  </div>
+  <div class="nav-item" title="Numbers">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5h2M3 10h2M3 15h2M7 3v18M11 5h2M11 10h2M11 15h2M15 3v18M19 5h2M19 10h2M19 15h2"/></svg>
+    <span>Nums</span>
+  </div>
+  <div class="nav-item" title="Team">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+    <span>Team</span>
+  </div>
+
+  <div class="sidebar-bottom">
+    <div class="nav-item" title="Settings">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+    </div>
+    <div class="avatar-sm">NB</div>
+  </div>
+</aside>
+
+<!-- Main -->
+<div class="main">
+
+  <!-- Top nav -->
+  <nav class="topnav">
+    <div class="topnav-item">Workspace</div>
+    <div class="topnav-item">Reports</div>
+    <div class="topnav-item active">Auto Dialer ▾</div>
+    <div class="topnav-item">Call Flow</div>
+    <div class="topnav-item">Numbers</div>
+    <div class="topnav-item">Team</div>
+    <div class="topnav-item">Integrations</div>
+    <div class="topnav-item">Account</div>
+    <div class="topnav-right">
+      <div class="status-pill">
+        <div class="status-dot"></div>
+        Available &nbsp;·&nbsp; 00:12
+      </div>
+      <div class="avatar-sm">NB</div>
+    </div>
+  </nav>
+
+  <!-- Page body -->
+  <div class="page-body">
+
+    <!-- Header -->
+    <div class="page-header">
+      <div>
+        <div class="page-title">Campaigns</div>
+      </div>
+      <div class="page-actions">
+        <button class="btn btn-secondary">Import</button>
+        <button class="btn btn-primary">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          New Campaign
+        </button>
+      </div>
+    </div>
+
+    <!-- DNC Panel -->
+    <div class="dnc-panel">
+      <div class="dnc-section">
+        <div class="dnc-label">National DNC Scrubber</div>
+        <div class="dnc-row">
+          <div class="toggle"></div>
+          <span style="font-size:13px;color:#374151;">Enabled — contacts scrubbed before dialing</span>
+        </div>
+      </div>
+      <div class="dnc-divider"></div>
+      <div class="dnc-section">
+        <div class="dnc-label">Local DNC List &nbsp;<span style="background:#e5e7eb;border-radius:10px;padding:1px 7px;font-size:11px;color:#374151;">142 numbers</span></div>
+        <div class="dnc-actions">
+          <button class="dnc-btn">+ Add</button>
+          <button class="dnc-btn">↑ Replace</button>
+          <button class="dnc-btn">✕ Delete</button>
+          <button class="dnc-btn">↓ Export CSV</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="card">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:40px;"></th>
+            <th>Status</th>
+            <th>Name</th>
+            <th>Mode</th>
+            <th>Agents</th>
+            <th>Records</th>
+            <th>Coverage Score</th>
+            <th style="width:120px;text-align:right;">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <!-- Running -->
+          <tr>
+            <td></td>
+            <td><span class="status-badge status-running"><span class="status-dot-r dot-green"></span>Running</span></td>
+            <td>
+              <div class="campaign-name">Q2 Renewal Outreach</div>
+              <div class="campaign-desc">Re-engage expiring subscribers</div>
+            </td>
+            <td><span class="mode-chip mode-predictive">Predictive</span></td>
+            <td>
+              <div class="avatars">
+                <div class="avatar av1">SJ</div>
+                <div class="avatar av2">ML</div>
+                <div class="avatar av3">RP</div>
+                <div class="avatar av-more">+2</div>
+              </div>
+            </td>
+            <td>
+              <div class="records-cell">4,821 contacts</div>
+              <div class="records-file">q2_renewals.csv</div>
+            </td>
+            <td>
+              <div class="coverage">
+                <span class="cov-pill cov-good">91.4%</span>
+                <span class="cov-frac">32 of 35</span>
+              </div>
+            </td>
+            <td>
+              <div class="row-actions" style="justify-content:flex-end;">
+                <button class="action-btn pause" title="Pause">
+                  <svg fill="currentColor" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                </button>
+                <button class="action-btn stop" title="Stop">
+                  <svg fill="currentColor" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+                </button>
+                <button class="action-btn" title="More">⋯</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Paused -->
+          <tr>
+            <td></td>
+            <td><span class="status-badge status-paused"><span class="status-dot-r dot-yellow"></span>Paused</span></td>
+            <td>
+              <div class="campaign-name">New Leads — April</div>
+              <div class="campaign-desc">Fresh inbound lead follow-up</div>
+            </td>
+            <td><span class="mode-chip mode-progressive">Progressive</span></td>
+            <td>
+              <div class="avatars">
+                <div class="avatar av4">KD</div>
+                <div class="avatar av2">ML</div>
+              </div>
+            </td>
+            <td>
+              <div class="records-cell">1,203 contacts</div>
+              <div class="records-file">april_leads.csv</div>
+            </td>
+            <td>
+              <div class="coverage">
+                <span class="cov-pill cov-warn">66.7%</span>
+                <span class="cov-frac">2 of 3</span>
+              </div>
+            </td>
+            <td>
+              <div class="row-actions" style="justify-content:flex-end;">
+                <button class="action-btn play" title="Resume">
+                  <svg fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                </button>
+                <button class="action-btn stop" title="Stop">
+                  <svg fill="currentColor" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+                </button>
+                <button class="action-btn" title="More">⋯</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Ready -->
+          <tr>
+            <td></td>
+            <td><span class="status-badge status-ready"><span class="status-dot-r dot-yellow"></span>Ready</span></td>
+            <td>
+              <div class="campaign-name">Insurance Upsell</div>
+              <div class="campaign-desc">Cross-sell premium plans to existing customers</div>
+            </td>
+            <td><span class="mode-chip mode-preview">Preview</span></td>
+            <td>
+              <div class="avatars">
+                <div class="avatar av1">SJ</div>
+                <div class="avatar av3">RP</div>
+                <div class="avatar av4">KD</div>
+              </div>
+            </td>
+            <td>
+              <div class="records-cell">887 contacts</div>
+              <div class="records-file">upsell_may.csv</div>
+            </td>
+            <td>
+              <div class="coverage">
+                <span class="cov-pill cov-good">100%</span>
+                <span class="cov-frac">5 of 5</span>
+              </div>
+            </td>
+            <td>
+              <div class="row-actions" style="justify-content:flex-end;">
+                <button class="action-btn play" title="Start">
+                  <svg fill="currentColor" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                </button>
+                <button class="action-btn" title="More">⋯</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Scheduled -->
+          <tr>
+            <td></td>
+            <td><span class="status-badge status-scheduled"><span class="status-dot-r dot-blue"></span>Scheduled</span></td>
+            <td>
+              <div class="campaign-name">Summer Promo Blast</div>
+              <div class="campaign-desc">Starts 2026-05-01 at 09:00 EST</div>
+            </td>
+            <td><span class="mode-chip mode-agentless">Agentless</span></td>
+            <td>
+              <div style="font-size:12px;color:#9ca3af;">—</div>
+            </td>
+            <td>
+              <div class="records-cell">12,440 contacts</div>
+              <div class="records-file">summer_promo.csv</div>
+            </td>
+            <td>
+              <div class="coverage">
+                <span class="cov-pill cov-good">88.2%</span>
+                <span class="cov-frac">15 of 17</span>
+              </div>
+            </td>
+            <td>
+              <div class="row-actions" style="justify-content:flex-end;">
+                <button class="action-btn" title="More">⋯</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Incomplete -->
+          <tr>
+            <td></td>
+            <td><span class="status-badge status-incomplete"><span class="status-dot-r dot-red"></span>Incomplete</span></td>
+            <td>
+              <div class="campaign-name">Win-Back Campaign</div>
+              <div class="campaign-desc">No record list assigned</div>
+            </td>
+            <td><span class="mode-chip mode-predictive">Predictive</span></td>
+            <td>
+              <div class="avatars">
+                <div class="avatar av2">ML</div>
+              </div>
+            </td>
+            <td>
+              <div class="records-cell" style="color:#dc2626;">No list assigned</div>
+            </td>
+            <td>
+              <div style="font-size:12px;color:#9ca3af;">—</div>
+            </td>
+            <td>
+              <div class="row-actions" style="justify-content:flex-end;">
+                <button class="action-btn" title="Edit">
+                  <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                </button>
+                <button class="action-btn" title="More">⋯</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Completed -->
+          <tr>
+            <td></td>
+            <td><span class="status-badge status-completed"><span class="status-dot-r dot-gray"></span>Completed</span></td>
+            <td>
+              <div class="campaign-name">Q1 Cold Outreach</div>
+              <div class="campaign-desc">Finished 2026-03-31</div>
+            </td>
+            <td><span class="mode-chip mode-progressive">Progressive</span></td>
+            <td>
+              <div class="avatars">
+                <div class="avatar av1">SJ</div>
+                <div class="avatar av4">KD</div>
+                <div class="avatar av3">RP</div>
+              </div>
+            </td>
+            <td>
+              <div class="records-cell">3,310 contacts</div>
+              <div class="records-file">q1_cold.csv</div>
+            </td>
+            <td>
+              <div class="coverage">
+                <span class="cov-pill cov-good">94.1%</span>
+                <span class="cov-frac">16 of 17</span>
+              </div>
+            </td>
+            <td>
+              <div class="row-actions" style="justify-content:flex-end;">
+                <button class="action-btn" title="More" style="color:#d1d5db;">⋯</button>
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div><!-- /page-body -->
+</div><!-- /main -->
+
+</body>
+</html>
