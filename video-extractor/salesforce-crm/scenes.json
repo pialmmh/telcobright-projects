@@ -1,0 +1,6991 @@
+[
+  {
+    "scene_index": 0,
+    "representative_frame": "frame_0002.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0002.jpg",
+    "start_time": 0,
+    "end_time": 1,
+    "start_fmt": "00:00",
+    "end_fmt": "00:01",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0001.jpg",
+      "frame_0002.jpg"
+    ]
+  },
+  {
+    "scene_index": 1,
+    "representative_frame": "frame_0003.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0003.jpg",
+    "start_time": 2,
+    "end_time": 2,
+    "start_fmt": "00:02",
+    "end_fmt": "00:02",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0003.jpg"
+    ]
+  },
+  {
+    "scene_index": 2,
+    "representative_frame": "frame_0011.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0011.jpg",
+    "start_time": 3,
+    "end_time": 16,
+    "start_fmt": "00:03",
+    "end_fmt": "00:16",
+    "duration_sec": 14,
+    "frame_count": 14,
+    "all_frames": [
+      "frame_0004.jpg",
+      "frame_0005.jpg",
+      "frame_0006.jpg",
+      "frame_0007.jpg",
+      "frame_0008.jpg",
+      "frame_0009.jpg",
+      "frame_0010.jpg",
+      "frame_0011.jpg",
+      "frame_0012.jpg",
+      "frame_0013.jpg",
+      "frame_0014.jpg",
+      "frame_0015.jpg",
+      "frame_0016.jpg",
+      "frame_0017.jpg"
+    ]
+  },
+  {
+    "scene_index": 3,
+    "representative_frame": "frame_0020.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0020.jpg",
+    "start_time": 17,
+    "end_time": 21,
+    "start_fmt": "00:17",
+    "end_fmt": "00:21",
+    "duration_sec": 5,
+    "frame_count": 5,
+    "all_frames": [
+      "frame_0018.jpg",
+      "frame_0019.jpg",
+      "frame_0020.jpg",
+      "frame_0021.jpg",
+      "frame_0022.jpg"
+    ]
+  },
+  {
+    "scene_index": 4,
+    "representative_frame": "frame_0028.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0028.jpg",
+    "start_time": 22,
+    "end_time": 31,
+    "start_fmt": "00:22",
+    "end_fmt": "00:31",
+    "duration_sec": 10,
+    "frame_count": 10,
+    "all_frames": [
+      "frame_0023.jpg",
+      "frame_0024.jpg",
+      "frame_0025.jpg",
+      "frame_0026.jpg",
+      "frame_0027.jpg",
+      "frame_0028.jpg",
+      "frame_0029.jpg",
+      "frame_0030.jpg",
+      "frame_0031.jpg",
+      "frame_0032.jpg"
+    ]
+  },
+  {
+    "scene_index": 5,
+    "representative_frame": "frame_0045.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0045.jpg",
+    "start_time": 32,
+    "end_time": 55,
+    "start_fmt": "00:32",
+    "end_fmt": "00:55",
+    "duration_sec": 24,
+    "frame_count": 24,
+    "all_frames": [
+      "frame_0033.jpg",
+      "frame_0034.jpg",
+      "frame_0035.jpg",
+      "frame_0036.jpg",
+      "frame_0037.jpg",
+      "frame_0038.jpg",
+      "frame_0039.jpg",
+      "frame_0040.jpg",
+      "frame_0041.jpg",
+      "frame_0042.jpg",
+      "frame_0043.jpg",
+      "frame_0044.jpg",
+      "frame_0045.jpg",
+      "frame_0046.jpg",
+      "frame_0047.jpg",
+      "frame_0048.jpg",
+      "frame_0049.jpg",
+      "frame_0050.jpg",
+      "frame_0051.jpg",
+      "frame_0052.jpg",
+      "frame_0053.jpg",
+      "frame_0054.jpg",
+      "frame_0055.jpg",
+      "frame_0056.jpg"
+    ]
+  },
+  {
+    "scene_index": 6,
+    "representative_frame": "frame_0057.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0057.jpg",
+    "start_time": 56,
+    "end_time": 56,
+    "start_fmt": "00:56",
+    "end_fmt": "00:56",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0057.jpg"
+    ]
+  },
+  {
+    "scene_index": 7,
+    "representative_frame": "frame_0067.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0067.jpg",
+    "start_time": 57,
+    "end_time": 75,
+    "start_fmt": "00:57",
+    "end_fmt": "01:15",
+    "duration_sec": 19,
+    "frame_count": 19,
+    "all_frames": [
+      "frame_0058.jpg",
+      "frame_0059.jpg",
+      "frame_0060.jpg",
+      "frame_0061.jpg",
+      "frame_0062.jpg",
+      "frame_0063.jpg",
+      "frame_0064.jpg",
+      "frame_0065.jpg",
+      "frame_0066.jpg",
+      "frame_0067.jpg",
+      "frame_0068.jpg",
+      "frame_0069.jpg",
+      "frame_0070.jpg",
+      "frame_0071.jpg",
+      "frame_0072.jpg",
+      "frame_0073.jpg",
+      "frame_0074.jpg",
+      "frame_0075.jpg",
+      "frame_0076.jpg"
+    ]
+  },
+  {
+    "scene_index": 8,
+    "representative_frame": "frame_0080.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0080.jpg",
+    "start_time": 76,
+    "end_time": 82,
+    "start_fmt": "01:16",
+    "end_fmt": "01:22",
+    "duration_sec": 7,
+    "frame_count": 7,
+    "all_frames": [
+      "frame_0077.jpg",
+      "frame_0078.jpg",
+      "frame_0079.jpg",
+      "frame_0080.jpg",
+      "frame_0081.jpg",
+      "frame_0082.jpg",
+      "frame_0083.jpg"
+    ]
+  },
+  {
+    "scene_index": 9,
+    "representative_frame": "frame_0111.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0111.jpg",
+    "start_time": 83,
+    "end_time": 137,
+    "start_fmt": "01:23",
+    "end_fmt": "02:17",
+    "duration_sec": 55,
+    "frame_count": 55,
+    "all_frames": [
+      "frame_0084.jpg",
+      "frame_0085.jpg",
+      "frame_0086.jpg",
+      "frame_0087.jpg",
+      "frame_0088.jpg",
+      "frame_0089.jpg",
+      "frame_0090.jpg",
+      "frame_0091.jpg",
+      "frame_0092.jpg",
+      "frame_0093.jpg",
+      "frame_0094.jpg",
+      "frame_0095.jpg",
+      "frame_0096.jpg",
+      "frame_0097.jpg",
+      "frame_0098.jpg",
+      "frame_0099.jpg",
+      "frame_0100.jpg",
+      "frame_0101.jpg",
+      "frame_0102.jpg",
+      "frame_0103.jpg",
+      "frame_0104.jpg",
+      "frame_0105.jpg",
+      "frame_0106.jpg",
+      "frame_0107.jpg",
+      "frame_0108.jpg",
+      "frame_0109.jpg",
+      "frame_0110.jpg",
+      "frame_0111.jpg",
+      "frame_0112.jpg",
+      "frame_0113.jpg",
+      "frame_0114.jpg",
+      "frame_0115.jpg",
+      "frame_0116.jpg",
+      "frame_0117.jpg",
+      "frame_0118.jpg",
+      "frame_0119.jpg",
+      "frame_0120.jpg",
+      "frame_0121.jpg",
+      "frame_0122.jpg",
+      "frame_0123.jpg",
+      "frame_0124.jpg",
+      "frame_0125.jpg",
+      "frame_0126.jpg",
+      "frame_0127.jpg",
+      "frame_0128.jpg",
+      "frame_0129.jpg",
+      "frame_0130.jpg",
+      "frame_0131.jpg",
+      "frame_0132.jpg",
+      "frame_0133.jpg",
+      "frame_0134.jpg",
+      "frame_0135.jpg",
+      "frame_0136.jpg",
+      "frame_0137.jpg",
+      "frame_0138.jpg"
+    ]
+  },
+  {
+    "scene_index": 10,
+    "representative_frame": "frame_0157.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0157.jpg",
+    "start_time": 138,
+    "end_time": 174,
+    "start_fmt": "02:18",
+    "end_fmt": "02:54",
+    "duration_sec": 37,
+    "frame_count": 37,
+    "all_frames": [
+      "frame_0139.jpg",
+      "frame_0140.jpg",
+      "frame_0141.jpg",
+      "frame_0142.jpg",
+      "frame_0143.jpg",
+      "frame_0144.jpg",
+      "frame_0145.jpg",
+      "frame_0146.jpg",
+      "frame_0147.jpg",
+      "frame_0148.jpg",
+      "frame_0149.jpg",
+      "frame_0150.jpg",
+      "frame_0151.jpg",
+      "frame_0152.jpg",
+      "frame_0153.jpg",
+      "frame_0154.jpg",
+      "frame_0155.jpg",
+      "frame_0156.jpg",
+      "frame_0157.jpg",
+      "frame_0158.jpg",
+      "frame_0159.jpg",
+      "frame_0160.jpg",
+      "frame_0161.jpg",
+      "frame_0162.jpg",
+      "frame_0163.jpg",
+      "frame_0164.jpg",
+      "frame_0165.jpg",
+      "frame_0166.jpg",
+      "frame_0167.jpg",
+      "frame_0168.jpg",
+      "frame_0169.jpg",
+      "frame_0170.jpg",
+      "frame_0171.jpg",
+      "frame_0172.jpg",
+      "frame_0173.jpg",
+      "frame_0174.jpg",
+      "frame_0175.jpg"
+    ]
+  },
+  {
+    "scene_index": 11,
+    "representative_frame": "frame_0176.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0176.jpg",
+    "start_time": 175,
+    "end_time": 175,
+    "start_fmt": "02:55",
+    "end_fmt": "02:55",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0176.jpg"
+    ]
+  },
+  {
+    "scene_index": 12,
+    "representative_frame": "frame_0178.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0178.jpg",
+    "start_time": 176,
+    "end_time": 178,
+    "start_fmt": "02:56",
+    "end_fmt": "02:58",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_0177.jpg",
+      "frame_0178.jpg",
+      "frame_0179.jpg"
+    ]
+  },
+  {
+    "scene_index": 13,
+    "representative_frame": "frame_0214.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0214.jpg",
+    "start_time": 179,
+    "end_time": 246,
+    "start_fmt": "02:59",
+    "end_fmt": "04:06",
+    "duration_sec": 68,
+    "frame_count": 68,
+    "all_frames": [
+      "frame_0180.jpg",
+      "frame_0181.jpg",
+      "frame_0182.jpg",
+      "frame_0183.jpg",
+      "frame_0184.jpg",
+      "frame_0185.jpg",
+      "frame_0186.jpg",
+      "frame_0187.jpg",
+      "frame_0188.jpg",
+      "frame_0189.jpg",
+      "frame_0190.jpg",
+      "frame_0191.jpg",
+      "frame_0192.jpg",
+      "frame_0193.jpg",
+      "frame_0194.jpg",
+      "frame_0195.jpg",
+      "frame_0196.jpg",
+      "frame_0197.jpg",
+      "frame_0198.jpg",
+      "frame_0199.jpg",
+      "frame_0200.jpg",
+      "frame_0201.jpg",
+      "frame_0202.jpg",
+      "frame_0203.jpg",
+      "frame_0204.jpg",
+      "frame_0205.jpg",
+      "frame_0206.jpg",
+      "frame_0207.jpg",
+      "frame_0208.jpg",
+      "frame_0209.jpg",
+      "frame_0210.jpg",
+      "frame_0211.jpg",
+      "frame_0212.jpg",
+      "frame_0213.jpg",
+      "frame_0214.jpg",
+      "frame_0215.jpg",
+      "frame_0216.jpg",
+      "frame_0217.jpg",
+      "frame_0218.jpg",
+      "frame_0219.jpg",
+      "frame_0220.jpg",
+      "frame_0221.jpg",
+      "frame_0222.jpg",
+      "frame_0223.jpg",
+      "frame_0224.jpg",
+      "frame_0225.jpg",
+      "frame_0226.jpg",
+      "frame_0227.jpg",
+      "frame_0228.jpg",
+      "frame_0229.jpg",
+      "frame_0230.jpg",
+      "frame_0231.jpg",
+      "frame_0232.jpg",
+      "frame_0233.jpg",
+      "frame_0234.jpg",
+      "frame_0235.jpg",
+      "frame_0236.jpg",
+      "frame_0237.jpg",
+      "frame_0238.jpg",
+      "frame_0239.jpg",
+      "frame_0240.jpg",
+      "frame_0241.jpg",
+      "frame_0242.jpg",
+      "frame_0243.jpg",
+      "frame_0244.jpg",
+      "frame_0245.jpg",
+      "frame_0246.jpg",
+      "frame_0247.jpg"
+    ]
+  },
+  {
+    "scene_index": 14,
+    "representative_frame": "frame_0248.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0248.jpg",
+    "start_time": 247,
+    "end_time": 247,
+    "start_fmt": "04:07",
+    "end_fmt": "04:07",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0248.jpg"
+    ]
+  },
+  {
+    "scene_index": 15,
+    "representative_frame": "frame_0289.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0289.jpg",
+    "start_time": 248,
+    "end_time": 328,
+    "start_fmt": "04:08",
+    "end_fmt": "05:28",
+    "duration_sec": 81,
+    "frame_count": 81,
+    "all_frames": [
+      "frame_0249.jpg",
+      "frame_0250.jpg",
+      "frame_0251.jpg",
+      "frame_0252.jpg",
+      "frame_0253.jpg",
+      "frame_0254.jpg",
+      "frame_0255.jpg",
+      "frame_0256.jpg",
+      "frame_0257.jpg",
+      "frame_0258.jpg",
+      "frame_0259.jpg",
+      "frame_0260.jpg",
+      "frame_0261.jpg",
+      "frame_0262.jpg",
+      "frame_0263.jpg",
+      "frame_0264.jpg",
+      "frame_0265.jpg",
+      "frame_0266.jpg",
+      "frame_0267.jpg",
+      "frame_0268.jpg",
+      "frame_0269.jpg",
+      "frame_0270.jpg",
+      "frame_0271.jpg",
+      "frame_0272.jpg",
+      "frame_0273.jpg",
+      "frame_0274.jpg",
+      "frame_0275.jpg",
+      "frame_0276.jpg",
+      "frame_0277.jpg",
+      "frame_0278.jpg",
+      "frame_0279.jpg",
+      "frame_0280.jpg",
+      "frame_0281.jpg",
+      "frame_0282.jpg",
+      "frame_0283.jpg",
+      "frame_0284.jpg",
+      "frame_0285.jpg",
+      "frame_0286.jpg",
+      "frame_0287.jpg",
+      "frame_0288.jpg",
+      "frame_0289.jpg",
+      "frame_0290.jpg",
+      "frame_0291.jpg",
+      "frame_0292.jpg",
+      "frame_0293.jpg",
+      "frame_0294.jpg",
+      "frame_0295.jpg",
+      "frame_0296.jpg",
+      "frame_0297.jpg",
+      "frame_0298.jpg",
+      "frame_0299.jpg",
+      "frame_0300.jpg",
+      "frame_0301.jpg",
+      "frame_0302.jpg",
+      "frame_0303.jpg",
+      "frame_0304.jpg",
+      "frame_0305.jpg",
+      "frame_0306.jpg",
+      "frame_0307.jpg",
+      "frame_0308.jpg",
+      "frame_0309.jpg",
+      "frame_0310.jpg",
+      "frame_0311.jpg",
+      "frame_0312.jpg",
+      "frame_0313.jpg",
+      "frame_0314.jpg",
+      "frame_0315.jpg",
+      "frame_0316.jpg",
+      "frame_0317.jpg",
+      "frame_0318.jpg",
+      "frame_0319.jpg",
+      "frame_0320.jpg",
+      "frame_0321.jpg",
+      "frame_0322.jpg",
+      "frame_0323.jpg",
+      "frame_0324.jpg",
+      "frame_0325.jpg",
+      "frame_0326.jpg",
+      "frame_0327.jpg",
+      "frame_0328.jpg",
+      "frame_0329.jpg"
+    ]
+  },
+  {
+    "scene_index": 16,
+    "representative_frame": "frame_0330.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0330.jpg",
+    "start_time": 329,
+    "end_time": 329,
+    "start_fmt": "05:29",
+    "end_fmt": "05:29",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0330.jpg"
+    ]
+  },
+  {
+    "scene_index": 17,
+    "representative_frame": "frame_0331.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0331.jpg",
+    "start_time": 330,
+    "end_time": 330,
+    "start_fmt": "05:30",
+    "end_fmt": "05:30",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0331.jpg"
+    ]
+  },
+  {
+    "scene_index": 18,
+    "representative_frame": "frame_0332.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0332.jpg",
+    "start_time": 331,
+    "end_time": 331,
+    "start_fmt": "05:31",
+    "end_fmt": "05:31",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0332.jpg"
+    ]
+  },
+  {
+    "scene_index": 19,
+    "representative_frame": "frame_0333.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0333.jpg",
+    "start_time": 332,
+    "end_time": 332,
+    "start_fmt": "05:32",
+    "end_fmt": "05:32",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0333.jpg"
+    ]
+  },
+  {
+    "scene_index": 20,
+    "representative_frame": "frame_0334.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0334.jpg",
+    "start_time": 333,
+    "end_time": 333,
+    "start_fmt": "05:33",
+    "end_fmt": "05:33",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0334.jpg"
+    ]
+  },
+  {
+    "scene_index": 21,
+    "representative_frame": "frame_0335.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0335.jpg",
+    "start_time": 334,
+    "end_time": 334,
+    "start_fmt": "05:34",
+    "end_fmt": "05:34",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0335.jpg"
+    ]
+  },
+  {
+    "scene_index": 22,
+    "representative_frame": "frame_0337.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0337.jpg",
+    "start_time": 335,
+    "end_time": 336,
+    "start_fmt": "05:35",
+    "end_fmt": "05:36",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0336.jpg",
+      "frame_0337.jpg"
+    ]
+  },
+  {
+    "scene_index": 23,
+    "representative_frame": "frame_0338.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0338.jpg",
+    "start_time": 337,
+    "end_time": 337,
+    "start_fmt": "05:37",
+    "end_fmt": "05:37",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0338.jpg"
+    ]
+  },
+  {
+    "scene_index": 24,
+    "representative_frame": "frame_0339.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0339.jpg",
+    "start_time": 338,
+    "end_time": 338,
+    "start_fmt": "05:38",
+    "end_fmt": "05:38",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0339.jpg"
+    ]
+  },
+  {
+    "scene_index": 25,
+    "representative_frame": "frame_0340.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0340.jpg",
+    "start_time": 339,
+    "end_time": 339,
+    "start_fmt": "05:39",
+    "end_fmt": "05:39",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0340.jpg"
+    ]
+  },
+  {
+    "scene_index": 26,
+    "representative_frame": "frame_0341.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0341.jpg",
+    "start_time": 340,
+    "end_time": 340,
+    "start_fmt": "05:40",
+    "end_fmt": "05:40",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0341.jpg"
+    ]
+  },
+  {
+    "scene_index": 27,
+    "representative_frame": "frame_0342.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0342.jpg",
+    "start_time": 341,
+    "end_time": 341,
+    "start_fmt": "05:41",
+    "end_fmt": "05:41",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0342.jpg"
+    ]
+  },
+  {
+    "scene_index": 28,
+    "representative_frame": "frame_0343.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0343.jpg",
+    "start_time": 342,
+    "end_time": 342,
+    "start_fmt": "05:42",
+    "end_fmt": "05:42",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0343.jpg"
+    ]
+  },
+  {
+    "scene_index": 29,
+    "representative_frame": "frame_0344.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0344.jpg",
+    "start_time": 343,
+    "end_time": 343,
+    "start_fmt": "05:43",
+    "end_fmt": "05:43",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0344.jpg"
+    ]
+  },
+  {
+    "scene_index": 30,
+    "representative_frame": "frame_0345.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0345.jpg",
+    "start_time": 344,
+    "end_time": 344,
+    "start_fmt": "05:44",
+    "end_fmt": "05:44",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0345.jpg"
+    ]
+  },
+  {
+    "scene_index": 31,
+    "representative_frame": "frame_0346.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0346.jpg",
+    "start_time": 345,
+    "end_time": 345,
+    "start_fmt": "05:45",
+    "end_fmt": "05:45",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0346.jpg"
+    ]
+  },
+  {
+    "scene_index": 32,
+    "representative_frame": "frame_0347.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0347.jpg",
+    "start_time": 346,
+    "end_time": 346,
+    "start_fmt": "05:46",
+    "end_fmt": "05:46",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0347.jpg"
+    ]
+  },
+  {
+    "scene_index": 33,
+    "representative_frame": "frame_0348.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0348.jpg",
+    "start_time": 347,
+    "end_time": 347,
+    "start_fmt": "05:47",
+    "end_fmt": "05:47",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0348.jpg"
+    ]
+  },
+  {
+    "scene_index": 34,
+    "representative_frame": "frame_0350.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0350.jpg",
+    "start_time": 348,
+    "end_time": 350,
+    "start_fmt": "05:48",
+    "end_fmt": "05:50",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_0349.jpg",
+      "frame_0350.jpg",
+      "frame_0351.jpg"
+    ]
+  },
+  {
+    "scene_index": 35,
+    "representative_frame": "frame_0352.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0352.jpg",
+    "start_time": 351,
+    "end_time": 351,
+    "start_fmt": "05:51",
+    "end_fmt": "05:51",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0352.jpg"
+    ]
+  },
+  {
+    "scene_index": 36,
+    "representative_frame": "frame_0353.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0353.jpg",
+    "start_time": 352,
+    "end_time": 352,
+    "start_fmt": "05:52",
+    "end_fmt": "05:52",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0353.jpg"
+    ]
+  },
+  {
+    "scene_index": 37,
+    "representative_frame": "frame_0354.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0354.jpg",
+    "start_time": 353,
+    "end_time": 353,
+    "start_fmt": "05:53",
+    "end_fmt": "05:53",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0354.jpg"
+    ]
+  },
+  {
+    "scene_index": 38,
+    "representative_frame": "frame_0355.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0355.jpg",
+    "start_time": 354,
+    "end_time": 354,
+    "start_fmt": "05:54",
+    "end_fmt": "05:54",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0355.jpg"
+    ]
+  },
+  {
+    "scene_index": 39,
+    "representative_frame": "frame_0356.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0356.jpg",
+    "start_time": 355,
+    "end_time": 355,
+    "start_fmt": "05:55",
+    "end_fmt": "05:55",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0356.jpg"
+    ]
+  },
+  {
+    "scene_index": 40,
+    "representative_frame": "frame_0357.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0357.jpg",
+    "start_time": 356,
+    "end_time": 356,
+    "start_fmt": "05:56",
+    "end_fmt": "05:56",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0357.jpg"
+    ]
+  },
+  {
+    "scene_index": 41,
+    "representative_frame": "frame_0358.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0358.jpg",
+    "start_time": 357,
+    "end_time": 357,
+    "start_fmt": "05:57",
+    "end_fmt": "05:57",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0358.jpg"
+    ]
+  },
+  {
+    "scene_index": 42,
+    "representative_frame": "frame_0359.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0359.jpg",
+    "start_time": 358,
+    "end_time": 358,
+    "start_fmt": "05:58",
+    "end_fmt": "05:58",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0359.jpg"
+    ]
+  },
+  {
+    "scene_index": 43,
+    "representative_frame": "frame_0360.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0360.jpg",
+    "start_time": 359,
+    "end_time": 359,
+    "start_fmt": "05:59",
+    "end_fmt": "05:59",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0360.jpg"
+    ]
+  },
+  {
+    "scene_index": 44,
+    "representative_frame": "frame_0361.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0361.jpg",
+    "start_time": 360,
+    "end_time": 360,
+    "start_fmt": "06:00",
+    "end_fmt": "06:00",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0361.jpg"
+    ]
+  },
+  {
+    "scene_index": 45,
+    "representative_frame": "frame_0362.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0362.jpg",
+    "start_time": 361,
+    "end_time": 361,
+    "start_fmt": "06:01",
+    "end_fmt": "06:01",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0362.jpg"
+    ]
+  },
+  {
+    "scene_index": 46,
+    "representative_frame": "frame_0363.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0363.jpg",
+    "start_time": 362,
+    "end_time": 362,
+    "start_fmt": "06:02",
+    "end_fmt": "06:02",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0363.jpg"
+    ]
+  },
+  {
+    "scene_index": 47,
+    "representative_frame": "frame_0365.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0365.jpg",
+    "start_time": 363,
+    "end_time": 364,
+    "start_fmt": "06:03",
+    "end_fmt": "06:04",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0364.jpg",
+      "frame_0365.jpg"
+    ]
+  },
+  {
+    "scene_index": 48,
+    "representative_frame": "frame_0367.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0367.jpg",
+    "start_time": 365,
+    "end_time": 366,
+    "start_fmt": "06:05",
+    "end_fmt": "06:06",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0366.jpg",
+      "frame_0367.jpg"
+    ]
+  },
+  {
+    "scene_index": 49,
+    "representative_frame": "frame_0368.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0368.jpg",
+    "start_time": 367,
+    "end_time": 367,
+    "start_fmt": "06:07",
+    "end_fmt": "06:07",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0368.jpg"
+    ]
+  },
+  {
+    "scene_index": 50,
+    "representative_frame": "frame_0369.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0369.jpg",
+    "start_time": 368,
+    "end_time": 368,
+    "start_fmt": "06:08",
+    "end_fmt": "06:08",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0369.jpg"
+    ]
+  },
+  {
+    "scene_index": 51,
+    "representative_frame": "frame_0370.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0370.jpg",
+    "start_time": 369,
+    "end_time": 369,
+    "start_fmt": "06:09",
+    "end_fmt": "06:09",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0370.jpg"
+    ]
+  },
+  {
+    "scene_index": 52,
+    "representative_frame": "frame_0371.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0371.jpg",
+    "start_time": 370,
+    "end_time": 370,
+    "start_fmt": "06:10",
+    "end_fmt": "06:10",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0371.jpg"
+    ]
+  },
+  {
+    "scene_index": 53,
+    "representative_frame": "frame_0372.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0372.jpg",
+    "start_time": 371,
+    "end_time": 371,
+    "start_fmt": "06:11",
+    "end_fmt": "06:11",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0372.jpg"
+    ]
+  },
+  {
+    "scene_index": 54,
+    "representative_frame": "frame_0373.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0373.jpg",
+    "start_time": 372,
+    "end_time": 372,
+    "start_fmt": "06:12",
+    "end_fmt": "06:12",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0373.jpg"
+    ]
+  },
+  {
+    "scene_index": 55,
+    "representative_frame": "frame_0374.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0374.jpg",
+    "start_time": 373,
+    "end_time": 373,
+    "start_fmt": "06:13",
+    "end_fmt": "06:13",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0374.jpg"
+    ]
+  },
+  {
+    "scene_index": 56,
+    "representative_frame": "frame_0375.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0375.jpg",
+    "start_time": 374,
+    "end_time": 374,
+    "start_fmt": "06:14",
+    "end_fmt": "06:14",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0375.jpg"
+    ]
+  },
+  {
+    "scene_index": 57,
+    "representative_frame": "frame_0376.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0376.jpg",
+    "start_time": 375,
+    "end_time": 375,
+    "start_fmt": "06:15",
+    "end_fmt": "06:15",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0376.jpg"
+    ]
+  },
+  {
+    "scene_index": 58,
+    "representative_frame": "frame_0377.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0377.jpg",
+    "start_time": 376,
+    "end_time": 376,
+    "start_fmt": "06:16",
+    "end_fmt": "06:16",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0377.jpg"
+    ]
+  },
+  {
+    "scene_index": 59,
+    "representative_frame": "frame_0378.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0378.jpg",
+    "start_time": 377,
+    "end_time": 377,
+    "start_fmt": "06:17",
+    "end_fmt": "06:17",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0378.jpg"
+    ]
+  },
+  {
+    "scene_index": 60,
+    "representative_frame": "frame_0379.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0379.jpg",
+    "start_time": 378,
+    "end_time": 378,
+    "start_fmt": "06:18",
+    "end_fmt": "06:18",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0379.jpg"
+    ]
+  },
+  {
+    "scene_index": 61,
+    "representative_frame": "frame_0380.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0380.jpg",
+    "start_time": 379,
+    "end_time": 379,
+    "start_fmt": "06:19",
+    "end_fmt": "06:19",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0380.jpg"
+    ]
+  },
+  {
+    "scene_index": 62,
+    "representative_frame": "frame_0381.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0381.jpg",
+    "start_time": 380,
+    "end_time": 380,
+    "start_fmt": "06:20",
+    "end_fmt": "06:20",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0381.jpg"
+    ]
+  },
+  {
+    "scene_index": 63,
+    "representative_frame": "frame_0382.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0382.jpg",
+    "start_time": 381,
+    "end_time": 381,
+    "start_fmt": "06:21",
+    "end_fmt": "06:21",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0382.jpg"
+    ]
+  },
+  {
+    "scene_index": 64,
+    "representative_frame": "frame_0383.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0383.jpg",
+    "start_time": 382,
+    "end_time": 382,
+    "start_fmt": "06:22",
+    "end_fmt": "06:22",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0383.jpg"
+    ]
+  },
+  {
+    "scene_index": 65,
+    "representative_frame": "frame_0384.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0384.jpg",
+    "start_time": 383,
+    "end_time": 383,
+    "start_fmt": "06:23",
+    "end_fmt": "06:23",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0384.jpg"
+    ]
+  },
+  {
+    "scene_index": 66,
+    "representative_frame": "frame_0385.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0385.jpg",
+    "start_time": 384,
+    "end_time": 384,
+    "start_fmt": "06:24",
+    "end_fmt": "06:24",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0385.jpg"
+    ]
+  },
+  {
+    "scene_index": 67,
+    "representative_frame": "frame_0386.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0386.jpg",
+    "start_time": 385,
+    "end_time": 385,
+    "start_fmt": "06:25",
+    "end_fmt": "06:25",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0386.jpg"
+    ]
+  },
+  {
+    "scene_index": 68,
+    "representative_frame": "frame_0388.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0388.jpg",
+    "start_time": 386,
+    "end_time": 387,
+    "start_fmt": "06:26",
+    "end_fmt": "06:27",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0387.jpg",
+      "frame_0388.jpg"
+    ]
+  },
+  {
+    "scene_index": 69,
+    "representative_frame": "frame_0389.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0389.jpg",
+    "start_time": 388,
+    "end_time": 388,
+    "start_fmt": "06:28",
+    "end_fmt": "06:28",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0389.jpg"
+    ]
+  },
+  {
+    "scene_index": 70,
+    "representative_frame": "frame_0390.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0390.jpg",
+    "start_time": 389,
+    "end_time": 389,
+    "start_fmt": "06:29",
+    "end_fmt": "06:29",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0390.jpg"
+    ]
+  },
+  {
+    "scene_index": 71,
+    "representative_frame": "frame_0392.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0392.jpg",
+    "start_time": 390,
+    "end_time": 391,
+    "start_fmt": "06:30",
+    "end_fmt": "06:31",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0391.jpg",
+      "frame_0392.jpg"
+    ]
+  },
+  {
+    "scene_index": 72,
+    "representative_frame": "frame_0393.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0393.jpg",
+    "start_time": 392,
+    "end_time": 392,
+    "start_fmt": "06:32",
+    "end_fmt": "06:32",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0393.jpg"
+    ]
+  },
+  {
+    "scene_index": 73,
+    "representative_frame": "frame_0395.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0395.jpg",
+    "start_time": 393,
+    "end_time": 394,
+    "start_fmt": "06:33",
+    "end_fmt": "06:34",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0394.jpg",
+      "frame_0395.jpg"
+    ]
+  },
+  {
+    "scene_index": 74,
+    "representative_frame": "frame_0396.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0396.jpg",
+    "start_time": 395,
+    "end_time": 395,
+    "start_fmt": "06:35",
+    "end_fmt": "06:35",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0396.jpg"
+    ]
+  },
+  {
+    "scene_index": 75,
+    "representative_frame": "frame_0397.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0397.jpg",
+    "start_time": 396,
+    "end_time": 396,
+    "start_fmt": "06:36",
+    "end_fmt": "06:36",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0397.jpg"
+    ]
+  },
+  {
+    "scene_index": 76,
+    "representative_frame": "frame_0398.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0398.jpg",
+    "start_time": 397,
+    "end_time": 397,
+    "start_fmt": "06:37",
+    "end_fmt": "06:37",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0398.jpg"
+    ]
+  },
+  {
+    "scene_index": 77,
+    "representative_frame": "frame_0400.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0400.jpg",
+    "start_time": 398,
+    "end_time": 399,
+    "start_fmt": "06:38",
+    "end_fmt": "06:39",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0399.jpg",
+      "frame_0400.jpg"
+    ]
+  },
+  {
+    "scene_index": 78,
+    "representative_frame": "frame_0401.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0401.jpg",
+    "start_time": 400,
+    "end_time": 400,
+    "start_fmt": "06:40",
+    "end_fmt": "06:40",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0401.jpg"
+    ]
+  },
+  {
+    "scene_index": 79,
+    "representative_frame": "frame_0402.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0402.jpg",
+    "start_time": 401,
+    "end_time": 401,
+    "start_fmt": "06:41",
+    "end_fmt": "06:41",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0402.jpg"
+    ]
+  },
+  {
+    "scene_index": 80,
+    "representative_frame": "frame_0403.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0403.jpg",
+    "start_time": 402,
+    "end_time": 402,
+    "start_fmt": "06:42",
+    "end_fmt": "06:42",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0403.jpg"
+    ]
+  },
+  {
+    "scene_index": 81,
+    "representative_frame": "frame_0404.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0404.jpg",
+    "start_time": 403,
+    "end_time": 403,
+    "start_fmt": "06:43",
+    "end_fmt": "06:43",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0404.jpg"
+    ]
+  },
+  {
+    "scene_index": 82,
+    "representative_frame": "frame_0405.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0405.jpg",
+    "start_time": 404,
+    "end_time": 404,
+    "start_fmt": "06:44",
+    "end_fmt": "06:44",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0405.jpg"
+    ]
+  },
+  {
+    "scene_index": 83,
+    "representative_frame": "frame_0406.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0406.jpg",
+    "start_time": 405,
+    "end_time": 405,
+    "start_fmt": "06:45",
+    "end_fmt": "06:45",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0406.jpg"
+    ]
+  },
+  {
+    "scene_index": 84,
+    "representative_frame": "frame_0408.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0408.jpg",
+    "start_time": 406,
+    "end_time": 407,
+    "start_fmt": "06:46",
+    "end_fmt": "06:47",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0407.jpg",
+      "frame_0408.jpg"
+    ]
+  },
+  {
+    "scene_index": 85,
+    "representative_frame": "frame_0409.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0409.jpg",
+    "start_time": 408,
+    "end_time": 408,
+    "start_fmt": "06:48",
+    "end_fmt": "06:48",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0409.jpg"
+    ]
+  },
+  {
+    "scene_index": 86,
+    "representative_frame": "frame_0410.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0410.jpg",
+    "start_time": 409,
+    "end_time": 409,
+    "start_fmt": "06:49",
+    "end_fmt": "06:49",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0410.jpg"
+    ]
+  },
+  {
+    "scene_index": 87,
+    "representative_frame": "frame_0411.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0411.jpg",
+    "start_time": 410,
+    "end_time": 410,
+    "start_fmt": "06:50",
+    "end_fmt": "06:50",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0411.jpg"
+    ]
+  },
+  {
+    "scene_index": 88,
+    "representative_frame": "frame_0412.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0412.jpg",
+    "start_time": 411,
+    "end_time": 411,
+    "start_fmt": "06:51",
+    "end_fmt": "06:51",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0412.jpg"
+    ]
+  },
+  {
+    "scene_index": 89,
+    "representative_frame": "frame_0413.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0413.jpg",
+    "start_time": 412,
+    "end_time": 412,
+    "start_fmt": "06:52",
+    "end_fmt": "06:52",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0413.jpg"
+    ]
+  },
+  {
+    "scene_index": 90,
+    "representative_frame": "frame_0414.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0414.jpg",
+    "start_time": 413,
+    "end_time": 413,
+    "start_fmt": "06:53",
+    "end_fmt": "06:53",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0414.jpg"
+    ]
+  },
+  {
+    "scene_index": 91,
+    "representative_frame": "frame_0416.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0416.jpg",
+    "start_time": 414,
+    "end_time": 415,
+    "start_fmt": "06:54",
+    "end_fmt": "06:55",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0415.jpg",
+      "frame_0416.jpg"
+    ]
+  },
+  {
+    "scene_index": 92,
+    "representative_frame": "frame_0418.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0418.jpg",
+    "start_time": 416,
+    "end_time": 417,
+    "start_fmt": "06:56",
+    "end_fmt": "06:57",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0417.jpg",
+      "frame_0418.jpg"
+    ]
+  },
+  {
+    "scene_index": 93,
+    "representative_frame": "frame_0420.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0420.jpg",
+    "start_time": 418,
+    "end_time": 419,
+    "start_fmt": "06:58",
+    "end_fmt": "06:59",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0419.jpg",
+      "frame_0420.jpg"
+    ]
+  },
+  {
+    "scene_index": 94,
+    "representative_frame": "frame_0421.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0421.jpg",
+    "start_time": 420,
+    "end_time": 420,
+    "start_fmt": "07:00",
+    "end_fmt": "07:00",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0421.jpg"
+    ]
+  },
+  {
+    "scene_index": 95,
+    "representative_frame": "frame_0422.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0422.jpg",
+    "start_time": 421,
+    "end_time": 421,
+    "start_fmt": "07:01",
+    "end_fmt": "07:01",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0422.jpg"
+    ]
+  },
+  {
+    "scene_index": 96,
+    "representative_frame": "frame_0423.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0423.jpg",
+    "start_time": 422,
+    "end_time": 422,
+    "start_fmt": "07:02",
+    "end_fmt": "07:02",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0423.jpg"
+    ]
+  },
+  {
+    "scene_index": 97,
+    "representative_frame": "frame_0424.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0424.jpg",
+    "start_time": 423,
+    "end_time": 423,
+    "start_fmt": "07:03",
+    "end_fmt": "07:03",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0424.jpg"
+    ]
+  },
+  {
+    "scene_index": 98,
+    "representative_frame": "frame_0425.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0425.jpg",
+    "start_time": 424,
+    "end_time": 424,
+    "start_fmt": "07:04",
+    "end_fmt": "07:04",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0425.jpg"
+    ]
+  },
+  {
+    "scene_index": 99,
+    "representative_frame": "frame_0426.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0426.jpg",
+    "start_time": 425,
+    "end_time": 425,
+    "start_fmt": "07:05",
+    "end_fmt": "07:05",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0426.jpg"
+    ]
+  },
+  {
+    "scene_index": 100,
+    "representative_frame": "frame_0428.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0428.jpg",
+    "start_time": 426,
+    "end_time": 428,
+    "start_fmt": "07:06",
+    "end_fmt": "07:08",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_0427.jpg",
+      "frame_0428.jpg",
+      "frame_0429.jpg"
+    ]
+  },
+  {
+    "scene_index": 101,
+    "representative_frame": "frame_0430.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0430.jpg",
+    "start_time": 429,
+    "end_time": 429,
+    "start_fmt": "07:09",
+    "end_fmt": "07:09",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0430.jpg"
+    ]
+  },
+  {
+    "scene_index": 102,
+    "representative_frame": "frame_0431.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0431.jpg",
+    "start_time": 430,
+    "end_time": 430,
+    "start_fmt": "07:10",
+    "end_fmt": "07:10",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0431.jpg"
+    ]
+  },
+  {
+    "scene_index": 103,
+    "representative_frame": "frame_0432.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0432.jpg",
+    "start_time": 431,
+    "end_time": 431,
+    "start_fmt": "07:11",
+    "end_fmt": "07:11",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0432.jpg"
+    ]
+  },
+  {
+    "scene_index": 104,
+    "representative_frame": "frame_0434.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0434.jpg",
+    "start_time": 432,
+    "end_time": 433,
+    "start_fmt": "07:12",
+    "end_fmt": "07:13",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0433.jpg",
+      "frame_0434.jpg"
+    ]
+  },
+  {
+    "scene_index": 105,
+    "representative_frame": "frame_0435.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0435.jpg",
+    "start_time": 434,
+    "end_time": 434,
+    "start_fmt": "07:14",
+    "end_fmt": "07:14",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0435.jpg"
+    ]
+  },
+  {
+    "scene_index": 106,
+    "representative_frame": "frame_0436.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0436.jpg",
+    "start_time": 435,
+    "end_time": 435,
+    "start_fmt": "07:15",
+    "end_fmt": "07:15",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0436.jpg"
+    ]
+  },
+  {
+    "scene_index": 107,
+    "representative_frame": "frame_0437.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0437.jpg",
+    "start_time": 436,
+    "end_time": 436,
+    "start_fmt": "07:16",
+    "end_fmt": "07:16",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0437.jpg"
+    ]
+  },
+  {
+    "scene_index": 108,
+    "representative_frame": "frame_0438.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0438.jpg",
+    "start_time": 437,
+    "end_time": 437,
+    "start_fmt": "07:17",
+    "end_fmt": "07:17",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0438.jpg"
+    ]
+  },
+  {
+    "scene_index": 109,
+    "representative_frame": "frame_0439.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0439.jpg",
+    "start_time": 438,
+    "end_time": 438,
+    "start_fmt": "07:18",
+    "end_fmt": "07:18",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0439.jpg"
+    ]
+  },
+  {
+    "scene_index": 110,
+    "representative_frame": "frame_0440.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0440.jpg",
+    "start_time": 439,
+    "end_time": 439,
+    "start_fmt": "07:19",
+    "end_fmt": "07:19",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0440.jpg"
+    ]
+  },
+  {
+    "scene_index": 111,
+    "representative_frame": "frame_0441.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0441.jpg",
+    "start_time": 440,
+    "end_time": 440,
+    "start_fmt": "07:20",
+    "end_fmt": "07:20",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0441.jpg"
+    ]
+  },
+  {
+    "scene_index": 112,
+    "representative_frame": "frame_0442.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0442.jpg",
+    "start_time": 441,
+    "end_time": 441,
+    "start_fmt": "07:21",
+    "end_fmt": "07:21",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0442.jpg"
+    ]
+  },
+  {
+    "scene_index": 113,
+    "representative_frame": "frame_0443.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0443.jpg",
+    "start_time": 442,
+    "end_time": 442,
+    "start_fmt": "07:22",
+    "end_fmt": "07:22",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0443.jpg"
+    ]
+  },
+  {
+    "scene_index": 114,
+    "representative_frame": "frame_0444.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0444.jpg",
+    "start_time": 443,
+    "end_time": 443,
+    "start_fmt": "07:23",
+    "end_fmt": "07:23",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0444.jpg"
+    ]
+  },
+  {
+    "scene_index": 115,
+    "representative_frame": "frame_0445.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0445.jpg",
+    "start_time": 444,
+    "end_time": 444,
+    "start_fmt": "07:24",
+    "end_fmt": "07:24",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0445.jpg"
+    ]
+  },
+  {
+    "scene_index": 116,
+    "representative_frame": "frame_0446.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0446.jpg",
+    "start_time": 445,
+    "end_time": 445,
+    "start_fmt": "07:25",
+    "end_fmt": "07:25",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0446.jpg"
+    ]
+  },
+  {
+    "scene_index": 117,
+    "representative_frame": "frame_0447.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0447.jpg",
+    "start_time": 446,
+    "end_time": 446,
+    "start_fmt": "07:26",
+    "end_fmt": "07:26",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0447.jpg"
+    ]
+  },
+  {
+    "scene_index": 118,
+    "representative_frame": "frame_0448.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0448.jpg",
+    "start_time": 447,
+    "end_time": 447,
+    "start_fmt": "07:27",
+    "end_fmt": "07:27",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0448.jpg"
+    ]
+  },
+  {
+    "scene_index": 119,
+    "representative_frame": "frame_0449.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0449.jpg",
+    "start_time": 448,
+    "end_time": 448,
+    "start_fmt": "07:28",
+    "end_fmt": "07:28",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0449.jpg"
+    ]
+  },
+  {
+    "scene_index": 120,
+    "representative_frame": "frame_0450.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0450.jpg",
+    "start_time": 449,
+    "end_time": 449,
+    "start_fmt": "07:29",
+    "end_fmt": "07:29",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0450.jpg"
+    ]
+  },
+  {
+    "scene_index": 121,
+    "representative_frame": "frame_0452.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0452.jpg",
+    "start_time": 450,
+    "end_time": 451,
+    "start_fmt": "07:30",
+    "end_fmt": "07:31",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0451.jpg",
+      "frame_0452.jpg"
+    ]
+  },
+  {
+    "scene_index": 122,
+    "representative_frame": "frame_0454.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0454.jpg",
+    "start_time": 452,
+    "end_time": 454,
+    "start_fmt": "07:32",
+    "end_fmt": "07:34",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_0453.jpg",
+      "frame_0454.jpg",
+      "frame_0455.jpg"
+    ]
+  },
+  {
+    "scene_index": 123,
+    "representative_frame": "frame_0456.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0456.jpg",
+    "start_time": 455,
+    "end_time": 455,
+    "start_fmt": "07:35",
+    "end_fmt": "07:35",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0456.jpg"
+    ]
+  },
+  {
+    "scene_index": 124,
+    "representative_frame": "frame_0458.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0458.jpg",
+    "start_time": 456,
+    "end_time": 458,
+    "start_fmt": "07:36",
+    "end_fmt": "07:38",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_0457.jpg",
+      "frame_0458.jpg",
+      "frame_0459.jpg"
+    ]
+  },
+  {
+    "scene_index": 125,
+    "representative_frame": "frame_0466.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0466.jpg",
+    "start_time": 459,
+    "end_time": 471,
+    "start_fmt": "07:39",
+    "end_fmt": "07:51",
+    "duration_sec": 13,
+    "frame_count": 13,
+    "all_frames": [
+      "frame_0460.jpg",
+      "frame_0461.jpg",
+      "frame_0462.jpg",
+      "frame_0463.jpg",
+      "frame_0464.jpg",
+      "frame_0465.jpg",
+      "frame_0466.jpg",
+      "frame_0467.jpg",
+      "frame_0468.jpg",
+      "frame_0469.jpg",
+      "frame_0470.jpg",
+      "frame_0471.jpg",
+      "frame_0472.jpg"
+    ]
+  },
+  {
+    "scene_index": 126,
+    "representative_frame": "frame_0473.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0473.jpg",
+    "start_time": 472,
+    "end_time": 472,
+    "start_fmt": "07:52",
+    "end_fmt": "07:52",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0473.jpg"
+    ]
+  },
+  {
+    "scene_index": 127,
+    "representative_frame": "frame_0477.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0477.jpg",
+    "start_time": 473,
+    "end_time": 479,
+    "start_fmt": "07:53",
+    "end_fmt": "07:59",
+    "duration_sec": 7,
+    "frame_count": 7,
+    "all_frames": [
+      "frame_0474.jpg",
+      "frame_0475.jpg",
+      "frame_0476.jpg",
+      "frame_0477.jpg",
+      "frame_0478.jpg",
+      "frame_0479.jpg",
+      "frame_0480.jpg"
+    ]
+  },
+  {
+    "scene_index": 128,
+    "representative_frame": "frame_0482.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0482.jpg",
+    "start_time": 480,
+    "end_time": 482,
+    "start_fmt": "08:00",
+    "end_fmt": "08:02",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_0481.jpg",
+      "frame_0482.jpg",
+      "frame_0483.jpg"
+    ]
+  },
+  {
+    "scene_index": 129,
+    "representative_frame": "frame_0505.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0505.jpg",
+    "start_time": 483,
+    "end_time": 525,
+    "start_fmt": "08:03",
+    "end_fmt": "08:45",
+    "duration_sec": 43,
+    "frame_count": 43,
+    "all_frames": [
+      "frame_0484.jpg",
+      "frame_0485.jpg",
+      "frame_0486.jpg",
+      "frame_0487.jpg",
+      "frame_0488.jpg",
+      "frame_0489.jpg",
+      "frame_0490.jpg",
+      "frame_0491.jpg",
+      "frame_0492.jpg",
+      "frame_0493.jpg",
+      "frame_0494.jpg",
+      "frame_0495.jpg",
+      "frame_0496.jpg",
+      "frame_0497.jpg",
+      "frame_0498.jpg",
+      "frame_0499.jpg",
+      "frame_0500.jpg",
+      "frame_0501.jpg",
+      "frame_0502.jpg",
+      "frame_0503.jpg",
+      "frame_0504.jpg",
+      "frame_0505.jpg",
+      "frame_0506.jpg",
+      "frame_0507.jpg",
+      "frame_0508.jpg",
+      "frame_0509.jpg",
+      "frame_0510.jpg",
+      "frame_0511.jpg",
+      "frame_0512.jpg",
+      "frame_0513.jpg",
+      "frame_0514.jpg",
+      "frame_0515.jpg",
+      "frame_0516.jpg",
+      "frame_0517.jpg",
+      "frame_0518.jpg",
+      "frame_0519.jpg",
+      "frame_0520.jpg",
+      "frame_0521.jpg",
+      "frame_0522.jpg",
+      "frame_0523.jpg",
+      "frame_0524.jpg",
+      "frame_0525.jpg",
+      "frame_0526.jpg"
+    ]
+  },
+  {
+    "scene_index": 130,
+    "representative_frame": "frame_0528.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0528.jpg",
+    "start_time": 526,
+    "end_time": 528,
+    "start_fmt": "08:46",
+    "end_fmt": "08:48",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_0527.jpg",
+      "frame_0528.jpg",
+      "frame_0529.jpg"
+    ]
+  },
+  {
+    "scene_index": 131,
+    "representative_frame": "frame_0551.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0551.jpg",
+    "start_time": 529,
+    "end_time": 571,
+    "start_fmt": "08:49",
+    "end_fmt": "09:31",
+    "duration_sec": 43,
+    "frame_count": 43,
+    "all_frames": [
+      "frame_0530.jpg",
+      "frame_0531.jpg",
+      "frame_0532.jpg",
+      "frame_0533.jpg",
+      "frame_0534.jpg",
+      "frame_0535.jpg",
+      "frame_0536.jpg",
+      "frame_0537.jpg",
+      "frame_0538.jpg",
+      "frame_0539.jpg",
+      "frame_0540.jpg",
+      "frame_0541.jpg",
+      "frame_0542.jpg",
+      "frame_0543.jpg",
+      "frame_0544.jpg",
+      "frame_0545.jpg",
+      "frame_0546.jpg",
+      "frame_0547.jpg",
+      "frame_0548.jpg",
+      "frame_0549.jpg",
+      "frame_0550.jpg",
+      "frame_0551.jpg",
+      "frame_0552.jpg",
+      "frame_0553.jpg",
+      "frame_0554.jpg",
+      "frame_0555.jpg",
+      "frame_0556.jpg",
+      "frame_0557.jpg",
+      "frame_0558.jpg",
+      "frame_0559.jpg",
+      "frame_0560.jpg",
+      "frame_0561.jpg",
+      "frame_0562.jpg",
+      "frame_0563.jpg",
+      "frame_0564.jpg",
+      "frame_0565.jpg",
+      "frame_0566.jpg",
+      "frame_0567.jpg",
+      "frame_0568.jpg",
+      "frame_0569.jpg",
+      "frame_0570.jpg",
+      "frame_0571.jpg",
+      "frame_0572.jpg"
+    ]
+  },
+  {
+    "scene_index": 132,
+    "representative_frame": "frame_0574.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0574.jpg",
+    "start_time": 572,
+    "end_time": 573,
+    "start_fmt": "09:32",
+    "end_fmt": "09:33",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0573.jpg",
+      "frame_0574.jpg"
+    ]
+  },
+  {
+    "scene_index": 133,
+    "representative_frame": "frame_0579.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0579.jpg",
+    "start_time": 574,
+    "end_time": 582,
+    "start_fmt": "09:34",
+    "end_fmt": "09:42",
+    "duration_sec": 9,
+    "frame_count": 9,
+    "all_frames": [
+      "frame_0575.jpg",
+      "frame_0576.jpg",
+      "frame_0577.jpg",
+      "frame_0578.jpg",
+      "frame_0579.jpg",
+      "frame_0580.jpg",
+      "frame_0581.jpg",
+      "frame_0582.jpg",
+      "frame_0583.jpg"
+    ]
+  },
+  {
+    "scene_index": 134,
+    "representative_frame": "frame_0584.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0584.jpg",
+    "start_time": 583,
+    "end_time": 583,
+    "start_fmt": "09:43",
+    "end_fmt": "09:43",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0584.jpg"
+    ]
+  },
+  {
+    "scene_index": 135,
+    "representative_frame": "frame_0601.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0601.jpg",
+    "start_time": 584,
+    "end_time": 615,
+    "start_fmt": "09:44",
+    "end_fmt": "10:15",
+    "duration_sec": 32,
+    "frame_count": 32,
+    "all_frames": [
+      "frame_0585.jpg",
+      "frame_0586.jpg",
+      "frame_0587.jpg",
+      "frame_0588.jpg",
+      "frame_0589.jpg",
+      "frame_0590.jpg",
+      "frame_0591.jpg",
+      "frame_0592.jpg",
+      "frame_0593.jpg",
+      "frame_0594.jpg",
+      "frame_0595.jpg",
+      "frame_0596.jpg",
+      "frame_0597.jpg",
+      "frame_0598.jpg",
+      "frame_0599.jpg",
+      "frame_0600.jpg",
+      "frame_0601.jpg",
+      "frame_0602.jpg",
+      "frame_0603.jpg",
+      "frame_0604.jpg",
+      "frame_0605.jpg",
+      "frame_0606.jpg",
+      "frame_0607.jpg",
+      "frame_0608.jpg",
+      "frame_0609.jpg",
+      "frame_0610.jpg",
+      "frame_0611.jpg",
+      "frame_0612.jpg",
+      "frame_0613.jpg",
+      "frame_0614.jpg",
+      "frame_0615.jpg",
+      "frame_0616.jpg"
+    ]
+  },
+  {
+    "scene_index": 136,
+    "representative_frame": "frame_0617.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0617.jpg",
+    "start_time": 616,
+    "end_time": 616,
+    "start_fmt": "10:16",
+    "end_fmt": "10:16",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0617.jpg"
+    ]
+  },
+  {
+    "scene_index": 137,
+    "representative_frame": "frame_0620.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0620.jpg",
+    "start_time": 617,
+    "end_time": 621,
+    "start_fmt": "10:17",
+    "end_fmt": "10:21",
+    "duration_sec": 5,
+    "frame_count": 5,
+    "all_frames": [
+      "frame_0618.jpg",
+      "frame_0619.jpg",
+      "frame_0620.jpg",
+      "frame_0621.jpg",
+      "frame_0622.jpg"
+    ]
+  },
+  {
+    "scene_index": 138,
+    "representative_frame": "frame_0639.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0639.jpg",
+    "start_time": 622,
+    "end_time": 654,
+    "start_fmt": "10:22",
+    "end_fmt": "10:54",
+    "duration_sec": 33,
+    "frame_count": 33,
+    "all_frames": [
+      "frame_0623.jpg",
+      "frame_0624.jpg",
+      "frame_0625.jpg",
+      "frame_0626.jpg",
+      "frame_0627.jpg",
+      "frame_0628.jpg",
+      "frame_0629.jpg",
+      "frame_0630.jpg",
+      "frame_0631.jpg",
+      "frame_0632.jpg",
+      "frame_0633.jpg",
+      "frame_0634.jpg",
+      "frame_0635.jpg",
+      "frame_0636.jpg",
+      "frame_0637.jpg",
+      "frame_0638.jpg",
+      "frame_0639.jpg",
+      "frame_0640.jpg",
+      "frame_0641.jpg",
+      "frame_0642.jpg",
+      "frame_0643.jpg",
+      "frame_0644.jpg",
+      "frame_0645.jpg",
+      "frame_0646.jpg",
+      "frame_0647.jpg",
+      "frame_0648.jpg",
+      "frame_0649.jpg",
+      "frame_0650.jpg",
+      "frame_0651.jpg",
+      "frame_0652.jpg",
+      "frame_0653.jpg",
+      "frame_0654.jpg",
+      "frame_0655.jpg"
+    ]
+  },
+  {
+    "scene_index": 139,
+    "representative_frame": "frame_0666.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0666.jpg",
+    "start_time": 655,
+    "end_time": 675,
+    "start_fmt": "10:55",
+    "end_fmt": "11:15",
+    "duration_sec": 21,
+    "frame_count": 21,
+    "all_frames": [
+      "frame_0656.jpg",
+      "frame_0657.jpg",
+      "frame_0658.jpg",
+      "frame_0659.jpg",
+      "frame_0660.jpg",
+      "frame_0661.jpg",
+      "frame_0662.jpg",
+      "frame_0663.jpg",
+      "frame_0664.jpg",
+      "frame_0665.jpg",
+      "frame_0666.jpg",
+      "frame_0667.jpg",
+      "frame_0668.jpg",
+      "frame_0669.jpg",
+      "frame_0670.jpg",
+      "frame_0671.jpg",
+      "frame_0672.jpg",
+      "frame_0673.jpg",
+      "frame_0674.jpg",
+      "frame_0675.jpg",
+      "frame_0676.jpg"
+    ]
+  },
+  {
+    "scene_index": 140,
+    "representative_frame": "frame_0677.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0677.jpg",
+    "start_time": 676,
+    "end_time": 676,
+    "start_fmt": "11:16",
+    "end_fmt": "11:16",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0677.jpg"
+    ]
+  },
+  {
+    "scene_index": 141,
+    "representative_frame": "frame_0683.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0683.jpg",
+    "start_time": 677,
+    "end_time": 687,
+    "start_fmt": "11:17",
+    "end_fmt": "11:27",
+    "duration_sec": 11,
+    "frame_count": 11,
+    "all_frames": [
+      "frame_0678.jpg",
+      "frame_0679.jpg",
+      "frame_0680.jpg",
+      "frame_0681.jpg",
+      "frame_0682.jpg",
+      "frame_0683.jpg",
+      "frame_0684.jpg",
+      "frame_0685.jpg",
+      "frame_0686.jpg",
+      "frame_0687.jpg",
+      "frame_0688.jpg"
+    ]
+  },
+  {
+    "scene_index": 142,
+    "representative_frame": "frame_0692.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0692.jpg",
+    "start_time": 688,
+    "end_time": 694,
+    "start_fmt": "11:28",
+    "end_fmt": "11:34",
+    "duration_sec": 7,
+    "frame_count": 7,
+    "all_frames": [
+      "frame_0689.jpg",
+      "frame_0690.jpg",
+      "frame_0691.jpg",
+      "frame_0692.jpg",
+      "frame_0693.jpg",
+      "frame_0694.jpg",
+      "frame_0695.jpg"
+    ]
+  },
+  {
+    "scene_index": 143,
+    "representative_frame": "frame_0698.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0698.jpg",
+    "start_time": 695,
+    "end_time": 699,
+    "start_fmt": "11:35",
+    "end_fmt": "11:39",
+    "duration_sec": 5,
+    "frame_count": 5,
+    "all_frames": [
+      "frame_0696.jpg",
+      "frame_0697.jpg",
+      "frame_0698.jpg",
+      "frame_0699.jpg",
+      "frame_0700.jpg"
+    ]
+  },
+  {
+    "scene_index": 144,
+    "representative_frame": "frame_0702.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0702.jpg",
+    "start_time": 700,
+    "end_time": 702,
+    "start_fmt": "11:40",
+    "end_fmt": "11:42",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_0701.jpg",
+      "frame_0702.jpg",
+      "frame_0703.jpg"
+    ]
+  },
+  {
+    "scene_index": 145,
+    "representative_frame": "frame_0704.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0704.jpg",
+    "start_time": 703,
+    "end_time": 703,
+    "start_fmt": "11:43",
+    "end_fmt": "11:43",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0704.jpg"
+    ]
+  },
+  {
+    "scene_index": 146,
+    "representative_frame": "frame_0726.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0726.jpg",
+    "start_time": 704,
+    "end_time": 746,
+    "start_fmt": "11:44",
+    "end_fmt": "12:26",
+    "duration_sec": 43,
+    "frame_count": 43,
+    "all_frames": [
+      "frame_0705.jpg",
+      "frame_0706.jpg",
+      "frame_0707.jpg",
+      "frame_0708.jpg",
+      "frame_0709.jpg",
+      "frame_0710.jpg",
+      "frame_0711.jpg",
+      "frame_0712.jpg",
+      "frame_0713.jpg",
+      "frame_0714.jpg",
+      "frame_0715.jpg",
+      "frame_0716.jpg",
+      "frame_0717.jpg",
+      "frame_0718.jpg",
+      "frame_0719.jpg",
+      "frame_0720.jpg",
+      "frame_0721.jpg",
+      "frame_0722.jpg",
+      "frame_0723.jpg",
+      "frame_0724.jpg",
+      "frame_0725.jpg",
+      "frame_0726.jpg",
+      "frame_0727.jpg",
+      "frame_0728.jpg",
+      "frame_0729.jpg",
+      "frame_0730.jpg",
+      "frame_0731.jpg",
+      "frame_0732.jpg",
+      "frame_0733.jpg",
+      "frame_0734.jpg",
+      "frame_0735.jpg",
+      "frame_0736.jpg",
+      "frame_0737.jpg",
+      "frame_0738.jpg",
+      "frame_0739.jpg",
+      "frame_0740.jpg",
+      "frame_0741.jpg",
+      "frame_0742.jpg",
+      "frame_0743.jpg",
+      "frame_0744.jpg",
+      "frame_0745.jpg",
+      "frame_0746.jpg",
+      "frame_0747.jpg"
+    ]
+  },
+  {
+    "scene_index": 147,
+    "representative_frame": "frame_0787.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0787.jpg",
+    "start_time": 747,
+    "end_time": 824,
+    "start_fmt": "12:27",
+    "end_fmt": "13:44",
+    "duration_sec": 78,
+    "frame_count": 78,
+    "all_frames": [
+      "frame_0748.jpg",
+      "frame_0749.jpg",
+      "frame_0750.jpg",
+      "frame_0751.jpg",
+      "frame_0752.jpg",
+      "frame_0753.jpg",
+      "frame_0754.jpg",
+      "frame_0755.jpg",
+      "frame_0756.jpg",
+      "frame_0757.jpg",
+      "frame_0758.jpg",
+      "frame_0759.jpg",
+      "frame_0760.jpg",
+      "frame_0761.jpg",
+      "frame_0762.jpg",
+      "frame_0763.jpg",
+      "frame_0764.jpg",
+      "frame_0765.jpg",
+      "frame_0766.jpg",
+      "frame_0767.jpg",
+      "frame_0768.jpg",
+      "frame_0769.jpg",
+      "frame_0770.jpg",
+      "frame_0771.jpg",
+      "frame_0772.jpg",
+      "frame_0773.jpg",
+      "frame_0774.jpg",
+      "frame_0775.jpg",
+      "frame_0776.jpg",
+      "frame_0777.jpg",
+      "frame_0778.jpg",
+      "frame_0779.jpg",
+      "frame_0780.jpg",
+      "frame_0781.jpg",
+      "frame_0782.jpg",
+      "frame_0783.jpg",
+      "frame_0784.jpg",
+      "frame_0785.jpg",
+      "frame_0786.jpg",
+      "frame_0787.jpg",
+      "frame_0788.jpg",
+      "frame_0789.jpg",
+      "frame_0790.jpg",
+      "frame_0791.jpg",
+      "frame_0792.jpg",
+      "frame_0793.jpg",
+      "frame_0794.jpg",
+      "frame_0795.jpg",
+      "frame_0796.jpg",
+      "frame_0797.jpg",
+      "frame_0798.jpg",
+      "frame_0799.jpg",
+      "frame_0800.jpg",
+      "frame_0801.jpg",
+      "frame_0802.jpg",
+      "frame_0803.jpg",
+      "frame_0804.jpg",
+      "frame_0805.jpg",
+      "frame_0806.jpg",
+      "frame_0807.jpg",
+      "frame_0808.jpg",
+      "frame_0809.jpg",
+      "frame_0810.jpg",
+      "frame_0811.jpg",
+      "frame_0812.jpg",
+      "frame_0813.jpg",
+      "frame_0814.jpg",
+      "frame_0815.jpg",
+      "frame_0816.jpg",
+      "frame_0817.jpg",
+      "frame_0818.jpg",
+      "frame_0819.jpg",
+      "frame_0820.jpg",
+      "frame_0821.jpg",
+      "frame_0822.jpg",
+      "frame_0823.jpg",
+      "frame_0824.jpg",
+      "frame_0825.jpg"
+    ]
+  },
+  {
+    "scene_index": 148,
+    "representative_frame": "frame_0826.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0826.jpg",
+    "start_time": 825,
+    "end_time": 825,
+    "start_fmt": "13:45",
+    "end_fmt": "13:45",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0826.jpg"
+    ]
+  },
+  {
+    "scene_index": 149,
+    "representative_frame": "frame_0827.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0827.jpg",
+    "start_time": 826,
+    "end_time": 826,
+    "start_fmt": "13:46",
+    "end_fmt": "13:46",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0827.jpg"
+    ]
+  },
+  {
+    "scene_index": 150,
+    "representative_frame": "frame_0835.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0835.jpg",
+    "start_time": 827,
+    "end_time": 841,
+    "start_fmt": "13:47",
+    "end_fmt": "14:01",
+    "duration_sec": 15,
+    "frame_count": 15,
+    "all_frames": [
+      "frame_0828.jpg",
+      "frame_0829.jpg",
+      "frame_0830.jpg",
+      "frame_0831.jpg",
+      "frame_0832.jpg",
+      "frame_0833.jpg",
+      "frame_0834.jpg",
+      "frame_0835.jpg",
+      "frame_0836.jpg",
+      "frame_0837.jpg",
+      "frame_0838.jpg",
+      "frame_0839.jpg",
+      "frame_0840.jpg",
+      "frame_0841.jpg",
+      "frame_0842.jpg"
+    ]
+  },
+  {
+    "scene_index": 151,
+    "representative_frame": "frame_0844.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0844.jpg",
+    "start_time": 842,
+    "end_time": 843,
+    "start_fmt": "14:02",
+    "end_fmt": "14:03",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_0843.jpg",
+      "frame_0844.jpg"
+    ]
+  },
+  {
+    "scene_index": 152,
+    "representative_frame": "frame_0880.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0880.jpg",
+    "start_time": 844,
+    "end_time": 914,
+    "start_fmt": "14:04",
+    "end_fmt": "15:14",
+    "duration_sec": 71,
+    "frame_count": 71,
+    "all_frames": [
+      "frame_0845.jpg",
+      "frame_0846.jpg",
+      "frame_0847.jpg",
+      "frame_0848.jpg",
+      "frame_0849.jpg",
+      "frame_0850.jpg",
+      "frame_0851.jpg",
+      "frame_0852.jpg",
+      "frame_0853.jpg",
+      "frame_0854.jpg",
+      "frame_0855.jpg",
+      "frame_0856.jpg",
+      "frame_0857.jpg",
+      "frame_0858.jpg",
+      "frame_0859.jpg",
+      "frame_0860.jpg",
+      "frame_0861.jpg",
+      "frame_0862.jpg",
+      "frame_0863.jpg",
+      "frame_0864.jpg",
+      "frame_0865.jpg",
+      "frame_0866.jpg",
+      "frame_0867.jpg",
+      "frame_0868.jpg",
+      "frame_0869.jpg",
+      "frame_0870.jpg",
+      "frame_0871.jpg",
+      "frame_0872.jpg",
+      "frame_0873.jpg",
+      "frame_0874.jpg",
+      "frame_0875.jpg",
+      "frame_0876.jpg",
+      "frame_0877.jpg",
+      "frame_0878.jpg",
+      "frame_0879.jpg",
+      "frame_0880.jpg",
+      "frame_0881.jpg",
+      "frame_0882.jpg",
+      "frame_0883.jpg",
+      "frame_0884.jpg",
+      "frame_0885.jpg",
+      "frame_0886.jpg",
+      "frame_0887.jpg",
+      "frame_0888.jpg",
+      "frame_0889.jpg",
+      "frame_0890.jpg",
+      "frame_0891.jpg",
+      "frame_0892.jpg",
+      "frame_0893.jpg",
+      "frame_0894.jpg",
+      "frame_0895.jpg",
+      "frame_0896.jpg",
+      "frame_0897.jpg",
+      "frame_0898.jpg",
+      "frame_0899.jpg",
+      "frame_0900.jpg",
+      "frame_0901.jpg",
+      "frame_0902.jpg",
+      "frame_0903.jpg",
+      "frame_0904.jpg",
+      "frame_0905.jpg",
+      "frame_0906.jpg",
+      "frame_0907.jpg",
+      "frame_0908.jpg",
+      "frame_0909.jpg",
+      "frame_0910.jpg",
+      "frame_0911.jpg",
+      "frame_0912.jpg",
+      "frame_0913.jpg",
+      "frame_0914.jpg",
+      "frame_0915.jpg"
+    ]
+  },
+  {
+    "scene_index": 153,
+    "representative_frame": "frame_0917.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0917.jpg",
+    "start_time": 915,
+    "end_time": 917,
+    "start_fmt": "15:15",
+    "end_fmt": "15:17",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_0916.jpg",
+      "frame_0917.jpg",
+      "frame_0918.jpg"
+    ]
+  },
+  {
+    "scene_index": 154,
+    "representative_frame": "frame_0919.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0919.jpg",
+    "start_time": 918,
+    "end_time": 918,
+    "start_fmt": "15:18",
+    "end_fmt": "15:18",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_0919.jpg"
+    ]
+  },
+  {
+    "scene_index": 155,
+    "representative_frame": "frame_0930.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0930.jpg",
+    "start_time": 919,
+    "end_time": 939,
+    "start_fmt": "15:19",
+    "end_fmt": "15:39",
+    "duration_sec": 21,
+    "frame_count": 21,
+    "all_frames": [
+      "frame_0920.jpg",
+      "frame_0921.jpg",
+      "frame_0922.jpg",
+      "frame_0923.jpg",
+      "frame_0924.jpg",
+      "frame_0925.jpg",
+      "frame_0926.jpg",
+      "frame_0927.jpg",
+      "frame_0928.jpg",
+      "frame_0929.jpg",
+      "frame_0930.jpg",
+      "frame_0931.jpg",
+      "frame_0932.jpg",
+      "frame_0933.jpg",
+      "frame_0934.jpg",
+      "frame_0935.jpg",
+      "frame_0936.jpg",
+      "frame_0937.jpg",
+      "frame_0938.jpg",
+      "frame_0939.jpg",
+      "frame_0940.jpg"
+    ]
+  },
+  {
+    "scene_index": 156,
+    "representative_frame": "frame_0955.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0955.jpg",
+    "start_time": 940,
+    "end_time": 967,
+    "start_fmt": "15:40",
+    "end_fmt": "16:07",
+    "duration_sec": 28,
+    "frame_count": 28,
+    "all_frames": [
+      "frame_0941.jpg",
+      "frame_0942.jpg",
+      "frame_0943.jpg",
+      "frame_0944.jpg",
+      "frame_0945.jpg",
+      "frame_0946.jpg",
+      "frame_0947.jpg",
+      "frame_0948.jpg",
+      "frame_0949.jpg",
+      "frame_0950.jpg",
+      "frame_0951.jpg",
+      "frame_0952.jpg",
+      "frame_0953.jpg",
+      "frame_0954.jpg",
+      "frame_0955.jpg",
+      "frame_0956.jpg",
+      "frame_0957.jpg",
+      "frame_0958.jpg",
+      "frame_0959.jpg",
+      "frame_0960.jpg",
+      "frame_0961.jpg",
+      "frame_0962.jpg",
+      "frame_0963.jpg",
+      "frame_0964.jpg",
+      "frame_0965.jpg",
+      "frame_0966.jpg",
+      "frame_0967.jpg",
+      "frame_0968.jpg"
+    ]
+  },
+  {
+    "scene_index": 157,
+    "representative_frame": "frame_0982.jpg",
+    "representative_path": "salesforce-crm/frames/frame_0982.jpg",
+    "start_time": 968,
+    "end_time": 993,
+    "start_fmt": "16:08",
+    "end_fmt": "16:33",
+    "duration_sec": 26,
+    "frame_count": 26,
+    "all_frames": [
+      "frame_0969.jpg",
+      "frame_0970.jpg",
+      "frame_0971.jpg",
+      "frame_0972.jpg",
+      "frame_0973.jpg",
+      "frame_0974.jpg",
+      "frame_0975.jpg",
+      "frame_0976.jpg",
+      "frame_0977.jpg",
+      "frame_0978.jpg",
+      "frame_0979.jpg",
+      "frame_0980.jpg",
+      "frame_0981.jpg",
+      "frame_0982.jpg",
+      "frame_0983.jpg",
+      "frame_0984.jpg",
+      "frame_0985.jpg",
+      "frame_0986.jpg",
+      "frame_0987.jpg",
+      "frame_0988.jpg",
+      "frame_0989.jpg",
+      "frame_0990.jpg",
+      "frame_0991.jpg",
+      "frame_0992.jpg",
+      "frame_0993.jpg",
+      "frame_0994.jpg"
+    ]
+  },
+  {
+    "scene_index": 158,
+    "representative_frame": "frame_1015.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1015.jpg",
+    "start_time": 994,
+    "end_time": 1034,
+    "start_fmt": "16:34",
+    "end_fmt": "17:14",
+    "duration_sec": 41,
+    "frame_count": 41,
+    "all_frames": [
+      "frame_0995.jpg",
+      "frame_0996.jpg",
+      "frame_0997.jpg",
+      "frame_0998.jpg",
+      "frame_0999.jpg",
+      "frame_1000.jpg",
+      "frame_1001.jpg",
+      "frame_1002.jpg",
+      "frame_1003.jpg",
+      "frame_1004.jpg",
+      "frame_1005.jpg",
+      "frame_1006.jpg",
+      "frame_1007.jpg",
+      "frame_1008.jpg",
+      "frame_1009.jpg",
+      "frame_1010.jpg",
+      "frame_1011.jpg",
+      "frame_1012.jpg",
+      "frame_1013.jpg",
+      "frame_1014.jpg",
+      "frame_1015.jpg",
+      "frame_1016.jpg",
+      "frame_1017.jpg",
+      "frame_1018.jpg",
+      "frame_1019.jpg",
+      "frame_1020.jpg",
+      "frame_1021.jpg",
+      "frame_1022.jpg",
+      "frame_1023.jpg",
+      "frame_1024.jpg",
+      "frame_1025.jpg",
+      "frame_1026.jpg",
+      "frame_1027.jpg",
+      "frame_1028.jpg",
+      "frame_1029.jpg",
+      "frame_1030.jpg",
+      "frame_1031.jpg",
+      "frame_1032.jpg",
+      "frame_1033.jpg",
+      "frame_1034.jpg",
+      "frame_1035.jpg"
+    ]
+  },
+  {
+    "scene_index": 159,
+    "representative_frame": "frame_1050.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1050.jpg",
+    "start_time": 1035,
+    "end_time": 1062,
+    "start_fmt": "17:15",
+    "end_fmt": "17:42",
+    "duration_sec": 28,
+    "frame_count": 28,
+    "all_frames": [
+      "frame_1036.jpg",
+      "frame_1037.jpg",
+      "frame_1038.jpg",
+      "frame_1039.jpg",
+      "frame_1040.jpg",
+      "frame_1041.jpg",
+      "frame_1042.jpg",
+      "frame_1043.jpg",
+      "frame_1044.jpg",
+      "frame_1045.jpg",
+      "frame_1046.jpg",
+      "frame_1047.jpg",
+      "frame_1048.jpg",
+      "frame_1049.jpg",
+      "frame_1050.jpg",
+      "frame_1051.jpg",
+      "frame_1052.jpg",
+      "frame_1053.jpg",
+      "frame_1054.jpg",
+      "frame_1055.jpg",
+      "frame_1056.jpg",
+      "frame_1057.jpg",
+      "frame_1058.jpg",
+      "frame_1059.jpg",
+      "frame_1060.jpg",
+      "frame_1061.jpg",
+      "frame_1062.jpg",
+      "frame_1063.jpg"
+    ]
+  },
+  {
+    "scene_index": 160,
+    "representative_frame": "frame_1066.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1066.jpg",
+    "start_time": 1063,
+    "end_time": 1066,
+    "start_fmt": "17:43",
+    "end_fmt": "17:46",
+    "duration_sec": 4,
+    "frame_count": 4,
+    "all_frames": [
+      "frame_1064.jpg",
+      "frame_1065.jpg",
+      "frame_1066.jpg",
+      "frame_1067.jpg"
+    ]
+  },
+  {
+    "scene_index": 161,
+    "representative_frame": "frame_1068.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1068.jpg",
+    "start_time": 1067,
+    "end_time": 1067,
+    "start_fmt": "17:47",
+    "end_fmt": "17:47",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1068.jpg"
+    ]
+  },
+  {
+    "scene_index": 162,
+    "representative_frame": "frame_1095.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1095.jpg",
+    "start_time": 1068,
+    "end_time": 1119,
+    "start_fmt": "17:48",
+    "end_fmt": "18:39",
+    "duration_sec": 52,
+    "frame_count": 52,
+    "all_frames": [
+      "frame_1069.jpg",
+      "frame_1070.jpg",
+      "frame_1071.jpg",
+      "frame_1072.jpg",
+      "frame_1073.jpg",
+      "frame_1074.jpg",
+      "frame_1075.jpg",
+      "frame_1076.jpg",
+      "frame_1077.jpg",
+      "frame_1078.jpg",
+      "frame_1079.jpg",
+      "frame_1080.jpg",
+      "frame_1081.jpg",
+      "frame_1082.jpg",
+      "frame_1083.jpg",
+      "frame_1084.jpg",
+      "frame_1085.jpg",
+      "frame_1086.jpg",
+      "frame_1087.jpg",
+      "frame_1088.jpg",
+      "frame_1089.jpg",
+      "frame_1090.jpg",
+      "frame_1091.jpg",
+      "frame_1092.jpg",
+      "frame_1093.jpg",
+      "frame_1094.jpg",
+      "frame_1095.jpg",
+      "frame_1096.jpg",
+      "frame_1097.jpg",
+      "frame_1098.jpg",
+      "frame_1099.jpg",
+      "frame_1100.jpg",
+      "frame_1101.jpg",
+      "frame_1102.jpg",
+      "frame_1103.jpg",
+      "frame_1104.jpg",
+      "frame_1105.jpg",
+      "frame_1106.jpg",
+      "frame_1107.jpg",
+      "frame_1108.jpg",
+      "frame_1109.jpg",
+      "frame_1110.jpg",
+      "frame_1111.jpg",
+      "frame_1112.jpg",
+      "frame_1113.jpg",
+      "frame_1114.jpg",
+      "frame_1115.jpg",
+      "frame_1116.jpg",
+      "frame_1117.jpg",
+      "frame_1118.jpg",
+      "frame_1119.jpg",
+      "frame_1120.jpg"
+    ]
+  },
+  {
+    "scene_index": 163,
+    "representative_frame": "frame_1122.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1122.jpg",
+    "start_time": 1120,
+    "end_time": 1122,
+    "start_fmt": "18:40",
+    "end_fmt": "18:42",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_1121.jpg",
+      "frame_1122.jpg",
+      "frame_1123.jpg"
+    ]
+  },
+  {
+    "scene_index": 164,
+    "representative_frame": "frame_1131.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1131.jpg",
+    "start_time": 1123,
+    "end_time": 1137,
+    "start_fmt": "18:43",
+    "end_fmt": "18:57",
+    "duration_sec": 15,
+    "frame_count": 15,
+    "all_frames": [
+      "frame_1124.jpg",
+      "frame_1125.jpg",
+      "frame_1126.jpg",
+      "frame_1127.jpg",
+      "frame_1128.jpg",
+      "frame_1129.jpg",
+      "frame_1130.jpg",
+      "frame_1131.jpg",
+      "frame_1132.jpg",
+      "frame_1133.jpg",
+      "frame_1134.jpg",
+      "frame_1135.jpg",
+      "frame_1136.jpg",
+      "frame_1137.jpg",
+      "frame_1138.jpg"
+    ]
+  },
+  {
+    "scene_index": 165,
+    "representative_frame": "frame_1140.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1140.jpg",
+    "start_time": 1138,
+    "end_time": 1140,
+    "start_fmt": "18:58",
+    "end_fmt": "19:00",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_1139.jpg",
+      "frame_1140.jpg",
+      "frame_1141.jpg"
+    ]
+  },
+  {
+    "scene_index": 166,
+    "representative_frame": "frame_1143.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1143.jpg",
+    "start_time": 1141,
+    "end_time": 1143,
+    "start_fmt": "19:01",
+    "end_fmt": "19:03",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_1142.jpg",
+      "frame_1143.jpg",
+      "frame_1144.jpg"
+    ]
+  },
+  {
+    "scene_index": 167,
+    "representative_frame": "frame_1153.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1153.jpg",
+    "start_time": 1144,
+    "end_time": 1159,
+    "start_fmt": "19:04",
+    "end_fmt": "19:19",
+    "duration_sec": 16,
+    "frame_count": 16,
+    "all_frames": [
+      "frame_1145.jpg",
+      "frame_1146.jpg",
+      "frame_1147.jpg",
+      "frame_1148.jpg",
+      "frame_1149.jpg",
+      "frame_1150.jpg",
+      "frame_1151.jpg",
+      "frame_1152.jpg",
+      "frame_1153.jpg",
+      "frame_1154.jpg",
+      "frame_1155.jpg",
+      "frame_1156.jpg",
+      "frame_1157.jpg",
+      "frame_1158.jpg",
+      "frame_1159.jpg",
+      "frame_1160.jpg"
+    ]
+  },
+  {
+    "scene_index": 168,
+    "representative_frame": "frame_1163.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1163.jpg",
+    "start_time": 1160,
+    "end_time": 1163,
+    "start_fmt": "19:20",
+    "end_fmt": "19:23",
+    "duration_sec": 4,
+    "frame_count": 4,
+    "all_frames": [
+      "frame_1161.jpg",
+      "frame_1162.jpg",
+      "frame_1163.jpg",
+      "frame_1164.jpg"
+    ]
+  },
+  {
+    "scene_index": 169,
+    "representative_frame": "frame_1170.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1170.jpg",
+    "start_time": 1164,
+    "end_time": 1173,
+    "start_fmt": "19:24",
+    "end_fmt": "19:33",
+    "duration_sec": 10,
+    "frame_count": 10,
+    "all_frames": [
+      "frame_1165.jpg",
+      "frame_1166.jpg",
+      "frame_1167.jpg",
+      "frame_1168.jpg",
+      "frame_1169.jpg",
+      "frame_1170.jpg",
+      "frame_1171.jpg",
+      "frame_1172.jpg",
+      "frame_1173.jpg",
+      "frame_1174.jpg"
+    ]
+  },
+  {
+    "scene_index": 170,
+    "representative_frame": "frame_1186.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1186.jpg",
+    "start_time": 1174,
+    "end_time": 1196,
+    "start_fmt": "19:34",
+    "end_fmt": "19:56",
+    "duration_sec": 23,
+    "frame_count": 23,
+    "all_frames": [
+      "frame_1175.jpg",
+      "frame_1176.jpg",
+      "frame_1177.jpg",
+      "frame_1178.jpg",
+      "frame_1179.jpg",
+      "frame_1180.jpg",
+      "frame_1181.jpg",
+      "frame_1182.jpg",
+      "frame_1183.jpg",
+      "frame_1184.jpg",
+      "frame_1185.jpg",
+      "frame_1186.jpg",
+      "frame_1187.jpg",
+      "frame_1188.jpg",
+      "frame_1189.jpg",
+      "frame_1190.jpg",
+      "frame_1191.jpg",
+      "frame_1192.jpg",
+      "frame_1193.jpg",
+      "frame_1194.jpg",
+      "frame_1195.jpg",
+      "frame_1196.jpg",
+      "frame_1197.jpg"
+    ]
+  },
+  {
+    "scene_index": 171,
+    "representative_frame": "frame_1220.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1220.jpg",
+    "start_time": 1197,
+    "end_time": 1240,
+    "start_fmt": "19:57",
+    "end_fmt": "20:40",
+    "duration_sec": 44,
+    "frame_count": 44,
+    "all_frames": [
+      "frame_1198.jpg",
+      "frame_1199.jpg",
+      "frame_1200.jpg",
+      "frame_1201.jpg",
+      "frame_1202.jpg",
+      "frame_1203.jpg",
+      "frame_1204.jpg",
+      "frame_1205.jpg",
+      "frame_1206.jpg",
+      "frame_1207.jpg",
+      "frame_1208.jpg",
+      "frame_1209.jpg",
+      "frame_1210.jpg",
+      "frame_1211.jpg",
+      "frame_1212.jpg",
+      "frame_1213.jpg",
+      "frame_1214.jpg",
+      "frame_1215.jpg",
+      "frame_1216.jpg",
+      "frame_1217.jpg",
+      "frame_1218.jpg",
+      "frame_1219.jpg",
+      "frame_1220.jpg",
+      "frame_1221.jpg",
+      "frame_1222.jpg",
+      "frame_1223.jpg",
+      "frame_1224.jpg",
+      "frame_1225.jpg",
+      "frame_1226.jpg",
+      "frame_1227.jpg",
+      "frame_1228.jpg",
+      "frame_1229.jpg",
+      "frame_1230.jpg",
+      "frame_1231.jpg",
+      "frame_1232.jpg",
+      "frame_1233.jpg",
+      "frame_1234.jpg",
+      "frame_1235.jpg",
+      "frame_1236.jpg",
+      "frame_1237.jpg",
+      "frame_1238.jpg",
+      "frame_1239.jpg",
+      "frame_1240.jpg",
+      "frame_1241.jpg"
+    ]
+  },
+  {
+    "scene_index": 172,
+    "representative_frame": "frame_1257.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1257.jpg",
+    "start_time": 1241,
+    "end_time": 1271,
+    "start_fmt": "20:41",
+    "end_fmt": "21:11",
+    "duration_sec": 31,
+    "frame_count": 31,
+    "all_frames": [
+      "frame_1242.jpg",
+      "frame_1243.jpg",
+      "frame_1244.jpg",
+      "frame_1245.jpg",
+      "frame_1246.jpg",
+      "frame_1247.jpg",
+      "frame_1248.jpg",
+      "frame_1249.jpg",
+      "frame_1250.jpg",
+      "frame_1251.jpg",
+      "frame_1252.jpg",
+      "frame_1253.jpg",
+      "frame_1254.jpg",
+      "frame_1255.jpg",
+      "frame_1256.jpg",
+      "frame_1257.jpg",
+      "frame_1258.jpg",
+      "frame_1259.jpg",
+      "frame_1260.jpg",
+      "frame_1261.jpg",
+      "frame_1262.jpg",
+      "frame_1263.jpg",
+      "frame_1264.jpg",
+      "frame_1265.jpg",
+      "frame_1266.jpg",
+      "frame_1267.jpg",
+      "frame_1268.jpg",
+      "frame_1269.jpg",
+      "frame_1270.jpg",
+      "frame_1271.jpg",
+      "frame_1272.jpg"
+    ]
+  },
+  {
+    "scene_index": 173,
+    "representative_frame": "frame_1273.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1273.jpg",
+    "start_time": 1272,
+    "end_time": 1272,
+    "start_fmt": "21:12",
+    "end_fmt": "21:12",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1273.jpg"
+    ]
+  },
+  {
+    "scene_index": 174,
+    "representative_frame": "frame_1283.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1283.jpg",
+    "start_time": 1273,
+    "end_time": 1291,
+    "start_fmt": "21:13",
+    "end_fmt": "21:31",
+    "duration_sec": 19,
+    "frame_count": 19,
+    "all_frames": [
+      "frame_1274.jpg",
+      "frame_1275.jpg",
+      "frame_1276.jpg",
+      "frame_1277.jpg",
+      "frame_1278.jpg",
+      "frame_1279.jpg",
+      "frame_1280.jpg",
+      "frame_1281.jpg",
+      "frame_1282.jpg",
+      "frame_1283.jpg",
+      "frame_1284.jpg",
+      "frame_1285.jpg",
+      "frame_1286.jpg",
+      "frame_1287.jpg",
+      "frame_1288.jpg",
+      "frame_1289.jpg",
+      "frame_1290.jpg",
+      "frame_1291.jpg",
+      "frame_1292.jpg"
+    ]
+  },
+  {
+    "scene_index": 175,
+    "representative_frame": "frame_1300.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1300.jpg",
+    "start_time": 1292,
+    "end_time": 1306,
+    "start_fmt": "21:32",
+    "end_fmt": "21:46",
+    "duration_sec": 15,
+    "frame_count": 15,
+    "all_frames": [
+      "frame_1293.jpg",
+      "frame_1294.jpg",
+      "frame_1295.jpg",
+      "frame_1296.jpg",
+      "frame_1297.jpg",
+      "frame_1298.jpg",
+      "frame_1299.jpg",
+      "frame_1300.jpg",
+      "frame_1301.jpg",
+      "frame_1302.jpg",
+      "frame_1303.jpg",
+      "frame_1304.jpg",
+      "frame_1305.jpg",
+      "frame_1306.jpg",
+      "frame_1307.jpg"
+    ]
+  },
+  {
+    "scene_index": 176,
+    "representative_frame": "frame_1308.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1308.jpg",
+    "start_time": 1307,
+    "end_time": 1307,
+    "start_fmt": "21:47",
+    "end_fmt": "21:47",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1308.jpg"
+    ]
+  },
+  {
+    "scene_index": 177,
+    "representative_frame": "frame_1309.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1309.jpg",
+    "start_time": 1308,
+    "end_time": 1308,
+    "start_fmt": "21:48",
+    "end_fmt": "21:48",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1309.jpg"
+    ]
+  },
+  {
+    "scene_index": 178,
+    "representative_frame": "frame_1311.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1311.jpg",
+    "start_time": 1309,
+    "end_time": 1310,
+    "start_fmt": "21:49",
+    "end_fmt": "21:50",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_1310.jpg",
+      "frame_1311.jpg"
+    ]
+  },
+  {
+    "scene_index": 179,
+    "representative_frame": "frame_1312.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1312.jpg",
+    "start_time": 1311,
+    "end_time": 1311,
+    "start_fmt": "21:51",
+    "end_fmt": "21:51",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1312.jpg"
+    ]
+  },
+  {
+    "scene_index": 180,
+    "representative_frame": "frame_1313.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1313.jpg",
+    "start_time": 1312,
+    "end_time": 1312,
+    "start_fmt": "21:52",
+    "end_fmt": "21:52",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1313.jpg"
+    ]
+  },
+  {
+    "scene_index": 181,
+    "representative_frame": "frame_1317.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1317.jpg",
+    "start_time": 1313,
+    "end_time": 1318,
+    "start_fmt": "21:53",
+    "end_fmt": "21:58",
+    "duration_sec": 6,
+    "frame_count": 6,
+    "all_frames": [
+      "frame_1314.jpg",
+      "frame_1315.jpg",
+      "frame_1316.jpg",
+      "frame_1317.jpg",
+      "frame_1318.jpg",
+      "frame_1319.jpg"
+    ]
+  },
+  {
+    "scene_index": 182,
+    "representative_frame": "frame_1342.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1342.jpg",
+    "start_time": 1319,
+    "end_time": 1362,
+    "start_fmt": "21:59",
+    "end_fmt": "22:42",
+    "duration_sec": 44,
+    "frame_count": 44,
+    "all_frames": [
+      "frame_1320.jpg",
+      "frame_1321.jpg",
+      "frame_1322.jpg",
+      "frame_1323.jpg",
+      "frame_1324.jpg",
+      "frame_1325.jpg",
+      "frame_1326.jpg",
+      "frame_1327.jpg",
+      "frame_1328.jpg",
+      "frame_1329.jpg",
+      "frame_1330.jpg",
+      "frame_1331.jpg",
+      "frame_1332.jpg",
+      "frame_1333.jpg",
+      "frame_1334.jpg",
+      "frame_1335.jpg",
+      "frame_1336.jpg",
+      "frame_1337.jpg",
+      "frame_1338.jpg",
+      "frame_1339.jpg",
+      "frame_1340.jpg",
+      "frame_1341.jpg",
+      "frame_1342.jpg",
+      "frame_1343.jpg",
+      "frame_1344.jpg",
+      "frame_1345.jpg",
+      "frame_1346.jpg",
+      "frame_1347.jpg",
+      "frame_1348.jpg",
+      "frame_1349.jpg",
+      "frame_1350.jpg",
+      "frame_1351.jpg",
+      "frame_1352.jpg",
+      "frame_1353.jpg",
+      "frame_1354.jpg",
+      "frame_1355.jpg",
+      "frame_1356.jpg",
+      "frame_1357.jpg",
+      "frame_1358.jpg",
+      "frame_1359.jpg",
+      "frame_1360.jpg",
+      "frame_1361.jpg",
+      "frame_1362.jpg",
+      "frame_1363.jpg"
+    ]
+  },
+  {
+    "scene_index": 183,
+    "representative_frame": "frame_1366.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1366.jpg",
+    "start_time": 1363,
+    "end_time": 1367,
+    "start_fmt": "22:43",
+    "end_fmt": "22:47",
+    "duration_sec": 5,
+    "frame_count": 5,
+    "all_frames": [
+      "frame_1364.jpg",
+      "frame_1365.jpg",
+      "frame_1366.jpg",
+      "frame_1367.jpg",
+      "frame_1368.jpg"
+    ]
+  },
+  {
+    "scene_index": 184,
+    "representative_frame": "frame_1374.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1374.jpg",
+    "start_time": 1368,
+    "end_time": 1378,
+    "start_fmt": "22:48",
+    "end_fmt": "22:58",
+    "duration_sec": 11,
+    "frame_count": 11,
+    "all_frames": [
+      "frame_1369.jpg",
+      "frame_1370.jpg",
+      "frame_1371.jpg",
+      "frame_1372.jpg",
+      "frame_1373.jpg",
+      "frame_1374.jpg",
+      "frame_1375.jpg",
+      "frame_1376.jpg",
+      "frame_1377.jpg",
+      "frame_1378.jpg",
+      "frame_1379.jpg"
+    ]
+  },
+  {
+    "scene_index": 185,
+    "representative_frame": "frame_1415.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1415.jpg",
+    "start_time": 1379,
+    "end_time": 1449,
+    "start_fmt": "22:59",
+    "end_fmt": "24:09",
+    "duration_sec": 71,
+    "frame_count": 71,
+    "all_frames": [
+      "frame_1380.jpg",
+      "frame_1381.jpg",
+      "frame_1382.jpg",
+      "frame_1383.jpg",
+      "frame_1384.jpg",
+      "frame_1385.jpg",
+      "frame_1386.jpg",
+      "frame_1387.jpg",
+      "frame_1388.jpg",
+      "frame_1389.jpg",
+      "frame_1390.jpg",
+      "frame_1391.jpg",
+      "frame_1392.jpg",
+      "frame_1393.jpg",
+      "frame_1394.jpg",
+      "frame_1395.jpg",
+      "frame_1396.jpg",
+      "frame_1397.jpg",
+      "frame_1398.jpg",
+      "frame_1399.jpg",
+      "frame_1400.jpg",
+      "frame_1401.jpg",
+      "frame_1402.jpg",
+      "frame_1403.jpg",
+      "frame_1404.jpg",
+      "frame_1405.jpg",
+      "frame_1406.jpg",
+      "frame_1407.jpg",
+      "frame_1408.jpg",
+      "frame_1409.jpg",
+      "frame_1410.jpg",
+      "frame_1411.jpg",
+      "frame_1412.jpg",
+      "frame_1413.jpg",
+      "frame_1414.jpg",
+      "frame_1415.jpg",
+      "frame_1416.jpg",
+      "frame_1417.jpg",
+      "frame_1418.jpg",
+      "frame_1419.jpg",
+      "frame_1420.jpg",
+      "frame_1421.jpg",
+      "frame_1422.jpg",
+      "frame_1423.jpg",
+      "frame_1424.jpg",
+      "frame_1425.jpg",
+      "frame_1426.jpg",
+      "frame_1427.jpg",
+      "frame_1428.jpg",
+      "frame_1429.jpg",
+      "frame_1430.jpg",
+      "frame_1431.jpg",
+      "frame_1432.jpg",
+      "frame_1433.jpg",
+      "frame_1434.jpg",
+      "frame_1435.jpg",
+      "frame_1436.jpg",
+      "frame_1437.jpg",
+      "frame_1438.jpg",
+      "frame_1439.jpg",
+      "frame_1440.jpg",
+      "frame_1441.jpg",
+      "frame_1442.jpg",
+      "frame_1443.jpg",
+      "frame_1444.jpg",
+      "frame_1445.jpg",
+      "frame_1446.jpg",
+      "frame_1447.jpg",
+      "frame_1448.jpg",
+      "frame_1449.jpg",
+      "frame_1450.jpg"
+    ]
+  },
+  {
+    "scene_index": 186,
+    "representative_frame": "frame_1451.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1451.jpg",
+    "start_time": 1450,
+    "end_time": 1450,
+    "start_fmt": "24:10",
+    "end_fmt": "24:10",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1451.jpg"
+    ]
+  },
+  {
+    "scene_index": 187,
+    "representative_frame": "frame_1457.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1457.jpg",
+    "start_time": 1451,
+    "end_time": 1461,
+    "start_fmt": "24:11",
+    "end_fmt": "24:21",
+    "duration_sec": 11,
+    "frame_count": 11,
+    "all_frames": [
+      "frame_1452.jpg",
+      "frame_1453.jpg",
+      "frame_1454.jpg",
+      "frame_1455.jpg",
+      "frame_1456.jpg",
+      "frame_1457.jpg",
+      "frame_1458.jpg",
+      "frame_1459.jpg",
+      "frame_1460.jpg",
+      "frame_1461.jpg",
+      "frame_1462.jpg"
+    ]
+  },
+  {
+    "scene_index": 188,
+    "representative_frame": "frame_1467.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1467.jpg",
+    "start_time": 1462,
+    "end_time": 1469,
+    "start_fmt": "24:22",
+    "end_fmt": "24:29",
+    "duration_sec": 8,
+    "frame_count": 8,
+    "all_frames": [
+      "frame_1463.jpg",
+      "frame_1464.jpg",
+      "frame_1465.jpg",
+      "frame_1466.jpg",
+      "frame_1467.jpg",
+      "frame_1468.jpg",
+      "frame_1469.jpg",
+      "frame_1470.jpg"
+    ]
+  },
+  {
+    "scene_index": 189,
+    "representative_frame": "frame_1471.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1471.jpg",
+    "start_time": 1470,
+    "end_time": 1470,
+    "start_fmt": "24:30",
+    "end_fmt": "24:30",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1471.jpg"
+    ]
+  },
+  {
+    "scene_index": 190,
+    "representative_frame": "frame_1498.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1498.jpg",
+    "start_time": 1471,
+    "end_time": 1523,
+    "start_fmt": "24:31",
+    "end_fmt": "25:23",
+    "duration_sec": 53,
+    "frame_count": 53,
+    "all_frames": [
+      "frame_1472.jpg",
+      "frame_1473.jpg",
+      "frame_1474.jpg",
+      "frame_1475.jpg",
+      "frame_1476.jpg",
+      "frame_1477.jpg",
+      "frame_1478.jpg",
+      "frame_1479.jpg",
+      "frame_1480.jpg",
+      "frame_1481.jpg",
+      "frame_1482.jpg",
+      "frame_1483.jpg",
+      "frame_1484.jpg",
+      "frame_1485.jpg",
+      "frame_1486.jpg",
+      "frame_1487.jpg",
+      "frame_1488.jpg",
+      "frame_1489.jpg",
+      "frame_1490.jpg",
+      "frame_1491.jpg",
+      "frame_1492.jpg",
+      "frame_1493.jpg",
+      "frame_1494.jpg",
+      "frame_1495.jpg",
+      "frame_1496.jpg",
+      "frame_1497.jpg",
+      "frame_1498.jpg",
+      "frame_1499.jpg",
+      "frame_1500.jpg",
+      "frame_1501.jpg",
+      "frame_1502.jpg",
+      "frame_1503.jpg",
+      "frame_1504.jpg",
+      "frame_1505.jpg",
+      "frame_1506.jpg",
+      "frame_1507.jpg",
+      "frame_1508.jpg",
+      "frame_1509.jpg",
+      "frame_1510.jpg",
+      "frame_1511.jpg",
+      "frame_1512.jpg",
+      "frame_1513.jpg",
+      "frame_1514.jpg",
+      "frame_1515.jpg",
+      "frame_1516.jpg",
+      "frame_1517.jpg",
+      "frame_1518.jpg",
+      "frame_1519.jpg",
+      "frame_1520.jpg",
+      "frame_1521.jpg",
+      "frame_1522.jpg",
+      "frame_1523.jpg",
+      "frame_1524.jpg"
+    ]
+  },
+  {
+    "scene_index": 191,
+    "representative_frame": "frame_1525.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1525.jpg",
+    "start_time": 1524,
+    "end_time": 1524,
+    "start_fmt": "25:24",
+    "end_fmt": "25:24",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1525.jpg"
+    ]
+  },
+  {
+    "scene_index": 192,
+    "representative_frame": "frame_1531.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1531.jpg",
+    "start_time": 1525,
+    "end_time": 1535,
+    "start_fmt": "25:25",
+    "end_fmt": "25:35",
+    "duration_sec": 11,
+    "frame_count": 11,
+    "all_frames": [
+      "frame_1526.jpg",
+      "frame_1527.jpg",
+      "frame_1528.jpg",
+      "frame_1529.jpg",
+      "frame_1530.jpg",
+      "frame_1531.jpg",
+      "frame_1532.jpg",
+      "frame_1533.jpg",
+      "frame_1534.jpg",
+      "frame_1535.jpg",
+      "frame_1536.jpg"
+    ]
+  },
+  {
+    "scene_index": 193,
+    "representative_frame": "frame_1539.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1539.jpg",
+    "start_time": 1536,
+    "end_time": 1539,
+    "start_fmt": "25:36",
+    "end_fmt": "25:39",
+    "duration_sec": 4,
+    "frame_count": 4,
+    "all_frames": [
+      "frame_1537.jpg",
+      "frame_1538.jpg",
+      "frame_1539.jpg",
+      "frame_1540.jpg"
+    ]
+  },
+  {
+    "scene_index": 194,
+    "representative_frame": "frame_1544.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1544.jpg",
+    "start_time": 1540,
+    "end_time": 1546,
+    "start_fmt": "25:40",
+    "end_fmt": "25:46",
+    "duration_sec": 7,
+    "frame_count": 7,
+    "all_frames": [
+      "frame_1541.jpg",
+      "frame_1542.jpg",
+      "frame_1543.jpg",
+      "frame_1544.jpg",
+      "frame_1545.jpg",
+      "frame_1546.jpg",
+      "frame_1547.jpg"
+    ]
+  },
+  {
+    "scene_index": 195,
+    "representative_frame": "frame_1548.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1548.jpg",
+    "start_time": 1547,
+    "end_time": 1547,
+    "start_fmt": "25:47",
+    "end_fmt": "25:47",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1548.jpg"
+    ]
+  },
+  {
+    "scene_index": 196,
+    "representative_frame": "frame_1549.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1549.jpg",
+    "start_time": 1548,
+    "end_time": 1548,
+    "start_fmt": "25:48",
+    "end_fmt": "25:48",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1549.jpg"
+    ]
+  },
+  {
+    "scene_index": 197,
+    "representative_frame": "frame_1552.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1552.jpg",
+    "start_time": 1549,
+    "end_time": 1552,
+    "start_fmt": "25:49",
+    "end_fmt": "25:52",
+    "duration_sec": 4,
+    "frame_count": 4,
+    "all_frames": [
+      "frame_1550.jpg",
+      "frame_1551.jpg",
+      "frame_1552.jpg",
+      "frame_1553.jpg"
+    ]
+  },
+  {
+    "scene_index": 198,
+    "representative_frame": "frame_1554.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1554.jpg",
+    "start_time": 1553,
+    "end_time": 1553,
+    "start_fmt": "25:53",
+    "end_fmt": "25:53",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1554.jpg"
+    ]
+  },
+  {
+    "scene_index": 199,
+    "representative_frame": "frame_1556.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1556.jpg",
+    "start_time": 1554,
+    "end_time": 1556,
+    "start_fmt": "25:54",
+    "end_fmt": "25:56",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_1555.jpg",
+      "frame_1556.jpg",
+      "frame_1557.jpg"
+    ]
+  },
+  {
+    "scene_index": 200,
+    "representative_frame": "frame_1558.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1558.jpg",
+    "start_time": 1557,
+    "end_time": 1557,
+    "start_fmt": "25:57",
+    "end_fmt": "25:57",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1558.jpg"
+    ]
+  },
+  {
+    "scene_index": 201,
+    "representative_frame": "frame_1559.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1559.jpg",
+    "start_time": 1558,
+    "end_time": 1558,
+    "start_fmt": "25:58",
+    "end_fmt": "25:58",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1559.jpg"
+    ]
+  },
+  {
+    "scene_index": 202,
+    "representative_frame": "frame_1560.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1560.jpg",
+    "start_time": 1559,
+    "end_time": 1559,
+    "start_fmt": "25:59",
+    "end_fmt": "25:59",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1560.jpg"
+    ]
+  },
+  {
+    "scene_index": 203,
+    "representative_frame": "frame_1561.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1561.jpg",
+    "start_time": 1560,
+    "end_time": 1560,
+    "start_fmt": "26:00",
+    "end_fmt": "26:00",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1561.jpg"
+    ]
+  },
+  {
+    "scene_index": 204,
+    "representative_frame": "frame_1563.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1563.jpg",
+    "start_time": 1561,
+    "end_time": 1563,
+    "start_fmt": "26:01",
+    "end_fmt": "26:03",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_1562.jpg",
+      "frame_1563.jpg",
+      "frame_1564.jpg"
+    ]
+  },
+  {
+    "scene_index": 205,
+    "representative_frame": "frame_1566.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1566.jpg",
+    "start_time": 1564,
+    "end_time": 1565,
+    "start_fmt": "26:04",
+    "end_fmt": "26:05",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_1565.jpg",
+      "frame_1566.jpg"
+    ]
+  },
+  {
+    "scene_index": 206,
+    "representative_frame": "frame_1567.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1567.jpg",
+    "start_time": 1566,
+    "end_time": 1566,
+    "start_fmt": "26:06",
+    "end_fmt": "26:06",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1567.jpg"
+    ]
+  },
+  {
+    "scene_index": 207,
+    "representative_frame": "frame_1568.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1568.jpg",
+    "start_time": 1567,
+    "end_time": 1567,
+    "start_fmt": "26:07",
+    "end_fmt": "26:07",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1568.jpg"
+    ]
+  },
+  {
+    "scene_index": 208,
+    "representative_frame": "frame_1569.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1569.jpg",
+    "start_time": 1568,
+    "end_time": 1568,
+    "start_fmt": "26:08",
+    "end_fmt": "26:08",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1569.jpg"
+    ]
+  },
+  {
+    "scene_index": 209,
+    "representative_frame": "frame_1570.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1570.jpg",
+    "start_time": 1569,
+    "end_time": 1569,
+    "start_fmt": "26:09",
+    "end_fmt": "26:09",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1570.jpg"
+    ]
+  },
+  {
+    "scene_index": 210,
+    "representative_frame": "frame_1571.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1571.jpg",
+    "start_time": 1570,
+    "end_time": 1570,
+    "start_fmt": "26:10",
+    "end_fmt": "26:10",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1571.jpg"
+    ]
+  },
+  {
+    "scene_index": 211,
+    "representative_frame": "frame_1574.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1574.jpg",
+    "start_time": 1571,
+    "end_time": 1574,
+    "start_fmt": "26:11",
+    "end_fmt": "26:14",
+    "duration_sec": 4,
+    "frame_count": 4,
+    "all_frames": [
+      "frame_1572.jpg",
+      "frame_1573.jpg",
+      "frame_1574.jpg",
+      "frame_1575.jpg"
+    ]
+  },
+  {
+    "scene_index": 212,
+    "representative_frame": "frame_1576.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1576.jpg",
+    "start_time": 1575,
+    "end_time": 1575,
+    "start_fmt": "26:15",
+    "end_fmt": "26:15",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1576.jpg"
+    ]
+  },
+  {
+    "scene_index": 213,
+    "representative_frame": "frame_1578.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1578.jpg",
+    "start_time": 1576,
+    "end_time": 1577,
+    "start_fmt": "26:16",
+    "end_fmt": "26:17",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_1577.jpg",
+      "frame_1578.jpg"
+    ]
+  },
+  {
+    "scene_index": 214,
+    "representative_frame": "frame_1582.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1582.jpg",
+    "start_time": 1578,
+    "end_time": 1584,
+    "start_fmt": "26:18",
+    "end_fmt": "26:24",
+    "duration_sec": 7,
+    "frame_count": 7,
+    "all_frames": [
+      "frame_1579.jpg",
+      "frame_1580.jpg",
+      "frame_1581.jpg",
+      "frame_1582.jpg",
+      "frame_1583.jpg",
+      "frame_1584.jpg",
+      "frame_1585.jpg"
+    ]
+  },
+  {
+    "scene_index": 215,
+    "representative_frame": "frame_1586.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1586.jpg",
+    "start_time": 1585,
+    "end_time": 1585,
+    "start_fmt": "26:25",
+    "end_fmt": "26:25",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1586.jpg"
+    ]
+  },
+  {
+    "scene_index": 216,
+    "representative_frame": "frame_1587.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1587.jpg",
+    "start_time": 1586,
+    "end_time": 1586,
+    "start_fmt": "26:26",
+    "end_fmt": "26:26",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1587.jpg"
+    ]
+  },
+  {
+    "scene_index": 217,
+    "representative_frame": "frame_1588.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1588.jpg",
+    "start_time": 1587,
+    "end_time": 1587,
+    "start_fmt": "26:27",
+    "end_fmt": "26:27",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1588.jpg"
+    ]
+  },
+  {
+    "scene_index": 218,
+    "representative_frame": "frame_1589.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1589.jpg",
+    "start_time": 1588,
+    "end_time": 1588,
+    "start_fmt": "26:28",
+    "end_fmt": "26:28",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1589.jpg"
+    ]
+  },
+  {
+    "scene_index": 219,
+    "representative_frame": "frame_1590.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1590.jpg",
+    "start_time": 1589,
+    "end_time": 1589,
+    "start_fmt": "26:29",
+    "end_fmt": "26:29",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1590.jpg"
+    ]
+  },
+  {
+    "scene_index": 220,
+    "representative_frame": "frame_1592.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1592.jpg",
+    "start_time": 1590,
+    "end_time": 1592,
+    "start_fmt": "26:30",
+    "end_fmt": "26:32",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_1591.jpg",
+      "frame_1592.jpg",
+      "frame_1593.jpg"
+    ]
+  },
+  {
+    "scene_index": 221,
+    "representative_frame": "frame_1594.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1594.jpg",
+    "start_time": 1593,
+    "end_time": 1593,
+    "start_fmt": "26:33",
+    "end_fmt": "26:33",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1594.jpg"
+    ]
+  },
+  {
+    "scene_index": 222,
+    "representative_frame": "frame_1595.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1595.jpg",
+    "start_time": 1594,
+    "end_time": 1594,
+    "start_fmt": "26:34",
+    "end_fmt": "26:34",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1595.jpg"
+    ]
+  },
+  {
+    "scene_index": 223,
+    "representative_frame": "frame_1596.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1596.jpg",
+    "start_time": 1595,
+    "end_time": 1595,
+    "start_fmt": "26:35",
+    "end_fmt": "26:35",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1596.jpg"
+    ]
+  },
+  {
+    "scene_index": 224,
+    "representative_frame": "frame_1599.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1599.jpg",
+    "start_time": 1596,
+    "end_time": 1599,
+    "start_fmt": "26:36",
+    "end_fmt": "26:39",
+    "duration_sec": 4,
+    "frame_count": 4,
+    "all_frames": [
+      "frame_1597.jpg",
+      "frame_1598.jpg",
+      "frame_1599.jpg",
+      "frame_1600.jpg"
+    ]
+  },
+  {
+    "scene_index": 225,
+    "representative_frame": "frame_1602.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1602.jpg",
+    "start_time": 1600,
+    "end_time": 1602,
+    "start_fmt": "26:40",
+    "end_fmt": "26:42",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_1601.jpg",
+      "frame_1602.jpg",
+      "frame_1603.jpg"
+    ]
+  },
+  {
+    "scene_index": 226,
+    "representative_frame": "frame_1604.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1604.jpg",
+    "start_time": 1603,
+    "end_time": 1603,
+    "start_fmt": "26:43",
+    "end_fmt": "26:43",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1604.jpg"
+    ]
+  },
+  {
+    "scene_index": 227,
+    "representative_frame": "frame_1605.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1605.jpg",
+    "start_time": 1604,
+    "end_time": 1604,
+    "start_fmt": "26:44",
+    "end_fmt": "26:44",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1605.jpg"
+    ]
+  },
+  {
+    "scene_index": 228,
+    "representative_frame": "frame_1606.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1606.jpg",
+    "start_time": 1605,
+    "end_time": 1605,
+    "start_fmt": "26:45",
+    "end_fmt": "26:45",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1606.jpg"
+    ]
+  },
+  {
+    "scene_index": 229,
+    "representative_frame": "frame_1607.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1607.jpg",
+    "start_time": 1606,
+    "end_time": 1606,
+    "start_fmt": "26:46",
+    "end_fmt": "26:46",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1607.jpg"
+    ]
+  },
+  {
+    "scene_index": 230,
+    "representative_frame": "frame_1608.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1608.jpg",
+    "start_time": 1607,
+    "end_time": 1607,
+    "start_fmt": "26:47",
+    "end_fmt": "26:47",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1608.jpg"
+    ]
+  },
+  {
+    "scene_index": 231,
+    "representative_frame": "frame_1609.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1609.jpg",
+    "start_time": 1608,
+    "end_time": 1608,
+    "start_fmt": "26:48",
+    "end_fmt": "26:48",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1609.jpg"
+    ]
+  },
+  {
+    "scene_index": 232,
+    "representative_frame": "frame_1610.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1610.jpg",
+    "start_time": 1609,
+    "end_time": 1609,
+    "start_fmt": "26:49",
+    "end_fmt": "26:49",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1610.jpg"
+    ]
+  },
+  {
+    "scene_index": 233,
+    "representative_frame": "frame_1611.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1611.jpg",
+    "start_time": 1610,
+    "end_time": 1610,
+    "start_fmt": "26:50",
+    "end_fmt": "26:50",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1611.jpg"
+    ]
+  },
+  {
+    "scene_index": 234,
+    "representative_frame": "frame_1612.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1612.jpg",
+    "start_time": 1611,
+    "end_time": 1611,
+    "start_fmt": "26:51",
+    "end_fmt": "26:51",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1612.jpg"
+    ]
+  },
+  {
+    "scene_index": 235,
+    "representative_frame": "frame_1613.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1613.jpg",
+    "start_time": 1612,
+    "end_time": 1612,
+    "start_fmt": "26:52",
+    "end_fmt": "26:52",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1613.jpg"
+    ]
+  },
+  {
+    "scene_index": 236,
+    "representative_frame": "frame_1614.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1614.jpg",
+    "start_time": 1613,
+    "end_time": 1613,
+    "start_fmt": "26:53",
+    "end_fmt": "26:53",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1614.jpg"
+    ]
+  },
+  {
+    "scene_index": 237,
+    "representative_frame": "frame_1615.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1615.jpg",
+    "start_time": 1614,
+    "end_time": 1614,
+    "start_fmt": "26:54",
+    "end_fmt": "26:54",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1615.jpg"
+    ]
+  },
+  {
+    "scene_index": 238,
+    "representative_frame": "frame_1617.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1617.jpg",
+    "start_time": 1615,
+    "end_time": 1616,
+    "start_fmt": "26:55",
+    "end_fmt": "26:56",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_1616.jpg",
+      "frame_1617.jpg"
+    ]
+  },
+  {
+    "scene_index": 239,
+    "representative_frame": "frame_1618.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1618.jpg",
+    "start_time": 1617,
+    "end_time": 1617,
+    "start_fmt": "26:57",
+    "end_fmt": "26:57",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1618.jpg"
+    ]
+  },
+  {
+    "scene_index": 240,
+    "representative_frame": "frame_1619.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1619.jpg",
+    "start_time": 1618,
+    "end_time": 1618,
+    "start_fmt": "26:58",
+    "end_fmt": "26:58",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1619.jpg"
+    ]
+  },
+  {
+    "scene_index": 241,
+    "representative_frame": "frame_1620.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1620.jpg",
+    "start_time": 1619,
+    "end_time": 1619,
+    "start_fmt": "26:59",
+    "end_fmt": "26:59",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1620.jpg"
+    ]
+  },
+  {
+    "scene_index": 242,
+    "representative_frame": "frame_1621.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1621.jpg",
+    "start_time": 1620,
+    "end_time": 1620,
+    "start_fmt": "27:00",
+    "end_fmt": "27:00",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1621.jpg"
+    ]
+  },
+  {
+    "scene_index": 243,
+    "representative_frame": "frame_1622.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1622.jpg",
+    "start_time": 1621,
+    "end_time": 1621,
+    "start_fmt": "27:01",
+    "end_fmt": "27:01",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1622.jpg"
+    ]
+  },
+  {
+    "scene_index": 244,
+    "representative_frame": "frame_1623.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1623.jpg",
+    "start_time": 1622,
+    "end_time": 1622,
+    "start_fmt": "27:02",
+    "end_fmt": "27:02",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1623.jpg"
+    ]
+  },
+  {
+    "scene_index": 245,
+    "representative_frame": "frame_1624.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1624.jpg",
+    "start_time": 1623,
+    "end_time": 1623,
+    "start_fmt": "27:03",
+    "end_fmt": "27:03",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1624.jpg"
+    ]
+  },
+  {
+    "scene_index": 246,
+    "representative_frame": "frame_1625.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1625.jpg",
+    "start_time": 1624,
+    "end_time": 1624,
+    "start_fmt": "27:04",
+    "end_fmt": "27:04",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1625.jpg"
+    ]
+  },
+  {
+    "scene_index": 247,
+    "representative_frame": "frame_1626.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1626.jpg",
+    "start_time": 1625,
+    "end_time": 1625,
+    "start_fmt": "27:05",
+    "end_fmt": "27:05",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1626.jpg"
+    ]
+  },
+  {
+    "scene_index": 248,
+    "representative_frame": "frame_1627.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1627.jpg",
+    "start_time": 1626,
+    "end_time": 1626,
+    "start_fmt": "27:06",
+    "end_fmt": "27:06",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1627.jpg"
+    ]
+  },
+  {
+    "scene_index": 249,
+    "representative_frame": "frame_1628.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1628.jpg",
+    "start_time": 1627,
+    "end_time": 1627,
+    "start_fmt": "27:07",
+    "end_fmt": "27:07",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1628.jpg"
+    ]
+  },
+  {
+    "scene_index": 250,
+    "representative_frame": "frame_1629.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1629.jpg",
+    "start_time": 1628,
+    "end_time": 1628,
+    "start_fmt": "27:08",
+    "end_fmt": "27:08",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1629.jpg"
+    ]
+  },
+  {
+    "scene_index": 251,
+    "representative_frame": "frame_1630.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1630.jpg",
+    "start_time": 1629,
+    "end_time": 1629,
+    "start_fmt": "27:09",
+    "end_fmt": "27:09",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1630.jpg"
+    ]
+  },
+  {
+    "scene_index": 252,
+    "representative_frame": "frame_1631.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1631.jpg",
+    "start_time": 1630,
+    "end_time": 1630,
+    "start_fmt": "27:10",
+    "end_fmt": "27:10",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1631.jpg"
+    ]
+  },
+  {
+    "scene_index": 253,
+    "representative_frame": "frame_1632.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1632.jpg",
+    "start_time": 1631,
+    "end_time": 1631,
+    "start_fmt": "27:11",
+    "end_fmt": "27:11",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1632.jpg"
+    ]
+  },
+  {
+    "scene_index": 254,
+    "representative_frame": "frame_1633.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1633.jpg",
+    "start_time": 1632,
+    "end_time": 1632,
+    "start_fmt": "27:12",
+    "end_fmt": "27:12",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1633.jpg"
+    ]
+  },
+  {
+    "scene_index": 255,
+    "representative_frame": "frame_1634.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1634.jpg",
+    "start_time": 1633,
+    "end_time": 1633,
+    "start_fmt": "27:13",
+    "end_fmt": "27:13",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1634.jpg"
+    ]
+  },
+  {
+    "scene_index": 256,
+    "representative_frame": "frame_1635.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1635.jpg",
+    "start_time": 1634,
+    "end_time": 1634,
+    "start_fmt": "27:14",
+    "end_fmt": "27:14",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1635.jpg"
+    ]
+  },
+  {
+    "scene_index": 257,
+    "representative_frame": "frame_1637.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1637.jpg",
+    "start_time": 1635,
+    "end_time": 1636,
+    "start_fmt": "27:15",
+    "end_fmt": "27:16",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_1636.jpg",
+      "frame_1637.jpg"
+    ]
+  },
+  {
+    "scene_index": 258,
+    "representative_frame": "frame_1638.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1638.jpg",
+    "start_time": 1637,
+    "end_time": 1637,
+    "start_fmt": "27:17",
+    "end_fmt": "27:17",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1638.jpg"
+    ]
+  },
+  {
+    "scene_index": 259,
+    "representative_frame": "frame_1642.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1642.jpg",
+    "start_time": 1638,
+    "end_time": 1644,
+    "start_fmt": "27:18",
+    "end_fmt": "27:24",
+    "duration_sec": 7,
+    "frame_count": 7,
+    "all_frames": [
+      "frame_1639.jpg",
+      "frame_1640.jpg",
+      "frame_1641.jpg",
+      "frame_1642.jpg",
+      "frame_1643.jpg",
+      "frame_1644.jpg",
+      "frame_1645.jpg"
+    ]
+  },
+  {
+    "scene_index": 260,
+    "representative_frame": "frame_1647.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1647.jpg",
+    "start_time": 1645,
+    "end_time": 1647,
+    "start_fmt": "27:25",
+    "end_fmt": "27:27",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_1646.jpg",
+      "frame_1647.jpg",
+      "frame_1648.jpg"
+    ]
+  },
+  {
+    "scene_index": 261,
+    "representative_frame": "frame_1662.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1662.jpg",
+    "start_time": 1648,
+    "end_time": 1674,
+    "start_fmt": "27:28",
+    "end_fmt": "27:54",
+    "duration_sec": 27,
+    "frame_count": 27,
+    "all_frames": [
+      "frame_1649.jpg",
+      "frame_1650.jpg",
+      "frame_1651.jpg",
+      "frame_1652.jpg",
+      "frame_1653.jpg",
+      "frame_1654.jpg",
+      "frame_1655.jpg",
+      "frame_1656.jpg",
+      "frame_1657.jpg",
+      "frame_1658.jpg",
+      "frame_1659.jpg",
+      "frame_1660.jpg",
+      "frame_1661.jpg",
+      "frame_1662.jpg",
+      "frame_1663.jpg",
+      "frame_1664.jpg",
+      "frame_1665.jpg",
+      "frame_1666.jpg",
+      "frame_1667.jpg",
+      "frame_1668.jpg",
+      "frame_1669.jpg",
+      "frame_1670.jpg",
+      "frame_1671.jpg",
+      "frame_1672.jpg",
+      "frame_1673.jpg",
+      "frame_1674.jpg",
+      "frame_1675.jpg"
+    ]
+  },
+  {
+    "scene_index": 262,
+    "representative_frame": "frame_1677.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1677.jpg",
+    "start_time": 1675,
+    "end_time": 1676,
+    "start_fmt": "27:55",
+    "end_fmt": "27:56",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_1676.jpg",
+      "frame_1677.jpg"
+    ]
+  },
+  {
+    "scene_index": 263,
+    "representative_frame": "frame_1688.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1688.jpg",
+    "start_time": 1677,
+    "end_time": 1697,
+    "start_fmt": "27:57",
+    "end_fmt": "28:17",
+    "duration_sec": 21,
+    "frame_count": 21,
+    "all_frames": [
+      "frame_1678.jpg",
+      "frame_1679.jpg",
+      "frame_1680.jpg",
+      "frame_1681.jpg",
+      "frame_1682.jpg",
+      "frame_1683.jpg",
+      "frame_1684.jpg",
+      "frame_1685.jpg",
+      "frame_1686.jpg",
+      "frame_1687.jpg",
+      "frame_1688.jpg",
+      "frame_1689.jpg",
+      "frame_1690.jpg",
+      "frame_1691.jpg",
+      "frame_1692.jpg",
+      "frame_1693.jpg",
+      "frame_1694.jpg",
+      "frame_1695.jpg",
+      "frame_1696.jpg",
+      "frame_1697.jpg",
+      "frame_1698.jpg"
+    ]
+  },
+  {
+    "scene_index": 264,
+    "representative_frame": "frame_1726.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1726.jpg",
+    "start_time": 1698,
+    "end_time": 1752,
+    "start_fmt": "28:18",
+    "end_fmt": "29:12",
+    "duration_sec": 55,
+    "frame_count": 55,
+    "all_frames": [
+      "frame_1699.jpg",
+      "frame_1700.jpg",
+      "frame_1701.jpg",
+      "frame_1702.jpg",
+      "frame_1703.jpg",
+      "frame_1704.jpg",
+      "frame_1705.jpg",
+      "frame_1706.jpg",
+      "frame_1707.jpg",
+      "frame_1708.jpg",
+      "frame_1709.jpg",
+      "frame_1710.jpg",
+      "frame_1711.jpg",
+      "frame_1712.jpg",
+      "frame_1713.jpg",
+      "frame_1714.jpg",
+      "frame_1715.jpg",
+      "frame_1716.jpg",
+      "frame_1717.jpg",
+      "frame_1718.jpg",
+      "frame_1719.jpg",
+      "frame_1720.jpg",
+      "frame_1721.jpg",
+      "frame_1722.jpg",
+      "frame_1723.jpg",
+      "frame_1724.jpg",
+      "frame_1725.jpg",
+      "frame_1726.jpg",
+      "frame_1727.jpg",
+      "frame_1728.jpg",
+      "frame_1729.jpg",
+      "frame_1730.jpg",
+      "frame_1731.jpg",
+      "frame_1732.jpg",
+      "frame_1733.jpg",
+      "frame_1734.jpg",
+      "frame_1735.jpg",
+      "frame_1736.jpg",
+      "frame_1737.jpg",
+      "frame_1738.jpg",
+      "frame_1739.jpg",
+      "frame_1740.jpg",
+      "frame_1741.jpg",
+      "frame_1742.jpg",
+      "frame_1743.jpg",
+      "frame_1744.jpg",
+      "frame_1745.jpg",
+      "frame_1746.jpg",
+      "frame_1747.jpg",
+      "frame_1748.jpg",
+      "frame_1749.jpg",
+      "frame_1750.jpg",
+      "frame_1751.jpg",
+      "frame_1752.jpg",
+      "frame_1753.jpg"
+    ]
+  },
+  {
+    "scene_index": 265,
+    "representative_frame": "frame_1757.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1757.jpg",
+    "start_time": 1753,
+    "end_time": 1759,
+    "start_fmt": "29:13",
+    "end_fmt": "29:19",
+    "duration_sec": 7,
+    "frame_count": 7,
+    "all_frames": [
+      "frame_1754.jpg",
+      "frame_1755.jpg",
+      "frame_1756.jpg",
+      "frame_1757.jpg",
+      "frame_1758.jpg",
+      "frame_1759.jpg",
+      "frame_1760.jpg"
+    ]
+  },
+  {
+    "scene_index": 266,
+    "representative_frame": "frame_1773.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1773.jpg",
+    "start_time": 1760,
+    "end_time": 1783,
+    "start_fmt": "29:20",
+    "end_fmt": "29:43",
+    "duration_sec": 24,
+    "frame_count": 24,
+    "all_frames": [
+      "frame_1761.jpg",
+      "frame_1762.jpg",
+      "frame_1763.jpg",
+      "frame_1764.jpg",
+      "frame_1765.jpg",
+      "frame_1766.jpg",
+      "frame_1767.jpg",
+      "frame_1768.jpg",
+      "frame_1769.jpg",
+      "frame_1770.jpg",
+      "frame_1771.jpg",
+      "frame_1772.jpg",
+      "frame_1773.jpg",
+      "frame_1774.jpg",
+      "frame_1775.jpg",
+      "frame_1776.jpg",
+      "frame_1777.jpg",
+      "frame_1778.jpg",
+      "frame_1779.jpg",
+      "frame_1780.jpg",
+      "frame_1781.jpg",
+      "frame_1782.jpg",
+      "frame_1783.jpg",
+      "frame_1784.jpg"
+    ]
+  },
+  {
+    "scene_index": 267,
+    "representative_frame": "frame_1793.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1793.jpg",
+    "start_time": 1784,
+    "end_time": 1800,
+    "start_fmt": "29:44",
+    "end_fmt": "30:00",
+    "duration_sec": 17,
+    "frame_count": 17,
+    "all_frames": [
+      "frame_1785.jpg",
+      "frame_1786.jpg",
+      "frame_1787.jpg",
+      "frame_1788.jpg",
+      "frame_1789.jpg",
+      "frame_1790.jpg",
+      "frame_1791.jpg",
+      "frame_1792.jpg",
+      "frame_1793.jpg",
+      "frame_1794.jpg",
+      "frame_1795.jpg",
+      "frame_1796.jpg",
+      "frame_1797.jpg",
+      "frame_1798.jpg",
+      "frame_1799.jpg",
+      "frame_1800.jpg",
+      "frame_1801.jpg"
+    ]
+  },
+  {
+    "scene_index": 268,
+    "representative_frame": "frame_1802.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1802.jpg",
+    "start_time": 1801,
+    "end_time": 1801,
+    "start_fmt": "30:01",
+    "end_fmt": "30:01",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1802.jpg"
+    ]
+  },
+  {
+    "scene_index": 269,
+    "representative_frame": "frame_1817.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1817.jpg",
+    "start_time": 1802,
+    "end_time": 1830,
+    "start_fmt": "30:02",
+    "end_fmt": "30:30",
+    "duration_sec": 29,
+    "frame_count": 29,
+    "all_frames": [
+      "frame_1803.jpg",
+      "frame_1804.jpg",
+      "frame_1805.jpg",
+      "frame_1806.jpg",
+      "frame_1807.jpg",
+      "frame_1808.jpg",
+      "frame_1809.jpg",
+      "frame_1810.jpg",
+      "frame_1811.jpg",
+      "frame_1812.jpg",
+      "frame_1813.jpg",
+      "frame_1814.jpg",
+      "frame_1815.jpg",
+      "frame_1816.jpg",
+      "frame_1817.jpg",
+      "frame_1818.jpg",
+      "frame_1819.jpg",
+      "frame_1820.jpg",
+      "frame_1821.jpg",
+      "frame_1822.jpg",
+      "frame_1823.jpg",
+      "frame_1824.jpg",
+      "frame_1825.jpg",
+      "frame_1826.jpg",
+      "frame_1827.jpg",
+      "frame_1828.jpg",
+      "frame_1829.jpg",
+      "frame_1830.jpg",
+      "frame_1831.jpg"
+    ]
+  },
+  {
+    "scene_index": 270,
+    "representative_frame": "frame_1832.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1832.jpg",
+    "start_time": 1831,
+    "end_time": 1831,
+    "start_fmt": "30:31",
+    "end_fmt": "30:31",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1832.jpg"
+    ]
+  },
+  {
+    "scene_index": 271,
+    "representative_frame": "frame_1844.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1844.jpg",
+    "start_time": 1832,
+    "end_time": 1853,
+    "start_fmt": "30:32",
+    "end_fmt": "30:53",
+    "duration_sec": 22,
+    "frame_count": 22,
+    "all_frames": [
+      "frame_1833.jpg",
+      "frame_1834.jpg",
+      "frame_1835.jpg",
+      "frame_1836.jpg",
+      "frame_1837.jpg",
+      "frame_1838.jpg",
+      "frame_1839.jpg",
+      "frame_1840.jpg",
+      "frame_1841.jpg",
+      "frame_1842.jpg",
+      "frame_1843.jpg",
+      "frame_1844.jpg",
+      "frame_1845.jpg",
+      "frame_1846.jpg",
+      "frame_1847.jpg",
+      "frame_1848.jpg",
+      "frame_1849.jpg",
+      "frame_1850.jpg",
+      "frame_1851.jpg",
+      "frame_1852.jpg",
+      "frame_1853.jpg",
+      "frame_1854.jpg"
+    ]
+  },
+  {
+    "scene_index": 272,
+    "representative_frame": "frame_1863.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1863.jpg",
+    "start_time": 1854,
+    "end_time": 1870,
+    "start_fmt": "30:54",
+    "end_fmt": "31:10",
+    "duration_sec": 17,
+    "frame_count": 17,
+    "all_frames": [
+      "frame_1855.jpg",
+      "frame_1856.jpg",
+      "frame_1857.jpg",
+      "frame_1858.jpg",
+      "frame_1859.jpg",
+      "frame_1860.jpg",
+      "frame_1861.jpg",
+      "frame_1862.jpg",
+      "frame_1863.jpg",
+      "frame_1864.jpg",
+      "frame_1865.jpg",
+      "frame_1866.jpg",
+      "frame_1867.jpg",
+      "frame_1868.jpg",
+      "frame_1869.jpg",
+      "frame_1870.jpg",
+      "frame_1871.jpg"
+    ]
+  },
+  {
+    "scene_index": 273,
+    "representative_frame": "frame_1876.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1876.jpg",
+    "start_time": 1871,
+    "end_time": 1878,
+    "start_fmt": "31:11",
+    "end_fmt": "31:18",
+    "duration_sec": 8,
+    "frame_count": 8,
+    "all_frames": [
+      "frame_1872.jpg",
+      "frame_1873.jpg",
+      "frame_1874.jpg",
+      "frame_1875.jpg",
+      "frame_1876.jpg",
+      "frame_1877.jpg",
+      "frame_1878.jpg",
+      "frame_1879.jpg"
+    ]
+  },
+  {
+    "scene_index": 274,
+    "representative_frame": "frame_1881.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1881.jpg",
+    "start_time": 1879,
+    "end_time": 1880,
+    "start_fmt": "31:19",
+    "end_fmt": "31:20",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_1880.jpg",
+      "frame_1881.jpg"
+    ]
+  },
+  {
+    "scene_index": 275,
+    "representative_frame": "frame_1883.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1883.jpg",
+    "start_time": 1881,
+    "end_time": 1883,
+    "start_fmt": "31:21",
+    "end_fmt": "31:23",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_1882.jpg",
+      "frame_1883.jpg",
+      "frame_1884.jpg"
+    ]
+  },
+  {
+    "scene_index": 276,
+    "representative_frame": "frame_1887.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1887.jpg",
+    "start_time": 1884,
+    "end_time": 1887,
+    "start_fmt": "31:24",
+    "end_fmt": "31:27",
+    "duration_sec": 4,
+    "frame_count": 4,
+    "all_frames": [
+      "frame_1885.jpg",
+      "frame_1886.jpg",
+      "frame_1887.jpg",
+      "frame_1888.jpg"
+    ]
+  },
+  {
+    "scene_index": 277,
+    "representative_frame": "frame_1909.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1909.jpg",
+    "start_time": 1888,
+    "end_time": 1928,
+    "start_fmt": "31:28",
+    "end_fmt": "32:08",
+    "duration_sec": 41,
+    "frame_count": 41,
+    "all_frames": [
+      "frame_1889.jpg",
+      "frame_1890.jpg",
+      "frame_1891.jpg",
+      "frame_1892.jpg",
+      "frame_1893.jpg",
+      "frame_1894.jpg",
+      "frame_1895.jpg",
+      "frame_1896.jpg",
+      "frame_1897.jpg",
+      "frame_1898.jpg",
+      "frame_1899.jpg",
+      "frame_1900.jpg",
+      "frame_1901.jpg",
+      "frame_1902.jpg",
+      "frame_1903.jpg",
+      "frame_1904.jpg",
+      "frame_1905.jpg",
+      "frame_1906.jpg",
+      "frame_1907.jpg",
+      "frame_1908.jpg",
+      "frame_1909.jpg",
+      "frame_1910.jpg",
+      "frame_1911.jpg",
+      "frame_1912.jpg",
+      "frame_1913.jpg",
+      "frame_1914.jpg",
+      "frame_1915.jpg",
+      "frame_1916.jpg",
+      "frame_1917.jpg",
+      "frame_1918.jpg",
+      "frame_1919.jpg",
+      "frame_1920.jpg",
+      "frame_1921.jpg",
+      "frame_1922.jpg",
+      "frame_1923.jpg",
+      "frame_1924.jpg",
+      "frame_1925.jpg",
+      "frame_1926.jpg",
+      "frame_1927.jpg",
+      "frame_1928.jpg",
+      "frame_1929.jpg"
+    ]
+  },
+  {
+    "scene_index": 278,
+    "representative_frame": "frame_1930.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1930.jpg",
+    "start_time": 1929,
+    "end_time": 1929,
+    "start_fmt": "32:09",
+    "end_fmt": "32:09",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1930.jpg"
+    ]
+  },
+  {
+    "scene_index": 279,
+    "representative_frame": "frame_1931.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1931.jpg",
+    "start_time": 1930,
+    "end_time": 1930,
+    "start_fmt": "32:10",
+    "end_fmt": "32:10",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1931.jpg"
+    ]
+  },
+  {
+    "scene_index": 280,
+    "representative_frame": "frame_1947.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1947.jpg",
+    "start_time": 1931,
+    "end_time": 1960,
+    "start_fmt": "32:11",
+    "end_fmt": "32:40",
+    "duration_sec": 30,
+    "frame_count": 30,
+    "all_frames": [
+      "frame_1932.jpg",
+      "frame_1933.jpg",
+      "frame_1934.jpg",
+      "frame_1935.jpg",
+      "frame_1936.jpg",
+      "frame_1937.jpg",
+      "frame_1938.jpg",
+      "frame_1939.jpg",
+      "frame_1940.jpg",
+      "frame_1941.jpg",
+      "frame_1942.jpg",
+      "frame_1943.jpg",
+      "frame_1944.jpg",
+      "frame_1945.jpg",
+      "frame_1946.jpg",
+      "frame_1947.jpg",
+      "frame_1948.jpg",
+      "frame_1949.jpg",
+      "frame_1950.jpg",
+      "frame_1951.jpg",
+      "frame_1952.jpg",
+      "frame_1953.jpg",
+      "frame_1954.jpg",
+      "frame_1955.jpg",
+      "frame_1956.jpg",
+      "frame_1957.jpg",
+      "frame_1958.jpg",
+      "frame_1959.jpg",
+      "frame_1960.jpg",
+      "frame_1961.jpg"
+    ]
+  },
+  {
+    "scene_index": 281,
+    "representative_frame": "frame_1962.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1962.jpg",
+    "start_time": 1961,
+    "end_time": 1961,
+    "start_fmt": "32:41",
+    "end_fmt": "32:41",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_1962.jpg"
+    ]
+  },
+  {
+    "scene_index": 282,
+    "representative_frame": "frame_1964.jpg",
+    "representative_path": "salesforce-crm/frames/frame_1964.jpg",
+    "start_time": 1962,
+    "end_time": 1964,
+    "start_fmt": "32:42",
+    "end_fmt": "32:44",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_1963.jpg",
+      "frame_1964.jpg",
+      "frame_1965.jpg"
+    ]
+  },
+  {
+    "scene_index": 283,
+    "representative_frame": "frame_2010.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2010.jpg",
+    "start_time": 1965,
+    "end_time": 2052,
+    "start_fmt": "32:45",
+    "end_fmt": "34:12",
+    "duration_sec": 88,
+    "frame_count": 88,
+    "all_frames": [
+      "frame_1966.jpg",
+      "frame_1967.jpg",
+      "frame_1968.jpg",
+      "frame_1969.jpg",
+      "frame_1970.jpg",
+      "frame_1971.jpg",
+      "frame_1972.jpg",
+      "frame_1973.jpg",
+      "frame_1974.jpg",
+      "frame_1975.jpg",
+      "frame_1976.jpg",
+      "frame_1977.jpg",
+      "frame_1978.jpg",
+      "frame_1979.jpg",
+      "frame_1980.jpg",
+      "frame_1981.jpg",
+      "frame_1982.jpg",
+      "frame_1983.jpg",
+      "frame_1984.jpg",
+      "frame_1985.jpg",
+      "frame_1986.jpg",
+      "frame_1987.jpg",
+      "frame_1988.jpg",
+      "frame_1989.jpg",
+      "frame_1990.jpg",
+      "frame_1991.jpg",
+      "frame_1992.jpg",
+      "frame_1993.jpg",
+      "frame_1994.jpg",
+      "frame_1995.jpg",
+      "frame_1996.jpg",
+      "frame_1997.jpg",
+      "frame_1998.jpg",
+      "frame_1999.jpg",
+      "frame_2000.jpg",
+      "frame_2001.jpg",
+      "frame_2002.jpg",
+      "frame_2003.jpg",
+      "frame_2004.jpg",
+      "frame_2005.jpg",
+      "frame_2006.jpg",
+      "frame_2007.jpg",
+      "frame_2008.jpg",
+      "frame_2009.jpg",
+      "frame_2010.jpg",
+      "frame_2011.jpg",
+      "frame_2012.jpg",
+      "frame_2013.jpg",
+      "frame_2014.jpg",
+      "frame_2015.jpg",
+      "frame_2016.jpg",
+      "frame_2017.jpg",
+      "frame_2018.jpg",
+      "frame_2019.jpg",
+      "frame_2020.jpg",
+      "frame_2021.jpg",
+      "frame_2022.jpg",
+      "frame_2023.jpg",
+      "frame_2024.jpg",
+      "frame_2025.jpg",
+      "frame_2026.jpg",
+      "frame_2027.jpg",
+      "frame_2028.jpg",
+      "frame_2029.jpg",
+      "frame_2030.jpg",
+      "frame_2031.jpg",
+      "frame_2032.jpg",
+      "frame_2033.jpg",
+      "frame_2034.jpg",
+      "frame_2035.jpg",
+      "frame_2036.jpg",
+      "frame_2037.jpg",
+      "frame_2038.jpg",
+      "frame_2039.jpg",
+      "frame_2040.jpg",
+      "frame_2041.jpg",
+      "frame_2042.jpg",
+      "frame_2043.jpg",
+      "frame_2044.jpg",
+      "frame_2045.jpg",
+      "frame_2046.jpg",
+      "frame_2047.jpg",
+      "frame_2048.jpg",
+      "frame_2049.jpg",
+      "frame_2050.jpg",
+      "frame_2051.jpg",
+      "frame_2052.jpg",
+      "frame_2053.jpg"
+    ]
+  },
+  {
+    "scene_index": 284,
+    "representative_frame": "frame_2055.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2055.jpg",
+    "start_time": 2053,
+    "end_time": 2054,
+    "start_fmt": "34:13",
+    "end_fmt": "34:14",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2054.jpg",
+      "frame_2055.jpg"
+    ]
+  },
+  {
+    "scene_index": 285,
+    "representative_frame": "frame_2057.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2057.jpg",
+    "start_time": 2055,
+    "end_time": 2057,
+    "start_fmt": "34:15",
+    "end_fmt": "34:17",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_2056.jpg",
+      "frame_2057.jpg",
+      "frame_2058.jpg"
+    ]
+  },
+  {
+    "scene_index": 286,
+    "representative_frame": "frame_2064.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2064.jpg",
+    "start_time": 2058,
+    "end_time": 2067,
+    "start_fmt": "34:18",
+    "end_fmt": "34:27",
+    "duration_sec": 10,
+    "frame_count": 10,
+    "all_frames": [
+      "frame_2059.jpg",
+      "frame_2060.jpg",
+      "frame_2061.jpg",
+      "frame_2062.jpg",
+      "frame_2063.jpg",
+      "frame_2064.jpg",
+      "frame_2065.jpg",
+      "frame_2066.jpg",
+      "frame_2067.jpg",
+      "frame_2068.jpg"
+    ]
+  },
+  {
+    "scene_index": 287,
+    "representative_frame": "frame_2069.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2069.jpg",
+    "start_time": 2068,
+    "end_time": 2068,
+    "start_fmt": "34:28",
+    "end_fmt": "34:28",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2069.jpg"
+    ]
+  },
+  {
+    "scene_index": 288,
+    "representative_frame": "frame_2071.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2071.jpg",
+    "start_time": 2069,
+    "end_time": 2070,
+    "start_fmt": "34:29",
+    "end_fmt": "34:30",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2070.jpg",
+      "frame_2071.jpg"
+    ]
+  },
+  {
+    "scene_index": 289,
+    "representative_frame": "frame_2072.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2072.jpg",
+    "start_time": 2071,
+    "end_time": 2071,
+    "start_fmt": "34:31",
+    "end_fmt": "34:31",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2072.jpg"
+    ]
+  },
+  {
+    "scene_index": 290,
+    "representative_frame": "frame_2083.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2083.jpg",
+    "start_time": 2072,
+    "end_time": 2091,
+    "start_fmt": "34:32",
+    "end_fmt": "34:51",
+    "duration_sec": 20,
+    "frame_count": 20,
+    "all_frames": [
+      "frame_2073.jpg",
+      "frame_2074.jpg",
+      "frame_2075.jpg",
+      "frame_2076.jpg",
+      "frame_2077.jpg",
+      "frame_2078.jpg",
+      "frame_2079.jpg",
+      "frame_2080.jpg",
+      "frame_2081.jpg",
+      "frame_2082.jpg",
+      "frame_2083.jpg",
+      "frame_2084.jpg",
+      "frame_2085.jpg",
+      "frame_2086.jpg",
+      "frame_2087.jpg",
+      "frame_2088.jpg",
+      "frame_2089.jpg",
+      "frame_2090.jpg",
+      "frame_2091.jpg",
+      "frame_2092.jpg"
+    ]
+  },
+  {
+    "scene_index": 291,
+    "representative_frame": "frame_2093.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2093.jpg",
+    "start_time": 2092,
+    "end_time": 2092,
+    "start_fmt": "34:52",
+    "end_fmt": "34:52",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2093.jpg"
+    ]
+  },
+  {
+    "scene_index": 292,
+    "representative_frame": "frame_2104.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2104.jpg",
+    "start_time": 2093,
+    "end_time": 2112,
+    "start_fmt": "34:53",
+    "end_fmt": "35:12",
+    "duration_sec": 20,
+    "frame_count": 20,
+    "all_frames": [
+      "frame_2094.jpg",
+      "frame_2095.jpg",
+      "frame_2096.jpg",
+      "frame_2097.jpg",
+      "frame_2098.jpg",
+      "frame_2099.jpg",
+      "frame_2100.jpg",
+      "frame_2101.jpg",
+      "frame_2102.jpg",
+      "frame_2103.jpg",
+      "frame_2104.jpg",
+      "frame_2105.jpg",
+      "frame_2106.jpg",
+      "frame_2107.jpg",
+      "frame_2108.jpg",
+      "frame_2109.jpg",
+      "frame_2110.jpg",
+      "frame_2111.jpg",
+      "frame_2112.jpg",
+      "frame_2113.jpg"
+    ]
+  },
+  {
+    "scene_index": 293,
+    "representative_frame": "frame_2151.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2151.jpg",
+    "start_time": 2113,
+    "end_time": 2186,
+    "start_fmt": "35:13",
+    "end_fmt": "36:26",
+    "duration_sec": 74,
+    "frame_count": 74,
+    "all_frames": [
+      "frame_2114.jpg",
+      "frame_2115.jpg",
+      "frame_2116.jpg",
+      "frame_2117.jpg",
+      "frame_2118.jpg",
+      "frame_2119.jpg",
+      "frame_2120.jpg",
+      "frame_2121.jpg",
+      "frame_2122.jpg",
+      "frame_2123.jpg",
+      "frame_2124.jpg",
+      "frame_2125.jpg",
+      "frame_2126.jpg",
+      "frame_2127.jpg",
+      "frame_2128.jpg",
+      "frame_2129.jpg",
+      "frame_2130.jpg",
+      "frame_2131.jpg",
+      "frame_2132.jpg",
+      "frame_2133.jpg",
+      "frame_2134.jpg",
+      "frame_2135.jpg",
+      "frame_2136.jpg",
+      "frame_2137.jpg",
+      "frame_2138.jpg",
+      "frame_2139.jpg",
+      "frame_2140.jpg",
+      "frame_2141.jpg",
+      "frame_2142.jpg",
+      "frame_2143.jpg",
+      "frame_2144.jpg",
+      "frame_2145.jpg",
+      "frame_2146.jpg",
+      "frame_2147.jpg",
+      "frame_2148.jpg",
+      "frame_2149.jpg",
+      "frame_2150.jpg",
+      "frame_2151.jpg",
+      "frame_2152.jpg",
+      "frame_2153.jpg",
+      "frame_2154.jpg",
+      "frame_2155.jpg",
+      "frame_2156.jpg",
+      "frame_2157.jpg",
+      "frame_2158.jpg",
+      "frame_2159.jpg",
+      "frame_2160.jpg",
+      "frame_2161.jpg",
+      "frame_2162.jpg",
+      "frame_2163.jpg",
+      "frame_2164.jpg",
+      "frame_2165.jpg",
+      "frame_2166.jpg",
+      "frame_2167.jpg",
+      "frame_2168.jpg",
+      "frame_2169.jpg",
+      "frame_2170.jpg",
+      "frame_2171.jpg",
+      "frame_2172.jpg",
+      "frame_2173.jpg",
+      "frame_2174.jpg",
+      "frame_2175.jpg",
+      "frame_2176.jpg",
+      "frame_2177.jpg",
+      "frame_2178.jpg",
+      "frame_2179.jpg",
+      "frame_2180.jpg",
+      "frame_2181.jpg",
+      "frame_2182.jpg",
+      "frame_2183.jpg",
+      "frame_2184.jpg",
+      "frame_2185.jpg",
+      "frame_2186.jpg",
+      "frame_2187.jpg"
+    ]
+  },
+  {
+    "scene_index": 294,
+    "representative_frame": "frame_2192.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2192.jpg",
+    "start_time": 2187,
+    "end_time": 2194,
+    "start_fmt": "36:27",
+    "end_fmt": "36:34",
+    "duration_sec": 8,
+    "frame_count": 8,
+    "all_frames": [
+      "frame_2188.jpg",
+      "frame_2189.jpg",
+      "frame_2190.jpg",
+      "frame_2191.jpg",
+      "frame_2192.jpg",
+      "frame_2193.jpg",
+      "frame_2194.jpg",
+      "frame_2195.jpg"
+    ]
+  },
+  {
+    "scene_index": 295,
+    "representative_frame": "frame_2197.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2197.jpg",
+    "start_time": 2195,
+    "end_time": 2197,
+    "start_fmt": "36:35",
+    "end_fmt": "36:37",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_2196.jpg",
+      "frame_2197.jpg",
+      "frame_2198.jpg"
+    ]
+  },
+  {
+    "scene_index": 296,
+    "representative_frame": "frame_2207.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2207.jpg",
+    "start_time": 2198,
+    "end_time": 2214,
+    "start_fmt": "36:38",
+    "end_fmt": "36:54",
+    "duration_sec": 17,
+    "frame_count": 17,
+    "all_frames": [
+      "frame_2199.jpg",
+      "frame_2200.jpg",
+      "frame_2201.jpg",
+      "frame_2202.jpg",
+      "frame_2203.jpg",
+      "frame_2204.jpg",
+      "frame_2205.jpg",
+      "frame_2206.jpg",
+      "frame_2207.jpg",
+      "frame_2208.jpg",
+      "frame_2209.jpg",
+      "frame_2210.jpg",
+      "frame_2211.jpg",
+      "frame_2212.jpg",
+      "frame_2213.jpg",
+      "frame_2214.jpg",
+      "frame_2215.jpg"
+    ]
+  },
+  {
+    "scene_index": 297,
+    "representative_frame": "frame_2216.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2216.jpg",
+    "start_time": 2215,
+    "end_time": 2215,
+    "start_fmt": "36:55",
+    "end_fmt": "36:55",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2216.jpg"
+    ]
+  },
+  {
+    "scene_index": 298,
+    "representative_frame": "frame_2229.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2229.jpg",
+    "start_time": 2216,
+    "end_time": 2239,
+    "start_fmt": "36:56",
+    "end_fmt": "37:19",
+    "duration_sec": 24,
+    "frame_count": 24,
+    "all_frames": [
+      "frame_2217.jpg",
+      "frame_2218.jpg",
+      "frame_2219.jpg",
+      "frame_2220.jpg",
+      "frame_2221.jpg",
+      "frame_2222.jpg",
+      "frame_2223.jpg",
+      "frame_2224.jpg",
+      "frame_2225.jpg",
+      "frame_2226.jpg",
+      "frame_2227.jpg",
+      "frame_2228.jpg",
+      "frame_2229.jpg",
+      "frame_2230.jpg",
+      "frame_2231.jpg",
+      "frame_2232.jpg",
+      "frame_2233.jpg",
+      "frame_2234.jpg",
+      "frame_2235.jpg",
+      "frame_2236.jpg",
+      "frame_2237.jpg",
+      "frame_2238.jpg",
+      "frame_2239.jpg",
+      "frame_2240.jpg"
+    ]
+  },
+  {
+    "scene_index": 299,
+    "representative_frame": "frame_2241.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2241.jpg",
+    "start_time": 2240,
+    "end_time": 2240,
+    "start_fmt": "37:20",
+    "end_fmt": "37:20",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2241.jpg"
+    ]
+  },
+  {
+    "scene_index": 300,
+    "representative_frame": "frame_2242.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2242.jpg",
+    "start_time": 2241,
+    "end_time": 2241,
+    "start_fmt": "37:21",
+    "end_fmt": "37:21",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2242.jpg"
+    ]
+  },
+  {
+    "scene_index": 301,
+    "representative_frame": "frame_2244.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2244.jpg",
+    "start_time": 2242,
+    "end_time": 2243,
+    "start_fmt": "37:22",
+    "end_fmt": "37:23",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2243.jpg",
+      "frame_2244.jpg"
+    ]
+  },
+  {
+    "scene_index": 302,
+    "representative_frame": "frame_2245.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2245.jpg",
+    "start_time": 2244,
+    "end_time": 2244,
+    "start_fmt": "37:24",
+    "end_fmt": "37:24",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2245.jpg"
+    ]
+  },
+  {
+    "scene_index": 303,
+    "representative_frame": "frame_2247.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2247.jpg",
+    "start_time": 2245,
+    "end_time": 2246,
+    "start_fmt": "37:25",
+    "end_fmt": "37:26",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2246.jpg",
+      "frame_2247.jpg"
+    ]
+  },
+  {
+    "scene_index": 304,
+    "representative_frame": "frame_2250.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2250.jpg",
+    "start_time": 2247,
+    "end_time": 2251,
+    "start_fmt": "37:27",
+    "end_fmt": "37:31",
+    "duration_sec": 5,
+    "frame_count": 5,
+    "all_frames": [
+      "frame_2248.jpg",
+      "frame_2249.jpg",
+      "frame_2250.jpg",
+      "frame_2251.jpg",
+      "frame_2252.jpg"
+    ]
+  },
+  {
+    "scene_index": 305,
+    "representative_frame": "frame_2253.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2253.jpg",
+    "start_time": 2252,
+    "end_time": 2252,
+    "start_fmt": "37:32",
+    "end_fmt": "37:32",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2253.jpg"
+    ]
+  },
+  {
+    "scene_index": 306,
+    "representative_frame": "frame_2255.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2255.jpg",
+    "start_time": 2253,
+    "end_time": 2254,
+    "start_fmt": "37:33",
+    "end_fmt": "37:34",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2254.jpg",
+      "frame_2255.jpg"
+    ]
+  },
+  {
+    "scene_index": 307,
+    "representative_frame": "frame_2260.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2260.jpg",
+    "start_time": 2255,
+    "end_time": 2262,
+    "start_fmt": "37:35",
+    "end_fmt": "37:42",
+    "duration_sec": 8,
+    "frame_count": 8,
+    "all_frames": [
+      "frame_2256.jpg",
+      "frame_2257.jpg",
+      "frame_2258.jpg",
+      "frame_2259.jpg",
+      "frame_2260.jpg",
+      "frame_2261.jpg",
+      "frame_2262.jpg",
+      "frame_2263.jpg"
+    ]
+  },
+  {
+    "scene_index": 308,
+    "representative_frame": "frame_2264.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2264.jpg",
+    "start_time": 2263,
+    "end_time": 2263,
+    "start_fmt": "37:43",
+    "end_fmt": "37:43",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2264.jpg"
+    ]
+  },
+  {
+    "scene_index": 309,
+    "representative_frame": "frame_2266.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2266.jpg",
+    "start_time": 2264,
+    "end_time": 2265,
+    "start_fmt": "37:44",
+    "end_fmt": "37:45",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2265.jpg",
+      "frame_2266.jpg"
+    ]
+  },
+  {
+    "scene_index": 310,
+    "representative_frame": "frame_2267.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2267.jpg",
+    "start_time": 2266,
+    "end_time": 2266,
+    "start_fmt": "37:46",
+    "end_fmt": "37:46",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2267.jpg"
+    ]
+  },
+  {
+    "scene_index": 311,
+    "representative_frame": "frame_2268.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2268.jpg",
+    "start_time": 2267,
+    "end_time": 2267,
+    "start_fmt": "37:47",
+    "end_fmt": "37:47",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2268.jpg"
+    ]
+  },
+  {
+    "scene_index": 312,
+    "representative_frame": "frame_2271.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2271.jpg",
+    "start_time": 2268,
+    "end_time": 2272,
+    "start_fmt": "37:48",
+    "end_fmt": "37:52",
+    "duration_sec": 5,
+    "frame_count": 5,
+    "all_frames": [
+      "frame_2269.jpg",
+      "frame_2270.jpg",
+      "frame_2271.jpg",
+      "frame_2272.jpg",
+      "frame_2273.jpg"
+    ]
+  },
+  {
+    "scene_index": 313,
+    "representative_frame": "frame_2275.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2275.jpg",
+    "start_time": 2273,
+    "end_time": 2275,
+    "start_fmt": "37:53",
+    "end_fmt": "37:55",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_2274.jpg",
+      "frame_2275.jpg",
+      "frame_2276.jpg"
+    ]
+  },
+  {
+    "scene_index": 314,
+    "representative_frame": "frame_2278.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2278.jpg",
+    "start_time": 2276,
+    "end_time": 2277,
+    "start_fmt": "37:56",
+    "end_fmt": "37:57",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2277.jpg",
+      "frame_2278.jpg"
+    ]
+  },
+  {
+    "scene_index": 315,
+    "representative_frame": "frame_2280.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2280.jpg",
+    "start_time": 2278,
+    "end_time": 2279,
+    "start_fmt": "37:58",
+    "end_fmt": "37:59",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2279.jpg",
+      "frame_2280.jpg"
+    ]
+  },
+  {
+    "scene_index": 316,
+    "representative_frame": "frame_2282.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2282.jpg",
+    "start_time": 2280,
+    "end_time": 2282,
+    "start_fmt": "38:00",
+    "end_fmt": "38:02",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_2281.jpg",
+      "frame_2282.jpg",
+      "frame_2283.jpg"
+    ]
+  },
+  {
+    "scene_index": 317,
+    "representative_frame": "frame_2284.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2284.jpg",
+    "start_time": 2283,
+    "end_time": 2283,
+    "start_fmt": "38:03",
+    "end_fmt": "38:03",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2284.jpg"
+    ]
+  },
+  {
+    "scene_index": 318,
+    "representative_frame": "frame_2285.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2285.jpg",
+    "start_time": 2284,
+    "end_time": 2284,
+    "start_fmt": "38:04",
+    "end_fmt": "38:04",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2285.jpg"
+    ]
+  },
+  {
+    "scene_index": 319,
+    "representative_frame": "frame_2286.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2286.jpg",
+    "start_time": 2285,
+    "end_time": 2285,
+    "start_fmt": "38:05",
+    "end_fmt": "38:05",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2286.jpg"
+    ]
+  },
+  {
+    "scene_index": 320,
+    "representative_frame": "frame_2287.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2287.jpg",
+    "start_time": 2286,
+    "end_time": 2286,
+    "start_fmt": "38:06",
+    "end_fmt": "38:06",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2287.jpg"
+    ]
+  },
+  {
+    "scene_index": 321,
+    "representative_frame": "frame_2288.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2288.jpg",
+    "start_time": 2287,
+    "end_time": 2287,
+    "start_fmt": "38:07",
+    "end_fmt": "38:07",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2288.jpg"
+    ]
+  },
+  {
+    "scene_index": 322,
+    "representative_frame": "frame_2290.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2290.jpg",
+    "start_time": 2288,
+    "end_time": 2290,
+    "start_fmt": "38:08",
+    "end_fmt": "38:10",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_2289.jpg",
+      "frame_2290.jpg",
+      "frame_2291.jpg"
+    ]
+  },
+  {
+    "scene_index": 323,
+    "representative_frame": "frame_2295.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2295.jpg",
+    "start_time": 2291,
+    "end_time": 2297,
+    "start_fmt": "38:11",
+    "end_fmt": "38:17",
+    "duration_sec": 7,
+    "frame_count": 7,
+    "all_frames": [
+      "frame_2292.jpg",
+      "frame_2293.jpg",
+      "frame_2294.jpg",
+      "frame_2295.jpg",
+      "frame_2296.jpg",
+      "frame_2297.jpg",
+      "frame_2298.jpg"
+    ]
+  },
+  {
+    "scene_index": 324,
+    "representative_frame": "frame_2299.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2299.jpg",
+    "start_time": 2298,
+    "end_time": 2298,
+    "start_fmt": "38:18",
+    "end_fmt": "38:18",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2299.jpg"
+    ]
+  },
+  {
+    "scene_index": 325,
+    "representative_frame": "frame_2300.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2300.jpg",
+    "start_time": 2299,
+    "end_time": 2299,
+    "start_fmt": "38:19",
+    "end_fmt": "38:19",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2300.jpg"
+    ]
+  },
+  {
+    "scene_index": 326,
+    "representative_frame": "frame_2302.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2302.jpg",
+    "start_time": 2300,
+    "end_time": 2301,
+    "start_fmt": "38:20",
+    "end_fmt": "38:21",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2301.jpg",
+      "frame_2302.jpg"
+    ]
+  },
+  {
+    "scene_index": 327,
+    "representative_frame": "frame_2303.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2303.jpg",
+    "start_time": 2302,
+    "end_time": 2302,
+    "start_fmt": "38:22",
+    "end_fmt": "38:22",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2303.jpg"
+    ]
+  },
+  {
+    "scene_index": 328,
+    "representative_frame": "frame_2304.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2304.jpg",
+    "start_time": 2303,
+    "end_time": 2303,
+    "start_fmt": "38:23",
+    "end_fmt": "38:23",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2304.jpg"
+    ]
+  },
+  {
+    "scene_index": 329,
+    "representative_frame": "frame_2305.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2305.jpg",
+    "start_time": 2304,
+    "end_time": 2304,
+    "start_fmt": "38:24",
+    "end_fmt": "38:24",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2305.jpg"
+    ]
+  },
+  {
+    "scene_index": 330,
+    "representative_frame": "frame_2306.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2306.jpg",
+    "start_time": 2305,
+    "end_time": 2305,
+    "start_fmt": "38:25",
+    "end_fmt": "38:25",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2306.jpg"
+    ]
+  },
+  {
+    "scene_index": 331,
+    "representative_frame": "frame_2307.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2307.jpg",
+    "start_time": 2306,
+    "end_time": 2306,
+    "start_fmt": "38:26",
+    "end_fmt": "38:26",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2307.jpg"
+    ]
+  },
+  {
+    "scene_index": 332,
+    "representative_frame": "frame_2308.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2308.jpg",
+    "start_time": 2307,
+    "end_time": 2307,
+    "start_fmt": "38:27",
+    "end_fmt": "38:27",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2308.jpg"
+    ]
+  },
+  {
+    "scene_index": 333,
+    "representative_frame": "frame_2310.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2310.jpg",
+    "start_time": 2308,
+    "end_time": 2309,
+    "start_fmt": "38:28",
+    "end_fmt": "38:29",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2309.jpg",
+      "frame_2310.jpg"
+    ]
+  },
+  {
+    "scene_index": 334,
+    "representative_frame": "frame_2312.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2312.jpg",
+    "start_time": 2310,
+    "end_time": 2311,
+    "start_fmt": "38:30",
+    "end_fmt": "38:31",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2311.jpg",
+      "frame_2312.jpg"
+    ]
+  },
+  {
+    "scene_index": 335,
+    "representative_frame": "frame_2313.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2313.jpg",
+    "start_time": 2312,
+    "end_time": 2312,
+    "start_fmt": "38:32",
+    "end_fmt": "38:32",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2313.jpg"
+    ]
+  },
+  {
+    "scene_index": 336,
+    "representative_frame": "frame_2314.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2314.jpg",
+    "start_time": 2313,
+    "end_time": 2313,
+    "start_fmt": "38:33",
+    "end_fmt": "38:33",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2314.jpg"
+    ]
+  },
+  {
+    "scene_index": 337,
+    "representative_frame": "frame_2316.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2316.jpg",
+    "start_time": 2314,
+    "end_time": 2315,
+    "start_fmt": "38:34",
+    "end_fmt": "38:35",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2315.jpg",
+      "frame_2316.jpg"
+    ]
+  },
+  {
+    "scene_index": 338,
+    "representative_frame": "frame_2317.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2317.jpg",
+    "start_time": 2316,
+    "end_time": 2316,
+    "start_fmt": "38:36",
+    "end_fmt": "38:36",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2317.jpg"
+    ]
+  },
+  {
+    "scene_index": 339,
+    "representative_frame": "frame_2318.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2318.jpg",
+    "start_time": 2317,
+    "end_time": 2317,
+    "start_fmt": "38:37",
+    "end_fmt": "38:37",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2318.jpg"
+    ]
+  },
+  {
+    "scene_index": 340,
+    "representative_frame": "frame_2319.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2319.jpg",
+    "start_time": 2318,
+    "end_time": 2318,
+    "start_fmt": "38:38",
+    "end_fmt": "38:38",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2319.jpg"
+    ]
+  },
+  {
+    "scene_index": 341,
+    "representative_frame": "frame_2321.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2321.jpg",
+    "start_time": 2319,
+    "end_time": 2320,
+    "start_fmt": "38:39",
+    "end_fmt": "38:40",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2320.jpg",
+      "frame_2321.jpg"
+    ]
+  },
+  {
+    "scene_index": 342,
+    "representative_frame": "frame_2322.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2322.jpg",
+    "start_time": 2321,
+    "end_time": 2321,
+    "start_fmt": "38:41",
+    "end_fmt": "38:41",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2322.jpg"
+    ]
+  },
+  {
+    "scene_index": 343,
+    "representative_frame": "frame_2323.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2323.jpg",
+    "start_time": 2322,
+    "end_time": 2322,
+    "start_fmt": "38:42",
+    "end_fmt": "38:42",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2323.jpg"
+    ]
+  },
+  {
+    "scene_index": 344,
+    "representative_frame": "frame_2324.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2324.jpg",
+    "start_time": 2323,
+    "end_time": 2323,
+    "start_fmt": "38:43",
+    "end_fmt": "38:43",
+    "duration_sec": 1,
+    "frame_count": 1,
+    "all_frames": [
+      "frame_2324.jpg"
+    ]
+  },
+  {
+    "scene_index": 345,
+    "representative_frame": "frame_2326.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2326.jpg",
+    "start_time": 2324,
+    "end_time": 2325,
+    "start_fmt": "38:44",
+    "end_fmt": "38:45",
+    "duration_sec": 2,
+    "frame_count": 2,
+    "all_frames": [
+      "frame_2325.jpg",
+      "frame_2326.jpg"
+    ]
+  },
+  {
+    "scene_index": 346,
+    "representative_frame": "frame_2328.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2328.jpg",
+    "start_time": 2326,
+    "end_time": 2328,
+    "start_fmt": "38:46",
+    "end_fmt": "38:48",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_2327.jpg",
+      "frame_2328.jpg",
+      "frame_2329.jpg"
+    ]
+  },
+  {
+    "scene_index": 347,
+    "representative_frame": "frame_2333.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2333.jpg",
+    "start_time": 2329,
+    "end_time": 2335,
+    "start_fmt": "38:49",
+    "end_fmt": "38:55",
+    "duration_sec": 7,
+    "frame_count": 7,
+    "all_frames": [
+      "frame_2330.jpg",
+      "frame_2331.jpg",
+      "frame_2332.jpg",
+      "frame_2333.jpg",
+      "frame_2334.jpg",
+      "frame_2335.jpg",
+      "frame_2336.jpg"
+    ]
+  },
+  {
+    "scene_index": 348,
+    "representative_frame": "frame_2338.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2338.jpg",
+    "start_time": 2336,
+    "end_time": 2338,
+    "start_fmt": "38:56",
+    "end_fmt": "38:58",
+    "duration_sec": 3,
+    "frame_count": 3,
+    "all_frames": [
+      "frame_2337.jpg",
+      "frame_2338.jpg",
+      "frame_2339.jpg"
+    ]
+  },
+  {
+    "scene_index": 349,
+    "representative_frame": "frame_2346.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2346.jpg",
+    "start_time": 2339,
+    "end_time": 2351,
+    "start_fmt": "38:59",
+    "end_fmt": "39:11",
+    "duration_sec": 13,
+    "frame_count": 13,
+    "all_frames": [
+      "frame_2340.jpg",
+      "frame_2341.jpg",
+      "frame_2342.jpg",
+      "frame_2343.jpg",
+      "frame_2344.jpg",
+      "frame_2345.jpg",
+      "frame_2346.jpg",
+      "frame_2347.jpg",
+      "frame_2348.jpg",
+      "frame_2349.jpg",
+      "frame_2350.jpg",
+      "frame_2351.jpg",
+      "frame_2352.jpg"
+    ]
+  },
+  {
+    "scene_index": 350,
+    "representative_frame": "frame_2355.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2355.jpg",
+    "start_time": 2352,
+    "end_time": 2356,
+    "start_fmt": "39:12",
+    "end_fmt": "39:16",
+    "duration_sec": 5,
+    "frame_count": 5,
+    "all_frames": [
+      "frame_2353.jpg",
+      "frame_2354.jpg",
+      "frame_2355.jpg",
+      "frame_2356.jpg",
+      "frame_2357.jpg"
+    ]
+  },
+  {
+    "scene_index": 351,
+    "representative_frame": "frame_2362.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2362.jpg",
+    "start_time": 2357,
+    "end_time": 2364,
+    "start_fmt": "39:17",
+    "end_fmt": "39:24",
+    "duration_sec": 8,
+    "frame_count": 8,
+    "all_frames": [
+      "frame_2358.jpg",
+      "frame_2359.jpg",
+      "frame_2360.jpg",
+      "frame_2361.jpg",
+      "frame_2362.jpg",
+      "frame_2363.jpg",
+      "frame_2364.jpg",
+      "frame_2365.jpg"
+    ]
+  },
+  {
+    "scene_index": 352,
+    "representative_frame": "frame_2383.jpg",
+    "representative_path": "salesforce-crm/frames/frame_2383.jpg",
+    "start_time": 2365,
+    "end_time": 2399,
+    "start_fmt": "39:25",
+    "end_fmt": "39:59",
+    "duration_sec": 35,
+    "frame_count": 35,
+    "all_frames": [
+      "frame_2366.jpg",
+      "frame_2367.jpg",
+      "frame_2368.jpg",
+      "frame_2369.jpg",
+      "frame_2370.jpg",
+      "frame_2371.jpg",
+      "frame_2372.jpg",
+      "frame_2373.jpg",
+      "frame_2374.jpg",
+      "frame_2375.jpg",
+      "frame_2376.jpg",
+      "frame_2377.jpg",
+      "frame_2378.jpg",
+      "frame_2379.jpg",
+      "frame_2380.jpg",
+      "frame_2381.jpg",
+      "frame_2382.jpg",
+      "frame_2383.jpg",
+      "frame_2384.jpg",
+      "frame_2385.jpg",
+      "frame_2386.jpg",
+      "frame_2387.jpg",
+      "frame_2388.jpg",
+      "frame_2389.jpg",
+      "frame_2390.jpg",
+      "frame_2391.jpg",
+      "frame_2392.jpg",
+      "frame_2393.jpg",
+      "frame_2394.jpg",
+      "frame_2395.jpg",
+      "frame_2396.jpg",
+      "frame_2397.jpg",
+      "frame_2398.jpg",
+      "frame_2399.jpg",
+      "frame_2400.jpg"
+    ]
+  }
+]

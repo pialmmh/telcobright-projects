@@ -1,0 +1,366 @@
+{
+  "source": "Salesforce Sales Cloud tutorial video (~40 minutes)",
+  "captured": "2026-04-13",
+  "product": "Salesforce Sales Cloud (CRM)",
+  "modules": [
+    {
+      "name": "Home",
+      "description": "Landing dashboard after login",
+      "features": [
+        "Pipeline summary chart",
+        "Tasks and events widget",
+        "Recent records list",
+        "Key deals widget",
+        "Assistant AI suggestions"
+      ]
+    },
+    {
+      "name": "Leads",
+      "description": "Prospective customers not yet qualified or converted",
+      "features": [
+        "List view with table and Kanban modes",
+        "Drag-and-drop between stages in Kanban",
+        "Lead create/edit form",
+        "Lead detail with status pipeline bar",
+        "Lead conversion to Account + Contact + Opportunity",
+        "Import via CSV",
+        "Chatter and Activity panel per record"
+      ],
+      "list_columns": ["Name", "Company", "State/Province", "Phone", "Email", "Lead Status", "Follow", "Owner", "Created Date"],
+      "kanban_stages": ["New", "Contacted", "Working", "Unqualified"],
+      "create_fields": {
+        "basic": ["Salutation", "First Name", "Last Name", "Company", "Title", "Phone", "Mobile", "Email", "Website"],
+        "lead_info": ["Lead Status", "Rating", "Lead Source", "Follow Up?"],
+        "address": ["Address", "City", "State/Province", "Postal Code", "Country"],
+        "additional": ["No. of Employees", "Annual Revenue", "Industry", "Description"]
+      },
+      "lead_source_options": ["Advertisement", "Employee Referral", "External Referral", "In-Store", "On Site", "Other", "Social", "Trade Show", "Web", "Word of mouth"],
+      "status_pipeline": ["New", "Working", "Unqualified", "Converted"],
+      "convert_lead": {
+        "description": "Converts lead into Account + Contact + Opportunity simultaneously",
+        "fields": ["Record Owner", "Converted Status"],
+        "creates": ["Account", "Contact", "Opportunity"],
+        "success_modal": "Shows created Account, Contact, and Opportunity names"
+      }
+    },
+    {
+      "name": "Accounts",
+      "description": "Businesses and organizations engaged with",
+      "features": [
+        "List view with table mode",
+        "Account create/edit form",
+        "Account detail with related tabs",
+        "Activity and Chatter panel",
+        "Duplicate detection"
+      ],
+      "list_columns": ["Account Name", "Billing State/Province", "Phone", "Type", "Account Owner Alias"],
+      "account_types": ["Prospect", "Partner", "Customer", "Reseller"],
+      "create_fields": {
+        "account_info": ["Account Owner", "Phone", "Fax", "Account Name", "Parent Account", "Website"],
+        "additional": ["Type", "Employees", "Industry", "Annual Revenue", "Description"],
+        "address": ["Billing Street", "Billing City", "Billing State/Province", "Billing Zip", "Billing Country", "Shipping Street", "Shipping City", "Shipping State/Province", "Shipping Zip", "Shipping Country"]
+      },
+      "detail_tabs": ["Details", "Contacts", "Opportunities", "Cases", "Notes & Files"],
+      "header_actions": ["Follow", "Edit", "New Contact", "New Opportunity"]
+    },
+    {
+      "name": "Contacts",
+      "description": "Individual people at Accounts",
+      "features": [
+        "List view",
+        "Contact create form",
+        "Add to Campaign (mass action)",
+        "Send List Email (mass action)",
+        "Import via CSV",
+        "Reports To hierarchy"
+      ],
+      "list_columns": ["Name", "Account Name", "Phone", "Email", "Contact Owner Alias"],
+      "list_actions": ["New", "Import", "Add to Campaign", "Send List Email"],
+      "create_fields": {
+        "name": ["Salutation", "First Name", "Last Name"],
+        "contact_info": ["Account Name", "Mobile", "Email", "Title", "Reports To"],
+        "mailing_address": ["Mailing Street", "Mailing City", "Mailing State/Province", "Mailing Zip", "Mailing Country"],
+        "other_address": ["Other Street", "Other City", "Other State/Province", "Other Zip", "Other Country"],
+        "additional": ["Fax", "Department", "Home Phone", "Lead Source"]
+      }
+    },
+    {
+      "name": "Opportunities",
+      "description": "Sales deals being tracked through stages to close",
+      "features": [
+        "List view (table and Kanban/pipeline modes)",
+        "Opportunity create/edit form",
+        "Stage pipeline bar with probability",
+        "Close Opportunity modal (Closed Won / Closed Lost)",
+        "Split-pane list+detail view",
+        "Mass Update from list",
+        "Stage History tab"
+      ],
+      "list_columns": ["Opportunity Name", "Account Name", "Owner Full Name", "Amount", "Close Date", "Stage", "Probability (%)", "Follow Up?"],
+      "list_actions": ["New", "Mass Update", "Printable View"],
+      "kanban_columns": ["Qualification", "Example Stage", "Proposal/Price Quote", "Negotiation/Review", "Closed Won"],
+      "stage_probability": {
+        "Qualification": 20,
+        "Proposal/Price Quote": 65,
+        "Negotiation/Review": 75,
+        "Closed Won": 100,
+        "Closed Lost": 0
+      },
+      "close_stages": ["Closed Won", "Closed Lost"],
+      "create_fields": {
+        "basic": ["Opportunity Name", "Account Name", "Close Date", "Stage"],
+        "details": ["Amount", "Type", "Lead Source", "Next Step", "Description", "Follow Up?", "Probability (%)"]
+      },
+      "detail_tabs": ["Details", "Contacts", "Cases", "Notes & Files"],
+      "activity_tabs": ["Activity", "Chatter", "Stage History"],
+      "header_actions": ["Follow", "Edit", "Update Next Steps", "Change Owner", "Mark Stage as Complete"]
+    },
+    {
+      "name": "Cases",
+      "description": "Customer support tickets and issues",
+      "features": [
+        "List view with multi-origin tracking",
+        "Case create form",
+        "Case detail with tri-panel layout",
+        "Feed with Email/Log a Call/Post",
+        "Knowledge base search",
+        "Status pipeline progression",
+        "Filter by Priority and Case Origin"
+      ],
+      "list_columns": ["Case Number", "Case Status", "Case Origin", "Contact Name", "Subject", "Priority", "Date/Time Opened", "Owner Name"],
+      "list_actions": ["New", "Change Owner", "Update Case"],
+      "case_origins": ["Facebook", "Twitter", "Email", "Web", "Phone"],
+      "case_statuses": ["New", "Open", "Pending", "Escalated", "Closed"],
+      "case_priorities": ["Critical", "High", "Medium", "Low"],
+      "create_fields": {
+        "case_info": ["Case Owner", "Case Number (auto)", "Contact Name", "Account Name", "Web Email"],
+        "additional": ["Status", "Type", "Case Origin", "Case Reason", "Priority"],
+        "description": ["Subject", "Description", "Internal Comments"]
+      },
+      "case_types": ["Problem", "Question", "Feature Request"],
+      "case_reasons": ["New problem", "Instructions not clear", "User didn't attend training"],
+      "detail_layout": {
+        "left_panel": ["Case Details (Number, Owner, Status, Priority, Subject)", "Contact Details (Name, Title, Account, Phone, Email)", "Cases for Parent Contact"],
+        "center": ["Feed tab (Email, Log a Call, Post, Status Changes)", "Details tab (all fields)"],
+        "right_panel": ["Knowledge (Search Knowledge, Suggested Articles)", "Related tab"]
+      }
+    },
+    {
+      "name": "Tasks",
+      "description": "To-do items assigned to users, related to records",
+      "features": [
+        "List view",
+        "Task create form with reminder",
+        "Inline status update",
+        "Task appears in related record's Activity panel"
+      ],
+      "list_columns": ["Subject", "Name", "Related To", "Due Date", "Status", "Priority", "Assigned Alias", "Last Modified Date"],
+      "task_statuses": ["Not Started", "In Progress", "Completed"],
+      "task_priorities": ["Normal", "High", "Low"],
+      "create_fields": {
+        "task_info": ["Assigned To", "Related To", "Subject (required)", "Comments", "Due Date"],
+        "reminder": ["Reminder Set (checkbox)", "Reminder Date", "Reminder Time"],
+        "additional": ["Status (required)", "Name"]
+      }
+    },
+    {
+      "name": "Calendar",
+      "description": "Schedule events and view team availability",
+      "features": [
+        "Month, Week, Day, Table, Availability views",
+        "Mini calendar navigator (right sidebar)",
+        "My Calendars and Other Calendars sections",
+        "New Event creation",
+        "Event popup with Edit/Delete"
+      ],
+      "view_options": ["Availability", "Day", "Week", "Month", "Table"],
+      "create_event_fields": {
+        "event_info": ["Subject (required)", "All-Day Event (checkbox)", "Private (checkbox)"],
+        "timing": ["Start Date", "Start Time", "End Date", "End Time"],
+        "other": ["Location", "Show Time As (Busy/Free)", "Description"]
+      }
+    },
+    {
+      "name": "Reports",
+      "description": "Tabular, summary, and matrix data analysis",
+      "features": [
+        "Report list with sidebar navigation",
+        "Saved report folders (Private/Public/Shared)",
+        "New Report and New Report (Salesforce Classic) buttons",
+        "Matrix report by Stage",
+        "Report search"
+      ],
+      "sidebar_sections": {
+        "reports": ["Recent", "Created by Me", "Private Reports", "Public Reports", "All Reports"],
+        "folders": ["All Folders", "Created by Me", "Shared with Me"],
+        "favorites": ["All Favorites"]
+      },
+      "list_columns": ["Report Name", "Description", "Folder", "Created By", "Created On", "Subscribed"],
+      "sample_reports": [
+        {
+          "name": "Opportunity Pipeline",
+          "type": "Matrix",
+          "rows": "Stage",
+          "data": "Amount, Probability, Age, Lead Source, Close Date, Account Name"
+        },
+        {"name": "HomePage - Potential Revenue Source"},
+        {"name": "HomePage - All Pipeline - Current Year"}
+      ]
+    },
+    {
+      "name": "Dashboards",
+      "description": "Visual KPI dashboards with charts and tables",
+      "features": [
+        "Dashboard list with sidebar navigation",
+        "Saved dashboard folders (Private/Public/Shared)",
+        "Multi-widget layout",
+        "Refresh button",
+        "Subscribe option"
+      ],
+      "sidebar_sections": {
+        "dashboards": ["Recent", "Created by Me", "Private Dashboards", "All Dashboards"],
+        "folders": ["All Folders", "Created by Me", "Shared with Me"],
+        "favorites": ["All Favorites"]
+      },
+      "sample_dashboard": {
+        "name": "Sales Pipeline",
+        "header_kpi": "Opportunity Pipeline Set to Close This Quarter: £210,800",
+        "widgets": [
+          {"name": "Leads Created", "type": "Donut chart", "dimension": "Lead Source", "period": "Current FY"},
+          {"name": "Leads Converted to Opportunities", "type": "Donut chart", "dimension": "Lead Owner", "period": "Current FY"},
+          {"name": "Total Pipeline by Stage", "type": "Table", "period": "Current FY"},
+          {"name": "Leads Created - Monthly Trend", "type": "Bar chart"},
+          {"name": "Open Leads", "type": "Table"},
+          {"name": "Open Pipeline by Owner", "type": "Table", "period": "Current FY"}
+        ]
+      }
+    },
+    {
+      "name": "Campaigns",
+      "description": "Marketing campaigns tracking Leads/Contacts and ROI",
+      "features": [
+        "Campaign list view with custom saved views",
+        "Campaign create form with budget/revenue tracking",
+        "Campaign detail with Opportunities, Attachments, Campaign Members",
+        "Add Leads and Add Contacts to campaign members",
+        "Link Opportunities via Primary Campaign Source",
+        "List view: pinnable, filterable, searchable"
+      ],
+      "list_columns": ["Campaign Name", "Parent Campaign", "Type", "Status", "Start Date", "End Date", "Responses in Campaign", "Owner Alias"],
+      "list_views": ["Recently Viewed", "All Active Campaigns"],
+      "campaign_statuses": ["Planned", "Active", "Aborted", "Completed"],
+      "campaign_types": ["Referral Program", "Email", "Webinar", "Conference", "Direct Mail", "Advertisement"],
+      "create_fields": {
+        "basic": ["Campaign Owner", "Status", "Campaign Name (required)", "Active (checkbox)", "Type", "Parent Campaign", "Description"],
+        "planning": ["Start Date", "End Date", "Num Sent in Campaign", "Expected Response (%)", "Expected Revenue in Campaign", "Budgeted Cost in Campaign", "Actual Cost in Campaign"]
+      },
+      "detail_related": ["Opportunities", "Attachments", "Campaign Members (Add Leads, Add Contacts)"],
+      "detail_activity": ["New Event", "New Task", "Log a Call", "Email"]
+    }
+  ],
+  "cross_module_features": {
+    "activity_panel": {
+      "description": "Present on most records — shows past activities and upcoming/overdue",
+      "tabs": ["Activity", "Chatter"],
+      "actions": ["Log a Call", "Email", "New Task", "New Event"],
+      "filters": ["All time", "All activities", "All types"],
+      "sections": ["Upcoming & Overdue", "Past activities"]
+    },
+    "chatter": {
+      "description": "Social collaboration feed on records",
+      "actions": ["Post", "Poll", "Question"],
+      "features": ["@mentions", "file attachments", "likes"]
+    },
+    "list_view_features": {
+      "modes": ["Table", "Kanban", "Split-pane (list + detail)"],
+      "actions": ["New", "Import", "Printable View", "Edit columns", "Filter", "Search"],
+      "search_note": "Some fields (dates, references, counts) not searchable — use filters instead",
+      "pinning": "List views can be pinned as default",
+      "inline_editing": "Update fields directly in list row"
+    },
+    "toast_notifications": {
+      "description": "Green success banners for CRUD operations",
+      "examples": ["Record created", "Status changed", "Event created", "Task created"]
+    },
+    "duplicate_detection": {
+      "description": "Banner shown on new records: 'We found no potential duplicates'",
+      "shown_on": ["Leads", "Accounts", "Contacts", "Opportunities"]
+    },
+    "quick_create": {
+      "description": "Modal overlays for creating records without leaving current page",
+      "available_on": ["All major objects"]
+    }
+  },
+  "data_entities": {
+    "Lead": {
+      "key_fields": ["Name", "Company", "Title", "Phone", "Email", "Lead Status", "Rating", "Lead Source", "Industry", "Annual Revenue", "No. of Employees"],
+      "status_values": ["New", "Working", "Unqualified", "Converted"],
+      "relationships": ["converts to → Account, Contact, Opportunity"]
+    },
+    "Account": {
+      "key_fields": ["Account Name", "Phone", "Website", "Type", "Industry", "Annual Revenue", "Employees", "Parent Account", "Billing Address", "Shipping Address"],
+      "type_values": ["Prospect", "Partner", "Customer", "Reseller"],
+      "relationships": ["has many → Contacts", "has many → Opportunities", "has many → Cases"]
+    },
+    "Contact": {
+      "key_fields": ["Name", "Account Name", "Title", "Phone", "Mobile", "Email", "Reports To", "Lead Source", "Department", "Mailing Address"],
+      "relationships": ["belongs to → Account", "reports to → Contact"]
+    },
+    "Opportunity": {
+      "key_fields": ["Opportunity Name", "Account Name", "Stage", "Close Date", "Amount", "Probability (%)", "Type", "Lead Source", "Next Step"],
+      "stage_values": ["Qualification", "Proposal/Price Quote", "Negotiation/Review", "Closed Won", "Closed Lost"],
+      "relationships": ["belongs to → Account", "linked to → Campaign (Primary Campaign Source)"]
+    },
+    "Case": {
+      "key_fields": ["Case Number (auto)", "Subject", "Status", "Priority", "Type", "Case Origin", "Case Reason", "Description", "Internal Comments"],
+      "status_values": ["New", "Open", "Pending", "Escalated", "Closed"],
+      "relationships": ["belongs to → Contact", "belongs to → Account"]
+    },
+    "Task": {
+      "key_fields": ["Subject", "Status", "Priority", "Due Date", "Comments", "Reminder Date/Time"],
+      "status_values": ["Not Started", "In Progress", "Completed"],
+      "relationships": ["assigned to → User", "related to → any record"]
+    },
+    "Event": {
+      "key_fields": ["Subject", "Start Date/Time", "End Date/Time", "Location", "Show Time As", "All-Day Event", "Private", "Description"],
+      "relationships": ["assigned to → User", "related to → any record"]
+    },
+    "Campaign": {
+      "key_fields": ["Campaign Name", "Status", "Type", "Active", "Start Date", "End Date", "Num Sent", "Expected Response %", "Expected Revenue", "Budgeted Cost", "Actual Cost", "Responses in Campaign"],
+      "status_values": ["Planned", "Active", "Aborted", "Completed"],
+      "relationships": ["has many → Leads (Campaign Members)", "has many → Contacts (Campaign Members)", "has many → Opportunities (via Primary Campaign Source)"]
+    },
+    "Report": {
+      "key_fields": ["Report Name", "Description", "Folder", "Type"],
+      "types": ["Tabular", "Summary", "Matrix", "Joined"],
+      "relationships": ["belongs to → Folder"]
+    },
+    "Dashboard": {
+      "key_fields": ["Dashboard Name", "Description", "Folder"],
+      "widget_types": ["Chart (bar, donut, line)", "Table", "Metric", "Gauge"],
+      "relationships": ["contains → Report widgets"]
+    }
+  },
+  "ui_patterns": {
+    "navigation": "Top horizontal tab bar: Home, Leads, Accounts, Contacts, Opportunities, Cases, Tasks, Calendar, Reports, Dashboards, Campaigns",
+    "global_search": "Top center search bar with global record search",
+    "record_header": "Record type icon + record name, breadcrumb, quick stats (Account, Date, Amount, Owner), action buttons",
+    "list_views": "Saved named views with column sorting, search, filter, inline edit, Kanban toggle",
+    "detail_layout": "Collapsible sections (Details, Address Information, Additional Information, System Information)",
+    "activity_panel": "Right sidebar on all records with tab switcher (Activity/Chatter)",
+    "status_pipeline": "Horizontal progress bar with clickable stages on Lead, Opportunity, Case detail pages",
+    "modal_create": "Full modal overlay for creating records: sectioned form, Save / Save & New / Cancel buttons",
+    "toast": "Green success banner at top of page, auto-dismissing with X button",
+    "kanban": "Stage columns with card count + total amount, draggable cards",
+    "split_pane": "List on left, record detail on right for fast navigation without page reload",
+    "knowledge_panel": "Right sidebar on Cases with keyword search and suggested articles"
+  },
+  "discarded_scenes": [
+    "Domestika coding course ads (scenes 125-127)",
+    "Hostinger domain ad (scene 214)",
+    "Firebase ad (scene 259)",
+    "Grammarly ads (scenes 304, 307, 312)",
+    "Namecheap ad (scene 347)",
+    "Presenter intro/outro slides"
+  ]
+}

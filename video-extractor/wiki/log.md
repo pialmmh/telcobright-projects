@@ -1,5 +1,30 @@
 # Ingest Log
 
+## 2026-04-13: Salesforce Sales Cloud wiki added
+
+**Source ingested:**
+- `salesforce-crm/knowledge_graph.json` — Salesforce Sales Cloud tutorial (~40 min, 81 significant scenes of 353 total)
+
+**Pages created:** 7
+- salesforce-modules.md, salesforce-leads.md, salesforce-opportunities.md, salesforce-cases.md, salesforce-activities.md, salesforce-campaigns.md, salesforce-reports.md, salesforce-data-entities.md
+
+**Key observations:**
+- Full CRM module coverage: Leads, Accounts, Contacts, Opportunities, Cases, Tasks, Calendar, Reports, Dashboards, Campaigns
+- Lead Conversion flow: one action creates Account + Contact + Opportunity simultaneously
+- Opportunity pipeline: Qualification (20%) → Proposal/Price Quote (65%) → Negotiation/Review (75%) → Closed Won (100%) or Closed Lost
+- Case detail: tri-panel layout (Case Details + Contact, Feed/Details center, Knowledge right)
+- Kanban views available on Leads (by Status) and Opportunities (by Stage)
+- Campaign ROI tracking via Primary Campaign Source field on Opportunities
+- Dashboard "Sales Pipeline": 6 widgets, header KPI £210,800
+
+**Discarded scenes:**
+- Ads: Domestika (scenes 125-127), Hostinger (scene 214), Firebase (scene 259), Grammarly (scenes 304, 307, 312), Namecheap (scene 347)
+- Presenter intro/outro
+
+**Index updated:** Added Salesforce section to index.md
+
+---
+
 ## 2026-04-13: Initial wiki compilation
 
 **Sources ingested:**
