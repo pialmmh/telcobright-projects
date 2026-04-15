@@ -1,5 +1,37 @@
 # Ingest Log
 
+## 2026-04-16: EspoCRM Advanced wiki added
+
+**Source ingested:**
+- `espocrm/knowledge_graph.json` — EspoCRM Advanced tutorial (17:00, 19 significant scenes of 37 total, from 1020 captured frames)
+
+**Pages created:** 8
+- espocrm-modules.md, espocrm-enquiries.md, espocrm-contacts-accounts.md, espocrm-opportunities.md, espocrm-sales.md, espocrm-dashboard-reports.md, espocrm-workflows.md, espocrm-administration.md, espocrm-data-entities.md
+
+**Key observations:**
+- EspoCRM calls Leads "Enquiries" — URL uses /Lead/ internally but UI displays "Enquiries"
+- Enquiry status pipeline: New → Assigned → In Process → Recycled → Dead (different from Salesforce)
+- Opportunity stages: Prospecting → Qualification → Perception Analysis → Proposal/Price Quote → Negotiation/Review → Closed Won / Closed Lost
+- Account types: Prospect, Customer, Investor, Partner, Reseller, Consultant
+- Sales Pack extends core with Quotes (Q-NNNNN auto-numbering), Invoices, Sales Orders, Products, Purchase Orders, Inventory Management
+- Advanced Pack adds Reports (Grid with drill-down), Workflows (condition→action), BPM
+- Workflow example 1: Account created → Send Email welcome
+- Workflow example 2: Opportunity reaches Proposal/Price Quote → Auto-create linked Quote
+- Dashboards are per-user/role configurable — Sales Manager tab has 7 chart/table widgets
+- Dashboard drill-down: click pie segment → modal with filtered record list
+- Admin customisation: Entity Manager, Layout Manager, Label Manager — EspoCRM is highly customisable without code
+- One very long scene (scene_07, 456s, 2:25–10:00) covered Lead conversion form + Contact/Account/Opportunity detail pages + Quote entity
+
+**Discarded scenes:**
+- Frames 0001-0039: Intro / presenter talking head over dashboard
+- Frames 0144-0199: Loading states and transitions
+- Various short scenes (< 5s): UI animation frames between navigation clicks
+- Final frames 1016-1020: Outro
+
+**Index updated:** Added EspoCRM section with 9 pages to index.md
+
+---
+
 ## 2026-04-13: Salesforce Sales Cloud wiki added
 
 **Source ingested:**

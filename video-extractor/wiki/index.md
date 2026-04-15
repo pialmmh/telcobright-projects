@@ -1,6 +1,6 @@
 # CRM Knowledge Wiki
 
-Compiled from video tutorials covering MightyCall Auto Dialer and Salesforce Sales Cloud.
+Compiled from video tutorials covering MightyCall Auto Dialer, Salesforce Sales Cloud, and EspoCRM.
 
 ## Sources
 
@@ -10,6 +10,7 @@ Compiled from video tutorials covering MightyCall Auto Dialer and Salesforce Sal
 | [Preview Dialer](../preview-dialer/knowledge_graph.json) | 6:18 | 21 | Preview mode, agent workspace, DNC compliance |
 | [Progressive Dialer](../progressive-dialer/knowledge_graph.json) | 6:52 | 19 | Progressive mode, AMD, auto-answer |
 | [Salesforce Sales Cloud](../salesforce-crm/knowledge_graph.json) | ~40:00 | 81 | Full CRM: Leads, Accounts, Contacts, Opportunities, Cases, Tasks, Calendar, Reports, Dashboards, Campaigns |
+| [EspoCRM Advanced](../espocrm/knowledge_graph.json) | 17:00 | 19 | CRM: Enquiries, Contacts, Accounts, Opportunities, Quotes, Dashboard, Reports, Workflows, Administration |
 
 ---
 
@@ -53,3 +54,26 @@ Compiled from video tutorials covering MightyCall Auto Dialer and Salesforce Sal
 
 ### Reference
 - [salesforce-data-entities.md](salesforce-data-entities.md) — All entity fields and relationships (Lead, Account, Contact, Opportunity, Case, Task, Event, Campaign, Report, Dashboard)
+
+---
+
+## EspoCRM Pages
+
+### Overview
+- [espocrm-modules.md](espocrm-modules.md) — All modules, navigation structure, cross-module features, UI layout patterns
+
+### CRM Modules
+- [espocrm-enquiries.md](espocrm-enquiries.md) — Enquiries (Leads): status pipeline New→Assigned→In Process→Recycled→Dead, conversion flow
+- [espocrm-contacts-accounts.md](espocrm-contacts-accounts.md) — Contacts and Accounts entities, Account types
+- [espocrm-opportunities.md](espocrm-opportunities.md) — Deal pipeline, 7 stages, line items, Quote automation
+
+### Sales & Automation
+- [espocrm-sales.md](espocrm-sales.md) — Quotes (Q-NNNNN), Invoices, Sales Orders, Products (Sales Pack)
+- [espocrm-workflows.md](espocrm-workflows.md) — Workflow automation: conditions, Send Email, Create Record actions
+- [espocrm-dashboard-reports.md](espocrm-dashboard-reports.md) — Dashboard tabs (My Items, Sales Manager), chart widgets, Grid reports with drill-down
+
+### Administration
+- [espocrm-administration.md](espocrm-administration.md) — Admin panel, customisation tools, extensions (Advanced Pack, Sales Pack, Project Management)
+
+### Reference
+- [espocrm-data-entities.md](espocrm-data-entities.md) — All entity fields and relationships (Enquiry, Contact, Account, Opportunity, Quote, Task, Report, Workflow)

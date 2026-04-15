@@ -1,0 +1,468 @@
+{
+  "product": "EspoCRM",
+  "edition": "Advanced (with Sales Pack + Advanced Pack extensions)",
+  "source_video": "espocrm/frames/",
+  "total_frames": 1020,
+  "total_scenes": 37,
+  "significant_scenes_analyzed": 19,
+  "discarded_scenes": [
+    {"frames": "0001-0039", "reason": "intro / presenter talking head, no UI"},
+    {"frames": "0070-0107", "reason": "presenter talking head over Dashboard, minimal new UI"},
+    {"frames": "0144-0199", "reason": "transition / loading states"},
+    {"frames": "0610-0619", "reason": "duplicate dashboard frames, no new content"},
+    {"frames": "0630-0648", "reason": "duplicate dashboard frames"},
+    {"frames": "0656-0663", "reason": "duplicate dashboard / chart hover only"},
+    {"frames": "0687-0694", "reason": "duplicate dashboard, caption only"},
+    {"frames": "0704-0710", "reason": "duplicate report/dashboard frames"},
+    {"frames": "0712-0716", "reason": "duplicate dashboard"},
+    {"frames": "0718-0727", "reason": "leads status modal (low res duplicate)"},
+    {"frames": "0729-0753", "reason": "duplicate dashboard tooltip frames"},
+    {"frames": "0771-0809", "reason": "navigation expansion animation"},
+    {"frames": "0851-0900", "reason": "user menu dropdown, minor"},
+    {"frames": "1016-1020", "reason": "outro / presenter talking head"}
+  ],
+  "modules": [
+    {
+      "name": "Home Dashboard",
+      "navigation_path": "Home (left nav icon)",
+      "description": "Personalised dashboard with tabbed views. Tabs are role/user specific.",
+      "features": ["tabbed dashboards", "configurable widgets", "per-user views"],
+      "dashboard_tabs": [
+        {
+          "name": "My Items",
+          "widgets": [
+            {"name": "Calendar", "type": "week_view", "description": "Week calendar showing scheduled activities"},
+            {"name": "My Activities", "type": "task_list", "description": "Tasks assigned to current user with status and related account"},
+            {"name": "Stream", "type": "activity_feed", "description": "Recent activity feed: created records, assigned tasks, stage changes"}
+          ]
+        },
+        {
+          "name": "Task Overview",
+          "widgets": ["task summary view"]
+        },
+        {
+          "name": "Sales Manager",
+          "description": "Sales manager role dashboard with pipeline analytics",
+          "widgets": [
+            {"name": "Opportunity By Stage", "type": "horizontal_bar_chart", "description": "Pipeline value per user broken down by stage"},
+            {"name": "Leads by status", "type": "pie_chart", "description": "Lead status distribution — New (6%), Assigned (8%), In Process (86%). Clickable segments drill into record list modal."},
+            {"name": "Revenue by month", "type": "bar_chart", "description": "Monthly revenue bar chart"},
+            {"name": "Revenue by month and user", "type": "line_chart", "description": "Multi-user revenue trend lines by month"},
+            {"name": "Opportunities by user", "type": "bar_chart", "description": "Opportunity count per user"},
+            {"name": "Opportunities won", "type": "data_table", "description": "Columns: Name, Account, Close Date, Amount. Lists recently closed-won deals."},
+            {"name": "Quotes won", "type": "data_table", "description": "Won quotes with Account, Date, Amount"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Calendar",
+      "navigation_path": "Calendar (left nav, second item)",
+      "features": ["week view", "own calendar", "other users' calendars"],
+      "description": "Week-view calendar. Can view own or other users' calendars."
+    },
+    {
+      "name": "Enquiries",
+      "navigation_path": "CRM > Enquiries",
+      "description": "EspoCRM's name for Leads. Incoming prospects before qualification. URL uses /Lead/ path internally.",
+      "features": ["status pipeline", "lead conversion", "target lists", "follow"],
+      "status_pipeline": ["New", "Assigned", "In Process", "Recycled", "Dead"],
+      "status_pipeline_display": "Horizontal clickable bar at top of detail page. Color-coded: New=blue, Assigned=amber, In Process=green, Recycled=gray, Dead=light purple.",
+      "detail_page": {
+        "tabs": ["Overview", "Other Information"],
+        "overview_fields": ["Status", "Source", "Name", "Account Name", "Email", "Phone", "Title", "Address"],
+        "right_panel": ["Assigned User", "Teams", "Map", "Created", "Modified", "Followers"],
+        "bottom_panels": ["Internal Collaboration / Newsfeed", "Related Entities > Target Lists"],
+        "activities_panel": ["Activities (email, call, task, event)", "History"]
+      },
+      "actions": ["Follow", "Convert", "Edit"],
+      "conversion": {
+        "description": "Convert button top-right opens multi-section form creating Account + Contact + Opportunity simultaneously",
+        "account_fields": ["Name", "Email", "Billing Address", "Shipping Address", "Type (Prospect/Customer/Investor/Partner/Reseller/Consultant)", "Sector", "Description"],
+        "opportunity_fields": ["Name", "Stage", "Amount", "Currency (GBP)", "Assigned User", "Teams", "Lead Source"],
+        "opportunity_stages_at_conversion": ["Prospecting", "Qualification", "Perception Analysis", "Proposal/Price Quote", "Negotiation/Review", "Closed Won", "Closed Lost"]
+      }
+    },
+    {
+      "name": "Contacts",
+      "navigation_path": "CRM > Contacts",
+      "features": ["linked to accounts", "activities", "stream", "history"],
+      "detail_page": {
+        "fields": ["Name", "Email", "Accounts (linked)", "Phone", "Address", "Description"],
+        "right_panel": ["Assigned User", "Teams", "Map", "Created", "Followers"],
+        "panels": ["Stream (newsfeed + activity log)", "Activities", "History", "Opportunities (related)"]
+      }
+    },
+    {
+      "name": "Accounts",
+      "navigation_path": "CRM > Accounts",
+      "features": ["account types", "linked contacts", "linked opportunities"],
+      "account_types": ["Prospect", "Customer", "Investor", "Partner", "Reseller", "Consultant"],
+      "fields": ["Name", "Email", "Phone", "Billing Address", "Shipping Address", "Type", "Sector", "Description", "Map"]
+    },
+    {
+      "name": "Opportunities",
+      "navigation_path": "CRM > Opportunities",
+      "features": ["deal pipeline", "stage tracking", "quotes", "line items", "workflow automation"],
+      "stage_pipeline": ["Prospecting", "Qualification", "Perception Analysis", "Proposal/Price Quote", "Negotiation/Review", "Closed Won", "Closed Lost"],
+      "detail_page": {
+        "tabs": ["Internal Collaboration / Newsfeed", "Related Entities"],
+        "main_fields": ["Name", "Stage", "Amount", "Currency", "Contacts (linked)", "Lead Source", "Description"],
+        "right_panel": ["Assigned User", "Teams", "Created", "Modified", "Followers"],
+        "related_entities_tab": ["Quotes", "Documents", "Items (line items)"],
+        "activities_panel": ["Activities", "History", "Tasks"]
+      },
+      "items_line_columns": ["Name", "Qty", "List Price", "Unit Price", "Amount"]
+    },
+    {
+      "name": "Complaints",
+      "navigation_path": "CRM > Complaints",
+      "description": "Customer complaints tracking module. Minimal detail visible in source."
+    },
+    {
+      "name": "Quotes",
+      "navigation_path": "Sales > Quotes",
+      "features": ["auto-numbering", "line items", "linked to opportunity and account", "draft/won status"],
+      "quote_number_format": "Q-NNNNN (e.g. Q-00011)",
+      "statuses": ["Draft"],
+      "detail_page": {
+        "tabs": ["Overview", "Details"],
+        "overview_fields": ["Quote Number", "Status", "Opportunity (linked)", "Account (linked)", "Amount", "Date Quoted"],
+        "right_panel": ["Assigned User", "Teams", "Amount (converted)", "Date Quoted", "Invoice Number", "Date Ordered", "Created"],
+        "items_section_columns": ["Name", "Qty", "List Price", "Unit Price", "Amount Express"]
+      }
+    },
+    {
+      "name": "Invoices",
+      "navigation_path": "Sales > Invoices",
+      "description": "Invoice management. Minimal detail visible in source."
+    },
+    {
+      "name": "Sales Orders",
+      "navigation_path": "Sales > Sales Orders",
+      "description": "Sales order management. Minimal detail visible in source."
+    },
+    {
+      "name": "Products",
+      "navigation_path": "Sales > Products",
+      "description": "Product catalog. Minimal detail visible in source."
+    },
+    {
+      "name": "Emails",
+      "navigation_path": "Activities > Emails",
+      "description": "Email management. Supports inbound/outbound, group email accounts, Email-to-Case."
+    },
+    {
+      "name": "Tasks",
+      "navigation_path": "Activities > Tasks",
+      "features": ["assigned to users", "related to accounts", "priority", "due date"],
+      "fields": ["Name", "Status (Not Started / In Progress / Completed)", "Priority (Normal / High / Urgent)", "Date Due", "Assigned To", "Related To (Account)", "Description"]
+    },
+    {
+      "name": "Marketing",
+      "navigation_path": "Activities > Marketing",
+      "description": "Marketing campaigns. Connects to Enquiries via Target Lists."
+    },
+    {
+      "name": "Reports",
+      "navigation_path": "Admin > Reports",
+      "features": ["grid reports", "pie/bar charts", "drill-down modals", "grouping by user"],
+      "report_types": ["Grid"],
+      "report_fields": ["Name", "Type", "Category", "Entity Type"],
+      "example_report": {
+        "name": "Open Tasks - By Assigned To",
+        "type": "Grid",
+        "entity_type": "Task",
+        "columns": ["User", "Name", "Status", "Account", "Count"],
+        "grouping": "by Assigned User",
+        "chart": "pie chart (by user share)",
+        "drill_down": "Click pie segment or row → modal showing filtered task records with Name, Status, Priority, Date Due"
+      }
+    },
+    {
+      "name": "Import",
+      "navigation_path": "Admin > Import",
+      "description": "Data import tool."
+    },
+    {
+      "name": "Administration",
+      "navigation_path": "User avatar (top-right) > Administration",
+      "sections": {
+        "System": ["Settings", "User Interface", "Authentication", "Scheduled Jobs", "Currency", "Notifications", "Integrations", "Extensions", "User Requirements", "Job Settings", "Upgrade"],
+        "Customisation": [
+          "Entity Manager — Create and edit custom entities, manage fields and relationships",
+          "Layout Manager — Customise layouts (list, detail, edit, search, mass update)",
+          "Label Manager — Customize application labels",
+          "Template Manager — Customize message templates",
+          "Report Filters — Custom list view filters based on reports",
+          "Report Panels — Detail view panels showing report results"
+        ],
+        "Messaging": [
+          "Outbound Emails — SMTP settings",
+          "Inbound Emails — incoming email settings",
+          "Group Email Accounts — Group IMAP, Email-to-Case",
+          "Personal Email Accounts",
+          "Email Filters",
+          "Group Email Folders",
+          "Email Templates",
+          "SMS"
+        ],
+        "Portal": ["(partial — portal configuration)"]
+      },
+      "official_extensions": {
+        "Advanced Pack": ["Reports", "Workflows", "Business Process Management (BPM)"],
+        "Sales Pack": ["Products", "Quotes", "Sales Orders", "Invoices", "Purchase Orders", "Inventory Management"],
+        "Project Management": ["Projects", "Tasks (extended)", "and more"]
+      }
+    },
+    {
+      "name": "Workflows",
+      "navigation_path": "Administration > Advanced Pack > Workflows (or via entity)",
+      "description": "Automation rules. Condition → Action triggers.",
+      "features": ["field value conditions", "send email action", "create record action", "execution log"],
+      "condition_types": ["field value equals", "All conditions must be met"],
+      "action_types": ["Send Email", "Create Record"],
+      "examples": [
+        {
+          "name": "Account Welcome",
+          "trigger": "Account created",
+          "conditions": "None",
+          "action": "Send Email / Immediately / From: Related Assigned User / To: Target record Account / Template: Case-to-Email auto-reply"
+        },
+        {
+          "name": "Auto Create Quote",
+          "trigger": "Opportunity stage change",
+          "conditions": "Last Stage equals Proposal/Price Quote",
+          "action": "Create Record > Quote, linked to Opportunity"
+        }
+      ]
+    }
+  ],
+  "data_entities": [
+    {
+      "name": "Enquiry",
+      "internal_name": "Lead",
+      "display_name": "Enquiries",
+      "fields": [
+        {"name": "status", "type": "enum", "options": ["New", "Assigned", "In Process", "Recycled", "Dead"], "default": "New"},
+        {"name": "source", "type": "enum", "options": ["Web Site", "and others"]},
+        {"name": "name", "type": "text", "required": true},
+        {"name": "account_name", "type": "text"},
+        {"name": "email", "type": "email"},
+        {"name": "phone", "type": "phone"},
+        {"name": "title", "type": "text"},
+        {"name": "address", "type": "address"},
+        {"name": "assigned_user", "type": "relate"},
+        {"name": "teams", "type": "relate_multi"},
+        {"name": "map", "type": "map"},
+        {"name": "created", "type": "datetime"},
+        {"name": "modified", "type": "datetime"},
+        {"name": "followers", "type": "relate_multi"}
+      ],
+      "relationships": [
+        "Enquiry → has many → Target Lists",
+        "Enquiry → converts to → Account + Contact + Opportunity"
+      ]
+    },
+    {
+      "name": "Contact",
+      "fields": [
+        {"name": "name", "type": "text", "required": true},
+        {"name": "email", "type": "email"},
+        {"name": "phone", "type": "phone"},
+        {"name": "address", "type": "address"},
+        {"name": "description", "type": "text"},
+        {"name": "assigned_user", "type": "relate"},
+        {"name": "teams", "type": "relate_multi"},
+        {"name": "map", "type": "map"},
+        {"name": "created", "type": "datetime"},
+        {"name": "followers", "type": "relate_multi"}
+      ],
+      "relationships": [
+        "Contact → belongs to → Account (multi)",
+        "Contact → has many → Opportunities",
+        "Contact → has many → Activities",
+        "Contact → has many → Tasks"
+      ]
+    },
+    {
+      "name": "Account",
+      "fields": [
+        {"name": "name", "type": "text", "required": true},
+        {"name": "email", "type": "email"},
+        {"name": "phone", "type": "phone"},
+        {"name": "type", "type": "enum", "options": ["Prospect", "Customer", "Investor", "Partner", "Reseller", "Consultant"], "default": "Prospect"},
+        {"name": "sector", "type": "text"},
+        {"name": "billing_address", "type": "address"},
+        {"name": "shipping_address", "type": "address"},
+        {"name": "description", "type": "text"},
+        {"name": "map", "type": "map"}
+      ],
+      "relationships": [
+        "Account → has many → Contacts",
+        "Account → has many → Opportunities",
+        "Account → has many → Quotes",
+        "Account → has many → Tasks"
+      ]
+    },
+    {
+      "name": "Opportunity",
+      "fields": [
+        {"name": "name", "type": "text", "required": true},
+        {"name": "stage", "type": "enum", "options": ["Prospecting", "Qualification", "Perception Analysis", "Proposal/Price Quote", "Negotiation/Review", "Closed Won", "Closed Lost"], "required": true},
+        {"name": "amount", "type": "currency"},
+        {"name": "currency", "type": "enum", "default": "GBP"},
+        {"name": "lead_source", "type": "enum", "options": ["Web Site", "and others"]},
+        {"name": "description", "type": "text"},
+        {"name": "assigned_user", "type": "relate"},
+        {"name": "teams", "type": "relate_multi"},
+        {"name": "created", "type": "datetime"},
+        {"name": "modified", "type": "datetime"},
+        {"name": "followers", "type": "relate_multi"}
+      ],
+      "relationships": [
+        "Opportunity → has many → Contacts",
+        "Opportunity → has many → Quotes",
+        "Opportunity → has many → Documents",
+        "Opportunity → has many → Items (line items)",
+        "Opportunity → has many → Tasks",
+        "Opportunity → created from → Enquiry (conversion)"
+      ]
+    },
+    {
+      "name": "Quote",
+      "fields": [
+        {"name": "quote_number", "type": "auto", "format": "Q-NNNNN"},
+        {"name": "status", "type": "enum", "options": ["Draft", "Sent", "Accepted", "Rejected", "Cancelled"], "default": "Draft"},
+        {"name": "opportunity", "type": "relate"},
+        {"name": "account", "type": "relate"},
+        {"name": "amount", "type": "currency"},
+        {"name": "amount_converted", "type": "currency"},
+        {"name": "date_quoted", "type": "date"},
+        {"name": "invoice_number", "type": "text"},
+        {"name": "date_ordered", "type": "date"},
+        {"name": "assigned_user", "type": "relate"},
+        {"name": "teams", "type": "relate_multi"},
+        {"name": "created", "type": "datetime"}
+      ],
+      "line_item_fields": ["name", "qty", "list_price", "unit_price", "amount_express"],
+      "relationships": [
+        "Quote → belongs to → Opportunity",
+        "Quote → belongs to → Account",
+        "Quote → has many → Line Items"
+      ]
+    },
+    {
+      "name": "Task",
+      "fields": [
+        {"name": "name", "type": "text", "required": true},
+        {"name": "status", "type": "enum", "options": ["Not Started", "In Progress", "Completed"], "default": "Not Started"},
+        {"name": "priority", "type": "enum", "options": ["Normal", "High", "Urgent"], "default": "Normal"},
+        {"name": "date_due", "type": "datetime"},
+        {"name": "assigned_to", "type": "relate"},
+        {"name": "related_to_account", "type": "relate"},
+        {"name": "description", "type": "text"}
+      ],
+      "relationships": [
+        "Task → assigned to → User",
+        "Task → related to → Account"
+      ]
+    },
+    {
+      "name": "Report",
+      "fields": [
+        {"name": "name", "type": "text"},
+        {"name": "type", "type": "enum", "options": ["Grid"]},
+        {"name": "category", "type": "text"},
+        {"name": "entity_type", "type": "enum", "description": "The entity this report queries (e.g. Task, Opportunity)"},
+        {"name": "assigned_user", "type": "relate"},
+        {"name": "teams", "type": "relate_multi"},
+        {"name": "created", "type": "datetime"}
+      ]
+    },
+    {
+      "name": "Workflow",
+      "fields": [
+        {"name": "name", "type": "text"},
+        {"name": "entity_type", "type": "enum"},
+        {"name": "trigger", "type": "enum", "options": ["record created", "record updated", "field value change"]},
+        {"name": "conditions", "type": "complex", "description": "All/Any condition groups with field value checks"},
+        {"name": "actions", "type": "complex", "options": ["Send Email", "Create Record", "Update Record", "Send Notification"]}
+      ]
+    }
+  ],
+  "ui_patterns": {
+    "layout": "Left icon sidebar (collapsed by default, expands to show labels) + top bar + main content area",
+    "left_sidebar": {
+      "default_state": "collapsed (icons only)",
+      "expanded_state": "shows section labels and item names",
+      "sections": ["Home", "Calendar", "CRM", "Sales", "Activities", "Admin"],
+      "bottom": "EspoCRM logo / company logo"
+    },
+    "top_bar": {
+      "left": "hamburger menu to toggle sidebar",
+      "center": "Search bar with global search",
+      "right": "notifications bell + badge count, user avatar with dropdown (Administration, Preferences, Last Viewed, About, Log Out)"
+    },
+    "color_scheme": {
+      "primary": "blue (navigation active states, links)",
+      "status_new": "blue",
+      "status_assigned": "amber/orange",
+      "status_in_process": "green",
+      "status_recycled": "gray",
+      "status_dead": "light purple/gray",
+      "background": "white / light gray",
+      "sidebar_bg": "white with colored module icons"
+    },
+    "entity_detail_layout": {
+      "header": "breadcrumb (Module > Record Name), action buttons right",
+      "status_bar": "horizontal pipeline bar below header (clickable stages)",
+      "body": "two-column: left=main fields, right=metadata panel (Assigned User, Teams, Map, Created, Modified, Followers)",
+      "bottom": "tabbed panels: Internal Collaboration/Newsfeed | Related Entities",
+      "right_side_panel": "Activities (email/call/task/event buttons), History, Tasks"
+    },
+    "list_view": {
+      "components": ["search bar", "scope filter (All dropdown)", "three-dot menu for column actions", "pagination"],
+      "actions": ["+ Create button top-right", "row click to open detail"]
+    },
+    "dashboard_widgets": {
+      "charts": ["horizontal bar", "pie (clickable segments)", "line (multi-series)", "vertical bar"],
+      "tables": ["data table with Name/Account/Date/Amount columns"],
+      "interactions": ["hover tooltip with user/stage/value", "click segment → modal drill-down"]
+    },
+    "navigation_structure": {
+      "Home": "Home",
+      "Calendar": "Calendar",
+      "CRM": ["Enquiries", "Contacts", "Accounts", "Opportunities", "Complaints"],
+      "Sales": ["Quotes", "Invoices", "Sales Orders", "Products"],
+      "Activities": ["Emails", "Tasks", "Marketing"],
+      "Admin": ["Reports", "Import"]
+    }
+  },
+  "cross_module_features": [
+    {
+      "name": "Stream / Newsfeed",
+      "description": "Activity feed on Home dashboard and on each entity detail page. Shows: created records, stage changes, assigned tasks, linked calls."
+    },
+    {
+      "name": "Activities Panel",
+      "description": "Present on Contact, Account, Opportunity, Enquiry detail pages. Shows linked calls, tasks, events with quick-action buttons (email, call, task, event)."
+    },
+    {
+      "name": "Follow",
+      "description": "Follow button on entity detail pages adds user to Followers list. Followed records appear in Stream."
+    },
+    {
+      "name": "Teams",
+      "description": "All entities support Teams assignment for visibility/access control. Dashboards and reports can be per-user or shared across teams."
+    },
+    {
+      "name": "Assigned User",
+      "description": "All entities have Assigned User field. Drives My Items dashboard, report groupings, and workflow routing."
+    },
+    {
+      "name": "Currency",
+      "description": "GBP used throughout. Amounts stored with currency code and converted amount field."
+    }
+  ]
+}
