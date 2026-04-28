@@ -2,6 +2,8 @@
 
 Compiled from video tutorials covering MightyCall Auto Dialer, Salesforce Sales Cloud, and EspoCRM.
 
+> **AI agents start here:** [`AI_AGENT_GUIDE.md`](AI_AGENT_GUIDE.md) — how to consume this wiki to build software, authority order, and screenshot caveats.
+
 ## Sources
 
 | Video | Duration | Scenes | Focus |
@@ -9,6 +11,7 @@ Compiled from video tutorials covering MightyCall Auto Dialer, Salesforce Sales 
 | [Predictive Dialer](../crm-mightycall/knowledge_graph.json) | 8:00 | 15 | Predictive mode, campaign analytics, reports |
 | [Preview Dialer](../preview-dialer/knowledge_graph.json) | 6:18 | 21 | Preview mode, agent workspace, DNC compliance |
 | [Progressive Dialer](../progressive-dialer/knowledge_graph.json) | 6:52 | 19 | Progressive mode, AMD, auto-answer |
+| [InterCloud9 Predictive Dialer](../intercloud9-dialer/knowledge_graph.json) | 4:40 | 17 | Cloud predictive dialer: Contact View, Campaigns, Agent Monitor, Admin |
 | [Salesforce Sales Cloud](../salesforce-crm/knowledge_graph.json) | ~40:00 | 81 | Full CRM: Leads, Accounts, Contacts, Opportunities, Cases, Tasks, Calendar, Reports, Dashboards, Campaigns |
 | [EspoCRM Advanced](../espocrm/knowledge_graph.json) | 17:00 | 19 | CRM: Enquiries, Contacts, Accounts, Opportunities, Quotes, Dashboard, Reports, Workflows, Administration |
 
@@ -36,6 +39,27 @@ Compiled from video tutorials covering MightyCall Auto Dialer, Salesforce Sales 
 
 ### Mock Screens (styling reference)
 - [`../mock-screens/mightycall-campaigns.html`](../mock-screens/mightycall-campaigns.html) — Campaigns list view: sidebar, top nav, status badges, DNC panel, agent avatars, coverage score, action buttons. Use as CSS/layout baseline.
+
+---
+
+## InterCloud9 Predictive Dialer Pages
+
+From the 4:40 demo at `pd.intercloud9.com`. Single-pane agent workspace with embedded script + dialer; supervisor barge over SIP.
+
+### Overview
+- [intercloud9-modules.md](intercloud9-modules.md) — top nav, all 7 modules, cross-module features
+- [intercloud9-vs-mightycall.md](intercloud9-vs-mightycall.md) — concept mapping vs the existing MightyCall wiki
+
+### Modules
+- [intercloud9-agent-home.md](intercloud9-agent-home.md) — agent landing page: Join Campaign, Scheduled Calls, Global Phone Search, My Stats
+- [intercloud9-contact-view.md](intercloud9-contact-view.md) — agent workspace: contact form + dialer + Disposition Bar + Read Script + Schedule Follow-up + Connected Calls
+- [intercloud9-campaigns.md](intercloud9-campaigns.md) — campaign list, Edit Predictive Campaign, Upload Contact (CSV mapper + DNC scrub + TCPA), Graph Stats, Export Contacts
+- [intercloud9-agent-monitor.md](intercloud9-agent-monitor.md) — live monitor, barge / coach / conference DTMF codes (`2`/`1`/`3`)
+- [intercloud9-admin.md](intercloud9-admin.md) — user provisioning (SIP Phone vs Telephone Dial-in), Setup Database Fields
+
+### Reference
+- [intercloud9-dispositions.md](intercloud9-dispositions.md) — system vs agent disposition catalogue
+- [intercloud9-data-entities.md](intercloud9-data-entities.md) — full schema: User, Campaign, Contact, CallRecord, Disposition, ScheduledCallback, ContactLog, Script, Recording, DoNotCallList
 
 ---
 
@@ -75,5 +99,20 @@ Compiled from video tutorials covering MightyCall Auto Dialer, Salesforce Sales 
 ### Administration
 - [espocrm-administration.md](espocrm-administration.md) — Admin panel, customisation tools, extensions (Advanced Pack, Sales Pack, Project Management)
 
+### Administration
+- [espocrm-administration.md](espocrm-administration.md) — Admin panel, customisation tools, extensions (Advanced Pack, Sales Pack, Project Management)
+
 ### Reference
 - [espocrm-data-entities.md](espocrm-data-entities.md) — All entity fields and relationships (Enquiry, Contact, Account, Opportunity, Quote, Task, Report, Workflow)
+
+---
+
+## EspoCRM Sales Pack Pages (deep-dive)
+
+From 6m20s tutorial: "Retail and e-commerce simplified with the EspoCRM Sales Pack | Invoices, Inventory, Orders"
+
+### Modules
+- [espocrm-sales-pack.md](espocrm-sales-pack.md) — Products (categories, inventory tabs), Quotes (full field list + actions), Purchase Orders, Transfer Orders, Warehouses, Inventory Numbers — with document flow diagram
+
+### Reference
+- [espocrm-sales-entities.md](espocrm-sales-entities.md) — Full entity schema: Product, Quote, QuoteItem, PurchaseOrder, TransferOrder, Warehouse, InventoryNumber (use for DB schema)

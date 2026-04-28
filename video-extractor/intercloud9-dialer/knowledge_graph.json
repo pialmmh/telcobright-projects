@@ -1,0 +1,597 @@
+{
+  "product": "InterCloud9 Predictive Dialer",
+  "tagline": "Cloud-based predictive auto-dialer with agent workspace, campaign management, real-time monitoring",
+  "source_video": "intercloud9-dialer/screenshots/",
+  "duration_sec": 280,
+  "total_frames": 280,
+  "total_scenes": 54,
+  "significant_scenes": 17,
+  "url_observed": "pd.intercloud9.com",
+  "discarded_scenes": [
+    {"frames": "0001-0013", "reason": "intro/title — no UI"},
+    {"frames": "0086-0102", "reason": "transitions/talking-head between agent workspace shots"},
+    {"frames": "0251-0263", "reason": "talking head with no UI focus"},
+    {"frames": "0273-0280", "reason": "outro / closing"}
+  ],
+  "top_nav": ["Home", "List View", "Contact View", "Settings", "Admin", "Campaigns", "Agent Monitor"],
+  "modules": [
+    {
+      "name": "Home (Agent Dashboard)",
+      "navigation_path": "Top Nav > Home",
+      "url_pattern": "/#/home",
+      "features": [
+        "Welcome banner with agent name",
+        "Join a Predictive Campaign panel — lists available campaigns with View Stats",
+        "Scheduled Calls panel — agent's pending callbacks",
+        "Global Phone Search — lookup contact by phone",
+        "My Stats panel with date range filter",
+        "Display Agent Productivity link"
+      ],
+      "screens": [
+        {
+          "name": "Agent Home",
+          "description": "Default landing page for agents — shows campaigns to join, scheduled callbacks, personal stats",
+          "components": ["welcome banner", "campaign list panel", "scheduled calls panel", "phone search widget", "stats panel"],
+          "fields": [
+            {"name": "Available Campaigns count", "type": "label", "notes": "e.g. '3 Available Campaigns'"},
+            {"name": "Scheduled Calls count", "type": "label", "notes": "e.g. '1 Scheduled Calls'"},
+            {"name": "Stats date range", "type": "dropdown", "notes": "for Today / custom"},
+            {"name": "Stats from-date", "type": "date", "notes": ""},
+            {"name": "Stats to-date", "type": "date", "notes": ""},
+            {"name": "Agent Connect Time", "type": "duration", "notes": "in seconds + minutes/hours"},
+            {"name": "Agent Dialing Sessions", "type": "integer", "notes": "with in-progress sub-count"},
+            {"name": "Contact Talk Time", "type": "duration", "notes": ""},
+            {"name": "Connected Campaign Contacts", "type": "integer", "notes": ""},
+            {"name": "Attempted Direct Calls", "type": "integer", "notes": ""}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Contact View (Agent Workspace)",
+      "navigation_path": "Top Nav > Contact View",
+      "url_pattern": "/#/contact/[contact_id]",
+      "features": [
+        "Two-column layout — contact form left, call control right",
+        "Manual Dial / Campaign Dial / Direct Dial mode toggle",
+        "Call control bar: Get Contact, Hangup, Play Msg, Record, Transfer, 3-Way, Send Email, Previous, Next",
+        "Disposition Bar with one-click outcomes",
+        "Read Script modal with merged personalisation fields",
+        "Schedule Follow-up modal with calendar + time picker",
+        "Connected Calls history modal",
+        "Contact Log timeline + Add Note"
+      ],
+      "screens": [
+        {
+          "name": "Contact Detail",
+          "description": "Active call workspace — contact info on left, dialer + disposition on right",
+          "components": ["contact form (left)", "Connection Status panel (right)", "Disposition Bar", "Contact Log table", "Add Note textarea"],
+          "fields": [
+            {"name": "Business", "type": "label", "notes": "context block at top"},
+            {"name": "First Name", "type": "text", "notes": ""},
+            {"name": "Last Name", "type": "text", "notes": ""},
+            {"name": "Company", "type": "text", "notes": ""},
+            {"name": "Address", "type": "text", "notes": ""},
+            {"name": "City", "type": "text", "notes": ""},
+            {"name": "State", "type": "text", "notes": ""},
+            {"name": "Zip", "type": "text", "notes": ""},
+            {"name": "Other", "type": "text", "notes": "free-form custom field"},
+            {"name": "Email", "type": "email", "notes": ""},
+            {"name": "Lead ID", "type": "text", "notes": "'Change or add fields' link visible — fields are configurable"}
+          ]
+        },
+        {
+          "name": "Connection Status panel",
+          "description": "Right-side call control / dialer panel",
+          "components": ["dial mode toggle", "phone display", "action button row", "Disposition Bar"],
+          "fields": [
+            {"name": "Dial mode", "type": "toggle", "notes": "Manual Dial / Campaign Dial / Direct Dial"},
+            {"name": "Phone number", "type": "label", "notes": "e.g. +1 (877) 256-2100"},
+            {"name": "Get Contact", "type": "button", "notes": "fetch next contact from campaign"},
+            {"name": "Hangup", "type": "button", "notes": ""},
+            {"name": "Play Msg", "type": "button", "notes": "play pre-recorded voicemail"},
+            {"name": "Record", "type": "button", "notes": "start call recording"},
+            {"name": "Transfer", "type": "button", "notes": "transfer to closer/specialist"},
+            {"name": "3-Way", "type": "button", "notes": "three-way conference"},
+            {"name": "Send Email", "type": "button", "notes": ""},
+            {"name": "Previous", "type": "button", "notes": "navigate to previous contact"},
+            {"name": "Next", "type": "button", "notes": ""},
+            {"name": "Popup script on connect", "type": "checkbox", "notes": "auto-show Read Script modal when call connects"},
+            {"name": "Upon disposition, load next call", "type": "checkbox", "notes": "auto-advance after disposition selected"}
+          ]
+        },
+        {
+          "name": "Disposition Bar",
+          "description": "One-click call-outcome bar with sub-menus",
+          "components": ["dropdown buttons"],
+          "fields": [
+            {"name": "Custom", "type": "dropdown", "notes": "user-defined dispositions"},
+            {"name": "Schedule Callback", "type": "dropdown", "notes": "opens Schedule Follow-up modal"},
+            {"name": "Made Contact", "type": "dropdown", "notes": "Sale/Goal/Lead, Not Interested/Dead, etc."},
+            {"name": "Unable to Contact", "type": "dropdown", "notes": "No Contact, Wrong Number, Machine Left Msg, etc."},
+            {"name": "Assign to", "type": "dropdown", "notes": "transfer ownership to closer or specialist"}
+          ]
+        },
+        {
+          "name": "Read Script modal",
+          "description": "Pre-written call script with merge fields populated from contact data",
+          "components": ["modal", "script body", "merge tags"],
+          "fields": [
+            {"name": "Script body", "type": "rich text", "notes": "supports {{First Name}} / {{Last Name}} merge — e.g. 'Hello, can I speak with [Joey Cleint] please?'"},
+            {"name": "Cancel", "type": "button", "notes": ""}
+          ]
+        },
+        {
+          "name": "Schedule Follow-up modal",
+          "description": "Date + hour + minute picker for callback scheduling",
+          "components": ["calendar", "hour grid", "minute grid", "follow-up summary"],
+          "fields": [
+            {"name": "Date calendar", "type": "calendar", "notes": "month + year dropdown, Prev/Next nav"},
+            {"name": "Hour", "type": "grid", "notes": "AM 1-11 + noon, PM 1-11 + midnight"},
+            {"name": "Minute", "type": "grid", "notes": "00-59 in 5-min highlights"},
+            {"name": "Follow-up on", "type": "label", "notes": "auto-computed datetime e.g. 'Wednesday, Sep 14, 2016 at 12:00 AM'"},
+            {"name": "Timezone", "type": "label", "notes": "displayed: 'time is based on your timezone (-7 hrs from UTC/GMT)'"},
+            {"name": "Schedule Callback", "type": "button", "notes": "primary action"}
+          ]
+        },
+        {
+          "name": "Connected Calls modal",
+          "description": "Per-agent history of connected calls with retrieval filter",
+          "components": ["calls table", "retrieval filter"],
+          "fields": [
+            {"name": "Total Calls", "type": "label", "notes": ""},
+            {"name": "Time column", "type": "datetime", "notes": "e.g. 14 Sep 16@6:45AM"},
+            {"name": "Phone Number column", "type": "phone", "notes": ""},
+            {"name": "Duration column", "type": "integer", "notes": "seconds"},
+            {"name": "Mode column", "type": "enum", "notes": "Dialer, Direct, conf"},
+            {"name": "Retrieve by Time", "type": "dropdown", "notes": "hour, 2 hours, 4 hours, 8 hours, day, 2 days, 3 days"},
+            {"name": "Retrieve by No Calls", "type": "input", "notes": "alternative filter"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Campaigns",
+      "navigation_path": "Top Nav > Campaigns",
+      "url_pattern": "/#/campaign",
+      "features": [
+        "Current Campaigns list with status indicator",
+        "Create New Campaign action",
+        "Per-campaign action icons: Edit, Refresh, Delete, Add Contacts, Audio Upload, Leaf (recordings/active toggle), Upload Contact, Stats",
+        "Real-time campaign metrics with pie chart breakdown",
+        "Edit Predictive Campaign modal",
+        "Upload Contact CSV mapper",
+        "Graph Stats modal (Disposition Data / Calling Data tabs)",
+        "Export Contacts modal (CDR or Contact List)"
+      ],
+      "screens": [
+        {
+          "name": "Campaigns list",
+          "description": "All campaigns with metrics and per-row action icons",
+          "components": ["campaign card list", "pie chart per row", "action toolbar per row"],
+          "fields": [
+            {"name": "Name", "type": "label", "notes": "with circle status icon"},
+            {"name": "Caller ID line", "type": "label", "notes": "phone / Caller ID name e.g. '+1 (212) 555-1212 / Your Name'"},
+            {"name": "Total Contacts", "type": "integer", "notes": ""},
+            {"name": "Connected Contacts", "type": "integer", "notes": ""},
+            {"name": "Unanswered Contacts", "type": "integer", "notes": ""},
+            {"name": "Remaining Contacts", "type": "label", "notes": "X (Y available) — second number is callable now after DNC + time-of-day filters"},
+            {"name": "Abandon Rate", "type": "percent", "notes": "with Reset link"},
+            {"name": "Recordings", "type": "links", "notes": "Website / CSV download"},
+            {"name": "API", "type": "link", "notes": "Import action"},
+            {"name": "Status pie chart", "type": "chart", "notes": "Uncalled (green) / Out of Time (red) / Called Once (grey)"}
+          ]
+        },
+        {
+          "name": "Edit Predictive Campaign modal",
+          "description": "Per-campaign settings — caller ID, calling hours, dial rate",
+          "components": ["modal form"],
+          "fields": [
+            {"name": "Name", "type": "text", "notes": "required"},
+            {"name": "Description", "type": "text", "notes": ""},
+            {"name": "Caller ID Name", "type": "text", "notes": "required"},
+            {"name": "Caller ID Number", "type": "phone", "notes": "required, validation 'Must Be A Valid Phone Number'"},
+            {"name": "Limit Calling Hours", "type": "checkbox", "notes": ""},
+            {"name": "Never Call Before", "type": "time", "notes": "e.g. 8:00 (8:00 am)"},
+            {"name": "Never Call After", "type": "time", "notes": "e.g. 17:00 (5:00 pm)"},
+            {"name": "Dial Rate Override", "type": "dropdown", "notes": "Auto, Inbound, 1, 2, 3, 4, 5 — lines per agent"},
+            {"name": "Wait for Agent", "type": "checkbox", "notes": ""},
+            {"name": "Save Campaign", "type": "button", "notes": ""}
+          ]
+        },
+        {
+          "name": "Upload Contact modal",
+          "description": "CSV → contacts mapper with DNC scrub and TCPA confirmation",
+          "components": ["3-step instructions", "field mappers per CSV column", "preview rows", "options checkboxes"],
+          "fields": [
+            {"name": "Step 1", "type": "text", "notes": "'Select a CSV file by pressing Load CSV File'"},
+            {"name": "Step 2", "type": "text", "notes": "'Select the appropriate field for any columns'"},
+            {"name": "Step 3", "type": "text", "notes": "'When complete, press Upload'"},
+            {"name": "Field mapping rows", "type": "dropdowns", "notes": "* Phone *, First Name, Last Name, Address, City, choose field — Company/State/Zip/Other/Email/Lead ID"},
+            {"name": "Load CSV File", "type": "button", "notes": ""},
+            {"name": "Random", "type": "checkbox", "notes": "randomise dial order"},
+            {"name": "Prevent Duplicate Phone Number in File", "type": "checkbox", "notes": "default checked"},
+            {"name": "Prevent Duplicate Phone Number in Campaign", "type": "checkbox", "notes": "default checked"},
+            {"name": "Scrub Against our Do-Not-Call List", "type": "checkbox", "notes": "default checked"},
+            {"name": "I am Allowed to Call These Contacts", "type": "checkbox", "notes": "TCPA compliance — must check to upload"},
+            {"name": "Upload", "type": "button", "notes": ""}
+          ]
+        },
+        {
+          "name": "Graph Stats modal",
+          "description": "Per-campaign chart popup with two tabs",
+          "components": ["tabs", "pie chart with hover tooltips", "legend"],
+          "fields": [
+            {"name": "Disposition Data tab", "type": "tab", "notes": "shows disposition breakdown"},
+            {"name": "Calling Data tab", "type": "tab", "notes": "Not Dispositioned, No Agent Available, Carrier Error NTF"},
+            {"name": "Hover tooltip", "type": "tooltip", "notes": "e.g. 'Not Dispositioned: 80%'"}
+          ]
+        },
+        {
+          "name": "Export Contacts modal",
+          "description": "Email-export of CDRs or filtered contact list",
+          "components": ["radio group", "disposition checkbox list", "email field"],
+          "fields": [
+            {"name": "Call Detailed Records (CDRs)", "type": "radio", "notes": "all calls made for this campaign"},
+            {"name": "Contacts List", "type": "radio", "notes": "all contacts, dispositions, call statuses"},
+            {"name": "Direct Call", "type": "checkbox", "notes": ""},
+            {"name": "Inbox", "type": "checkbox", "notes": ""},
+            {"name": "Scheduled Callback", "type": "checkbox", "notes": ""},
+            {"name": "Sale/Goal/Lead", "type": "checkbox", "notes": ""},
+            {"name": "Not Interested/Dead", "type": "checkbox", "notes": ""},
+            {"name": "No Contact", "type": "checkbox", "notes": ""},
+            {"name": "Wrong Number", "type": "checkbox", "notes": ""},
+            {"name": "Machine Left Msg", "type": "checkbox", "notes": ""},
+            {"name": "Send to Email", "type": "email", "notes": "required"},
+            {"name": "Export", "type": "button", "notes": ""}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Agent Monitor",
+      "navigation_path": "Top Nav > Agent Monitor",
+      "url_pattern": "/#/monitor",
+      "features": [
+        "Real-Time Monitor / Recorded Calls tabs",
+        "Live agent status table",
+        "Barge-in / Listen via SIP connection",
+        "Coaching modes (whisper / barge / conference)"
+      ],
+      "screens": [
+        {
+          "name": "Real-Time Monitor",
+          "description": "Live view of all active agents with barge controls",
+          "components": ["Outgoing Calls counter (left)", "agent status table (right)", "instructions banner"],
+          "fields": [
+            {"name": "Outgoing Calls (X total)", "type": "label", "notes": ""},
+            {"name": "Name column", "type": "text", "notes": "agent name"},
+            {"name": "Campaign column", "type": "text", "notes": "current campaign or 'unkn'"},
+            {"name": "Status column", "type": "enum", "notes": "Unknown/Available/On Call/etc"},
+            {"name": "Time column", "type": "duration", "notes": "time in current state"},
+            {"name": "Barge button", "type": "button", "notes": "speech-balloon icon — requires SIP connection"}
+          ]
+        },
+        {
+          "name": "Coaching keypad codes",
+          "description": "DTMF codes for supervisor while connected via SIP",
+          "components": ["instructions banner"],
+          "fields": [
+            {"name": "Press 2", "type": "dtmf", "notes": "coach your agent (whisper)"},
+            {"name": "Press 1", "type": "dtmf", "notes": "speak with their contact"},
+            {"name": "Press 3", "type": "dtmf", "notes": "conference (3-way)"}
+          ]
+        },
+        {
+          "name": "Recorded Calls tab",
+          "description": "Listen to past call recordings",
+          "components": ["recordings table"],
+          "fields": []
+        }
+      ]
+    },
+    {
+      "name": "Admin",
+      "navigation_path": "Top Nav > Admin",
+      "url_pattern": "/#/admin",
+      "features": [
+        "User management (Create/Edit users)",
+        "Per-user connect-via mode (SIP Phone or Telephone Dial-in)",
+        "Per-user agent ID / PIN provisioning",
+        "Setup Database Fields (configure custom contact fields)",
+        "Logoff/login required to enable new settings"
+      ],
+      "screens": [
+        {
+          "name": "Account Information / Users",
+          "description": "Admin user list with connection credentials",
+          "components": ["Users panel", "Create New User button", "per-user action toolbar"],
+          "fields": [
+            {"name": "Total Users", "type": "label", "notes": "e.g. '5 Total Users'"},
+            {"name": "User Name", "type": "text", "notes": ""},
+            {"name": "Emails (×2)", "type": "email", "notes": "two email fields per user"},
+            {"name": "Phone", "type": "phone", "notes": ""},
+            {"name": "Connect via", "type": "enum", "notes": "SIP Phone | Telephone Dial-in"},
+            {"name": "Username (SIP)", "type": "text", "notes": "e.g. sip_2 — SIP-mode only"},
+            {"name": "Password (SIP)", "type": "text", "notes": "shown in plaintext in admin"},
+            {"name": "Agent ID (Dial-in)", "type": "text", "notes": "e.g. sip_155"},
+            {"name": "PIN (Dial-in)", "type": "integer", "notes": "e.g. 1234"},
+            {"name": "Action: Edit", "type": "button", "notes": "pencil icon"},
+            {"name": "Action: Stats", "type": "button", "notes": "chart icon"},
+            {"name": "Action: Status", "type": "button", "notes": "circle icon"},
+            {"name": "Action: Phone setup", "type": "button", "notes": "phone icon"},
+            {"name": "Action: Calendar/log", "type": "button", "notes": "list icon"},
+            {"name": "Action: Recordings (Direct Calls Only)", "type": "button", "notes": "speaker icon — tooltip seen"}
+          ]
+        },
+        {
+          "name": "Setup Database Fields",
+          "description": "Configure custom contact fields visible in Contact View",
+          "components": ["link from Admin"],
+          "fields": []
+        }
+      ]
+    },
+    {
+      "name": "List View",
+      "navigation_path": "Top Nav > List View",
+      "url_pattern": "/#/list",
+      "features": ["Bulk view of contacts (referenced by nav, no detail captured)"],
+      "screens": []
+    },
+    {
+      "name": "Settings",
+      "navigation_path": "Top Nav > Settings",
+      "url_pattern": "/#/settings",
+      "features": ["Per-user preferences (referenced by nav, no detail captured)"],
+      "screens": []
+    }
+  ],
+  "data_entities": [
+    {
+      "name": "User (Agent/Admin)",
+      "fields": [
+        {"name": "id", "type": "uuid", "notes": ""},
+        {"name": "name", "type": "text", "notes": "e.g. Demo, Adam, Jason, Greg, Alex"},
+        {"name": "email_primary", "type": "email", "notes": ""},
+        {"name": "email_secondary", "type": "email", "notes": ""},
+        {"name": "phone", "type": "phone", "notes": ""},
+        {"name": "connect_via", "type": "enum", "notes": "SIP Phone | Telephone Dial-in"},
+        {"name": "sip_username", "type": "text", "notes": "if SIP — e.g. sip_2"},
+        {"name": "sip_password", "type": "text", "notes": "if SIP"},
+        {"name": "agent_id", "type": "text", "notes": "if Dial-in — e.g. sip_155"},
+        {"name": "pin", "type": "integer", "notes": "if Dial-in"},
+        {"name": "role", "type": "enum", "notes": "Agent | Admin"}
+      ],
+      "relationships": [
+        "User → has many → Disposition (made by)",
+        "User → has many → ContactLog entry",
+        "User → assigned → Campaign (multiple)"
+      ]
+    },
+    {
+      "name": "Campaign",
+      "fields": [
+        {"name": "id", "type": "uuid", "notes": ""},
+        {"name": "name", "type": "text", "notes": "required"},
+        {"name": "description", "type": "text", "notes": ""},
+        {"name": "type", "type": "enum", "notes": "Predictive (others likely)"},
+        {"name": "caller_id_name", "type": "text", "notes": "required"},
+        {"name": "caller_id_number", "type": "phone", "notes": "required"},
+        {"name": "limit_calling_hours", "type": "boolean", "notes": ""},
+        {"name": "never_call_before", "type": "time", "notes": ""},
+        {"name": "never_call_after", "type": "time", "notes": ""},
+        {"name": "dial_rate_override", "type": "enum", "notes": "Auto | Inbound | 1 | 2 | 3 | 4 | 5"},
+        {"name": "wait_for_agent", "type": "boolean", "notes": ""},
+        {"name": "abandon_rate", "type": "percent", "notes": "computed, resettable"},
+        {"name": "status", "type": "enum", "notes": "Active/Paused (small status circle on card)"}
+      ],
+      "relationships": [
+        "Campaign → has many → Contact",
+        "Campaign → has many → CallRecord",
+        "Campaign → has many → Recording",
+        "Campaign → assigned to → User (multiple)"
+      ]
+    },
+    {
+      "name": "Contact",
+      "fields": [
+        {"name": "id", "type": "uuid", "notes": "URL: /contact/3419513"},
+        {"name": "campaign_id", "type": "relate", "notes": "→ Campaign"},
+        {"name": "business", "type": "text", "notes": "context label, default 'Unknown'"},
+        {"name": "first_name", "type": "text", "notes": ""},
+        {"name": "last_name", "type": "text", "notes": ""},
+        {"name": "company", "type": "text", "notes": ""},
+        {"name": "address", "type": "text", "notes": ""},
+        {"name": "city", "type": "text", "notes": ""},
+        {"name": "state", "type": "text", "notes": ""},
+        {"name": "zip", "type": "text", "notes": ""},
+        {"name": "other", "type": "text", "notes": "free-form"},
+        {"name": "email", "type": "email", "notes": ""},
+        {"name": "lead_id", "type": "text", "notes": "external lead system ref"},
+        {"name": "phone", "type": "phone", "notes": "primary dial number"},
+        {"name": "called_status", "type": "enum", "notes": "Uncalled | Out of Time | Called Once (from pie chart)"},
+        {"name": "current_disposition", "type": "relate", "notes": "→ Disposition"},
+        {"name": "custom_fields", "type": "json", "notes": "configurable via Setup Database Fields"}
+      ],
+      "relationships": [
+        "Contact → belongs to → Campaign",
+        "Contact → has many → CallRecord",
+        "Contact → has many → ContactLog",
+        "Contact → has many → ScheduledCallback"
+      ]
+    },
+    {
+      "name": "CallRecord",
+      "fields": [
+        {"name": "id", "type": "uuid", "notes": ""},
+        {"name": "contact_id", "type": "relate", "notes": "→ Contact"},
+        {"name": "campaign_id", "type": "relate", "notes": "→ Campaign (nullable for Direct calls)"},
+        {"name": "agent_id", "type": "relate", "notes": "→ User"},
+        {"name": "phone_number", "type": "phone", "notes": ""},
+        {"name": "time", "type": "datetime", "notes": ""},
+        {"name": "duration_sec", "type": "integer", "notes": ""},
+        {"name": "mode", "type": "enum", "notes": "Dialer | Direct | conf"},
+        {"name": "disposition_id", "type": "relate", "notes": "→ Disposition (nullable)"},
+        {"name": "recording_url", "type": "url", "notes": "if Record was pressed"}
+      ],
+      "relationships": [
+        "CallRecord → belongs to → Contact",
+        "CallRecord → belongs to → Campaign",
+        "CallRecord → belongs to → User",
+        "CallRecord → has one → Recording"
+      ]
+    },
+    {
+      "name": "Disposition",
+      "fields": [
+        {"name": "id", "type": "uuid", "notes": ""},
+        {"name": "name", "type": "text", "notes": ""},
+        {"name": "category", "type": "enum", "notes": "Made Contact | Unable to Contact | Custom | System"},
+        {"name": "is_system", "type": "boolean", "notes": "system dispositions: No Agent Available, Carrier Error NTF, Not Dispositioned"}
+      ],
+      "relationships": [
+        "Disposition → has many → CallRecord"
+      ],
+      "known_values": [
+        "Direct Call",
+        "Inbox",
+        "Scheduled Callback",
+        "Sale/Goal/Lead",
+        "Not Interested/Dead",
+        "No Contact",
+        "Wrong Number",
+        "Machine Left Msg",
+        "No Agent Available (system)",
+        "Carrier Error NTF (system)",
+        "Not Dispositioned (system)"
+      ]
+    },
+    {
+      "name": "ScheduledCallback",
+      "fields": [
+        {"name": "id", "type": "uuid", "notes": ""},
+        {"name": "contact_id", "type": "relate", "notes": "→ Contact"},
+        {"name": "agent_id", "type": "relate", "notes": "→ User (assigned agent)"},
+        {"name": "follow_up_at", "type": "datetime", "notes": "with timezone"},
+        {"name": "agent_timezone_offset", "type": "integer", "notes": "e.g. -7 hrs from UTC/GMT"},
+        {"name": "created_at", "type": "datetime", "notes": ""},
+        {"name": "campaign_id", "type": "relate", "notes": "→ Campaign"}
+      ],
+      "relationships": [
+        "ScheduledCallback → belongs to → Contact",
+        "ScheduledCallback → belongs to → User"
+      ]
+    },
+    {
+      "name": "ContactLog",
+      "fields": [
+        {"name": "id", "type": "uuid", "notes": ""},
+        {"name": "contact_id", "type": "relate", "notes": "→ Contact"},
+        {"name": "date", "type": "datetime", "notes": "e.g. '16 Sep 16@11:25AM'"},
+        {"name": "message", "type": "text", "notes": "agent note OR auto-message e.g. '[auto] assigned contact to Web Admin'"},
+        {"name": "is_auto", "type": "boolean", "notes": "true for system-generated entries"},
+        {"name": "agent_id", "type": "relate", "notes": "→ User (nullable for auto)"}
+      ],
+      "relationships": [
+        "ContactLog → belongs to → Contact",
+        "ContactLog → belongs to → User"
+      ]
+    },
+    {
+      "name": "Script",
+      "fields": [
+        {"name": "id", "type": "uuid", "notes": ""},
+        {"name": "campaign_id", "type": "relate", "notes": "→ Campaign"},
+        {"name": "body", "type": "rich_text", "notes": "supports merge tags from Contact fields"},
+        {"name": "popup_on_connect", "type": "boolean", "notes": "checkbox in Connection Status"}
+      ],
+      "relationships": [
+        "Script → belongs to → Campaign"
+      ]
+    },
+    {
+      "name": "Recording",
+      "fields": [
+        {"name": "id", "type": "uuid", "notes": ""},
+        {"name": "call_record_id", "type": "relate", "notes": "→ CallRecord"},
+        {"name": "url", "type": "url", "notes": "Website link"},
+        {"name": "csv_url", "type": "url", "notes": "CSV bulk export"},
+        {"name": "direct_calls_only", "type": "boolean", "notes": "tooltip: 'Recordings (Direct Calls Only)'"}
+      ],
+      "relationships": [
+        "Recording → belongs to → CallRecord"
+      ]
+    },
+    {
+      "name": "DoNotCallList",
+      "fields": [
+        {"name": "id", "type": "uuid", "notes": ""},
+        {"name": "phone_number", "type": "phone", "notes": ""},
+        {"name": "added_at", "type": "datetime", "notes": ""},
+        {"name": "scope", "type": "enum", "notes": "global | campaign"}
+      ],
+      "relationships": [
+        "Upload Contact → checks → DoNotCallList (Scrub Against our Do-Not-Call List checkbox)"
+      ]
+    }
+  ],
+  "ui_patterns": {
+    "layout": "Single horizontal top nav with 7 items; main pane below; modals for create/edit/detail flows",
+    "color_scheme": {
+      "primary_blue": "#3a8dde — section headers, action buttons, links",
+      "warning_orange": "#f0a151 — banners, primary CTAs (Save Campaign, Schedule Callback, Upload, Manual Dial active)",
+      "active_tab_blue": "darker blue background for active nav item",
+      "panel_header_blue": "blue with white text (Connection Status, My Stats, Global Phone Search, Scheduled Calls)",
+      "neutral_grey": "form labels, table headers"
+    },
+    "navigation": {
+      "top_level_items": ["Home", "List View", "Contact View", "Settings", "Admin", "Campaigns", "Agent Monitor"],
+      "active_indicator": "blue background pill behind active item",
+      "header_right": "[response time ms indicator] | Logout"
+    },
+    "branding": {
+      "logo": "interCloud9 wordmark with stylised circular swoop",
+      "footer": "Copyright (c) 2008-16. All rights reserved. Unauthorized Access Prohibited. Support: 877-256-2100 | support@intercloud9.com"
+    },
+    "modals": {
+      "header_style": "title left-aligned, no icon, no close button visible (Cancel button bottom-right)",
+      "primary_action_color": "orange (Schedule Callback, Save Campaign, Upload, Export)",
+      "secondary_action": "blue Cancel"
+    },
+    "tables": {
+      "header_color": "light blue fill with white text",
+      "row_hover": "implied (not captured)",
+      "action_icons_inline": "right of row — pencil edit, refresh, trash, plus, audio, leaf, stats"
+    }
+  },
+  "cross_module_features": [
+    "Disposition system shared across Contact View, Campaigns export, Graph Stats",
+    "Recording playback shared across Contact View, Agent Monitor (Recorded Calls), Campaigns row (Recordings link)",
+    "Agent stats shared between Home (My Stats), Admin (Stats per user), Agent Monitor (live status)",
+    "DNC scrubbing applied at Upload Contact time (national + custom)",
+    "TCPA confirmation required: 'I am Allowed to Call These Contacts' must be checked",
+    "Phone search (Home Global Phone Search) cross-references all campaigns",
+    "Scheduled callbacks visible on Home (Scheduled Calls panel) regardless of which campaign created them"
+  ],
+  "comparison_to_mightycall": {
+    "shared_concepts": [
+      "Predictive dialing mode",
+      "Campaign list with metrics + pie chart",
+      "DNC compliance with scrub-on-upload",
+      "TCPA consent checkbox",
+      "Disposition split into system vs agent",
+      "CSV upload with column mapping",
+      "Agent recording playback"
+    ],
+    "intercloud9_distinct": [
+      "Combined contact form + dialer in single 'Contact View' (vs MightyCall's separate List View + agent workspace)",
+      "Read Script modal with merge fields embedded directly in Contact View",
+      "Connect via SIP Phone OR Telephone Dial-in (admin-configurable per agent)",
+      "Three-way / coaching keypad codes (1/2/3 DTMF)",
+      "Lead ID field on Contact for external system cross-reference",
+      "'Wait for Agent' as a campaign-level toggle alongside Dial Rate Override",
+      "Direct call recording flagged separately ('Recordings (Direct Calls Only)' tooltip)"
+    ]
+  }
+}
