@@ -2,7 +2,9 @@
 
 Compiled from video tutorials covering MightyCall Auto Dialer, Salesforce Sales Cloud, and EspoCRM.
 
-> **AI agents start here:** [`AI_AGENT_GUIDE.md`](AI_AGENT_GUIDE.md) — how to consume this wiki to build software, authority order, and screenshot caveats.
+> **AI agents start here:**
+> - [`AI_AGENT_GUIDE.md`](AI_AGENT_GUIDE.md) — how to read this wiki: read order, authority order (JSON > wiki > screenshots), missing-image rules.
+> - [`BUILD_INSTRUCTION.md`](BUILD_INSTRUCTION.md) — the imperative checklist when you're being asked to **build** software from this wiki. Emphasises *look at every screenshot* before writing code.
 
 ## Sources
 
