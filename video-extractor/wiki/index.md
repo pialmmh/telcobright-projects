@@ -14,6 +14,25 @@ Compiled from video tutorials covering MightyCall Auto Dialer, Salesforce Sales 
 | [InterCloud9 Predictive Dialer](../intercloud9-dialer/knowledge_graph.json) | 4:40 | 17 | Cloud predictive dialer: Contact View, Campaigns, Agent Monitor, Admin |
 | [Salesforce Sales Cloud](../salesforce-crm/knowledge_graph.json) | ~40:00 | 81 | Full CRM: Leads, Accounts, Contacts, Opportunities, Cases, Tasks, Calendar, Reports, Dashboards, Campaigns |
 | [EspoCRM Advanced](../espocrm/knowledge_graph.json) | 17:00 | 19 | CRM: Enquiries, Contacts, Accounts, Opportunities, Quotes, Dashboard, Reports, Workflows, Administration |
+| [Odoo 17 Product Management](../odoo/product/knowledge_graph.json) | 15:00 | 19 | Sales > Products: form (7 tabs), variants, vendors, routes, Update Quantity |
+
+---
+
+## Odoo 17 Product Management Pages
+
+### Overview
+- [odoo-product-modules.md](odoo-product-modules.md) — top nav, form anatomy, smart-button row, tab strip
+
+### Modules / Tabs
+- [odoo-product-general.md](odoo-product-general.md) — General Information tab (product type, pricing, taxes, categorisation)
+- [odoo-product-variants.md](odoo-product-variants.md) — Attributes & Variants matrix + Variants smart button
+- [odoo-product-sales.md](odoo-product-sales.md) — Sales tab: cross-sell, POS, Self-Order, eCommerce
+- [odoo-product-purchase.md](odoo-product-purchase.md) — vendors, vendor billing, chatter
+- [odoo-product-inventory.md](odoo-product-inventory.md) — Routes, logistics (HS Code, Origin of Goods), descriptions
+- [odoo-product-update-quantity.md](odoo-product-update-quantity.md) — per-variant per-location stock grid
+
+### Reference
+- [odoo-product-data-entities.md](odoo-product-data-entities.md) — `ProductTemplate`, `ProductProduct`, `AttributeLine`, `SupplierInfo`, `StockQuant`, etc.
 
 ---
 

@@ -1,0 +1,427 @@
+{
+  "product": "Odoo 17 — Product Management (Sales app)",
+  "source_video": "odoo/product/screenshots/",
+  "video_duration_sec": 900,
+  "total_scenes": 670,
+  "significant_scenes_threshold_sec": 3,
+  "significant_scenes_count": 38,
+  "kept_scenes_count": 19,
+  "discarded_scenes": [
+    {"frames": "0001-0068", "reason": "intro / channel branding / opening narration before any product UI is shown"},
+    {"frames": "0070-0133", "reason": "narration on the same Product form (Mug, General Information) — duplicates of frame_0069"},
+    {"frames": "0135-0216", "reason": "same Product Type tooltip / repeated cursor motion over the General Information tab"},
+    {"frames": "0250-0345", "reason": "narration over Invoicing Policy / Cost — duplicates of frames 0249 / 0276"},
+    {"frames": "0500-0593", "reason": "narration over Sales tab Optional Products tooltip — duplicate of frame 0499"},
+    {"frames": "0840-0900", "reason": "outro / call-to-subscribe"}
+  ],
+  "modules": [
+    {
+      "name": "Sales",
+      "navigation_path": "Top Nav: Sales | Orders | To Invoice | Products | Reporting | Configuration",
+      "features": [
+        "Products list (CRUD)",
+        "Product detail form with 7 tabs",
+        "Smart buttons leading to Variants / Documents / Extra Prices / Website / In-Out moves",
+        "Update Quantity (per-location stock adjustment)",
+        "Replenishment & Print Labels",
+        "Chatter (Send message / Log note / WhatsApp / Activities) with Following toggle"
+      ],
+      "screens": [
+        {
+          "name": "Product Form — header",
+          "description": "Top of the Product detail form. Always visible regardless of which tab is active.",
+          "components": [
+            "breadcrumb (Products / <name>)",
+            "header action buttons (New, Replenish, Print Labels)",
+            "smart-button row (Extra Prices, Documents, Go to Website, In/Out, Variants, More dropdown)",
+            "Product Name + Favorite star",
+            "image upload placeholder (top-right)",
+            "language indicator (EN)",
+            "scope checkboxes (Can be Sold, Can be Purchased, Can be Expensed, Recurring, Can be Rented)",
+            "tab strip"
+          ],
+          "fields": [
+            {"name": "name", "type": "text", "notes": "Product Name — required. Yellow star toggles favorite."},
+            {"name": "image", "type": "image", "notes": "Top-right placeholder; upload via icon"},
+            {"name": "can_be_sold", "type": "boolean", "notes": "Drives appearance in sale orders"},
+            {"name": "can_be_purchased", "type": "boolean", "notes": "Drives appearance in purchase orders / RFQs"},
+            {"name": "can_be_expensed", "type": "boolean", "notes": "Allow as reimbursable expense"},
+            {"name": "recurring", "type": "boolean", "notes": "Subscription product"},
+            {"name": "can_be_rented", "type": "boolean", "notes": "Rental product"}
+          ],
+          "representative_frames": ["screenshots/frame_0069.jpg"]
+        },
+        {
+          "name": "Tab — General Information",
+          "description": "Two-column layout. Left = type/policy/UoM. Right = pricing/taxes/categorisation.",
+          "components": ["two-column form", "field-level help tooltips (?)"],
+          "fields": [
+            {"name": "product_type", "type": "selection", "notes": "Consumable | Service | Storable Product | Booking Fees | Combo | Event Ticket | Event Booth | Course. Storable requires Inventory app."},
+            {"name": "invoicing_policy", "type": "selection", "notes": "Ordered quantities | Delivered quantities"},
+            {"name": "uom_id", "type": "many2one(uom.uom)", "notes": "Unit of Measure for sales"},
+            {"name": "uom_po_id", "type": "many2one(uom.uom)", "notes": "Purchase UoM"},
+            {"name": "create_repair", "type": "boolean", "notes": "Auto-create a repair order on receipt of return"},
+            {"name": "list_price", "type": "monetary", "notes": "Sales Price; shown with '(= $X.YZ Incl. Taxes)' on the right"},
+            {"name": "taxes_id", "type": "many2many(account.tax)", "notes": "Customer Taxes — chip selector e.g. 15%"},
+            {"name": "tic_category_id", "type": "many2one", "notes": "TaxCloud Category — TIC code, prevails over category default"},
+            {"name": "avatax_category_id", "type": "many2one", "notes": "Avatax Category"},
+            {"name": "standard_price", "type": "monetary", "notes": "Cost; AVCO-computed. Used for inventory valuation when purchase cost unknown, and for sale-order margins."},
+            {"name": "categ_id", "type": "many2one(product.category)", "notes": "Product Category, default 'All'"},
+            {"name": "default_code", "type": "text", "notes": "Part Number"},
+            {"name": "oem_no", "type": "text", "notes": "OEM No."},
+            {"name": "barcode", "type": "text", "notes": "UPC / EAN Code"},
+            {"name": "version", "type": "integer", "notes": "Default 1"},
+            {"name": "product_template_tag_ids", "type": "many2many", "notes": "Product Template Tags"},
+            {"name": "brand_id", "type": "many2one", "notes": "Brands"},
+            {"name": "company_id", "type": "many2one(res.company)", "notes": "Multi-company scope"}
+          ],
+          "representative_frames": [
+            "screenshots/frame_0069.jpg",
+            "screenshots/frame_0134.jpg",
+            "screenshots/frame_0217.jpg",
+            "screenshots/frame_0249.jpg",
+            "screenshots/frame_0346.jpg",
+            "screenshots/frame_0365.jpg",
+            "screenshots/frame_0382.jpg",
+            "screenshots/frame_0765.jpg"
+          ]
+        },
+        {
+          "name": "Tab — Attributes & Variants",
+          "description": "Configure variant attributes (e.g. Color: White / Black / Green / Pink). Saving generates the variant matrix and a Variants smart button appears in the header.",
+          "components": [
+            "table (Attribute | Values | Configure | trash)",
+            "Add a line link",
+            "warning text",
+            "SALES VARIANT SELECTION radio (Product Configurator | Order Grid Entry)"
+          ],
+          "fields": [
+            {"name": "attribute_line_ids.attribute_id", "type": "many2one(product.attribute)", "notes": "e.g. Color"},
+            {"name": "attribute_line_ids.value_ids", "type": "many2many(product.attribute.value)", "notes": "Coloured chips (background per value)"},
+            {"name": "sales_variant_selection", "type": "selection", "notes": "Product Configurator | Order Grid Entry"}
+          ],
+          "warnings": [
+            "Adding or deleting attributes will delete and recreate existing variants and lead to the loss of their possible customizations."
+          ],
+          "behaviors": [
+            "After save with attributes, a 'Variants' smart button appears showing variant count (e.g. 4)."
+          ],
+          "representative_frames": [
+            "screenshots/frame_0422.jpg",
+            "screenshots/frame_0427.jpg",
+            "screenshots/frame_0447.jpg"
+          ]
+        },
+        {
+          "name": "Tab — Sales",
+          "description": "Cross-sell, POS, eCommerce, Self-Order, and extra media settings.",
+          "components": ["four-section two-column layout"],
+          "sections": {
+            "UPSELL & CROSS-SELL": [
+              {"name": "optional_product_ids", "type": "many2many(product.template)", "notes": "Suggested when customer hits *Add to Cart* (cross-sell, e.g. computers: warranty, software)"},
+              {"name": "accessory_product_ids", "type": "many2many(product.template)", "notes": "Suggested accessories in eCommerce cart"},
+              {"name": "alternative_product_ids", "type": "many2many(product.template)", "notes": "Displayed at bottom of product pages"}
+            ],
+            "POINT OF SALE": [
+              {"name": "available_in_pos", "type": "boolean"},
+              {"name": "to_weight", "type": "boolean", "notes": "To Weigh With Scale"},
+              {"name": "pos_categ_id", "type": "many2one(pos.category)", "notes": "POS Category, e.g. Drinks"},
+              {"name": "available_in_self_order", "type": "boolean"}
+            ],
+            "PRODUCT DESCRIPTION FOR SELF ORDER": [
+              {"name": "self_order_description", "type": "text", "notes": "Information about your product for Self Order and Kiosk"}
+            ],
+            "ECOMMERCE SHOP": [
+              {"name": "website_id", "type": "many2one(website)", "notes": "e.g. My Website"},
+              {"name": "public_categ_ids", "type": "many2many(product.public.category)", "notes": "Categories chip e.g. Furnitures"}
+            ],
+            "EXTRA PRODUCT MEDIA": [
+              {"name": "media_ids", "type": "one2many", "notes": "Add a Media button"}
+            ]
+          },
+          "representative_frames": [
+            "screenshots/frame_0499.jpg",
+            "screenshots/frame_0594.jpg"
+          ]
+        },
+        {
+          "name": "Tab — Purchase",
+          "description": "Vendors, vendor billing policy, and the chatter pane.",
+          "components": [
+            "vendors o2m table (Vendor | Price | Currency | Delivery Lead Time | Min Qty)",
+            "Add a line",
+            "VENDOR BILLS section",
+            "PURCHASE DESCRIPTION textarea",
+            "chatter (Send message / Log note / WhatsApp / Activities) with Following indicator"
+          ],
+          "fields": [
+            {"name": "seller_ids", "type": "one2many(product.supplierinfo)", "notes": "Vendor lines: name, price, currency, delivery lead time, min qty"},
+            {"name": "supplier_taxes_id", "type": "many2many(account.tax)", "notes": "Vendor Taxes e.g. 15%"},
+            {"name": "purchase_method", "type": "selection", "notes": "Control Policy radio: 'On ordered quantities' (control bills based on ordered qty) | 'On received quantities' (control bills based on received qty)"},
+            {"name": "description_purchase", "type": "text", "notes": "Note added to purchase orders"}
+          ],
+          "representative_frames": [
+            "screenshots/frame_0609.jpg",
+            "screenshots/frame_0635.jpg"
+          ]
+        },
+        {
+          "name": "Tab — Inventory",
+          "description": "Procurement routes, logistics metadata, and per-document descriptions.",
+          "components": ["two-column layout", "View Diagram link under Routes"],
+          "sections": {
+            "OPERATIONS": [
+              {"name": "route_ids", "type": "many2many(stock.route)", "notes": "Multi-checkbox: Dropship Subcontractor on Order, Buy, Replenish on Order (MTO), Manufacture, Resupply Subcontractor on Order, Dropship, <Company>: Cross-Dock"}
+            ],
+            "LOGISTICS": [
+              {"name": "responsible_id", "type": "many2one(res.users)", "notes": "Responsible (e.g. Mitchell Admin)"},
+              {"name": "sale_delay", "type": "float", "notes": "Customer Lead Time, in days"},
+              {"name": "hs_code", "type": "text", "notes": "Standardized code for international shipping. Currently used for FedEx shipping provider."},
+              {"name": "country_of_origin", "type": "many2one(res.country)", "notes": "Origin of Goods — economic nationality of goods, used for rules of origin"}
+            ],
+            "DESCRIPTION FOR RECEIPTS": [
+              {"name": "description_pickingin", "type": "text", "notes": "Note added to receipt orders (e.g. where to store in warehouse)"}
+            ],
+            "DESCRIPTION FOR DELIVERY ORDERS": [
+              {"name": "description_pickingout", "type": "text"}
+            ],
+            "DESCRIPTION FOR INTERNAL TRANSFERS": [
+              {"name": "description_picking", "type": "text"}
+            ]
+          },
+          "representative_frames": [
+            "screenshots/frame_0668.jpg",
+            "screenshots/frame_0678.jpg"
+          ]
+        },
+        {
+          "name": "Tab — Accounting",
+          "description": "Visible in tab strip but not demonstrated in this video.",
+          "components": [],
+          "fields": [],
+          "representative_frames": []
+        },
+        {
+          "name": "Tab — eBay",
+          "description": "Visible in tab strip but not demonstrated in this video.",
+          "components": [],
+          "fields": [],
+          "representative_frames": []
+        },
+        {
+          "name": "Update Quantity (smart button)",
+          "description": "Per-variant per-location on-hand quantity grid. Reached from the product form's smart button row.",
+          "components": [
+            "header buttons (New, Inventory at Date)",
+            "breadcrumb (Products / <Mug> / Update Quantity)",
+            "active filters: Internal Locations, On Hand",
+            "search input + filter dropdown",
+            "view toggles (list / kanban / graph)",
+            "data list (Location | Product | Owner | On Hand Quantity (editable) | Reserved | Unit | History | Replenishment)",
+            "totals row at the bottom",
+            "empty-state graphic 'No Stock On Hand — This analysis gives you an overview of the current stock level of your products.'"
+          ],
+          "fields": [
+            {"name": "location_id", "type": "many2one(stock.location)", "notes": "e.g. WH/Stock"},
+            {"name": "product_id", "type": "many2one(product.product)", "notes": "Variant — e.g. Mug (White)"},
+            {"name": "owner_id", "type": "many2one(res.partner)", "notes": "Optional partner owner of stock"},
+            {"name": "quantity", "type": "float", "notes": "On-hand qty — editable inline (pencil icon)"},
+            {"name": "reserved_quantity", "type": "float", "notes": "Read-only"},
+            {"name": "uom_id", "type": "many2one(uom.uom)"}
+          ],
+          "representative_frames": [
+            "screenshots/frame_0806.jpg",
+            "screenshots/frame_0838.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "data_entities": [
+    {
+      "name": "ProductTemplate",
+      "table_hint": "product.template",
+      "fields": [
+        {"name": "id", "type": "uuid"},
+        {"name": "name", "type": "text", "notes": "required"},
+        {"name": "image", "type": "binary"},
+        {"name": "is_favorite", "type": "boolean", "notes": "yellow star"},
+        {"name": "can_be_sold", "type": "boolean"},
+        {"name": "can_be_purchased", "type": "boolean"},
+        {"name": "can_be_expensed", "type": "boolean"},
+        {"name": "recurring", "type": "boolean"},
+        {"name": "can_be_rented", "type": "boolean"},
+        {"name": "product_type", "type": "selection", "notes": "Consumable | Service | Storable Product | Booking Fees | Combo | Event Ticket | Event Booth | Course"},
+        {"name": "invoicing_policy", "type": "selection", "notes": "Ordered quantities | Delivered quantities"},
+        {"name": "uom_id", "type": "many2one(uom.uom)"},
+        {"name": "uom_po_id", "type": "many2one(uom.uom)"},
+        {"name": "create_repair", "type": "boolean"},
+        {"name": "list_price", "type": "monetary", "notes": "Sales Price"},
+        {"name": "taxes_id", "type": "many2many(account.tax)", "notes": "Customer Taxes"},
+        {"name": "tic_category_id", "type": "many2one"},
+        {"name": "avatax_category_id", "type": "many2one"},
+        {"name": "standard_price", "type": "monetary", "notes": "Cost (AVCO)"},
+        {"name": "categ_id", "type": "many2one(product.category)", "notes": "default 'All'"},
+        {"name": "default_code", "type": "text", "notes": "Part Number"},
+        {"name": "oem_no", "type": "text"},
+        {"name": "barcode", "type": "text", "notes": "UPC / EAN"},
+        {"name": "version", "type": "integer"},
+        {"name": "product_template_tag_ids", "type": "many2many"},
+        {"name": "brand_id", "type": "many2one"},
+        {"name": "company_id", "type": "many2one(res.company)"},
+        {"name": "available_in_pos", "type": "boolean"},
+        {"name": "to_weight", "type": "boolean"},
+        {"name": "pos_categ_id", "type": "many2one(pos.category)"},
+        {"name": "available_in_self_order", "type": "boolean"},
+        {"name": "self_order_description", "type": "text"},
+        {"name": "website_id", "type": "many2one(website)"},
+        {"name": "public_categ_ids", "type": "many2many(product.public.category)"},
+        {"name": "media_ids", "type": "one2many"},
+        {"name": "optional_product_ids", "type": "many2many(product.template)"},
+        {"name": "accessory_product_ids", "type": "many2many(product.template)"},
+        {"name": "alternative_product_ids", "type": "many2many(product.template)"},
+        {"name": "supplier_taxes_id", "type": "many2many(account.tax)"},
+        {"name": "purchase_method", "type": "selection", "notes": "On ordered quantities | On received quantities"},
+        {"name": "description_purchase", "type": "text"},
+        {"name": "route_ids", "type": "many2many(stock.route)"},
+        {"name": "responsible_id", "type": "many2one(res.users)"},
+        {"name": "sale_delay", "type": "float", "notes": "Customer Lead Time (days)"},
+        {"name": "hs_code", "type": "text"},
+        {"name": "country_of_origin", "type": "many2one(res.country)"},
+        {"name": "description_pickingin", "type": "text"},
+        {"name": "description_pickingout", "type": "text"},
+        {"name": "description_picking", "type": "text"},
+        {"name": "sales_variant_selection", "type": "selection", "notes": "Product Configurator | Order Grid Entry"}
+      ],
+      "relationships": [
+        "ProductTemplate → has many → AttributeLine",
+        "ProductTemplate → has many → ProductProduct (variants)",
+        "ProductTemplate → has many → SupplierInfo (vendors)",
+        "ProductTemplate → has many → ProductMedia"
+      ]
+    },
+    {
+      "name": "AttributeLine",
+      "table_hint": "product.template.attribute.line",
+      "fields": [
+        {"name": "id", "type": "uuid"},
+        {"name": "product_tmpl_id", "type": "many2one(product.template)"},
+        {"name": "attribute_id", "type": "many2one(product.attribute)", "notes": "e.g. Color"},
+        {"name": "value_ids", "type": "many2many(product.attribute.value)", "notes": "e.g. White, Black, Green, Pink"}
+      ],
+      "relationships": [
+        "AttributeLine → belongs to → ProductTemplate",
+        "AttributeLine → belongs to → ProductAttribute",
+        "AttributeLine → has many → ProductAttributeValue"
+      ]
+    },
+    {
+      "name": "ProductAttribute",
+      "table_hint": "product.attribute",
+      "fields": [
+        {"name": "id", "type": "uuid"},
+        {"name": "name", "type": "text", "notes": "e.g. Color"},
+        {"name": "display_type", "type": "selection", "notes": "radio | select | color (chip background colour visible in screenshots)"}
+      ],
+      "relationships": [
+        "ProductAttribute → has many → ProductAttributeValue"
+      ]
+    },
+    {
+      "name": "ProductAttributeValue",
+      "table_hint": "product.attribute.value",
+      "fields": [
+        {"name": "id", "type": "uuid"},
+        {"name": "attribute_id", "type": "many2one(product.attribute)"},
+        {"name": "name", "type": "text", "notes": "e.g. White, Black, Green, Pink, Dark Blue, Grey, Blue, Yellow, Rainbow"},
+        {"name": "html_color", "type": "text", "notes": "background colour for chip"}
+      ]
+    },
+    {
+      "name": "ProductProduct",
+      "table_hint": "product.product",
+      "fields": [
+        {"name": "id", "type": "uuid"},
+        {"name": "product_tmpl_id", "type": "many2one(product.template)"},
+        {"name": "combination", "type": "many2many(product.attribute.value)", "notes": "Distinct combination per variant"},
+        {"name": "default_code", "type": "text", "notes": "Variant-level SKU"},
+        {"name": "barcode", "type": "text"}
+      ],
+      "relationships": [
+        "ProductProduct → belongs to → ProductTemplate",
+        "ProductProduct → has many → StockQuant"
+      ]
+    },
+    {
+      "name": "SupplierInfo",
+      "table_hint": "product.supplierinfo",
+      "fields": [
+        {"name": "id", "type": "uuid"},
+        {"name": "product_tmpl_id", "type": "many2one(product.template)"},
+        {"name": "partner_id", "type": "many2one(res.partner)", "notes": "Vendor"},
+        {"name": "price", "type": "monetary"},
+        {"name": "currency_id", "type": "many2one(res.currency)"},
+        {"name": "delay", "type": "integer", "notes": "Delivery Lead Time"},
+        {"name": "min_qty", "type": "float"}
+      ]
+    },
+    {
+      "name": "StockQuant",
+      "table_hint": "stock.quant",
+      "description": "Backs the Update Quantity grid",
+      "fields": [
+        {"name": "id", "type": "uuid"},
+        {"name": "product_id", "type": "many2one(product.product)"},
+        {"name": "location_id", "type": "many2one(stock.location)"},
+        {"name": "owner_id", "type": "many2one(res.partner)", "notes": "Optional"},
+        {"name": "quantity", "type": "float", "notes": "On-hand"},
+        {"name": "reserved_quantity", "type": "float"},
+        {"name": "uom_id", "type": "many2one(uom.uom)"}
+      ],
+      "relationships": [
+        "StockQuant → belongs to → ProductProduct",
+        "StockQuant → belongs to → StockLocation"
+      ]
+    },
+    {
+      "name": "ProductCategory",
+      "table_hint": "product.category",
+      "fields": [
+        {"name": "id", "type": "uuid"},
+        {"name": "name", "type": "text", "notes": "default seed: 'All'"},
+        {"name": "parent_id", "type": "many2one(product.category)"}
+      ]
+    },
+    {
+      "name": "ProductTemplateTag",
+      "fields": [
+        {"name": "id", "type": "uuid"},
+        {"name": "name", "type": "text"}
+      ]
+    }
+  ],
+  "ui_patterns": {
+    "layout": "Top horizontal nav (Sales | Orders | To Invoice | Products | Reporting | Configuration). Form pages have: breadcrumb + header buttons (top-left), smart-button row (top-right), then a centred white card with Name/scope checkboxes/tab strip and a two-column tabbed body. Chatter docks at bottom of form.",
+    "color_scheme": {
+      "primary": "purple-burgundy header buttons (e.g. 'Inventory at Date')",
+      "accent_links": "teal/cyan for inline links and tab focus underline",
+      "status_chips": "soft tinted backgrounds (Drinks=light grey, Furnitures=light grey, 15%=light grey)",
+      "attribute_value_chips": "background colour matches the named colour (Black=red-ish demo, White=green demo, Pink=light pink)"
+    },
+    "navigation": {
+      "tab_strip": "General Information | Attributes & Variants | Sales | Purchase | Inventory | Accounting | eBay",
+      "smart_buttons": "Extra Prices, Documents, Go to Website, In/Out, Variants (after attributes saved), More dropdown",
+      "breadcrumb": "Products / <name> [/ <subview>]",
+      "pagination": "1/1 with prev/next chevrons top-right"
+    },
+    "tooltips": "Field labels carry a small '?' superscript that shows a help bubble on hover.",
+    "view_toggles_on_lists": "list / kanban / graph icons top-right, plus search bar with active filter chips."
+  },
+  "cross_module_features": [
+    "Chatter (Send message / Log note / WhatsApp / Activities) appears at bottom of all major detail forms",
+    "Smart-button row contextual to the current record (counts e.g. Variants: 4)",
+    "Multi-language indicator (EN) per textual field",
+    "Save / discard cloud + revert icons appear in the breadcrumb area when the record is dirty",
+    "Multi-company scoping via company_id on records"
+  ]
+}

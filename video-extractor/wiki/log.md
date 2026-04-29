@@ -1,5 +1,29 @@
 # Ingest Log
 
+## 2026-04-29: Odoo 17 Product Management wiki added
+
+**Source**: `odoo/product/screenshots/` — 15:00 demo "How to Manage Products in Odoo 17", captured at 1 fps (900 frames → 670 scenes → 38 ≥3s → 19 kept) on `runbot134.odoo.com` using a focused-window screen grab
+
+**Pages created**: 7
+- odoo-product-modules.md, odoo-product-general.md, odoo-product-variants.md, odoo-product-sales.md, odoo-product-purchase.md, odoo-product-inventory.md, odoo-product-update-quantity.md, odoo-product-data-entities.md
+
+**Key observations**:
+- Single Product form with 7 tabs (General Information / Attributes & Variants / Sales / Purchase / Inventory / Accounting / eBay) — only the first 5 demoed
+- Product Type has 8 values: Consumable, Service, Storable Product, Booking Fees, Combo, Event Ticket, Event Booth, Course
+- Sales tab is wider than expected — covers eCommerce categories, Self-Order/Kiosk description, POS visibility, and three flavours of cross-sell (Optional / Accessory / Alternative)
+- Variants smart button only appears after Attributes & Variants is saved with values; count badge is the cartesian product of selected values
+- Update Quantity is the canonical UX for stock adjustment per-variant per-location, reachable via smart-button on the product form
+- Captured with new `capture-window.sh` (focused-window x11grab) instead of full-screen `capture.sh`
+
+**Discarded scenes**:
+- 0001-0068 (intro / channel branding before any UI)
+- 0070-0133, 0135-0216, 0250-0345, 0500-0593 (narration-only over screens already captured by their representative frame)
+- 0840-0900 (outro / call to subscribe)
+
+**Tooling note**: lowered the "significant scene" threshold from 5s to 3s for this video — Odoo's UI has heavy mouse motion that fragments scenes via phash drift, so the default ≥5s filter dropped real content.
+
+---
+
 ## 2026-04-28: InterCloud9 Predictive Dialer wiki added
 
 **Source ingested:**
